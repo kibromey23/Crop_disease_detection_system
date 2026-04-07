@@ -1,0 +1,15 @@
+{
+  "_note": "This file is auto-generated after training. Run the command in SETUP_GUIDE.txt to create it.",
+  "0": "Maize_Gray_Leaf_Spot",
+  "1": "Maize_Healthy",
+  "2": "Maize_Northern_Leaf_Blight",
+  "3": "Sorghum_Anthracnose",
+  "4": "Sorghum_Downy_Mildew",
+  "5": "Sorghum_Healthy",
+  "6": "Teff_Healthy",
+  "7": "Teff_Leaf_Spot",
+  "8": "Wheat_Healthy",
+  "9": "Wheat_Leaf_Rust",
+  "10": "Wheat_Stem_Rust",
+  "11": "Wheat_Yellow_Rust"
+}

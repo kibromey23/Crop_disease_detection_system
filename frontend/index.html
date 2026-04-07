@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: http://localhost:3001; connect-src 'self' http://localhost:3001 http://localhost:8000 https://api.open-meteo.com; worker-src 'self' blob:;" />
+
+    <title>Crop disease detection</title>
+    <meta name="description" content="AI-powered plant and crop disease detection for Tigray smallholder farmers." />
+    <meta name="theme-color" content="#07110a" />
+
+    <!--
+      Favicon: matches crop.png — green shield + leaf + magnifier
+      SVG encoded directly so it works without any file upload
+    -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='sf' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%233a7d2c'/%3E%3Cstop offset='100%25' stop-color='%231b5e20'/%3E%3C/linearGradient%3E%3ClinearGradient id='sk' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%2390caf9'/%3E%3Cstop offset='60%25' stop-color='%23c8e6c9'/%3E%3Cstop offset='100%25' stop-color='%234caf50'/%3E%3C/linearGradient%3E%3CclipPath id='sc'%3E%3Cpath d='M60 12 L98 26 L98 66 Q98 91 60 104 Q22 91 22 66 L22 26 Z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d='M60 5 L104 21 L104 67 Q104 96 60 111 Q16 96 16 67 L16 21 Z' fill='url(%23sf)' stroke='%23145214' stroke-width='1.5'/%3E%3Cpath d='M60 10 L100 25 L100 66 Q100 93 60 107 Q20 93 20 66 L20 25 Z' fill='white'/%3E%3Cpath d='M60 12 L98 26 L98 66 Q98 91 60 104 Q22 91 22 66 L22 26 Z' fill='url(%23sk)'/%3E%3Cellipse cx='60' cy='84' rx='40' ry='22' fill='%234caf50' clip-path='url(%23sc)'/%3E%3Crect x='57' y='64' width='7' height='20' rx='2' fill='%236d4c41' clip-path='url(%23sc)'/%3E%3Cpath d='M58 64 Q40 52 33 32 Q50 36 61 56 Z' fill='%2343a047' clip-path='url(%23sc)'/%3E%3Cpath d='M60 64 Q53 42 55 16 Q67 28 67 52 Z' fill='%234caf50' clip-path='url(%23sc)'/%3E%3Cpath d='M62 60 Q78 46 86 28 Q72 34 63 54 Z' fill='%2366bb6a' clip-path='url(%23sc)'/%3E%3Cline x1='75' y1='75' x2='98' y2='98' stroke='%231b5e20' stroke-width='9' stroke-linecap='round'/%3E%3Cline x1='75' y1='75' x2='98' y2='98' stroke='%2366bb6a' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='62' cy='60' r='22' fill='none' stroke='%23757575' stroke-width='6'/%3E%3Ccircle cx='62' cy='60' r='18.5' fill='%23fffde7' opacity='0.7'/%3E%3Ccircle cx='63' cy='62' r='6' fill='%23e64a19'/%3E%3Ccircle cx='74' cy='51' r='4' fill='%23f4511e'/%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

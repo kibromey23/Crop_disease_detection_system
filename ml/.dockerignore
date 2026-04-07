@@ -1,0 +1,9 @@
+# Exclude large training data from Docker image
+data/
+checkpoints/
+evaluation_outputs/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/

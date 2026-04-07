@@ -1,0 +1,41 @@
+# Secrets — NEVER commit
+.env
+.env.local
+.env.production
+
+# Node
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# User uploaded images — privacy violation if committed
+backend/uploads/*.jpg
+backend/uploads/*.jpeg
+backend/uploads/*.png
+backend/uploads/*.webp
+backend/uploads/*.gif
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# ML artifacts — too large for git
+ml/data/
+ml/checkpoints/
+ml/evaluation_outputs/
+ml/logs/
+*.h5
+*.keras
+*.pb
+
+# Build output
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db

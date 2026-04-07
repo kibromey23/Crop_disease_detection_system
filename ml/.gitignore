@@ -1,0 +1,11 @@
+# ml/.gitignore
+__pycache__/
+*.pyc
+.env
+data/
+checkpoints/
+saved_model/
+evaluation_outputs/
+*.h5
+*.keras
+logs/
