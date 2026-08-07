@@ -8,7 +8,7 @@ const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
 const COLORS = ["var(--green)","var(--amber)","var(--blue)","var(--purple)","#fb923c","#38bdf8","#f472b6","#34d399"];
 
 export default function DashboardPage({ nav, settings, t }) {
-  const { user, isPremium, scansRemaining, FREE_DAILY_LIMIT: FREE_DAILY_SCANS, upgradeToPremium, authFetch } = useAuth();
+  const { user, isPremium, scansRemaining, FREE_DAILY_LIMIT: FREE_DAILY_SCANS, authFetch } = useAuth();
   const [records, setRecords] = useState([]);
   const [statsData, setStatsData] = useState({}); // ✅ FIXED NAME
   const [loading, setLoading] = useState(true);
@@ -62,7 +62,7 @@ export default function DashboardPage({ nav, settings, t }) {
     { icon:"◷", lbl:t("action_history"),  fn:()=>nav("history")      },
   ];
 
-  const scansPct   = isPremium ? 100 : Math.round((scansRemaining/FREE_DAILY_SCANS)*100);
+  const scansPct   = isPremium ? 100 : Math.round(((scansRemaining ?? 0) / (FREE_DAILY_SCANS || 5)) * 100);
   const scansColor = scansPct > 50 ? "var(--green)" : scansPct > 20 ? "var(--amber-text)" : "var(--red-text)";
 
   return (

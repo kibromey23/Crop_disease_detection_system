@@ -1,0 +1,2175 @@
+{
+  "_meta": {
+    "project": "CropGuard AI",
+    "institution": "Mekelle Institute of Technology, 2026",
+    "source_language": "English (en)",
+    "target_languages": [
+      "Tigrinya (ti)",
+      "Amharic (am)"
+    ],
+    "generated": "2026-05-03",
+    "notes": "Hardcoded English strings for frontend, backend, and ML layers."
+  },
+  "frontend": {
+    "app": {
+      "app_name": "CropGuard AI",
+      "app_subtitle": "Plant Disease Detection",
+      "version": "v1.0 · MIT 2026",
+      "model_online": "AI Online",
+      "ai_ready": "Model Ready",
+      "loading": "Loading…",
+      "saving": "Saving…",
+      "close": "Close",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "back": "Back",
+      "next": "Next",
+      "done": "Done",
+      "scan_now": "Scan now",
+      "learn_more": "Learn more",
+      "view_all": "View all",
+      "see_more": "See more",
+      "save_profile": "Save profile",
+      "downgrade": "Downgrade",
+      "daily_scans": "Daily scans",
+      "resets_midnight": "Resets at midnight",
+      "features_on_plan": "Features on your plan",
+      "see_premium_features": "See all Premium features →",
+      "account_info": "Account info",
+      "email_label": "Email",
+      "member_since": "Member since",
+      "user_id_label": "User ID",
+      "security": "Security",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "today": "Today",
+      "weather_label": "Mekelle Weather",
+      "humidity": "Humidity",
+      "wind": "Wind"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "diseases": "Disease Guide",
+      "signin": "Sign In",
+      "register": "Register",
+      "dashboard": "Dashboard",
+      "backHome": "Back to Home",
+      "nav_main": "Main",
+      "nav_system": "Intelligence",
+      "nav_tools": "Tools",
+      "nav_dashboard": "Dashboard",
+      "nav_detect": "Detect Disease",
+      "nav_history": "Scan History",
+      "nav_encyclopedia": "Disease Guide",
+      "nav_analytics": "Analytics",
+      "nav_farm": "Farm Manager",
+      "nav_community": "Community",
+      "nav_bookmarks": "Saved Plans",
+      "nav_settings": "Settings",
+      "btn_new_scan": "New Scan",
+      "sign_in": "Sign in",
+      "sign_out": "Sign out"
+    },
+    "home": {
+      "hero": {
+        "badge": "AI-Powered Agriculture",
+        "title": "Protect Your Crops with CropGuard AI",
+        "subtitle": "An intelligent, multilingual plant disease detection system designed for Ethiopian smallholder farmers. Upload a leaf image and receive instant AI-powered diagnosis with actionable treatment recommendations.",
+        "getStarted": "Get Started Free",
+        "learnMore": "Explore Disease Guide",
+        "supportedCrops": "Supports Wheat · Teff · Maize · Tomato · Potato · Pepper"
+      },
+      "stats": {
+        "accuracy": "93.7%",
+        "accuracyLabel": "Model Accuracy",
+        "diseases": "10+",
+        "diseasesLabel": "Disease Classes",
+        "languages": "3",
+        "languagesLabel": "Languages",
+        "farmers": "Tigray",
+        "farmersLabel": "Region Focus"
+      },
+      "features": {
+        "title": "Why CropGuard AI?",
+        "subtitle": "Purpose-built for Ethiopian smallholder farmers — accurate, accessible, and multilingual.",
+        "ai": {
+          "title": "AI Disease Detection",
+          "desc": "MobileNetV2-powered deep learning model trained on 14,559 leaf images achieves 93.7% classification accuracy across 10 crop disease classes."
+        },
+        "multilingual": {
+          "title": "3-Language Support",
+          "desc": "Full native support for English, Amharic (አማርኛ), and Tigrinya (ትግርኛ) — eliminating language barriers for Ethiopian farmers."
+        },
+        "instant": {
+          "title": "Instant Results",
+          "desc": "Upload a leaf photo and receive a diagnosis in seconds, complete with confidence scores and tailored treatment recommendations."
+        },
+        "history": {
+          "title": "Prediction History",
+          "desc": "Track all your past scans in a personal dashboard. Monitor disease trends across your fields over time."
+        },
+        "chat": {
+          "title": "AI Chat Assistant",
+          "desc": "Ask follow-up questions about any diagnosed disease in your preferred language. Powered by advanced natural language AI."
+        },
+        "crops": {
+          "title": "Local Crop Coverage",
+          "desc": "Disease detection tailored for Tigray-prevalent crops: Wheat, Teff, Maize, Tomato, Potato, and Pepper."
+        }
+      },
+      "howItWorks": {
+        "title": "How It Works",
+        "subtitle": "Three simple steps to protect your harvest",
+        "step1": {
+          "title": "Upload a Leaf Photo",
+          "desc": "Take a clear, close-up photo of the affected crop leaf and upload it directly from your phone or computer."
+        },
+        "step2": {
+          "title": "AI Analysis",
+          "desc": "Our MobileNetV2 deep learning model instantly analyzes the image, detecting disease patterns with 93.7% accuracy."
+        },
+        "step3": {
+          "title": "Get Recommendations",
+          "desc": "Receive the disease name, confidence score, and specific chemical and organic treatment options in your language."
+        }
+      },
+      "crops": {
+        "title": "Supported Crops",
+        "subtitle": "CropGuard AI covers the most important crops for Tigray agriculture",
+        "list": [
+          {
+            "name": "Wheat",
+            "diseases": "Stem Rust, Leaf Rust"
+          },
+          {
+            "name": "Teff",
+            "diseases": "Leaf Blight, Smut"
+          },
+          {
+            "name": "Maize",
+            "diseases": "Leaf Blight, Gray Leaf Spot"
+          },
+          {
+            "name": "Tomato",
+            "diseases": "Late Blight, Bacterial Spot"
+          },
+          {
+            "name": "Potato",
+            "diseases": "Early Blight, Late Blight"
+          },
+          {
+            "name": "Pepper",
+            "diseases": "Bacterial Spot, Healthy"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Start Protecting Your Crops Today",
+        "subtitle": "Join farmers across Tigray using AI to safeguard their harvests. Free and accessible on any device.",
+        "button": "Create Free Account",
+        "secondary": "Browse Disease Guide"
+      },
+      "seasonal_tip": "Seasonal Advisory",
+      "tip_text": "Rust diseases peak during rainy season. Inspect wheat and barley every 3–5 days from tillering to heading.",
+      "welcome_title": "Welcome to CropGuard AI",
+      "welcome_sub": "AI-powered crop disease detection for Tigray farmers. Upload a leaf photo for instant diagnosis.",
+      "btn_view_history": "View History",
+      "btn_disease_guide": "Disease Guide"
+    },
+    "auth": {
+      "signin": {
+        "title": "Welcome Back",
+        "subtitle": "Sign in to access your crop disease dashboard",
+        "email": "Email Address",
+        "password": "Password",
+        "button": "Sign In",
+        "noAccount": "Don't have an account?",
+        "register": "Register here",
+        "backHome": "Back to Home"
+      },
+      "register": {
+        "title": "Create Account",
+        "subtitle": "Join CropGuard AI and protect your harvest",
+        "name": "Full Name",
+        "email": "Email Address",
+        "password": "Password",
+        "confirm": "Confirm Password",
+        "button": "Create Account",
+        "hasAccount": "Already have an account?",
+        "signin": "Sign in here",
+        "backHome": "Back to Home"
+      },
+      "auth_sign_in": "Sign in",
+      "auth_create_account": "Create account",
+      "auth_email": "Email address",
+      "auth_password": "Password",
+      "auth_full_name": "Full name",
+      "auth_institution": "Institution",
+      "auth_language": "Language",
+      "auth_confirm_pw": "Confirm password",
+      "auth_subtitle": "Plant Disease Detection",
+      "auth_your_email": "your@email.com",
+      "auth_your_password": "Enter your password",
+      "auth_pw_placeholder": "Min 8 chars, uppercase & number",
+      "auth_confirm_ph": "Re-enter your password",
+      "auth_please_wait": "Please wait…",
+      "auth_no_name": "Please enter your full name.",
+      "auth_bad_email": "Please enter a valid email address.",
+      "auth_pw_min": "Password must be at least 8 characters.",
+      "auth_pw_rules": "Password needs at least one uppercase letter and one number.",
+      "auth_pw_mismatch": "Passwords do not match.",
+      "auth_pw_match": "✓ Passwords match",
+      "auth_free_plan_note": "Free plan: 5 scans/day, disease encyclopedia. Upgrade to Premium ($4.99/mo) for unlimited scans.",
+      "pw_show": "Show",
+      "pw_hide": "Hide",
+      "auth_pw_too_short": "Too short",
+      "auth_pw_weak": "Weak",
+      "auth_pw_fair": "Fair",
+      "auth_pw_good": "Good",
+      "auth_pw_strong": "Strong",
+      "auth_pw_very_strong": "Very strong"
+    },
+    "dashboard": {
+      "title": "My Dashboard",
+      "backHome": "Back to Home",
+      "welcome": "Welcome back",
+      "stats": {
+        "totalScans": "Total Scans",
+        "diseased": "Diseased",
+        "healthy": "Healthy",
+        "thisMonth": "This Month"
+      },
+      "recentScans": "Recent Scans",
+      "noScans": "No scans yet. Upload your first leaf image to get started.",
+      "uploadNew": "Upload New Image",
+      "stat_total": "Total Scans",
+      "stat_diseased": "Diseases Found",
+      "stat_healthy": "Healthy Crops",
+      "stat_confidence": "Avg Confidence",
+      "health_rate": "Health Rate",
+      "recent_scans": "Recent Scans",
+      "no_scans_yet": "No scans yet — tap New Scan to get started",
+      "disease_dist": "Disease Distribution",
+      "quick_actions": "Quick Actions",
+      "action_scan": "Scan a Leaf",
+      "action_guide": "Disease Guide",
+      "action_history": "Scan History",
+      "action_settings": "Settings",
+      "activity_chart_label": "7-day scan activity",
+      "day_abbreviations": {
+        "su": "Su",
+        "mo": "Mo",
+        "tu": "Tu",
+        "we": "We",
+        "th": "Th",
+        "fr": "Fr",
+        "sa": "Sa"
+      }
+    },
+    "detect": {
+      "upload_title": "Scan a leaf, get a diagnosis",
+      "upload_sub": "Upload a clear photo of an affected leaf. Our AI identifies the disease and recommends treatment in seconds.",
+      "drop_title": "Drop your leaf image here",
+      "drop_sub": "or click to browse files",
+      "ready_label": "Ready to analyse",
+      "remove_image": "Remove image",
+      "btn_analyse": "Analyse this leaf",
+      "btn_select": "Select an image first",
+      "analysing": "Analysing…",
+      "running_model": "Running AI model",
+      "photo_tips": "Photography Tips",
+      "tip1_title": "Good lighting",
+      "tip1_desc": "Use natural daylight, avoid harsh shadows",
+      "tip2_title": "Close-up shot",
+      "tip2_desc": "Fill the frame with one or two leaves",
+      "tip3_title": "Show symptoms",
+      "tip3_desc": "Capture the most affected area",
+      "tip4_title": "Steady camera",
+      "tip4_desc": "Keep camera parallel to the leaf",
+      "conf_threshold": "Confidence threshold",
+      "conf_in_settings": "Adjust in Settings → Detection",
+      "error_prefix": "Error: ",
+      "upload_note": "JPG, PNG, WebP · Max 10 MB",
+      "cam_live": "LIVE",
+      "cam_scan_btn": "Scan Leaf",
+      "cam_capture": "Capturing…",
+      "cam_retake": "Retake",
+      "cam_flip": "Flip camera",
+      "cam_not_supported": "Camera not supported",
+      "cam_not_supported_sub": "Use the Upload tab instead.",
+      "cam_denied": "Camera access denied — please allow permission and reload.",
+      "offline_queued": "You are offline — scan saved and will analyse when reconnected.",
+      "offline_banner": "Offline mode — scans queued locally and will sync when reconnected.",
+      "online_back": "Back online",
+      "error_ai_offline": "AI server is offline. Please start it and try again.",
+      "error_too_large": "File too large — max 10 MB",
+      "error_wrong_type": "Only JPG, PNG or WebP images are accepted",
+      "error_try_again": "Something went wrong. Please try again.",
+      "upload_tab_label": "Upload Image",
+      "cam_tab_camera": "Camera",
+      "cam_realtime_sub": "Point camera at affected plant leaf",
+      "quota_resets_midnight": "Quota resets at midnight"
+    },
+    "history": {
+      "search_placeholder": "Search by disease or crop name…",
+      "filter_all": "All Results",
+      "filter_diseased": "Diseased Only",
+      "filter_healthy": "Healthy Only",
+      "filter_highconf": "High Confidence",
+      "sort_newest": "Newest First",
+      "sort_oldest": "Oldest First",
+      "sort_conf": "By Confidence",
+      "scans_count": "{n} of {total} scans",
+      "no_history_title": "No scans yet",
+      "no_history_sub": "Scan a leaf to get started",
+      "no_results_title": "No results found",
+      "no_results_sub": "Try a different search or filter",
+      "confidence_label": "Confidence",
+      "healthy_badge": "Healthy",
+      "diseased_badge": "Diseased",
+      "export_csv": "Export CSV",
+      "view_grid": "Grid",
+      "view_list": "List",
+      "select_all": "Select all",
+      "deselect_all": "Deselect",
+      "bulk_delete": "Delete {n} selected",
+      "notif_deleted": "Deleted",
+      "notif_exported": "CSV exported",
+      "delete_one_title": "Delete this scan?",
+      "delete_one_message": "This cannot be undone.",
+      "delete_one_confirm_label": "Delete",
+      "delete_bulk_title": "Delete {n} scan(s)?",
+      "delete_bulk_message": "All selected scans will be permanently removed.",
+      "delete_bulk_confirm_label": "Delete all",
+      "deleted_n_scans": "{n} scans deleted"
+    },
+    "settings": {
+      "settings_sub": "Customise your CropGuard AI experience",
+      "btn_save": "Save Changes",
+      "btn_saved": "✓ Saved!",
+      "tab_appearance": "Appearance",
+      "tab_detection": "Detection",
+      "tab_profile": "Profile",
+      "tab_account": "Account",
+      "tab_about": "About",
+      "theme_title": "Theme",
+      "theme_desc": "Choose your interface theme",
+      "theme_dark": "Dark",
+      "theme_light": "Light",
+      "fontsize_title": "Font Size",
+      "fontsize_desc": "Adjust text size",
+      "fs_small": "Small",
+      "fs_medium": "Medium",
+      "fs_large": "Large",
+      "language_title": "Language",
+      "language_desc": "Interface language",
+      "conf_title": "Confidence Threshold",
+      "conf_desc": "Minimum confidence to show a result.",
+      "conf_more": "30% — More results",
+      "conf_precise": "95% — High precision",
+      "top3_title": "Show Top-3 Predictions",
+      "top3_desc": "Display alternative predictions",
+      "autosave_title": "Auto-save Scans",
+      "autosave_desc": "Save every result automatically",
+      "name_title": "Your Name",
+      "name_desc": "Shown in the top bar",
+      "name_placeholder": "Enter your name",
+      "inst_title": "Institution",
+      "inst_desc": "Your organisation",
+      "inst_placeholder": "Institution name",
+      "about_title": "About CropGuard AI",
+      "about_desc": "System information",
+      "team_title": "Project Team",
+      "lbl_version": "Version",
+      "lbl_model": "Model",
+      "lbl_dataset": "Dataset",
+      "lbl_crops": "Target Crops",
+      "lbl_inst": "Institution",
+      "lbl_submitted": "Submitted to",
+      "lbl_year": "Year",
+      "lbl_frontend": "Frontend",
+      "lbl_backend": "Backend",
+      "lbl_ai_server": "AI Server",
+      "view_active_sessions": "View active sessions",
+      "signout_all_devices": "Sign out from all devices",
+      "downgrade_title": "Downgrade to Free?",
+      "downgrade_msg": "You will lose Premium features including unlimited scans, AI insights, and smart recommendations.",
+      "downgrade_confirm": "Yes, downgrade",
+      "downgraded_info": "Downgraded to Free plan",
+      "signout_all_title": "Sign out from all devices?",
+      "signout_all_msg": "This will end all active sessions on every device. You will need to sign in again.",
+      "signout_all_btn": "Sign out all",
+      "signout_all_done": "Signed out from all devices",
+      "logout_confirm_message": "You will be signed out from this device. Your data is safely stored on the server.",
+      "stage_seedling": "Seedling",
+      "stage_vegetative": "Vegetative",
+      "stage_flowering": "Flowering",
+      "stage_fruiting": "Fruiting",
+      "stage_harvest": "Harvest",
+      "stage_dormant": "Dormant"
+    },
+    "pricing": {
+      "upgrade_cta": "Upgrade to Premium",
+      "upgrade_sub": "Unlock unlimited scans, AI insights, and expert support",
+      "plan_free": "Free",
+      "plan_premium": "Premium",
+      "plan_enterprise": "Enterprise",
+      "plan_free_desc": "5 scans per day · Basic results · Community access",
+      "plan_premium_desc": "Unlimited scans · AI insights · Smart recommendations · Priority support",
+      "plan_enterprise_desc": "Multi-farm · Team access · Custom model · API access",
+      "plan_free_price": "Free",
+      "plan_premium_price": "$4.99 / month",
+      "plan_enterprise_price": "Contact us",
+      "plan_current": "Current plan",
+      "plan_upgrade": "Upgrade",
+      "plan_most_popular": "Most popular",
+      "premium_feature": "Premium feature",
+      "premium_locked": "This feature requires a Premium plan",
+      "premium_unlock": "Unlock with Premium",
+      "go_premium": "Go Premium →",
+      "enterprise_price_monthly": "$19.99 / month",
+      "enterprise_payment_title": "Enterprise Plan",
+      "enterprise_payment_sub": "Billed annually. Includes all Premium features plus custom model, API access, and dedicated support.",
+      "enterprise_contact_btn": "Contact for Custom Pricing",
+      "enterprise_upgrade_btn": "Get Enterprise →",
+      "enterprise_contact_alert": "Contact us at cropguard@mit.edu.et to get enterprise pricing for your organisation.",
+      "current_plan_badge": "Current plan:",
+      "plan_card_current_label": "✓ Current plan",
+      "plan_card_contact_label": "Contact us",
+      "plan_card_downgrade_label": "Downgrade",
+      "what_you_get_title": "What you get with each plan",
+      "feature_matrix": {
+        "col_feature": "Feature",
+        "rows": {
+          "daily_scans": {
+            "label": "Daily scans",
+            "free": "5 / day",
+            "premium": "Unlimited",
+            "enterprise": "Unlimited"
+          },
+          "ai_diagnosis": {
+            "label": "AI diagnosis",
+            "free": "Basic",
+            "premium": "Advanced",
+            "enterprise": "Advanced"
+          },
+          "farms": {
+            "label": "Farms",
+            "free": "2",
+            "premium": "10",
+            "enterprise": "Unlimited"
+          },
+          "scan_history": {
+            "label": "Scan history",
+            "free": "Last 20",
+            "premium": "Unlimited",
+            "enterprise": "Unlimited"
+          },
+          "ai_insights": {
+            "label": "AI insights",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "smart_treatment": {
+            "label": "Smart treatment",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "risk_scoring": {
+            "label": "Risk scoring",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "export_reports": {
+            "label": "Export reports",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "offline_queue": {
+            "label": "Offline queue",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "api_access": {
+            "label": "API access",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "custom_model": {
+            "label": "Custom model",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "support": {
+            "label": "Support",
+            "free": "Community",
+            "premium": "Priority email",
+            "enterprise": "Dedicated manager"
+          },
+          "price": {
+            "label": "Price",
+            "free": "Free",
+            "premium": "$4.99/mo",
+            "enterprise": "Contact us"
+          }
+        }
+      },
+      "plan_features": {
+        "free": [
+          "5 scans per day",
+          "Basic AI diagnosis",
+          "Disease encyclopedia",
+          "2 farms max",
+          "Scan history (last 20)"
+        ],
+        "free_locked": [
+          "AI insights & trends",
+          "Smart treatment plans",
+          "Risk & yield scoring",
+          "Location intelligence",
+          "Export reports (PDF/CSV)",
+          "Offline scan queue",
+          "Community feed",
+          "Priority support"
+        ],
+        "premium": [
+          "Unlimited daily scans",
+          "Advanced AI diagnosis",
+          "Disease encyclopedia",
+          "Up to 10 farms",
+          "Full scan history (unlimited)",
+          "AI insights & trends",
+          "Smart treatment plans",
+          "Risk & yield scoring",
+          "Location intelligence",
+          "Export reports (PDF/CSV)",
+          "Offline scan queue",
+          "Community feed access",
+          "Priority email support"
+        ],
+        "enterprise": [
+          "Everything in Premium",
+          "Unlimited farms & users",
+          "Custom AI model training",
+          "REST API access",
+          "Team dashboard & reports",
+          "Dedicated support manager",
+          "On-site training",
+          "White-label option",
+          "SLA guarantee"
+        ]
+      },
+      "toast_welcome_premium": "🎉 Welcome to Premium! All features unlocked.",
+      "toast_downgraded": "Downgraded to Free plan.",
+      "feat_unlimited_scans": "Unlimited daily scans",
+      "feat_ai_insights": "AI crop insights",
+      "feat_smart_rec": "Smart treatment plans",
+      "feat_risk_score": "Risk & yield scoring",
+      "feat_explain": "Explainability layer",
+      "feat_location": "Location intelligence",
+      "feat_export": "Export reports (PDF/CSV)",
+      "feat_history_full": "Full scan history (unlimited)",
+      "feat_community": "Community feed access",
+      "feat_alerts": "Advanced outbreak alerts",
+      "feat_offline": "Offline scan queue",
+      "feat_multi_farm": "Multiple farms (up to 10)",
+      "feat_support": "Priority email support"
+    },
+    "about": {
+      "hero": {
+        "title": "About CropGuard AI",
+        "subtitle": "A research project from Mekelle University's Institute of Technology, developed to empower Ethiopian farmers with AI-driven agricultural diagnostics."
+      },
+      "university_badge": "Mekelle University – MIT",
+      "mission": {
+        "title": "Our Mission",
+        "text": "Agriculture constitutes the cornerstone of Ethiopia's economy, employing approximately 70–80% of the national workforce. In the Tigray region, smallholder subsistence farming of staple crops such as wheat, teff, maize, sorghum, barley, and lentils represents the primary livelihood for millions of households. CropGuard AI was created to address the critical gap in accessible, accurate, and multilingual plant disease detection tools for these farming communities.",
+        "quote": "Empowering every farmer — regardless of language or location — with the diagnostic power of AI.",
+        "card_subtitle": "AI-powered crop disease detection for Ethiopian farmers"
+      },
+      "problem": {
+        "title": "The Problem We Solve",
+        "subtitle": "Four interconnected challenges face smallholder farmers in Tigray and across Ethiopia",
+        "items": [
+          {
+            "title": "Expert Unavailability",
+            "desc": "Agricultural extension officers and plant pathologists serve large, geographically dispersed rural populations, resulting in delayed or inaccessible consultations and uncontrolled disease spread."
+          },
+          {
+            "title": "Language Barriers",
+            "desc": "Existing AI-based plant disease tools are developed exclusively in English, rendering them inaccessible to the millions of Ethiopian farmers who communicate in Amharic or Tigrinya."
+          },
+          {
+            "title": "Pesticide Misuse",
+            "desc": "Misdiagnosis leads to the indiscriminate or incorrect application of pesticides, inflating production costs, polluting water sources, and accelerating resistance development."
+          },
+          {
+            "title": "Manual Diagnostic Error",
+            "desc": "Visual identification of plant disease symptoms by non-expert farmers is frequently inaccurate, particularly in early disease stages where symptoms of distinct pathogens overlap."
+          }
+        ]
+      },
+      "model": {
+        "title": "The Technology Behind CropGuard AI",
+        "text": "CropGuard AI uses MobileNetV2 — a lightweight convolutional neural network optimized for mobile and web deployment, developed by Google. Pre-trained on ImageNet's 1.28 million images, then fine-tuned on a curated dataset of 14,559 plant disease images from the PlantVillage repository, supplemented with locally collected Tigray field images, the model achieves 93.7% validation accuracy across 10 disease classes. The architecture's inverted residual blocks and depthwise separable convolutions allow fast inference even on resource-constrained servers.",
+        "stats": [
+          {
+            "label": "Training Images",
+            "value": "14,559"
+          },
+          {
+            "label": "Disease Classes",
+            "value": "10"
+          },
+          {
+            "label": "Model Accuracy",
+            "value": "93.7%"
+          },
+          {
+            "label": "Supported Crops",
+            "value": "6"
+          }
+        ],
+        "techStack": [
+          "React.js Frontend",
+          "Node.js / Express API",
+          "Python FastAPI ML Service",
+          "PostgreSQL Database",
+          "MobileNetV2 Model",
+          "i18next Multilingual"
+        ]
+      },
+      "comparison": {
+        "title": "How We Compare",
+        "subtitle": "CropGuard AI uniquely combines multilingual support, local crop coverage, and a prediction history dashboard",
+        "headers": [
+          "Feature",
+          "PlantVillage",
+          "Plantix",
+          "CropGuard AI"
+        ],
+        "rows": [
+          {
+            "feature": "Real-Time Detection",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "Amharic / Tigrinya",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "AI Chat Assistant",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "Tigray Crop Coverage",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "Free & Open Access",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "Prediction Dashboard",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          }
+        ]
+      },
+      "team": {
+        "title": "The Research Team",
+        "subtitle": "Seven Bachelor of Information Technology graduates from Mekelle Institute of Technology who built CropGuard AI as their final thesis project.",
+        "members": [
+          {
+            "name": "Niema Kedir",
+            "role": "Team Lead & ML Engineer"
+          },
+          {
+            "name": "Halefom Hailu",
+            "role": "Backend Developer"
+          },
+          {
+            "name": "Guesh Teklu",
+            "role": "Frontend Developer"
+          },
+          {
+            "name": "Hadush Tsigabu",
+            "role": "Database Engineer"
+          },
+          {
+            "name": "Kibrom Getachew",
+            "role": "AI/ML Researcher"
+          },
+          {
+            "name": "Solomon G/cherkos",
+            "role": "System Architect"
+          },
+          {
+            "name": "G/zgher Destalem",
+            "role": "UI/UX Designer"
+          }
+        ],
+        "supervisor": "Supervised by Ins. Gorge",
+        "institution": "Mekelle University – MIT, Department of Information Technology, Mekelle, Tigray, Ethiopia",
+        "year": "February 2026"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contact Us",
+        "subtitle": "Have questions about CropGuard AI? We'd love to hear from farmers, researchers, and partners."
+      },
+      "form": {
+        "send_us_message": "Send us a Message",
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "success": "Message sent successfully! We will get back to you soon.",
+        "namePlaceholder": "Your full name",
+        "emailPlaceholder": "your@email.com",
+        "subjectPlaceholder": "How can we help?",
+        "messagePlaceholder": "Write your message here..."
+      },
+      "info": {
+        "title": "Get in Touch",
+        "institution": "Mekelle Institute of Technology",
+        "department": "Department of Information Technology",
+        "location": "Mekelle, Tigray, Ethiopia",
+        "email": "cropguard@mekelle.edu.et",
+        "email_label": "Email",
+        "languages_label": "Languages",
+        "languages_value": "English · አማርኛ · ትግርኛ",
+        "response_time_title": "Response Time",
+        "response_time_text": "We typically respond to inquiries within 2–3 business days. For urgent research matters, please mention it in your subject line.",
+        "topics": {
+          "title": "Common Topics",
+          "items": [
+            "Technical support for app usage",
+            "Research collaboration inquiries",
+            "Disease coverage expansion requests",
+            "Feedback and bug reports",
+            "Partnership opportunities"
+          ]
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "items": [
+          {
+            "q": "Is CropGuard AI free to use?",
+            "a": "Yes, CropGuard AI is completely free for all farmers and researchers."
+          },
+          {
+            "q": "Which crops does the system support?",
+            "a": "We support Wheat, Teff, Maize, Tomato, Potato, and Pepper — the most common crops in the Tigray region."
+          },
+          {
+            "q": "Does the app work on mobile phones?",
+            "a": "Yes, CropGuard AI is fully responsive and works on any modern smartphone or computer with a browser."
+          },
+          {
+            "q": "How accurate is the AI diagnosis?",
+            "a": "Our MobileNetV2 model achieves 93.7% validation accuracy across 10 disease classes."
+          }
+        ]
+      }
+    },
+    "analytics": {
+      "analytics_title": "Analytics & Insights",
+      "analytics_sub": "Intelligent analysis from your scan history",
+      "total_scans": "Total Scans",
+      "disease_rate": "Disease Rate",
+      "avg_conf": "Avg Confidence",
+      "top_disease": "Top Disease",
+      "monthly_trend": "Monthly Trend",
+      "crop_breakdown": "Health Overview",
+      "conf_distribution": "Confidence Levels",
+      "no_analytics": "No data yet. Start scanning to see analytics.",
+      "tab_analytics_overview": "Overview",
+      "tab_analytics_insights": "AI Insights",
+      "tab_analytics_trends": "Trends",
+      "tab_analytics_location": "Location"
+    },
+    "farm": {
+      "farm_title": "Farm Manager",
+      "farm_sub": "Manage your fields and track crop growth stages.",
+      "farm_add": "Add Field",
+      "farm_edit": "Edit",
+      "farm_delete": "Delete",
+      "farm_name": "Field name",
+      "farm_area": "Area (optional)",
+      "farm_notes": "Notes",
+      "farm_crop": "Crop type",
+      "farm_stage": "Growth stage",
+      "farm_name_ph": "e.g. North Tomato Field",
+      "farm_area_ph": "e.g. 0.5 hectare",
+      "farm_notes_ph": "Any notes about this field…",
+      "farm_not_scanned": "Not scanned yet",
+      "farm_scan_btn": "Scan this crop",
+      "farm_save": "Save field",
+      "farm_cancel": "Cancel",
+      "farm_empty_title": "No farms added yet",
+      "farm_empty_sub": "Add your first field to track crop health.",
+      "farm_add_first": "Add your first field",
+      "farm_delete_confirm": "Delete this farm?",
+      "farm_saved": "Farm saved",
+      "farm_updated": "Farm updated",
+      "farm_deleted": "Farm deleted",
+      "farm_premium_limit": "Free plan allows 2 farms. Upgrade for up to 10."
+    },
+    "bookmarks": {
+      "bookmarks_title": "Saved Plans",
+      "bookmarks_saved": "Saved Plans",
+      "bookmarks_feedback": "Feedback",
+      "bookmarks_compare": "Before / After",
+      "bookmarks_empty_title": "No saved plans yet",
+      "bookmarks_empty_sub": "Tap Save plan on any result to bookmark it here.",
+      "bookmarks_remove": "Remove bookmark",
+      "bookmarks_view_guide": "View disease guide →",
+      "compare_title": "Compare two scans",
+      "compare_sub": "Select two scans to track disease progression or verify treatment.",
+      "compare_before": "Before (first scan)",
+      "compare_after": "After (follow-up)",
+      "compare_select": "Select a scan…",
+      "compare_same": "Same disease in both scans",
+      "compare_different": "Different diagnosis results",
+      "compare_reducing": "Disease pressure appears to be reducing.",
+      "compare_increasing": "Disease pressure appears to be increasing.",
+      "feedback_empty_title": "No feedback submitted yet",
+      "feedback_empty_sub": "After a diagnosis, tap Feedback to improve AI accuracy.",
+      "feedback_clear": "Clear all"
+    },
+    "user": {
+      "user_greeting_morning": "Good morning",
+      "user_greeting_afternoon": "Good afternoon",
+      "user_greeting_evening": "Good evening",
+      "user_free_plan": "Free Plan",
+      "user_premium_plan": "Premium",
+      "user_scans_remaining": "{n} scans remaining today",
+      "user_unlimited": "Unlimited scans",
+      "profile_title": "Your Profile"
+    },
+    "notifications": {
+      "notif_copied": "Copied to clipboard",
+      "notif_scan_saved": "Scan saved",
+      "notif_farm_saved": "Farm saved",
+      "notif_feedback_sent": "Feedback submitted",
+      "notif_plan_saved": "Treatment plan saved",
+      "alerts_title": "Notifications",
+      "alerts_clear": "Clear all",
+      "alerts_unread": "{n} unread",
+      "alerts_empty": "All clear",
+      "alerts_empty_sub": "No notifications right now",
+      "alerts_urgent_badge": "{n} urgent",
+      "alerts_unread_sub": "{n} unread alerts",
+      "alerts_filter_all": "All",
+      "alerts_filter_urgent": "🔴 Urgent",
+      "alerts_filter_outbreak": "Outbreak",
+      "alerts_filter_reminder": "Reminder",
+      "alerts_filter_weather": "Weather",
+      "alert1_title": "Late blight outbreak detected",
+      "alert1_body": "3 tomato scans this week show Late Blight. Inspect your field and apply fungicide.",
+      "alert2_title": "Treatment follow-up due",
+      "alert2_body": "Apply Mancozeb second dose — 7 days since last treatment on field A.",
+      "alert3_title": "Weekly scan reminder",
+      "alert3_body": "You haven't scanned your tomato field in 5 days. High humidity increases risk.",
+      "alert4_title": "High humidity risk alert",
+      "alert4_body": "Humidity above 85% forecast this week. Fungal disease risk is elevated.",
+      "alert5_title": "Seasonal tip: rainy season",
+      "alert5_body": "Rust and blight diseases peak in rainy season. Scout every 3–5 days."
+    },
+    "footer": {
+      "tagline": "AI-powered plant disease detection for Ethiopian farmers",
+      "links": "Quick Links",
+      "contact": "Contact",
+      "rights": "All rights reserved.",
+      "developed": "Developed at Mekelle University – MIT · February 2026"
+    },
+    "treatment_labels": {
+      "cause_fungal": "Fungal",
+      "cause_bacterial": "Bacterial",
+      "cause_pest": "Pest",
+      "cause_viral": "Viral",
+      "lbl_organic": "🌿 Organic / Natural",
+      "lbl_chemical": "⚗ Chemical (with dosage)",
+      "lbl_chemical_warning": "⚠ Wear protective gloves and mask when applying chemicals. Follow label instructions.",
+      "organic_blight": "Copper hydroxide 3g/L · Neem oil 5mL/L every 7 days",
+      "organic_rust": "Sulphur dust 3g/L · Potassium bicarbonate 5g/L · Neem oil 5mL/L",
+      "organic_mildew": "Potassium bicarbonate 5g/L · Baking soda 4g/L + neem oil 5mL/L",
+      "organic_spot": "Copper oxychloride 3g/L · Bordeaux mixture 1%",
+      "organic_mold": "Neem oil 5mL/L · Trichoderma biopesticide per label",
+      "organic_virus": "No organic cure. Remove plants. Control vectors with neem oil.",
+      "organic_default": "Copper-based fungicide 3g/L · Neem oil 5mL/L preventively",
+      "chemical_blight": "Mancozeb 2.5g/L OR Cymoxanil+Mancozeb 2g/L · Repeat every 5–7 days",
+      "chemical_rust": "Tebuconazole 1mL/L OR Propiconazole 1mL/L · 2–3 apps, 14 days apart",
+      "chemical_mildew": "Trifloxystrobin 0.5g/L OR Myclobutanil 1g/L · At first sign",
+      "chemical_spot": "Chlorothalonil 2g/L OR Azoxystrobin 1mL/L · Weekly",
+      "chemical_mold": "Chlorothalonil 2g/L · Ventilate. Apply every 7 days."
+    },
+    "encyclopedia": {
+      "enc_title": "Disease Encyclopedia",
+      "enc_sub": "Browse and search crop diseases",
+      "enc_search": "Search diseases...",
+      "all_crops": "All Crops",
+      "no_disease_found": "No disease found",
+      "enc_high": "High",
+      "enc_medium": "Medium",
+      "enc_low": "Low",
+      "enc_fungal": "Fungal",
+      "enc_bacterial": "Bacterial",
+      "enc_viral": "Viral",
+      "symptoms": "Symptoms",
+      "cause": "Cause",
+      "treatment": "Treatment",
+      "prevention": "Prevention",
+      "severity": "Severity"
+    },
+    "resultcard": {
+      "analysis_complete": "Analysis Complete",
+      "btn_bookmark": "Bookmark",
+      "btn_bookmarked": "Bookmarked",
+      "btn_new_scan2": "New Scan",
+      "btn_report": "Export",
+      "btn_share": "Share",
+      "feedback_btn_close": "Close Feedback",
+      "feedback_btn_open": "Give Feedback",
+      "healthy_label": "✓ Healthy",
+      "disease_label": "⚠ Disease Detected",
+      "diagnosed_at": "Diagnosed at",
+      "confidence_score": "Confidence Score",
+      "recommended_action": "Recommended Action",
+      "alt_predictions": "Alternative Predictions",
+      "disclaimer": "This AI analysis is for guidance only. Consult a local agricultural expert for definitive diagnosis and treatment decisions.",
+      "tab_overview": "Overview",
+      "tab_explain": "AI Explain",
+      "tab_smart": "Smart Rec",
+      "tab_risk": "Risk Score",
+      "tab_treatment": "Treatment",
+      "tab_steps": "Steps",
+      "unknown_crop": "Unknown Crop",
+      "severity_high": "High Risk",
+      "severity_medium": "Medium Risk",
+      "severity_low": "Low Risk",
+      "step1": "Isolate affected plants immediately to prevent spread",
+      "step2": "Remove and safely dispose of heavily infected material",
+      "step3": "Apply recommended treatment (chemical or organic)",
+      "step4": "Monitor surrounding plants for signs of infection",
+      "step5": "Follow up with preventive measures after recovery"
+    },
+    "community": {
+      "community_tab_feed": "Feed",
+      "community_tab_success": "Success Stories",
+      "community_tab_experts": "Expert Tips",
+      "community_all_crops": "All Crops",
+      "community_worked": "Worked",
+      "community_failed": "Did not work"
+    },
+    "diseases": {
+      "hero": {
+        "title": "Disease Guide",
+        "subtitle": "Comprehensive guide to crop diseases affecting Ethiopian agriculture — symptoms, treatments, and prevention"
+      },
+      "search": "Search diseases...",
+      "filter": {
+        "all": "All Crops",
+        "wheat": "Wheat",
+        "maize": "Maize",
+        "tomato": "Tomato",
+        "potato": "Potato",
+        "pepper": "Pepper",
+        "teff": "Teff",
+        "sorghum": "Sorghum"
+      },
+      "severity": {
+        "high": "High Risk",
+        "medium": "Medium Risk",
+        "low": "Low Risk"
+      },
+      "labels": {
+        "symptoms": "Symptoms",
+        "causes": "Causes",
+        "chemical": "Chemical Treatment",
+        "organic": "Organic Treatment",
+        "prevention": "Prevention"
+      },
+      "list": [
+        {
+          "id": "wheat_leaf_rust",
+          "name": "Wheat Leaf Rust",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "Orange-brown powdery pustules on upper leaf surface. Leaves turn yellow and dry.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Tebuconazole or Propiconazole fungicide. Remove and destroy infected plants. Use resistant varieties.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Plant resistant varieties. Avoid dense planting. Monitor during warm humid weather."
+        },
+        {
+          "id": "wheat_stem_rust",
+          "name": "Wheat Stem Rust",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "Dark red-brown pustules on stems and leaves. Severely weakens stems causing lodging.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Spray Propiconazole fungicide at first sign. Use certified resistant seed.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use resistant varieties. Avoid late planting. Remove volunteer wheat plants."
+        },
+        {
+          "id": "wheat_yellow_rust",
+          "name": "Wheat Yellow Rust",
+          "crop": "Wheat",
+          "severity": "medium",
+          "symptoms": "Yellow-orange pustules in stripes along leaves. Leaves turn pale yellow.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Trifloxystrobin or Propiconazole early. Avoid excess nitrogen fertilizer.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Plant resistant varieties. Monitor fields regularly in cool wet weather."
+        },
+        {
+          "id": "northern_leaf_blight",
+          "name": "Northern Leaf Blight",
+          "crop": "Maize",
+          "severity": "high",
+          "symptoms": "Long cigar-shaped gray-green to tan lesions (5–15 cm) on leaves with wavy edges.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Mancozeb or Azoxystrobin fungicide. Remove infected crop residue after harvest.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Practice crop rotation. Use resistant hybrids. Bury infected residue."
+        },
+        {
+          "id": "gray_leaf_spot",
+          "name": "Gray Leaf Spot",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "Rectangular gray to tan lesions with yellow borders running parallel to leaf veins.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Use resistant hybrids. Apply Azoxystrobin or Propiconazole at early signs.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Rotate crops. Ensure good plant spacing. Bury crop residue after harvest."
+        },
+        {
+          "id": "common_rust",
+          "name": "Common Rust",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "Small powdery brick-red pustules on both sides of leaves. Turn dark brown with age.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Mancozeb or Chlorothalonil if severe. Plant resistant hybrids.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Monitor during cool wet periods. Plant early-maturing resistant varieties."
+        },
+        {
+          "id": "sorghum_anthracnose",
+          "name": "Sorghum Anthracnose",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "Red or tan oval spots on leaves and stalks. Spots have dark red borders. Stalk rot in severe cases.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Use certified disease-free seed. Apply Chlorothalonil. Destroy infected residue.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use resistant varieties. Rotate crops. Avoid dense planting."
+        },
+        {
+          "id": "sorghum_downy_mildew",
+          "name": "Sorghum Downy Mildew",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "White downy growth on underside of leaves. Leaves turn yellow and plant is stunted.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Treat seed with Metalaxyl before planting. Remove and destroy all infected plants.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use resistant varieties. Treat seed. Avoid fields with previous downy mildew."
+        },
+        {
+          "id": "teff_leaf_spot",
+          "name": "Teff Leaf Spot",
+          "crop": "Teff",
+          "severity": "low",
+          "symptoms": "Small brown circular spots on leaves. Spots may have yellow halos. Mild defoliation.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Improve plant spacing for airflow. Apply copper-based fungicide if severe.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Avoid overhead irrigation. Use well-drained soil. Rotate crops."
+        },
+        {
+          "id": "tomato_early_blight",
+          "name": "Tomato Early Blight",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Dark brown spots with concentric target-like rings on lower leaves. Yellow halo around spots.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Chlorothalonil or Mancozeb. Remove lower infected leaves. Stake plants for air circulation.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Rotate crops. Mulch around base to prevent soil splash. Avoid overhead watering."
+        },
+        {
+          "id": "tomato_late_blight",
+          "name": "Tomato Late Blight",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "Water-soaked gray-green lesions that turn brown fast. White mold on leaf undersides. Fruit rots.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Mancozeb or Cymoxanil IMMEDIATELY — spreads extremely fast. Remove all infected parts.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Avoid wetting foliage. Use resistant varieties. Ensure good ventilation."
+        },
+        {
+          "id": "tomato_bacterial_spot",
+          "name": "Tomato Bacterial Spot",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Small dark water-soaked spots on leaves and fruit. Spots become brown with yellow halos.",
+          "causes": "Caused by bacterial pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply copper-based bactericide. Remove infected stems and leaves. Avoid overhead irrigation.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use disease-free transplants. Avoid working with plants when wet. Rotate crops."
+        },
+        {
+          "id": "tomato_leaf_mold",
+          "name": "Tomato Leaf Mold",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Yellow patches on upper leaf surface. Olive-green to brown fuzzy mold on leaf underside.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Improve ventilation. Apply Chlorothalonil or copper fungicide. Avoid wetting leaves.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Space plants well. Keep humidity below 85%. Use resistant varieties."
+        },
+        {
+          "id": "septoria_leaf_spot",
+          "name": "Septoria Leaf Spot",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Many small circular spots with dark borders and light gray centers. Tiny black dots inside spots.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Chlorothalonil or Mancozeb. Remove and destroy infected leaves.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Mulch soil surface. Avoid overhead irrigation. Rotate crops annually."
+        },
+        {
+          "id": "spider_mites",
+          "name": "Spider Mites",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Tiny yellow or white speckles on leaves. Fine webbing on leaf undersides. Leaves dry and curl.",
+          "causes": "Caused by pest pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Abamectin or Bifenazate miticide. Use neem oil as organic option. Increase humidity.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Keep plants well-watered. Introduce predatory mites. Avoid dusty conditions."
+        },
+        {
+          "id": "yellow_leaf_curl_virus",
+          "name": "Yellow Leaf Curl Virus",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "Upward curling and yellowing of leaves. Stunted growth. Flowers drop without fruiting.",
+          "causes": "Caused by viral pathogens. Spreads in warm, humid conditions.",
+          "chemical": "No cure. Remove and destroy infected plants immediately. Control whiteflies with insecticides or sticky traps.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use TYLCV-resistant varieties. Install insect-proof mesh. Monitor for whiteflies."
+        },
+        {
+          "id": "tomato_mosaic_virus",
+          "name": "Tomato Mosaic Virus",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "Mottled light and dark green mosaic pattern on leaves. Distorted fern-like new growth.",
+          "causes": "Caused by viral pathogens. Spreads in warm, humid conditions.",
+          "chemical": "No cure. Remove infected plants. Disinfect tools with 10% bleach solution.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use resistant varieties. Wash hands before handling. Use certified disease-free transplants."
+        },
+        {
+          "id": "tomato_target_spot",
+          "name": "Tomato Target Spot",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "Brown circular spots with concentric rings on leaves and fruit. Premature leaf drop.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Chlorothalonil or Azoxystrobin. Remove heavily infected leaves.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Improve air circulation through staking. Avoid overhead irrigation."
+        },
+        {
+          "id": "potato_early_blight",
+          "name": "Potato Early Blight",
+          "crop": "Potato",
+          "severity": "medium",
+          "symptoms": "Brown spots with yellow halo and target ring pattern on older lower leaves.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Spray Chlorothalonil or Mancozeb. Ensure good drainage and adequate potassium.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Rotate crops. Mulch to reduce soil splash. Avoid drought stress."
+        },
+        {
+          "id": "potato_late_blight",
+          "name": "Potato Late Blight",
+          "crop": "Potato",
+          "severity": "high",
+          "symptoms": "Dark water-soaked lesions on leaves. White mold on underside. Tubers develop brown rot.",
+          "causes": "Caused by fungal pathogens. Spreads in warm, humid conditions.",
+          "chemical": "Apply Mancozeb or Cymoxanil immediately. Remove all infected plant material.",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "Use certified seed potatoes. Avoid overhead irrigation. Scout fields regularly."
+        }
+      ]
+    }
+  },
+  "components": {
+    "aiChat": {
+      "window_title": "CropGuard AI Assistant",
+      "status_thinking": "Thinking…",
+      "status_online": "Online · EN / AM / TI",
+      "btn_clear": "Clear",
+      "btn_close_aria": "Close",
+      "suggestions_label_en": "Try asking",
+      "suggestions_label_am": "ጥያቄ ሀሳቦች",
+      "suggestions_label_ti": "ሕቶታት",
+      "language_hint_en": "Type in English, Amharic (አማርኛ), or Tigrinya (ትግርኛ)",
+      "language_hint_am": "በአማርኛ፣ ትግርኛ ወይም እንግሊዝኛ ይጻፉ",
+      "language_hint_ti": "ብትግርኛ፣ አማርኛ ወይ እንግሊዘኛ ጽሓፍ",
+      "input_placeholder_en": "Describe your crop problem…",
+      "input_placeholder_am": "ጥያቄዎን ይጻፉ…",
+      "input_placeholder_ti": "ሕቶኻ ጽሓፍ…",
+      "footer_disclaimer_en": "Enter to send · AI may make mistakes — consult an expert for critical decisions",
+      "footer_disclaimer_am": "Enter ለመላክ · AI ሁልጊዜ ትክክል አይሆንም — ጥርጣሬ ካለ ባለሙያ ያማክሩ",
+      "footer_disclaimer_ti": "Enter ን ሰደድ · AI ኩሉ ጊዜ ቅኑዕ ኣይኮነን — ምስ ሙኩር ክትዘራረብ",
+      "greeting_en": "Hello! I'm Sage, your CropGuard AI agricultural assistant. I can help with crop diseases, pests, soil health, fertilizers, irrigation, and farming best practices. What can I help you with today?",
+      "greeting_am": "ሰላም! እኔ ሴጅ ነኝ፣ የ CropGuard AI የእርሻ አማካሪ። በሰብል በሽታዎች፣ ተባዮች፣ ማዳበሪያ እና ስለ እርሻ ጥያቄ ቢኖርዎ እዚህ ነኝ። ምን ልርዳዎ?",
+      "greeting_ti": "ሰላም! ኣነ ሴጅ እየ፣ ናይ CropGuard AI ናይ ሕርሻ ምኽሪ ሃቢ። ብዛዕባ ሕማም ሕርሻ፣ ኣባ ጎሮ፣ ፍሩቅ ወይ ካሊእ ሕቶ ኣለካ? ሓግዘካ ኢየ።",
+      "chat_cleared_message": "Chat cleared. How can I help you?",
+      "connection_error": "Connection error. Please check your internet and try again.",
+      "response_fallback": "I could not generate a response. Please try again.",
+      "connection_error_response": "Connection error. Please try again.",
+      "open_chat_bubble": "Hey! Need help?",
+      "chat_placeholder": "Ask about diseases, treatments…",
+      "suggestions": {
+        "en": [
+          "My maize leaves are turning yellow",
+          "How do I treat tomato late blight?",
+          "What fertilizer is best for teff?",
+          "My wheat has rust spots"
+        ],
+        "am": [
+          "የበቆሎ ቅጠሌ ይቀላሉ",
+          "የቲማቲም የዘገየ ቅርፊት በሽታ እንዴት ይታከማል?",
+          "ለጤፍ የሚሻለው ማዳበሪያ ምንድነው?",
+          "ስንዴዬ ዝገት አለበት"
+        ],
+        "ti": [
+          "ናይ ሽምብራ ቅጠሉ ቢጫ ይኸውን ኣሎ",
+          "ናይ ቲማቲም ሕማም ብኸመይ ይፍወስ?",
+          "ንጤፍ ዝሓሸ ፍሩቅ ኣየናይ እዩ?",
+          "ሕርሻ ናይ ስርናይ ዝምቡዕ ኣለዎ"
+        ]
+      }
+    },
+    "resultCard": {
+      "analysis_complete": "Analysis Complete",
+      "btn_new_scan": "New Scan",
+      "btn_share": "Share",
+      "btn_report": "Report",
+      "btn_save_plan": "Save plan",
+      "btn_saved_plan": "Saved",
+      "healthy_label": "✓ Healthy Plant",
+      "disease_label": "⚠ Disease Detected",
+      "confidence_score": "Confidence Score",
+      "recommended_action": "Recommended Treatment",
+      "alt_predictions": "Alternative Predictions",
+      "severity_high": "🔴 Severe",
+      "severity_medium": "🟡 Moderate",
+      "severity_low": "🟢 Mild",
+      "disclaimer": "AI-assisted preliminary diagnosis only. For severe outbreaks, consult your agricultural extension officer.",
+      "diagnosed_at": "Diagnosed at",
+      "unknown_crop": "Unknown",
+      "export_header": "CROPGUARD AI",
+      "export_fields": {
+        "confidence_score": "confidence_score",
+        "analysis_complete": "analysis_complete",
+        "alt_predictions": "alt_predictions",
+        "disclaimer": "disclaimer",
+        "diagnosed_at": "diagnosed_at",
+        "healthy_label": "healthy_label",
+        "disease_label": "disease_label",
+        "recommended_action": "recommended_action"
+      },
+      "tab_overview": "Overview",
+      "tab_explain": "Why this?",
+      "tab_smart": "Smart plan",
+      "tab_risk": "Risk & impact",
+      "tab_treatment": "Treatment",
+      "tab_steps": "Next steps"
+    },
+    "feedbackPanel": {
+      "step1_title": "Was this diagnosis correct?",
+      "step1_subtitle": "Your feedback helps improve the AI model for all farmers.",
+      "btn_correct": "Yes, correct",
+      "btn_wrong": "No, wrong",
+      "btn_unsure": "Not sure",
+      "step2_title_correct": "Great! Any additional notes?",
+      "step2_title_wrong": "What was the actual disease?",
+      "ai_diagnosed_prefix": "The AI diagnosed:",
+      "placeholder_wrong": "e.g. It was actually Tomato Early Blight, not Late Blight...",
+      "placeholder_correct": "Any notes about symptoms, field conditions, or treatment used...",
+      "treatment_q": "Did the recommended treatment work? (optional)",
+      "treatment_worked": "✅ Yes, worked",
+      "treatment_partial": "⚡ Partially",
+      "treatment_didnt": "❌ No improvement",
+      "upload_followup": "Upload a follow-up image (optional)",
+      "uploading": "Saving...",
+      "btn_skip": "Skip",
+      "btn_submit": "Submit feedback",
+      "submitting": "Submitting…",
+      "step3_title": "Thank you for your feedback!",
+      "step3_subtitle": "Your feedback has been submitted and helps improve AI accuracy for all farmers.",
+      "btn_close": "Close",
+      "toast_submitted": "Thank you! Your feedback improves our AI.",
+      "toast_followup_saved": "Follow-up image saved for review",
+      "toast_skipped": "Feedback skipped.",
+      "feedback_correct": "Yes, correct",
+      "feedback_wrong": "No, wrong",
+      "feedback_unsure": "Not sure",
+      "feedback_treatment_q": "Did the recommended treatment work?",
+      "feedback_worked": "Worked",
+      "feedback_partial": "Partially",
+      "feedback_didnt": "No improvement",
+      "feedback_skip": "Skip",
+      "feedback_submit": "Submit feedback",
+      "feedback_thanks": "Thank you for your feedback!",
+      "feedback_thanks_sub": "Your response helps improve AI accuracy for all farmers.",
+      "feedback_was_correct": "Was this diagnosis correct?",
+      "feedback_note_ph_wrong": "e.g. It was actually Tomato Early Blight, not Late Blight…",
+      "feedback_note_ph_right": "Any notes about symptoms, conditions, or treatment used…"
+    },
+    "smartRecommendation": {
+      "no_action_title": "✅ No action required",
+      "no_action_desc": "This crop appears healthy. Continue regular monitoring every 3–5 days during high-risk periods.",
+      "severity_label_suffix": " Severity",
+      "act_label": "⏱ Act:",
+      "priority_label": "Priority",
+      "stage_aware_prefix": "Stage-aware:",
+      "recommended_approach": "Recommended approach:",
+      "organic_approach": "🌿 Start organic",
+      "chemical_approach": "⚗ Chemical treatment",
+      "no_treatment_approach": "⛔ Avoid treatment near harvest",
+      "escalation_title": "📋 Treatment escalation path",
+      "tip_add_farm": "💡 Tip: Add this crop to your Farm Manager with its growth stage for more personalised treatment recommendations.",
+      "crop_note_prefix": "🌾 {crop} note:",
+      "severity_actions": {
+        "high": {
+          "urgency": "Immediate (within 24h)",
+          "escalation": "chemical",
+          "label": "🔴 Critical"
+        },
+        "medium": {
+          "urgency": "Soon (within 3 days)",
+          "escalation": "organic first, then chemical if no improvement in 5 days",
+          "label": "🟡 Moderate"
+        },
+        "low": {
+          "urgency": "This week",
+          "escalation": "organic only",
+          "label": "🟢 Low"
+        }
+      },
+      "stage_strategies": {
+        "Seedling": "Seedlings are fragile — avoid strong chemicals. Organic options are safer at this stage.",
+        "Vegetative": "Early vegetative stage — start organic. Escalate to chemical only if disease spreads beyond 25% of canopy.",
+        "Flowering": "Flowering stage — minimise chemical applications to protect pollinators. Target treatment to evenings.",
+        "Fruiting": "Fruiting stage — chemical may be necessary but observe pre-harvest intervals carefully.",
+        "Harvest": "Near harvest — avoid all chemical applications. Harvest healthy portions first.",
+        "Dormant": "Dormant season — ideal time for preventive chemical treatment and pruning."
+      },
+      "crop_notes": {
+        "Tomato": "Tomatoes are susceptible to a wide range of diseases. Monitor twice weekly during humid periods.",
+        "Corn": "Corn diseases spread rapidly. Scout the entire field when symptoms are first detected.",
+        "Apple": "Apple diseases require preventive spray programmes starting from bud break.",
+        "Grape": "Grapes are especially vulnerable to fungal diseases. Canopy management is key.",
+        "Potato": "Late Blight in potato can destroy an entire crop in days. Act immediately.",
+        "Pepper": "Bacterial diseases in pepper spread via water splash — avoid overhead irrigation.",
+        "Peach": "Peach bacterial spot — use resistant varieties for future planting.",
+        "Strawberry": "Strawberry diseases are often linked to poor drainage and air circulation.",
+        "Squash": "Powdery mildew on squash responds well to organic treatments applied early.",
+        "Orange": "Citrus greening has no cure — focus on prevention and vector control.",
+        "default": "Follow integrated pest management practices for best long-term results."
+      },
+      "steps": {
+        "medium_low": [
+          {
+            "icon": "🌿",
+            "label": "Start organic",
+            "desc": "Apply neem oil or copper-based organic fungicide. Monitor for 5 days."
+          },
+          {
+            "icon": "⚗",
+            "label": "Escalate if needed",
+            "desc": "If no improvement after 5 days, switch to {escalation}."
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "Consult expert",
+            "desc": "If symptoms worsen despite treatment, contact your agricultural extension officer."
+          }
+        ],
+        "high": [
+          {
+            "icon": "🚨",
+            "label": "Immediate chemical treatment",
+            "desc": "Severity is high — organic options may be too slow. Apply chemical fungicide within 24h."
+          },
+          {
+            "icon": "🔒",
+            "label": "Isolate and remove",
+            "desc": "Remove and bag all severely infected plant material immediately."
+          },
+          {
+            "icon": "📅",
+            "label": "Follow-up scan in 7 days",
+            "desc": "Rescan to verify treatment effectiveness."
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "Notify extension office",
+            "desc": "High-severity outbreaks should be reported for regional tracking."
+          }
+        ]
+      }
+    },
+    "explainPanel": {
+      "section_confidence": "🎯 Confidence explained",
+      "section_ai_detected": "🔬 What the AI detected in this leaf",
+      "section_how_ai_works": "⚙ How the AI reached this result",
+      "limitations_notice": "⚠ Limitations: AI accuracy depends on photo quality, lighting and crop growth stage. Early-stage diseases may produce lower confidence. Always confirm severe diagnoses with an agricultural extension officer.",
+      "margin_strong": "— strong differentiation from alternatives.",
+      "margin_weak": "— consider taking a clearer photo to increase certainty.",
+      "margin_prefix": "📊 {margin}% margin over the second-best match",
+      "model_trained_note": "🏋 Model trained on 54,305 leaf images across 14 crops and 38 disease classes using MobileNetV2 transfer learning. Accuracy target: ≥85%.",
+      "step_label": "Step {n}",
+      "confidence_levels": {
+        "high": {
+          "label": "Very High Confidence",
+          "text": "The AI found strong visual evidence. Multiple disease markers clearly visible and consistent with known patterns."
+        },
+        "good": {
+          "label": "High Confidence",
+          "text": "Clear visual evidence detected. Dominant features match this disease well. Minor ambiguity in secondary markers."
+        },
+        "medium": {
+          "label": "Moderate Confidence",
+          "text": "Partial evidence detected. Some markers are present but image quality or early-stage symptoms create some uncertainty."
+        },
+        "low": {
+          "label": "Low Confidence",
+          "text": "Limited evidence. The model detected possible signs but strongly recommends a clearer photograph or expert consultation."
+        }
+      },
+      "visual_cues": {
+        "blight": [
+          "Dark lesions with concentric rings",
+          "Yellow halo around spots",
+          "Starts on lower older leaves",
+          "Rapid spread in humid conditions"
+        ],
+        "rust": [
+          "Orange-brown powdery pustules",
+          "Scattered across leaf surface",
+          "Pustules break open releasing spores",
+          "Yellow chlorotic areas around pustules"
+        ],
+        "mildew": [
+          "White powdery coating on leaves",
+          "Affects young growth first",
+          "Leaves curl and distort",
+          "Powdery residue visible on touch"
+        ],
+        "spot": [
+          "Small circular lesions",
+          "Dark border with lighter centre",
+          "Multiple spots per leaf",
+          "Yellow halo surrounding spots"
+        ],
+        "mold": [
+          "Yellow patches on upper surface",
+          "Olive-green mould on underside",
+          "Requires high humidity",
+          "Starts on older leaves"
+        ],
+        "virus": [
+          "Mosaic light/dark green pattern",
+          "Leaf distortion and curling",
+          "Stunted plant growth",
+          "Yellowing of young leaves"
+        ],
+        "mites": [
+          "Tiny yellow stippling pattern",
+          "Fine webbing on underside",
+          "Bronzing and drying of leaves",
+          "Premature leaf drop"
+        ],
+        "default": [
+          "Pattern detected in leaf texture",
+          "Colour deviation from healthy tissue",
+          "Structural leaf damage visible",
+          "Distribution matches known disease patterns"
+        ]
+      },
+      "model_steps": [
+        {
+          "icon": "🔲",
+          "label": "Leaf segmentation",
+          "desc": "Model isolated the leaf from background"
+        },
+        {
+          "icon": "🎨",
+          "label": "Colour analysis",
+          "desc": "Detected abnormal pigmentation patterns"
+        },
+        {
+          "icon": "🔍",
+          "label": "Texture analysis",
+          "desc": "Analysed lesion shape, size and distribution"
+        },
+        {
+          "icon": "📊",
+          "label": "Pattern matching",
+          "desc": "Compared against 54,305 training images"
+        },
+        {
+          "icon": "🧠",
+          "label": "Classification",
+          "desc": "Ranked 38 possible disease classes"
+        }
+      ]
+    },
+    "riskScorePanel": {
+      "section_projected_yield": "📉 Projected yield impact if untreated",
+      "potential_loss_suffix": "potential loss",
+      "early_treatment_note": "💡 With early treatment: Yield loss can be reduced to approximately {min}–{max}% through prompt intervention.",
+      "repeat_detection": "🔁 Repeat detection: This disease has appeared in {n} recent scan(s). Indicates active disease pressure in your field — widen your scouting area.",
+      "score_cards": {
+        "healthy_risk_label": "Crop Risk Score",
+        "healthy_risk_value": "LOW",
+        "healthy_risk_sub": "No disease detected",
+        "healthy_yield_label": "Yield Impact",
+        "healthy_yield_value": "~0%",
+        "healthy_yield_sub": "No projected loss",
+        "risk_score_label": "Risk Score",
+        "yield_loss_label": "Yield Loss (if untreated)",
+        "yield_loss_sub": "Estimated range",
+        "priority_label": "Treatment Priority",
+        "priority_first": "Treat this first",
+        "priority_order": "Treat in order"
+      },
+      "gauge_labels": {
+        "crop_health_risk": "Crop Health Risk",
+        "minimal": "Minimal",
+        "low": "Low",
+        "moderate": "Moderate",
+        "critical": "Critical"
+      },
+      "risk_labels": {
+        "critical": "Critical",
+        "moderate": "Moderate",
+        "low": "Low",
+        "minimal": "Minimal"
+      },
+      "yield_impact_notes": {
+        "blight": "Blights can cause catastrophic yield loss if untreated.",
+        "rust": "Rust diseases reduce grain/fruit quality and quantity.",
+        "mildew": "Powdery mildew affects photosynthesis and fruit quality.",
+        "spot": "Leaf spots reduce photosynthetic area.",
+        "mold": "Leaf mold significantly reduces fruit set and quality.",
+        "virus": "Viral diseases have no cure and can devastate entire crops.",
+        "default": "Disease impact varies — early treatment minimises losses."
+      }
+    },
+    "locationIntelligence": {
+      "btn_auto_detect": "🎯 Auto-detect",
+      "btn_change": "Change",
+      "btn_set": "Set",
+      "input_placeholder": "e.g. Axum, Adigrat, Adwa, Wukro…",
+      "detecting": "⏳",
+      "error_denied": "Location access denied. Using Mekelle default.",
+      "error_weather": "Could not fetch weather data.",
+      "your_location": "Your location",
+      "section_weather_risk": "Weather-Risk Correlations",
+      "watch_for": "Watch for:",
+      "disease_risk_suffix": " disease risk",
+      "loading_suffix": "loading...",
+      "humidity_label": "Humidity",
+      "temperature_label": "Temperature",
+      "wind_label": "Wind",
+      "rainfall_label": "Rainfall",
+      "risk_rules": [
+        {
+          "level": "high",
+          "message": "Very high fungal risk — humidity above 85% with warm temperatures create ideal conditions for blight and mould.",
+          "diseases": [
+            "Late Blight",
+            "Early Blight",
+            "Septoria Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "Moderate fungal risk — current humidity favours powdery mildew and leaf mould development.",
+          "diseases": [
+            "Powdery Mildew",
+            "Leaf Mold",
+            "Gray Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "Elevated spore dispersal risk — high wind speeds can carry rust and blight spores across fields.",
+          "diseases": [
+            "Rust",
+            "Septoria",
+            "Anthracnose"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "Hot dry conditions favour spider mite outbreaks. Check leaf undersides carefully.",
+          "diseases": [
+            "Spider Mites",
+            "Target Spot"
+          ]
+        },
+        {
+          "level": "low",
+          "message": "Low humidity reduces fungal risk. Monitor for pest activity instead.",
+          "diseases": []
+        },
+        {
+          "level": "low",
+          "message": "Current conditions present low disease risk. Continue regular monitoring.",
+          "diseases": []
+        }
+      ],
+      "correlation_tips": {
+        "humidity_high": "Humidity {value}% → Fungal disease risk is elevated",
+        "humidity_med": "Humidity {value}% → Moderate fungal risk, monitor closely",
+        "heat_dry": "Hot & dry conditions → Spider mite and pest pressure elevated",
+        "recent_rain": "Recent rainfall → Increases late blight and bacterial disease risk",
+        "high_wind": "High winds → Spores dispersing, widen your scouting area"
+      },
+      "cities": {
+        "mekelle": "Mekelle, Tigray",
+        "axum": "Axum, Tigray",
+        "adwa": "Adwa, Tigray",
+        "adigrat": "Adigrat, Tigray",
+        "wukro": "Wukro, Tigray",
+        "addis": "Addis Ababa"
+      }
+    },
+    "weatherWidget": {
+      "weather_codes": {
+        "0": "Clear sky",
+        "1": "Mainly clear",
+        "2": "Partly cloudy",
+        "3": "Overcast",
+        "45": "Foggy",
+        "51": "Drizzle",
+        "53": "Drizzle",
+        "61": "Rain",
+        "63": "Rain",
+        "65": "Heavy rain",
+        "80": "Showers",
+        "95": "Thunderstorm"
+      }
+    },
+    "diseaseEncyclopedia": {
+      "search_placeholder": "Search diseases or symptoms…",
+      "filter_all_crops": "All crops",
+      "filter_all_types": "All types",
+      "results_found": "{n} disease(s) found",
+      "clear_filters": "Clear filters ✕",
+      "no_diseases_found": "No diseases found. Try a different search or filter.",
+      "section_symptoms": "Symptoms",
+      "section_treatment": "Treatment",
+      "section_prevention": "Prevention",
+      "enc_title": "Disease Encyclopedia",
+      "enc_sub": "Reference guide for crop diseases — symptoms, causes and treatments",
+      "severity_high": "High",
+      "severity_medium": "Medium",
+      "severity_low": "Low",
+      "diseases": [
+        {
+          "name": "Wheat Leaf Rust",
+          "crop": "Wheat",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Puccinia triticina",
+          "symptom": "Orange-brown powdery pustules on upper leaf surface. Leaves turn yellow and dry.",
+          "treatment": "Apply Tebuconazole or Propiconazole fungicide. Remove and destroy infected plants. Use resistant varieties.",
+          "prevention": "Plant resistant varieties. Avoid dense planting. Monitor during warm humid weather."
+        },
+        {
+          "name": "Wheat Stem Rust",
+          "crop": "Wheat",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Puccinia graminis",
+          "symptom": "Dark red-brown pustules on stems and leaves. Severely weakens stems causing lodging.",
+          "treatment": "Spray Propiconazole fungicide at first sign. Use certified resistant seed.",
+          "prevention": "Use resistant varieties. Avoid late planting. Remove volunteer wheat plants."
+        },
+        {
+          "name": "Wheat Yellow Rust",
+          "crop": "Wheat",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Puccinia striiformis",
+          "symptom": "Yellow-orange pustules in stripes along leaves. Leaves turn pale yellow.",
+          "treatment": "Apply Trifloxystrobin or Propiconazole early. Avoid excess nitrogen fertilizer.",
+          "prevention": "Plant resistant varieties. Monitor fields regularly in cool wet weather."
+        },
+        {
+          "name": "Northern Leaf Blight",
+          "crop": "Maize",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Exserohilum turcicum",
+          "symptom": "Long cigar-shaped gray-green to tan lesions (5–15 cm) on leaves with wavy edges.",
+          "treatment": "Apply Mancozeb or Azoxystrobin fungicide. Remove infected crop residue after harvest.",
+          "prevention": "Practice crop rotation. Use resistant hybrids. Bury infected residue."
+        },
+        {
+          "name": "Gray Leaf Spot",
+          "crop": "Maize",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Cercospora zeae-maydis",
+          "symptom": "Rectangular gray to tan lesions with yellow borders running parallel to leaf veins.",
+          "treatment": "Use resistant hybrids. Apply Azoxystrobin or Propiconazole at early signs.",
+          "prevention": "Rotate crops. Ensure good plant spacing. Bury crop residue after harvest."
+        },
+        {
+          "name": "Common Rust",
+          "crop": "Maize",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Puccinia sorghi",
+          "symptom": "Small powdery brick-red pustules on both sides of leaves. Turn dark brown with age.",
+          "treatment": "Apply Mancozeb or Chlorothalonil if severe. Plant resistant hybrids.",
+          "prevention": "Monitor during cool wet periods. Plant early-maturing resistant varieties."
+        },
+        {
+          "name": "Sorghum Anthracnose",
+          "crop": "Sorghum",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Colletotrichum sublineolum",
+          "symptom": "Red or tan oval spots on leaves and stalks. Spots have dark red borders. Stalk rot in severe cases.",
+          "treatment": "Use certified disease-free seed. Apply Chlorothalonil. Destroy infected residue.",
+          "prevention": "Use resistant varieties. Rotate crops. Avoid dense planting."
+        },
+        {
+          "name": "Sorghum Downy Mildew",
+          "crop": "Sorghum",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Peronosclerospora sorghi",
+          "symptom": "White downy growth on underside of leaves. Leaves turn yellow and plant is stunted.",
+          "treatment": "Treat seed with Metalaxyl before planting. Remove and destroy all infected plants.",
+          "prevention": "Use resistant varieties. Treat seed. Avoid fields with previous downy mildew."
+        },
+        {
+          "name": "Teff Leaf Spot",
+          "crop": "Teff",
+          "severity": "Low",
+          "type": "Fungal",
+          "scientific": "Various fungal species",
+          "symptom": "Small brown circular spots on leaves. Spots may have yellow halos. Mild defoliation.",
+          "treatment": "Improve plant spacing for airflow. Apply copper-based fungicide if severe.",
+          "prevention": "Avoid overhead irrigation. Use well-drained soil. Rotate crops."
+        },
+        {
+          "name": "Tomato Early Blight",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Alternaria solani",
+          "symptom": "Dark brown spots with concentric target-like rings on lower leaves. Yellow halo around spots.",
+          "treatment": "Apply Chlorothalonil or Mancozeb. Remove lower infected leaves. Stake plants for air circulation.",
+          "prevention": "Rotate crops. Mulch around base to prevent soil splash. Avoid overhead watering."
+        },
+        {
+          "name": "Tomato Late Blight",
+          "crop": "Tomato",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Phytophthora infestans",
+          "symptom": "Water-soaked gray-green lesions that turn brown fast. White mold on leaf undersides. Fruit rots.",
+          "treatment": "Apply Mancozeb or Cymoxanil IMMEDIATELY — spreads extremely fast. Remove all infected parts.",
+          "prevention": "Avoid wetting foliage. Use resistant varieties. Ensure good ventilation."
+        },
+        {
+          "name": "Tomato Bacterial Spot",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Bacterial",
+          "scientific": "Xanthomonas vesicatoria",
+          "symptom": "Small dark water-soaked spots on leaves and fruit. Spots become brown with yellow halos.",
+          "treatment": "Apply copper-based bactericide. Remove infected stems and leaves. Avoid overhead irrigation.",
+          "prevention": "Use disease-free transplants. Avoid working with plants when wet. Rotate crops."
+        },
+        {
+          "name": "Tomato Leaf Mold",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Fulvia fulva",
+          "symptom": "Yellow patches on upper leaf surface. Olive-green to brown fuzzy mold on leaf underside.",
+          "treatment": "Improve ventilation. Apply Chlorothalonil or copper fungicide. Avoid wetting leaves.",
+          "prevention": "Space plants well. Keep humidity below 85%. Use resistant varieties."
+        },
+        {
+          "name": "Septoria Leaf Spot",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Septoria lycopersici",
+          "symptom": "Many small circular spots with dark borders and light gray centers. Tiny black dots inside spots.",
+          "treatment": "Apply Chlorothalonil or Mancozeb. Remove and destroy infected leaves.",
+          "prevention": "Mulch soil surface. Avoid overhead irrigation. Rotate crops annually."
+        },
+        {
+          "name": "Spider Mites",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Pest",
+          "scientific": "Tetranychus urticae",
+          "symptom": "Tiny yellow or white speckles on leaves. Fine webbing on leaf undersides. Leaves dry and curl.",
+          "treatment": "Apply Abamectin or Bifenazate miticide. Use neem oil as organic option. Increase humidity.",
+          "prevention": "Keep plants well-watered. Introduce predatory mites. Avoid dusty conditions."
+        },
+        {
+          "name": "Yellow Leaf Curl Virus",
+          "crop": "Tomato",
+          "severity": "High",
+          "type": "Viral",
+          "scientific": "TYLCV (Begomovirus)",
+          "symptom": "Upward curling and yellowing of leaves. Stunted growth. Flowers drop without fruiting.",
+          "treatment": "No cure. Remove and destroy infected plants immediately. Control whiteflies with insecticides or sticky traps.",
+          "prevention": "Use TYLCV-resistant varieties. Install insect-proof mesh. Monitor for whiteflies."
+        },
+        {
+          "name": "Tomato Mosaic Virus",
+          "crop": "Tomato",
+          "severity": "High",
+          "type": "Viral",
+          "scientific": "Tomato mosaic virus (ToMV)",
+          "symptom": "Mottled light and dark green mosaic pattern on leaves. Distorted fern-like new growth.",
+          "treatment": "No cure. Remove infected plants. Disinfect tools with 10% bleach solution.",
+          "prevention": "Use resistant varieties. Wash hands before handling. Use certified disease-free transplants."
+        },
+        {
+          "name": "Tomato Target Spot",
+          "crop": "Tomato",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Corynespora cassiicola",
+          "symptom": "Brown circular spots with concentric rings on leaves and fruit. Premature leaf drop.",
+          "treatment": "Apply Chlorothalonil or Azoxystrobin. Remove heavily infected leaves.",
+          "prevention": "Improve air circulation through staking. Avoid overhead irrigation."
+        },
+        {
+          "name": "Potato Early Blight",
+          "crop": "Potato",
+          "severity": "Medium",
+          "type": "Fungal",
+          "scientific": "Alternaria solani",
+          "symptom": "Brown spots with yellow halo and target ring pattern on older lower leaves.",
+          "treatment": "Spray Chlorothalonil or Mancozeb. Ensure good drainage and adequate potassium.",
+          "prevention": "Rotate crops. Mulch to reduce soil splash. Avoid drought stress."
+        },
+        {
+          "name": "Potato Late Blight",
+          "crop": "Potato",
+          "severity": "High",
+          "type": "Fungal",
+          "scientific": "Phytophthora infestans",
+          "symptom": "Dark water-soaked lesions on leaves. White mold on underside. Tubers develop brown rot.",
+          "treatment": "Apply Mancozeb or Cymoxanil immediately. Remove all infected plant material.",
+          "prevention": "Use certified seed potatoes. Avoid overhead irrigation. Scout fields regularly."
+        }
+      ]
+    },
+    "communityPage": {
+      "intro_text": "See what diseases other farmers in Tigray are reporting. Share your results and learn from the community.",
+      "outbreak_title_prefix": "Active outbreak:",
+      "outbreak_desc": "{n} farmers in Tigray have reported this disease in the last week. Monitor your crops closely.",
+      "btn_scan_now": "Scan now",
+      "tab_feed": "Community Feed",
+      "tab_insights": "Treatment Success",
+      "tab_experts": "Expert Tips",
+      "filter_all_crops": "All crops",
+      "reports_count": "{n} reports",
+      "treatment_label_prefix": "Treatment:",
+      "community_worked": "Worked successfully",
+      "community_failed": "No improvement — trying alternative",
+      "watching_symptoms": "⏳ Treatment not yet applied — watching symptoms",
+      "view_disease_info": "View disease info →",
+      "liked": "❤",
+      "not_liked": "🤍",
+      "insights_title": "Treatment success rates (community data)",
+      "insights_based_on": "Based on {n} treatment reports from farmers in Tigray.",
+      "success_rate": "{rate}% success ({n} report{s})",
+      "most_reported_title": "Most reported diseases this week",
+      "reports_this_week": "{n} report{s} this week",
+      "active_outbreak_badge": "Active outbreak",
+      "experts_intro": "Verified tips from plant pathologists and agricultural extension officers in Ethiopia.",
+      "farmers_found_helpful": "{n} farmers found this helpful",
+      "community_title": "Community",
+      "community_sub": "See what diseases other farmers in Tigray are reporting.",
+      "expert_tips_data": [
+        {
+          "expert": "Dr. Teklu",
+          "role": "Plant Pathologist, MU",
+          "tip": "Late blight spreads within 48 hours in humid conditions. Never wait — apply Mancozeb the same day you spot symptoms.",
+          "crop": "Tomato"
+        },
+        {
+          "expert": "Ato Halefom",
+          "role": "Agricultural Extension Officer",
+          "tip": "For rust diseases in wheat and corn: scout early mornings when dew is present — spores are most visible then.",
+          "crop": "Corn"
+        },
+        {
+          "expert": "Dr. Niema",
+          "role": "Crop Scientist, MIT",
+          "tip": "Neem oil loses effectiveness after 8 hours in sunlight. Always apply in the evening for maximum coverage.",
+          "crop": "General"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "errors": {
+      "auth": {
+        "email_exists": "An account with this email already exists.",
+        "registration_failed": "Registration failed. Please try again.",
+        "email_password_required": "Email and password are required.",
+        "no_account_found": "No account found with this email.",
+        "incorrect_password": "Incorrect password.",
+        "login_failed": "Login failed. Please try again.",
+        "refresh_token_required": "Refresh token required.",
+        "session_expired": "Session expired or revoked. Please sign in again.",
+        "invalid_session": "Invalid or expired session. Please sign in again.",
+        "signed_out_all": "Signed out from all devices.",
+        "user_not_found": "User not found.",
+        "profile_load_failed": "Could not load profile.",
+        "profile_update_failed": "Could not update profile.",
+        "upgrade_gateway_only": "Plan upgrades must be initiated through the payment gateway webhook.",
+        "invalid_plan": "Invalid plan. Must be: premium or enterprise",
+        "upgrade_success": "Successfully upgraded to {plan}.",
+        "upgrade_failed": "Upgrade failed.",
+        "downgrade_failed": "Downgrade failed.",
+        "field_required": "{field} is required.",
+        "field_must_be_string": "{field} must be a string.",
+        "field_max_length": "{field} must be {max} characters or fewer.",
+        "field_min_length": "{field} must be at least {min} characters.",
+        "field_enum": "{field} must be one of: {values}.",
+        "field_email": "{field} must be a valid email address.",
+        "field_complexity": "{field} must contain at least one uppercase letter and one number."
+      },
+      "chat": {
+        "invalid_message": "Invalid message.",
+        "ai_not_configured": "AI assistant is not configured. Please set GROQ_API_KEY.",
+        "ai_unavailable": "AI assistant is temporarily unavailable.",
+        "response_failed": "I could not generate a response. Please try again."
+      },
+      "feedback": {
+        "disease_rating_required": "disease and rating required.",
+        "invalid_rating": "Invalid rating.",
+        "disease_too_long": "Disease field too long (max 200 chars).",
+        "note_too_long": "Note too long (max 1000 chars).",
+        "treatment_too_long": "treatment_result too long (max 200 chars).",
+        "scan_not_found": "Scan not found or access denied.",
+        "save_failed": "Could not save feedback.",
+        "load_failed": "Could not load feedback."
+      },
+      "history": {
+        "load_failed": "Could not load history.",
+        "stats_failed": "Could not load stats.",
+        "scan_not_found": "Scan not found.",
+        "delete_failed": "Could not delete scan.",
+        "bulk_delete_failed": "Bulk delete failed.",
+        "fetch_failed": "Could not fetch scan.",
+        "ids_required": "Provide ids array in body."
+      },
+      "predict": {
+        "no_image": "No image file provided.",
+        "only_images_allowed": "Only JPG, PNG and WebP images are allowed.",
+        "quota_exceeded": "Daily scan limit reached ({limit}/day on Free plan).",
+        "upgrade_message": "Upgrade to Premium for unlimited scans.",
+        "user_not_found": "User not found.",
+        "invalid_ai_response": "Invalid response from AI model server.",
+        "ai_server_offline": "AI model server is offline. Start it with: uvicorn serve:app --port 8000",
+        "image_unprocessable": "Image could not be processed.",
+        "prediction_failed": "Prediction failed. Please try again.",
+        "file_must_be_image": "File must be an image (JPEG, PNG, or WebP).",
+        "file_too_large": "File too large. Maximum {max} MB."
+      }
+    }
+  },
+  "ml": {
+    "friendlyNames": {
+      "Apple___Apple_scab": "Apple Scab",
+      "Apple___Black_rot": "Apple Black Rot",
+      "Apple___Cedar_apple_rust": "Cedar Apple Rust",
+      "Apple___healthy": "Apple — Healthy",
+      "Blueberry___healthy": "Blueberry — Healthy",
+      "Cherry_(including_sour)___Powdery_mildew": "Cherry Powdery Mildew",
+      "Cherry_(including_sour)___healthy": "Cherry — Healthy",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "Maize Gray Leaf Spot",
+      "Corn_(maize)___Common_rust_": "Maize Common Rust",
+      "Corn_(maize)___Northern_Leaf_Blight": "Maize Northern Leaf Blight",
+      "Corn_(maize)___healthy": "Maize — Healthy",
+      "Grape___Black_rot": "Grape Black Rot",
+      "Grape___Esca_(Black_Measles)": "Grape Esca (Black Measles)",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "Grape Leaf Blight",
+      "Grape___healthy": "Grape — Healthy",
+      "Orange___Haunglongbing_(Citrus_greening)": "Citrus Greening (HLB)",
+      "Peach___Bacterial_spot": "Peach Bacterial Spot",
+      "Peach___healthy": "Peach — Healthy",
+      "Pepper,_bell___Bacterial_spot": "Bell Pepper Bacterial Spot",
+      "Pepper,_bell___healthy": "Bell Pepper — Healthy",
+      "Potato___Early_blight": "Potato Early Blight",
+      "Potato___Late_blight": "Potato Late Blight",
+      "Potato___healthy": "Potato — Healthy",
+      "Raspberry___healthy": "Raspberry — Healthy",
+      "Soybean___healthy": "Soybean — Healthy",
+      "Squash___Powdery_mildew": "Squash Powdery Mildew",
+      "Strawberry___Leaf_scorch": "Strawberry Leaf Scorch",
+      "Strawberry___healthy": "Strawberry — Healthy",
+      "Tomato___Bacterial_spot": "Tomato Bacterial Spot",
+      "Tomato___Early_blight": "Tomato Early Blight",
+      "Tomato___Late_blight": "Tomato Late Blight",
+      "Tomato___Leaf_Mold": "Tomato Leaf Mold",
+      "Tomato___Septoria_leaf_spot": "Tomato Septoria Leaf Spot",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "Tomato Spider Mites",
+      "Tomato___Target_Spot": "Tomato Target Spot",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "Tomato Yellow Leaf Curl Virus",
+      "Tomato___Tomato_mosaic_virus": "Tomato Mosaic Virus",
+      "Tomato___healthy": "Tomato — Healthy"
+    },
+    "diseaseMeta": {
+      "Apple___Apple_scab": "Apply sulfur spray or neem oil at first sign. Remove affected leaves.",
+      "Apple___Black_rot": "Prune infected wood. Apply copper-based fungicide. Remove mummified fruit.",
+      "Apple___Cedar_apple_rust": "Remove nearby cedar/juniper hosts. Apply sulfur fungicide.",
+      "Apple___healthy": "No treatment needed. Maintain orchard hygiene.",
+      "Blueberry___healthy": "No treatment needed.",
+      "Cherry_(including_sour)___Powdery_mildew": "Apply potassium bicarbonate or neem oil. Improve air circulation.",
+      "Cherry_(including_sour)___healthy": "No treatment needed.",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "Rotate crops. Remove crop debris. Apply neem oil at early stages.",
+      "Corn_(maize)___Common_rust_": "Plant resistant varieties. Neem oil at early stage.",
+      "Corn_(maize)___Northern_Leaf_Blight": "Rotate crops. Remove infected debris. Copper spray at early signs.",
+      "Corn_(maize)___healthy": "No treatment needed.",
+      "Grape___Black_rot": "Remove mummified berries. Apply copper fungicide. Improve canopy airflow.",
+      "Grape___Esca_(Black_Measles)": "No cure. Remove infected vines. Seal pruning wounds with paste.",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "Apply copper spray. Remove infected leaves. Improve airflow.",
+      "Grape___healthy": "No treatment needed.",
+      "Orange___Haunglongbing_(Citrus_greening)": "No cure. Remove infected tree immediately. Control psyllid insects.",
+      "Peach___Bacterial_spot": "Apply copper bactericide. Avoid overhead irrigation.",
+      "Peach___healthy": "No treatment needed.",
+      "Pepper,_bell___Bacterial_spot": "Apply copper spray. Remove infected leaves. Use disease-free transplants.",
+      "Pepper,_bell___healthy": "No treatment needed.",
+      "Potato___Early_blight": "Remove lower infected leaves. Apply copper-based fungicide. Rotate crops.",
+      "Potato___Late_blight": "⚠️ Act immediately. Remove all infected material. Copper spray. Destroy infected plants.",
+      "Potato___healthy": "No treatment needed. Scout regularly during wet weather.",
+      "Raspberry___healthy": "No treatment needed.",
+      "Soybean___healthy": "No treatment needed.",
+      "Squash___Powdery_mildew": "Apply baking soda spray (1 tsp/L water) or neem oil. Improve airflow.",
+      "Strawberry___Leaf_scorch": "Remove infected leaves. Apply copper fungicide. Avoid wetting foliage.",
+      "Strawberry___healthy": "No treatment needed.",
+      "Tomato___Bacterial_spot": "Apply copper bactericide. Remove infected leaves. Avoid wet foliage.",
+      "Tomato___Early_blight": "Remove lower infected leaves. Apply copper fungicide or neem oil. Mulch base.",
+      "Tomato___Late_blight": "⚠️ Act immediately. Remove infected parts. Apply copper spray. Destroy severely infected plants.",
+      "Tomato___Leaf_Mold": "Improve ventilation. Reduce humidity. Apply copper or sulfur spray.",
+      "Tomato___Septoria_leaf_spot": "Remove infected leaves. Apply copper spray. Mulch soil to reduce splash.",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "Spray with neem oil or insecticidal soap. Increase humidity. Introduce predatory mites.",
+      "Tomato___Target_Spot": "Remove heavily infected leaves. Apply neem oil. Stake plants for airflow.",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "No cure. Remove infected plants immediately. Use reflective mulch to deter whiteflies.",
+      "Tomato___Tomato_mosaic_virus": "No cure. Remove infected plants. Disinfect tools with bleach. Wash hands before handling.",
+      "Tomato___healthy": "No treatment needed."
+    },
+    "recommendations": {
+      "Apple___Apple_scab": "Apply fungicide (Captan or Mancozeb) at green tip stage. Remove and destroy fallen infected leaves. Prune for good air circulation.",
+      "Apple___Black_rot": "Prune out infected cankers and mummified fruit. Apply Captan or Thiophanate-methyl fungicide. Remove all infected material from the orchard.",
+      "Apple___Cedar_apple_rust": "Apply myclobutanil or propiconazole fungicide starting at pink bud stage. Remove nearby cedar/juniper trees if possible.",
+      "Apple___healthy": "No disease detected. Maintain regular pruning, balanced fertilisation, and monitor for early signs of pests or disease.",
+      "Blueberry___healthy": "No disease detected. Maintain proper soil pH (4.5–5.5), adequate irrigation, and annual pruning.",
+      "Cherry_(including_sour)___Powdery_mildew": "Apply sulphur-based or potassium bicarbonate fungicide. Improve air circulation by pruning. Avoid excessive nitrogen fertilisation.",
+      "Cherry_(including_sour)___healthy": "No disease detected. Continue regular monitoring and maintain orchard hygiene.",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "Apply Azoxystrobin or Propiconazole at early signs. Use resistant hybrids in future seasons. Rotate crops.",
+      "Corn_(maize)___Common_rust_": "Apply Mancozeb or Chlorothalonil if infection is severe. Plant resistant hybrids. Monitor fields during cool wet periods.",
+      "Corn_(maize)___Northern_Leaf_Blight": "Apply Mancozeb or Azoxystrobin fungicide. Practice crop rotation. Bury or remove infected crop residue after harvest.",
+      "Corn_(maize)___healthy": "No disease detected. Continue monitoring and maintain good agronomic practices.",
+      "Grape___Black_rot": "Apply Mancozeb or Myclobutanil from bud break through harvest. Remove mummified berries and infected canes.",
+      "Grape___Esca_(Black_Measles)": "No effective cure. Remove and destroy severely infected vines. Protect pruning wounds with fungicide paste.",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "Apply copper-based fungicide or Mancozeb. Improve air circulation. Remove infected leaves promptly.",
+      "Grape___healthy": "No disease detected. Maintain canopy management and balanced nutrition.",
+      "Orange___Haunglongbing_(Citrus_greening)": "No cure. Remove and destroy infected trees immediately. Control the Asian citrus psyllid with insecticides. Plant certified disease-free trees.",
+      "Peach___Bacterial_spot": "Apply copper-based bactericide in autumn and early spring. Avoid overhead irrigation. Remove infected twigs.",
+      "Peach___healthy": "No disease detected. Continue regular monitoring, proper pruning, and balanced fertilisation.",
+      "Pepper,_bell___Bacterial_spot": "Apply copper-based bactericide. Remove infected material. Avoid overhead irrigation. Use disease-free transplants.",
+      "Pepper,_bell___healthy": "No disease detected. Maintain proper spacing for air circulation.",
+      "Potato___Early_blight": "Apply Chlorothalonil or Mancozeb. Remove infected lower leaves. Ensure adequate potassium. Practice crop rotation.",
+      "Potato___Late_blight": "⚠️ Apply Mancozeb or Cymoxanil IMMEDIATELY — late blight spreads very rapidly. Remove and destroy all infected plant material.",
+      "Potato___healthy": "No disease detected. Scout fields regularly, especially during cool wet weather.",
+      "Raspberry___healthy": "No disease detected. Maintain proper cane management and remove old canes after fruiting.",
+      "Soybean___healthy": "No disease detected. Monitor for soybean rust during the growing season.",
+      "Squash___Powdery_mildew": "Apply potassium bicarbonate, neem oil, or sulphur at first sign. Improve air circulation. Avoid wetting foliage.",
+      "Strawberry___Leaf_scorch": "Apply Captan or Myclobutanil. Remove infected leaves. Ensure good drainage and air circulation.",
+      "Strawberry___healthy": "No disease detected. Maintain proper bed renovation after harvest.",
+      "Tomato___Bacterial_spot": "Apply copper-based bactericide. Remove infected leaves and stems. Avoid overhead irrigation.",
+      "Tomato___Early_blight": "Apply Chlorothalonil or Mancozeb. Remove lower infected leaves. Stake plants for better air circulation.",
+      "Tomato___Late_blight": "⚠️ Apply Mancozeb or Cymoxanil IMMEDIATELY — this disease spreads extremely fast. Remove infected parts.",
+      "Tomato___Leaf_Mold": "Improve ventilation. Apply Chlorothalonil or copper fungicide. Avoid wetting leaves.",
+      "Tomato___Septoria_leaf_spot": "Apply Chlorothalonil or Mancozeb. Remove infected lower leaves. Mulch around base to prevent soil splash.",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "Apply Abamectin or Bifenazate miticide. Use neem oil as an organic option. Increase humidity.",
+      "Tomato___Target_Spot": "Apply Chlorothalonil or Azoxystrobin. Remove heavily infected leaves. Improve air circulation.",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "No cure. Remove and destroy infected plants immediately. Control the whitefly vector with sticky traps.",
+      "Tomato___Tomato_mosaic_virus": "No cure. Remove infected plants. Disinfect tools with bleach solution. Wash hands before handling plants.",
+      "Tomato___healthy": "No disease detected. Continue regular scouting and maintain good cultural practices."
+    },
+    "errors": {
+      "image_quality_low": "Image quality too low for reliable diagnosis.",
+      "image_too_small": "Image too small ({w}×{h}px). Please use a photo of at least {min}×{min} pixels.",
+      "image_blurry": "Image appears blurry. Please hold the camera steady and take a sharper photo.",
+      "confidence_too_low": "Confidence too low ({confidence}%). The model is unsure — the leaf may not be clearly visible, or the disease may not be in the supported list.",
+      "retake_reason": "Please retake the photo: ensure the leaf fills the frame, use good lighting, and focus on the most affected area.",
+      "file_not_image": "File must be an image (JPEG, PNG, or WebP).",
+      "file_too_large": "File too large. Maximum {max} MB.",
+      "image_unreadable": "Could not read image: {error}",
+      "image_decode_failed": "Could not decode image: {error}",
+      "fallback_recommendation": "Consult your local agricultural extension officer."
+    }
+  }
+}

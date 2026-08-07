@@ -1,0 +1,2175 @@
+{
+  "_meta": {
+    "project": "CropGuard AI",
+    "institution": "ኢንስቲትዩት ቴክኖሎጂ መቐለ (MIT)፣ 2026",
+    "source_language": "English (en)",
+    "target_languages": [
+      "Tigrinya (ti)",
+      "Amharic (am)"
+    ],
+    "generated": "2026-05-03",
+    "notes": "ትርጉም ትግርኛ ንክፋላት ፊትለፊት (frontend)፣ ድሕሪት (backend) ከምኡ እውን ማሽን ላርኒንግ (ML)"
+  },
+  "frontend": {
+    "app": {
+      "app_name": "CropGuard AI",
+      "app_subtitle": "መርማሪ ሕማም ኣትክልቲ",
+      "version": "v1.0 · MIT 2026",
+      "model_online": "AI ኣብ መስመር ኣሎ",
+      "ai_ready": "ሞዴል ድሉው እዩ",
+      "loading": "ይጽዕን ኣሎ…",
+      "saving": "ይዕቅብ ኣሎ…",
+      "close": "ዕጸው",
+      "cancel": "ሰርዝ",
+      "confirm": "ኣረጋግፅ",
+      "back": "ተመለስ",
+      "next": "ቀጻሊ",
+      "done": "ተዛዚሙ",
+      "scan_now": "ሕጂ መርምር",
+      "learn_more": "ተወሳኺ ፍለጥ",
+      "view_all": "ኩሉ ርአ",
+      "see_more": "ተወሳኺ ርአ",
+      "save_profile": "ፕሮፋይል ዕቀብ",
+      "downgrade": "ታሕቲ ኣውርድ",
+      "daily_scans": "ናይ መዓልቲ ምርመራታት",
+      "resets_midnight": "ፍርቂ ለይቲ ይሕደስ",
+      "features_on_plan": "ኣብ ኣገልግሎትካ ዝተሓወሱ ረብሓታት",
+      "see_premium_features": "ኩሎም ናይ ፕሪሚየም ረብሓታት ርአ →",
+      "account_info": "ሓበሬታ ሕሳብ",
+      "email_label": "ኢሜይል",
+      "member_since": "ኣባል ዝኾነሉ ግዜ",
+      "user_id_label": "መፍለዪ ተጠቃሚ",
+      "security": "ድሕንነት",
+      "enabled": "በርዩ",
+      "disabled": "ጠፊኡ",
+      "today": "ሎሚ",
+      "weather_label": "ኩነታት ኣየር መቐለ",
+      "humidity": "ርጥበት",
+      "wind": "ንፋስ"
+    },
+    "nav": {
+      "home": "መበገሲ",
+      "about": "ብዛዕባና",
+      "contact": "ርኸቡና",
+      "diseases": "መምርሒ ሕማማት",
+      "signin": "እቶ",
+      "register": "ተመዝገብ",
+      "dashboard": "ቦርድ ቁጽጽር",
+      "backHome": "ናብ መበገሲ ተመለስ",
+      "nav_main": "ቀንዲ",
+      "nav_system": "ብልህ ሓበሬታ",
+      "nav_tools": "መሳርሒታት",
+      "nav_dashboard": "ቦርድ ቁጽጽር",
+      "nav_detect": "ሕማም መርምር",
+      "nav_history": "ታሪኽ ምርመራ",
+      "nav_encyclopedia": "መዝገበ-ቃላት ሕማማት",
+      "nav_analytics": "ትንተና",
+      "nav_farm": "ኣካያዲ ሕርሻ",
+      "nav_community": "ማሕበረሰብ",
+      "nav_bookmarks": "ዝተዓቀቡ ትልምታት",
+      "nav_settings": "ቅጥዓታት",
+      "btn_new_scan": "ሓድሽ ምርመራ",
+      "sign_in": "እቶ",
+      "sign_out": "ውጻእ"
+    },
+    "home": {
+      "hero": {
+        "badge": "ብ AI ዝምራሕ ሕርሻ",
+        "title": "ፍርያትካ ብ CropGuard AI ሓልው",
+        "subtitle": "ንናእሽቱ ሓረስቶት ኢትዮጵያ ዝተዳለወ ብልህ ምርመራ ሕማም ኣትክልቲ። ፎቶ ቆጽሊ ብምጽዓን ቅልጡፍ ምርመራን ናይ ሕክምና ምኽርን ይርከቡ።",
+        "getStarted": "ብነጻ ጀምር",
+        "learnMore": "መምርሒ ሕማማት ርአ",
+        "supportedCrops": "ስርናይ · ጤፍ · ዕፉን · ቲማቲም · ድንች · በርበረ"
+      },
+      "stats": {
+        "accuracy": "93.7%",
+        "accuracyLabel": "ትኽክለኛነት ሞዴል",
+        "diseases": "10+",
+        "diseasesLabel": "ዓይነታት ሕማም",
+        "languages": "3",
+        "languagesLabel": "ቋንቋታት",
+        "farmers": "ትግራይ",
+        "farmersLabel": "ዞባ ትኹረት"
+      },
+      "features": {
+        "title": "ንምንታይ CropGuard AI?",
+        "subtitle": "ንሓረስቶት ኢትዮጵያ ተባሂሉ ዝተሰርሐ — ትኽክለኛ፣ ተበጻሕን ብዙሕ ቋንቋ ዝዛረብን።",
+        "ai": {
+          "title": "ምርመራ ሕማም ብ AI",
+          "desc": "ብ14,559 ምስልታት ቆጽሊ ዝሰልጠነ ሞዴል ኣብ 10 ሕማማት ዝራእቲ 93.7% ትኽክለኛነት የርእይ።"
+        },
+        "multilingual": {
+          "title": "ደገፍ 3 ቋንቋታት",
+          "desc": "ምሉእ ደገፍ እንግሊዝኛ፣ ኣምሓርኛን ትግርኛን — ንሓረስቶት ዕንቅፋት ቋንቋ ዘወገደ።"
+        },
+        "instant": {
+          "title": "ቅልጡፍ ውጽኢት",
+          "desc": "ምስሊ ቆጽሊ ብምጽዓን ኣብ ውሽጢ ውሑዳት ሰከንድታት ውጽኢትን ዝሰማማዕ ናይ ሕክምና ምኽርን ይርከቡ።"
+        },
+        "history": {
+          "title": "ታሪኽ ትንበያ",
+          "desc": "ኩሎም ዝሓለፉ ምርመራታት ኣብ ቦርድ ቁጽጽርካ ተኸታተል። ኩነታት ሕማም ሕርሻኻ ገምግም።"
+        },
+        "chat": {
+          "title": "ረዳኢ AI",
+          "desc": "ብዛዕባ ዝተረኸበ ሕማም ተወሳኺ ሕቶታት ብዝመረጽካዮ ቋንቋ ሕተት። ብዘመናዊ AI ዝተሓገዘ።"
+        },
+        "crops": {
+          "title": "ሽፋን ከባቢያዊ ዝራእቲ",
+          "desc": "ኣብ ትግራይ ንዝበቅሉ ዝራእቲ ዝተዳለወ፦ ስርናይ፣ ጤፍ፣ ዕፉን፣ ቲማቲም፣ ድንች ከምኡ እውን በርበረ።"
+        }
+      },
+      "howItWorks": {
+        "title": "ከመይ ይሰርሕ?",
+        "subtitle": "ፍርያትካ ንምክልኻል ሰለስተ ቀለልቲ ስጉምትታት",
+        "step1": {
+          "title": "ምስሊ ቆጽሊ ጽዓን",
+          "desc": "ናይቲ ዝሓመመ ቆጽሊ ናይ ቀረባን ንጹርን ፎቶ ብምልዓል ካብ ስልክኻ ወይ ኮምፒውተርካ ጽዓን።"
+        },
+        "step2": {
+          "title": "ትንተና AI",
+          "desc": "ሞዴልና ነቲ ምስሊ ብቕልጡፍ ብምትንታን ምልክታት እቲ ሕማም ብ93.7% ትኽክለኛነት ይፈልጦ።"
+        },
+        "step3": {
+          "title": "ምኽሪ ይርከቡ",
+          "desc": "ስም እቲ ሕማም፣ ደረጃ ርግፀኛነትን ናይ ሕክምና ኣማራጺታትን ብቋንቋኻ ይርከቡ።"
+        }
+      },
+      "crops": {
+        "title": "ዝድገፉ ዝራእቲ",
+        "subtitle": "CropGuard AI ኣብ ሕርሻ ትግራይ ቀንዲ ንዝኾኑ ዝራእቲ ይሽፍን",
+        "list": [
+          {
+            "name": "ስርናይ",
+            "diseases": "ዋግ ጉንዲ፣ ዋግ ቆጽሊ"
+          },
+          {
+            "name": "ጤፍ",
+            "diseases": "ብላክ ቆጽሊ፣ ስመጥ ጤፍ"
+          },
+          {
+            "name": "ዕፉን",
+            "diseases": "ብላክ ቆጽሊ፣ ግራጫ ነጠብጣብ ቆጽሊ"
+          },
+          {
+            "name": "ቲማቲም",
+            "diseases": "ዘንጊዩ ዝመጽእ ብላክ፣ ነጠብጣብ ባክቴሪያ"
+          },
+          {
+            "name": "ድንች",
+            "diseases": "ቀዲሙ ዝመጽእ ብላክ፣ ዘንጊዩ ዝመጽእ ብላክ"
+          },
+          {
+            "name": "በርበረ",
+            "diseases": "ነጠብጣብ ባክቴሪያ፣ ጥዑይ"
+          }
+        ]
+      },
+      "cta": {
+        "title": "ዝራእትኻ ሎሚ ምክልኻል ጀምር",
+        "subtitle": "ፍርያቶም ንምሕላው AI ዝጥቀሙ ሓረስቶት ትግራይ ተጸንበር። ኣብ ዝኾነ መሳርሒ ብነጻ ርከቦ።",
+        "button": "ናይ ነጻ ሕሳብ ፍጠር",
+        "secondary": "መምርሒ ሕማማት ርአ"
+      },
+      "seasonal_tip": "እዋናዊ ምኽሪ",
+      "tip_text": "ሕማማት ዋግ ኣብ እዋን ዝናብ ይጋደዱ። ንስርናይን ስገምን ኣብ ሰለስተ ወይ ሓሙሽተ መዓልቲ ተኸታተሉ።",
+      "welcome_title": "ናብ CropGuard AI እንቋዕ ብደሓን መጻእኩም",
+      "welcome_sub": "ንሓረስቶት ትግራይ ዝተዳለወ መርማሪ ሕማም ብ AI። ንቕልጡፍ ምርመራ ፎቶ ጽዓን።",
+      "btn_view_history": "ታሪኽ ርአ",
+      "btn_disease_guide": "መምርሒ ሕማማት"
+    },
+    "auth": {
+      "signin": {
+        "title": "እንቋዕ ብደሓን ተመለስኩም",
+        "subtitle": "ናብ ቦርድ ቁጽጽርካ ንምእታው ሕሳብካ እቶ",
+        "email": "ኣድራሻ ኢሜይል",
+        "password": "መሕለፊ ቃል",
+        "button": "እቶ",
+        "noAccount": "ሕሳብ የብልካን?",
+        "register": "ኣብዚ ተመዝገብ",
+        "backHome": "ናብ መበገሲ ተመለስ"
+      },
+      "register": {
+        "title": "ሕሳብ ፍጠር",
+        "subtitle": "ኣብ CropGuard AI ተጸንበር እሞ ፍርያትካ ሓልው",
+        "name": "ምሉእ ስም",
+        "email": "ኣድራሻ ኢሜይል",
+        "password": "መሕለፊ ቃል",
+        "confirm": "መሕለፊ ቃል ኣረጋግፅ",
+        "button": "ሕሳብ ፍጠር",
+        "hasAccount": "ቅድሚ ሕጂ ሕሳብ ነይሩካ?",
+        "signin": "ኣብዚ እቶ",
+        "backHome": "ናብ መበገሲ ተመለስ"
+      },
+      "auth_sign_in": "እቶ",
+      "auth_create_account": "ሕሳብ ፍጠር",
+      "auth_email": "ኣድራሻ ኢሜይል",
+      "auth_password": "መሕለፊ ቃል",
+      "auth_full_name": "ምሉእ ስም",
+      "auth_institution": "ትካል",
+      "auth_language": "ቋንቋ",
+      "auth_confirm_pw": "መሕለፊ ቃል ኣረጋግፅ",
+      "auth_subtitle": "መርማሪ ሕማም ኣትክልቲ",
+      "auth_your_email": "your@email.com",
+      "auth_your_password": "መሕለፊ ቃል ኣእቱ",
+      "auth_pw_placeholder": "ወይ 8 ፊደላት፣ ዓቢ ፊደልን ቁጽርን",
+      "auth_confirm_ph": "መሕለፊ ቃልካ ደጊምካ ኣእቱ",
+      "auth_please_wait": "በጃኹም ተጸበዩ…",
+      "auth_no_name": "በጃኹም ምሉእ ስምኩም ኣእትዉ።",
+      "auth_bad_email": "በጃኹም ትኽክለኛ ኢሜይል ኣእትዉ።",
+      "auth_pw_min": "መሕለፊ ቃል ብውሑዱ 8 ፊደላት ክኸውን ኣለዎ።",
+      "auth_pw_rules": "መሕለፊ ቃል ብውሑዱ ሓደ ዓቢ ፊደልን ሓደ ቁጽርን ክሕዝ ኣለዎ።",
+      "auth_pw_mismatch": "መሕለፊ ቃላት ኣይመሳሰሉን።",
+      "auth_pw_match": "✓ መሕለፊ ቃላት ተመሳሲሎም",
+      "auth_free_plan_note": "ናይ ነጻ ኣገልግሎት፦ ኣብ መዓልቲ 5 ምርመራታት። ንዘይተገደበ ምርመራ ናብ ፕሪሚየም ($4.99/ወርሒ) ክብ ኣብልዎ።",
+      "pw_show": "ኣርኢ",
+      "pw_hide": "ሕባእ",
+      "auth_pw_too_short": "ጣዕሚ ሓጺር",
+      "auth_pw_weak": "ድኹም",
+      "auth_pw_fair": "ማእከላይ",
+      "auth_pw_good": "ጽቡቕ",
+      "auth_pw_strong": "ድልዱል",
+      "auth_pw_very_strong": "ጣዕሚ ድልዱል"
+    },
+    "dashboard": {
+      "title": "ናተይ ቦርድ ቁጽጽር",
+      "backHome": "ናብ መበገሲ ተመለስ",
+      "welcome": "እንቋዕ ብደሓን ተመለስኩም",
+      "stats": {
+        "totalScans": "ጠቕላላ ምርመራታት",
+        "diseased": "ዝሓመሙ",
+        "healthy": "ጥዑያት",
+        "thisMonth": "ኣብዚ ወርሒ"
+      },
+      "recentScans": "ናይ ቀረባ ግዜ ምርመራታት",
+      "noScans": "ክሳብ ሕጂ ዝተገብረ ምርመራ የለን። ንምጅማር ምስሊ ቆጽሊ ጽዓን።",
+      "uploadNew": "ሓድሽ ምስሊ ጽዓን",
+      "stat_total": "ጠቕላላ ምርመራታት",
+      "stat_diseased": "ዝተረኸቡ ሕማማት",
+      "stat_healthy": "ጥዑያት ዝራእቲ",
+      "stat_confidence": "ማእከላይ ርግፀኛነት",
+      "health_rate": "ደረጃ ጥዕና",
+      "recent_scans": "ናይ ቀረባ ግዜ ምርመራታት",
+      "no_scans_yet": "ክሳብ ሕጂ ምርመራ የለን — 'ሓድሽ ምርመራ' ጠውቕ",
+      "disease_dist": "ዝርገሐ ሕማማት",
+      "quick_actions": "ቅልጡፍ ተግባራት",
+      "action_scan": "ቆጽሊ መርምር",
+      "action_guide": "መምርሒ ሕማማት",
+      "action_history": "ታሪኽ ምርመራ",
+      "action_settings": "ቅጥዓታት",
+      "activity_chart_label": "ናይ 7 መዓልቲ ንጥፈት ምርመራ",
+      "day_abbreviations": {
+        "su": "ሰን",
+        "mo": "ሰኑ",
+        "tu": "ሰሉ",
+        "we": "ረቡ",
+        "th": "ሓሙ",
+        "fr": "ዓር",
+        "sa": "ቀዳ"
+      }
+    },
+    "detect": {
+      "upload_title": "ቆጽሊ መርምር፣ ውጽኢት ረክብ",
+      "upload_sub": "ምስሊ ዝሓመመ ቆጽሊ ጽዓን። AIና ነቲ ሕማም ፈሊዩ ኣብ ውሑዳት ሰከንድታት ሕክምና ክእምት እዩ።",
+      "drop_title": "ምስሊ ቆጽሊ ኣብዚ ስሓቦ",
+      "drop_sub": "ወይ ፋይላት ንምምራጽ ኣብዚ ጠውቕ",
+      "ready_label": "ንትንተና ድሉው እዩ",
+      "remove_image": "ነቲ ምስሊ ኣልግሶ",
+      "btn_analyse": "ነዚ ቆጽሊ ተንትን",
+      "btn_select": "መጀመሪያ ምስሊ ምረጽ",
+      "analysing": "ይትንትን ኣሎ…",
+      "running_model": "ሞዴል AI ይዓዪ ኣሎ",
+      "photo_tips": "ምኽርታት ኣልዓዕላ ፎቶ",
+      "tip1_title": "ጽቡቕ ብርሃን",
+      "tip1_desc": "ናይ መዓልቲ ብርሃን ተጠቐም፣ ጽላሎት ከይዓርፎ ተጠንቀቕ",
+      "tip2_title": "ናይ ቀረባ ምስሊ",
+      "tip2_desc": "ሓደ ወይ ክልተ ቆጽሊ ንምሉእ ስክሪን ክሽፍኑ ግበር",
+      "tip3_title": "ምልክታት ኣርኢ",
+      "tip3_desc": "ነቲ ዝያዳ ዝተሃስየ ክፋል ቆጽሊ ፎቶ ኣልዕሎ",
+      "tip4_title": "ካሜራ ኣይተነቓንቕ",
+      "tip4_desc": "ካሜራ ምስቲ ቆጽሊ ትኹል ገይርካ ሓዞ",
+      "conf_threshold": "ወሰን ርግፀኛነት",
+      "conf_in_settings": "ኣብ ቅጥዓታት → ምርመራ ኣስተኻኽል",
+      "error_prefix": "ጌጋ: ",
+      "upload_note": "JPG, PNG, WebP · ዝለዓለ 10 MB",
+      "cam_live": "ቀጥታ",
+      "cam_scan_btn": "ፎቶ ቆጽሊ ኣልዕል",
+      "cam_capture": "የልዕል ኣሎ…",
+      "cam_retake": "ደጊምካ ኣልዕል",
+      "cam_flip": "ካሜራ ኣዙር",
+      "cam_not_supported": "ካሜራ ኣይሰርሕን",
+      "cam_not_supported_sub": "ኣብ ክንድኡ 'ምጽዓን' ተጠቐም።",
+      "cam_denied": "ፍቓድ ካሜራ ተኸልኪሉ — በጃኹም ፍቓድ ሂብኩም ገጹ ሕደስዎ።",
+      "offline_queued": "ኢንተርኔት የለን — ምርመራ ተዓቂቡ ኣሎ፣ ኢንተርኔት ምስ መጸ ክትንተን እዩ።",
+      "offline_banner": "ብዘይ ኢንተርኔት — ምርመራታት ተመዝጊቦም ኢንተርኔት ምስ ረኸቡ ክለኣኩ እዮም።",
+      "online_back": "ኢንተርኔት ተመሊሱ",
+      "error_ai_offline": "ሰርቨር AI ጠፊኡ ኣሎ። በጃኹም ኣበጊስኩም ደጊምኩም ፈትኑ።",
+      "error_too_large": "ፋይል ጣዕሚ ዓቢ እዩ — ዝለዓለ 10 MB",
+      "error_wrong_type": "JPG, PNG ወይ WebP ምስልታት ጥራይ ይፍቀዱ",
+      "error_try_again": "ገለ ጌጋ ተፈጢሩ። በጃኹም ደጊምኩም ፈትኑ።",
+      "upload_tab_label": "ምስሊ ስቀል",
+      "cam_tab_camera": "ካሜራ",
+      "cam_realtime_sub": "ካሜራ ናብ ዝሓመመ ቅጠል ዘርእዮ",
+      "quota_resets_midnight": "ኮታ ኣብ ፍርቂ ለይቲ ይሕደስ"
+    },
+    "history": {
+      "search_placeholder": "ብሕማም ወይ ብስም ዝራእቲ ድለ…",
+      "filter_all": "ኩሎም ውጽኢታት",
+      "filter_diseased": "ዝሓመሙ ጥራይ",
+      "filter_healthy": "ጥዑያት ጥራይ",
+      "filter_highconf": "ልዑል ርግፀኛነት",
+      "sort_newest": "ናይ ቀረባ ግዜ መጀመሪያ",
+      "sort_oldest": "ቀዳሞት መጀመሪያ",
+      "sort_conf": "ብደረጃ ርግፀኛነት",
+      "scans_count": "ካብ {total} ምርመራታት እቶም {n}",
+      "no_history_title": "ታሪኽ የለን",
+      "no_history_sub": "ንምጅማር ቆጽሊ መርምር",
+      "no_results_title": "ዝተረኸበ ውጽኢት የለን",
+      "no_results_sub": "ካልእ ቃል ወይ መጻረዪ ፈትን",
+      "confidence_label": "ርግፀኛነት",
+      "healthy_badge": "ጥዑይ",
+      "diseased_badge": "ዝሓመመ",
+      "export_csv": "ብ CSV ኣውርድ",
+      "view_grid": "ሰንጠረዥ",
+      "view_list": "ዝርዝር",
+      "select_all": "ኩሉ ምረጽ",
+      "deselect_all": "ምርጫ ሰርዝ",
+      "bulk_delete": "{n} ዝተመርጹ ሰርዝ",
+      "notif_deleted": "ተሰሪዙ",
+      "notif_exported": "CSV ወሪዱ",
+      "delete_one_title": "እዚ ምርመራ ይሰረዝ?",
+      "delete_one_message": "እዚ ተግባር ክምለስ ኣይኽእልን።",
+      "delete_one_confirm_label": "ሰርዝ",
+      "delete_bulk_title": "{n} ምርመራታት ይሰረዙ?",
+      "delete_bulk_message": "ኩሎም ዝተመርጹ ምርመራታት ንሓዋሩ ክጠፍኡ እዮም።",
+      "delete_bulk_confirm_label": "ኩሉ ሰርዝ",
+      "deleted_n_scans": "{n} ምርመራታት ተሰሪዞም"
+    },
+    "settings": {
+      "settings_sub": "ተመክሮ CropGuard AI ኣስተኻኽል",
+      "btn_save": "ለውጥታት ዕቀብ",
+      "btn_saved": "✓ ተዓቂቡ!",
+      "tab_appearance": "ትርኢት",
+      "tab_detection": "ምርመራ",
+      "tab_profile": "ፕሮፋይል",
+      "tab_account": "ሕሳብ",
+      "tab_about": "ብዛዕባ",
+      "theme_title": "ሕብሪ ገጽ",
+      "theme_desc": "ትርኢት እቲ ኣፕ ምረጽ",
+      "theme_dark": "ጸሊም",
+      "theme_light": "ጻዕዳ",
+      "fontsize_title": "ዓቐን ፊደላት",
+      "fontsize_desc": "ዓቐን ጽሑፍ ኣስተኻኽል",
+      "fs_small": "ንእሽቶ",
+      "fs_medium": "ማእከላይ",
+      "fs_large": "ዓቢ",
+      "language_title": "ቋንቋ",
+      "language_desc": "ቋንቋ እቲ ኣፕ",
+      "conf_title": "ወሰን ርግፀኛነት",
+      "conf_desc": "ውጽኢት ንምርኣይ ዘድሊ ትሕተ-መጠን ርግፀኛነት።",
+      "conf_more": "30% — ብዙሕ ውጽኢታት",
+      "conf_precise": "95% — ልዑል ትኽክለኛነት",
+      "top3_title": "3 ዝበለጹ ትንበያታት ኣርኢ",
+      "top3_desc": "ተመሳሰልቲ ውጽኢታት የርእይ",
+      "autosave_title": "ምርመራታት ባዕልኻ ዕቀብ",
+      "autosave_desc": "ኩሎም ውጽኢታት ብባዕሉ ይዕቅብ",
+      "name_title": "ስምካ",
+      "name_desc": "ኣብ ላዕሊ እቲ ኣፕ ይርአ",
+      "name_placeholder": "ስምካ ኣእቱ",
+      "inst_title": "ትካል",
+      "inst_desc": "ትካልካ",
+      "inst_placeholder": "ስም ትካል",
+      "about_title": "ብዛዕባ CropGuard AI",
+      "about_desc": "ሓበሬታ ስርዓት",
+      "team_title": "ጉጅለ ፕሮጀክት",
+      "lbl_version": "ቨርዥን",
+      "lbl_model": "ሞዴል",
+      "lbl_dataset": "ዳታሴት",
+      "lbl_crops": "ዝተሓለሙ ዝራእቲ",
+      "lbl_inst": "ትካል",
+      "lbl_submitted": "ዝቐረበሉ",
+      "lbl_year": "ዓመተ ምሕረት",
+      "lbl_frontend": "Frontend",
+      "lbl_backend": "Backend",
+      "lbl_ai_server": "ሰርቨር AI",
+      "view_active_sessions": "ንጥፉ ዝኾኑ ግዜያት ርአ",
+      "signout_all_devices": "ካብ ኩሎም መሳርሒታት ውጻእ",
+      "downgrade_title": "ናብ ነጻ ኣገልግሎት ክምለስ?",
+      "downgrade_msg": "ዘይተገደበ ምርመራን ናይ AI ምኽርታትን ሓዊሱ ናይ ፕሪሚየም ረብሓታት ክትስእን ኢኻ።",
+      "downgrade_confirm": "እወ፣ ይመለስ",
+      "downgraded_info": "ናብ ነጻ ኣገልግሎት ተመሊስካ ኣለኻ",
+      "signout_all_title": "ካብ ኩሎም መሳርሒታት ክትወጽእ ትደሊ?",
+      "signout_all_msg": "እዚ ኣብ ኩሎም መሳርሒታት ዘለዉ ግዜያት የቋርጽ። ደጊምካ ክትኣቱ የድልየካ።",
+      "signout_all_btn": "ካብ ኩሉ ውጻእ",
+      "signout_all_done": "ካብ ኩሎም መሳርሒታት ወጺእካ ኣለኻ",
+      "logout_confirm_message": "ካብዚ መሳርሒ ክትወጽእ ኢኻ። ሓበሬታኻ ኣብ ሰርቨር ብጥንቃቐ ተዓቂቡ ኣሎ።",
+      "stage_seedling": "ተኽሊ",
+      "stage_vegetative": "ዕብየት",
+      "stage_flowering": "ዕምበባ",
+      "stage_fruiting": "ፍረ",
+      "stage_harvest": "ምህርቲ",
+      "stage_dormant": "ዕረፍቲ"
+    },
+    "pricing": {
+      "upgrade_cta": "ናብ ፕሪሚየም ክብ ኣብል",
+      "upgrade_sub": "ዘይተገደበ ምርመራን ደገፍ ክኢላን ይርከቡ",
+      "plan_free": "ነጻ",
+      "plan_premium": "ፕሪሚየም",
+      "plan_enterprise": "ትካላዊ",
+      "plan_free_desc": "ኣብ መዓልቲ 5 ምርመራታት · መሰረታዊ ውጽኢታት",
+      "plan_premium_desc": "ዘይተገደበ ምርመራ · ምኽርታት AI · ቅልጡፍ ደገፍ",
+      "plan_enterprise_desc": "ንብዙሓት ሕርሻታት · ንጉጅለ · ንትካላት",
+      "plan_free_price": "ነጻ",
+      "plan_premium_price": "$4.99 / ብወርሒ",
+      "plan_enterprise_price": "ርኸቡና",
+      "plan_current": "ናይ ሕጂ ኣገልግሎት",
+      "plan_upgrade": "ክብ ኣብል",
+      "plan_most_popular": "ተመራጺ",
+      "premium_feature": "ረብሓ ፕሪሚየም",
+      "premium_locked": "እዚ ኣገልግሎት ናይ ፕሪሚየም ኣባልነት ይሓትት",
+      "premium_unlock": "ብፕሪሚየም ክፈቶ",
+      "go_premium": "ናብ ፕሪሚየም →",
+      "enterprise_price_monthly": "$19.99 / ብወርሒ",
+      "enterprise_payment_title": "ትካላዊ ኣገልግሎት",
+      "enterprise_payment_sub": "ኩሎም ናይ ፕሪሚየም ረብሓታት ምስ ምሉእ ደገፍ ዝሓዘ እዩ።",
+      "enterprise_contact_btn": "ንዋጋ ርኸቡና",
+      "enterprise_upgrade_btn": "ትካላዊ ይርከቡ →",
+      "enterprise_contact_alert": "ንትካልኩም ኣገልግሎት ንምርካብ ኣብ cropguard@mit.edu.et ርኸቡና።",
+      "current_plan_badge": "ናይ ሕጂ ኣገልግሎት:",
+      "plan_card_current_label": "✓ ናይ ሕጂ ኣገልግሎት",
+      "plan_card_contact_label": "ርኸቡና",
+      "plan_card_downgrade_label": "ታሕቲ ኣውርድ",
+      "what_you_get_title": "ኣብ ነፍሲ ወከፍ ኣገልግሎት ዝርከብ",
+      "feature_matrix": {
+        "col_feature": "ረብሓታት",
+        "rows": {
+          "daily_scans": {
+            "label": "ምርመራታት መዓልቲ",
+            "free": "5 / መዓልቲ",
+            "premium": "ዘይተገደበ",
+            "enterprise": "ዘይተገደበ"
+          },
+          "ai_diagnosis": {
+            "label": "ምርመራ AI",
+            "free": "መሰረታዊ",
+            "premium": "ዝማበለ",
+            "enterprise": "ዝማበለ"
+          },
+          "farms": {
+            "label": "ሕርሻታት",
+            "free": "2",
+            "premium": "10",
+            "enterprise": "ዘይተገደበ"
+          },
+          "scan_history": {
+            "label": "ታሪኽ ምርመራ",
+            "free": "ናይ መወዳእታ 20",
+            "premium": "ዘይተገደበ",
+            "enterprise": "ዘይተገደበ"
+          },
+          "ai_insights": {
+            "label": "ምኽርታት AI",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "smart_treatment": {
+            "label": "ብልህ ሕክምና",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "risk_scoring": {
+            "label": "ዓቐን ሓደጋ",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "export_reports": {
+            "label": "ሪፖርት ምውጽኢ",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "offline_queue": {
+            "label": "ብዘይ ኢንተርኔት",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "api_access": {
+            "label": "ፍቓድ API",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "custom_model": {
+            "label": "ፍሉይ ሞዴል",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "support": {
+            "label": "ደገፍ",
+            "free": "ማሕበረሰብ",
+            "premium": "ቅልጡፍ ኢሜይል",
+            "enterprise": "ፍሉይ ደገፍ"
+          },
+          "price": {
+            "label": "ዋጋ",
+            "free": "ነጻ",
+            "premium": "$4.99/ወርሒ",
+            "enterprise": "ርኸቡና"
+          }
+        }
+      },
+      "plan_features": {
+        "free": [
+          "ኣብ መዓልቲ 5 ምርመራታት",
+          "መሰረታዊ ምርመራ AI",
+          "ኢንሳይክሎፒዲያ ሕማማት",
+          "ዝለዓለ 2 ሕርሻታት",
+          "ናይ መወዳእታ 20 ታሪኽ"
+        ],
+        "free_locked": [
+          "ትንተናታት AI",
+          "ብልህ ትልሚ ሕክምና",
+          "ጸብጻብ ሓደጋን ፍርያትን",
+          "ብልህ ቦታ",
+          "ሪፖርት ምውራድ",
+          "ብዘይ ኢንተርኔት ምጥቃም",
+          "ሓበሬታ ማሕበረሰብ",
+          "ቀዳምነት ደገፍ"
+        ],
+        "premium": [
+          "ዘይተገደበ ምርመራ",
+          "ዝማበለ ምርመራ AI",
+          "ኢንሳይክሎፒዲያ ሕማማት",
+          "ክሳብ 10 ሕርሻታት",
+          "ምሉእ ታሪኽ ምርመራ",
+          "ትንተናታት AI",
+          "ብልህ ትልሚ ሕክምና",
+          "ጸብጻብ ሓደጋን ፍርያትን",
+          "ብልህ ቦታ",
+          "ሪፖርት ምውራድ",
+          "ብዘይ ኢንተርኔት ምጥቃም",
+          "ሓበሬታ ማሕበረሰብ",
+          "ቀዳምነት ደገፍ ብኢሜይል"
+        ],
+        "enterprise": [
+          "ኩሎም ናይ ፕሪሚየም ረብሓታት",
+          "ዘይተገደበ ሕርሻን ተጠቃሚን",
+          "ፍሉይ ስልጠና ሞዴል AI",
+          "ፍቓድ API",
+          "ቁጽጽር ጉጅለ",
+          "ፍሉይ ደጋፊ",
+          "ናይ ቦታ ስልጠና",
+          "ፍሉይ ምልክት ምግባር",
+          "ውሕስነት ኣገልግሎት"
+        ]
+      },
+      "toast_welcome_premium": "🎉 ናብ ፕሪሚየም እንቋዕ ብደሓን መጻእኩም! ኩሎም ረብሓታት ተኸፊቶም ኣለዉ።",
+      "toast_downgraded": "ናብ ነጻ ኣገልግሎት ተመሊስኩም ኣለኹም።",
+      "feat_unlimited_scans": "ዘይተገደበ ምርመራ",
+      "feat_ai_insights": "ምኽርታት ዝራእቲ ብ AI",
+      "feat_smart_rec": "ብልህ ትልምታት ሕክምና",
+      "feat_risk_score": "ጸብጻብ ሓደጋን ፍርያትን",
+      "feat_explain": "ንብርብሪ መብርሂ",
+      "feat_location": "ብልህ ቦታ",
+      "feat_export": "ሪፖርት ምውራድ (PDF/CSV)",
+      "feat_history_full": "ምሉእ ታሪኽ ምርመራ",
+      "feat_community": "ሓበሬታ ማሕበረሰብ",
+      "feat_alerts": "መጠንቀቕታ ምኽሳቲ ሕማም",
+      "feat_offline": "ብዘይ ኢንተርኔት ምጥቃም",
+      "feat_multi_farm": "ክሳብ 10 ሕርሻታት",
+      "feat_support": "ቅልጡፍ ደገፍ ብኢሜይል"
+    },
+    "about": {
+      "hero": {
+        "title": "ብዛዕባ CropGuard AI",
+        "subtitle": "ካብ ዩኒቨርሲቲ መቐለ ኢንስቲትዩት ቴክኖሎጂ ዝተረኸበ ናይ ምርምር ፕሮጀክት፤ ንሓረስቶት ኢትዮጵያ ብሕርሻ AI ንምድጋፍ ዝተሰርሐ።"
+      },
+      "university_badge": "ዩኒቨርሲቲ መቐለ – MIT",
+      "mission": {
+        "title": "ተልእኮና",
+        "text": "ሕርሻ መሰረት ቁጠባ ኢትዮጵያ ኮይኑ ካብ 70–80% ሓይሊ ሰብ የዋፍር። ኣብ ክልል ትግራይ ስርናይ፣ ጤፍ፣ ዕፉንን ዝመሳሰሉ ዝራእትን ንሚልዮናት ስድራቤታት ቀንዲ መነባበሮ እዮም። CropGuard AI ዝተፈጠረ ነዞም ሓረስቶት ተበጻሒ፣ ትኽክለኛን ብዙሕ ቋንቋ ዝዛረብን መርማሪ ሕማም ኣትክልቲ ንምቕራብ እዩ።",
+        "quote": "ንነፍሲ ወከፍ ሓረስታይ — ብቋንቋ ወይ ብቦታ ከይተገደበ — ብዓቕሚ ምርመራ AI ምብቃዕ።",
+        "card_subtitle": "ንሓረስቶት ኢትዮጵያ ብ AI ዝሰርሕ ምርመራ ሕማም ዝራእቲ"
+      },
+      "problem": {
+        "title": "እንፈትሖ ጸገም",
+        "subtitle": "ኣብ ትግራይን መላእ ኢትዮጵያን ንናእሽቱ ሓረስቶት ዘጋጥሙ ኣርባዕተ ተተሓሓዝቲ ጸገማት",
+        "items": [
+          {
+            "title": "ሕጽረት ክኢላታት",
+            "desc": "ክኢላታት ግብርና ኤክስቴንሽን ንገጠር ህዝቢ እኹላት ስለዘይኮኑ ምርመራ ሕማም ዘንጊዩ ዝራእቲ ክጠፍእ ይገብር።"
+          },
+          {
+            "title": "ዕንቅፋት ቋንቋ",
+            "desc": "ዘለዉ መሳርሒታት AI ብእንግሊዝኛ ጥራይ ስለዝኾኑ ብኣምሓርኛ ወይ ብትግርኛ ንዝረዳድኡ ሚልዮናት ሓረስቶት ኣይጥዕሙን።"
+          },
+          {
+            "title": "ዘይግቡእ ኣጠቓቕማ መድሃኒት",
+            "desc": "ነቲ ሕማም ብልክዕ ዘይምፍላጥ ዘይግቡእ ኬሚካል ክንጸግ፣ ወጻኢታት ክውስኽን ማይ ክበከልን ይገብር።"
+          },
+          {
+            "title": "ጌጋ ምርመራ",
+            "desc": "ክኢላ ዘይኮኑ ሓረስቶት ምልክታት ሕማም ብምርኣይ ጥራይ ንምፍላጥ ስለዝኸብዶም ብፍላይ ኣብ መጀመርታ ደረጃ ጌጋ ይፍጠር።"
+          }
+        ]
+      },
+      "model": {
+        "title": "ኣብ ድሕሪ CropGuard AI ዘሎ ቴክኖሎጂ",
+        "text": "CropGuard AI ዝጥቀሞ MobileNetV2 ዝተባሃለ ንሞባይልን ዌብን ዝተመቻቸወ ብጎግል ዝማበለ ናይ ነርቭ መርበብ እዩ። ብ14,559 ምስልታት ሕማም ኣትክልቲ ዝሰልጠነ ኮይኑ ካብ ከባቢ ትግራይ ምስ ዝተኣከቡ ምስልታት ተደሚሩ 93.7% ትኽክለኛነት ኣመዝጊቡ ኣሎ።",
+        "stats": [
+          {
+            "label": "ምስልታት ስልጠና",
+            "value": "14,559"
+          },
+          {
+            "label": "ዓይነታት ሕማም",
+            "value": "10"
+          },
+          {
+            "label": "ትኽክለኛነት ሞዴል",
+            "value": "93.7%"
+          },
+          {
+            "label": "ዝድገፉ ዝራእቲ",
+            "value": "6"
+          }
+        ],
+        "techStack": [
+          "React.js Frontend",
+          "Node.js / Express API",
+          "Python FastAPI ML Service",
+          "PostgreSQL Database",
+          "MobileNetV2 Model",
+          "i18next Multilingual"
+        ]
+      },
+      "comparison": {
+        "title": "ናትና ፍሉይነት",
+        "subtitle": "CropGuard AI ደገፍ ብዙሕ ቋንቋ፣ ሽፋን ከባቢያዊ ዝራእትን ታሪኽ ምርመራን ብሓደ ዝሓዘ እዩ",
+        "headers": [
+          "ባህሪ",
+          "PlantVillage",
+          "Plantix",
+          "CropGuard AI"
+        ],
+        "rows": [
+          {
+            "feature": "ቀጥታ ምርመራ",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "ኣምሓርኛ / ትግርኛ",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "ረዳኢ AI",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "ሽፋን ዝራእቲ ትግራይ",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "ነጻን ክፉትን",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "ቁጽጽር ምርመራ",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          }
+        ]
+      },
+      "team": {
+        "title": "ጉጅለ ምርምር",
+        "subtitle": "ሸውዓተ ኣብ ኢንስቲትዩት ቴክኖሎጂ መቐለ ተምሃሮ ቴክኖሎጂ ሓበሬታ ዝነበሩ ኮይኖም ንምረቓ መምለኢ CropGuard AI ሰሪሖምዎ።",
+        "members": [
+          {
+            "name": "ኒማ ከድር",
+            "role": "መራሒት ጉጅለን መሃንዲስ ML"
+          },
+          {
+            "name": "ሃለፎም ሓይሉ",
+            "role": "ኣሰናዳኢ Backend"
+          },
+          {
+            "name": "ጉዕሽ ተክሉ",
+            "role": "ኣሰናዳኢ Frontend"
+          },
+          {
+            "name": "ሃዱሽ ጸጋቡ",
+            "role": "መሃንዲስ ዳታቤዝ"
+          },
+          {
+            "name": "ኪብሮም ጌታቸው",
+            "role": "ተመራማሪ AI/ML"
+          },
+          {
+            "name": "ሰለሞን ገ/ቸርቆስ",
+            "role": "ኣርክቴክት ስርዓት"
+          },
+          {
+            "name": "ገ/እግዚአብሔር ደስታለም",
+            "role": "ዲዛይነር UI/UX"
+          }
+        ],
+        "supervisor": "ብኢንስፔክተር ጆርጅ ዝምራሕ",
+        "institution": "ዩኒቨርሲቲ መቐለ – MIT፣ ክፍሊ ትምህርቲ ቴክኖሎጂ ሓበሬታ፣ መቐለ፣ ትግራይ፣ ኢትዮጵያ",
+        "year": "ለካቲት 2026"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "ርኸቡና",
+        "subtitle": "ብዛዕባ CropGuard AI ሕቶ ኣለኩም? ካብ ሓረስቶት፣ ተመራመርትን መሻርኽትን ክንሰምዕ ንደሊ።"
+      },
+      "form": {
+        "send_us_message": "መልእኽቲ ስደዱልና",
+        "name": "ምሉእ ስም",
+        "email": "ኣድራሻ ኢሜይል",
+        "subject": "ኣርእስቲ",
+        "message": "መልእኽቲ",
+        "send": "መልእኽቲ ስደድ",
+        "success": "መልእኽትኹም ብዓወት ተላኢኹ ኣሎ! ብቕልጡፍ ክንምልሰልኩም ኢና።",
+        "namePlaceholder": "ምሉእ ስምኩም",
+        "emailPlaceholder": "your@email.com",
+        "subjectPlaceholder": "ከመይ ክንሕግዘኩም ንኽእል?",
+        "messagePlaceholder": "መልእኽትኹም ኣብዚ ጸሓፉ..."
+      },
+      "info": {
+        "title": "በዞም ኣድራሻታት ርኸቡና",
+        "institution": "ኢንስቲትዩት ቴክኖሎጂ መቐለ",
+        "department": "ክፍሊ ትምህርቲ ቴክኖሎጂ ሓበሬታ",
+        "location": "መቐለ፣ ትግራይ፣ ኢትዮጵያ",
+        "email": "cropguard@mekelle.edu.et",
+        "email_label": "ኢሜይል",
+        "languages_label": "ቋንቋታት",
+        "languages_value": "English · ኣምሓርኛ · ትግርኛ",
+        "response_time_title": "ግዜ መልሲ",
+        "response_time_text": "ከም ልሙድ ኣብ ውሽጢ 2–3 ናይ ስራሕ መዓልታት መልሲ ንህብ። ንህጹጽ ጉዳያት ኣብ ኣርእስቲ ጥቐሱ።",
+        "topics": {
+          "title": "ልሙዳት ኣርእስትታት",
+          "items": [
+            "ብዛዕባ እቲ ኣፕ ቴክኒካዊ ደገፍ",
+            "ሕቶታት ምትሕብባር ምርምር",
+            "ሽፋን ሕማም ንክውስኽ ምሕታት",
+            "ርእይቶን ጌጋ ስርዓትን",
+            "ዕድላት ሽርክና"
+          ]
+        }
+      },
+      "faq": {
+        "title": "ተደጋጋሚ ሕቶታት",
+        "items": [
+          {
+            "q": "CropGuard AI ምጥቃም ነጻ እዩ?",
+            "a": "እወ፣ CropGuard AI ንኩሎም ሓረስቶትን ተመራመርትን ምሉእ ብምሉእ ነጻ እዩ።"
+          },
+          {
+            "q": "እቲ ስርዓት ኣየኖት ዝራእቲ ይድግፍ?",
+            "a": "ስርናይ፣ ጤፍ፣ ዕፉን፣ ቲማቲም፣ ድንች ከምኡ እውን በርበረ — ኣብ ትግራይ ልሙዳት ዝራእቲ ይድግፍ።"
+          },
+          {
+            "q": "እቲ ኣፕ ኣብ ሞባይል ይሰርሕ?",
+            "a": "እወ፣ ኣብ ዝኾነ ዘመናዊ ስልክ ወይ ኮምፒውተር ይሰርሕ።"
+          },
+          {
+            "q": "ምርመራ AI ክሳብ ክንደይ ትኽክለኛ እዩ?",
+            "a": "ሞዴልና ኣብ 10 ዓይነታት ሕማም 93.7% ትኽክለኛነት ኣመዝጊቡ ኣሎ።"
+          }
+        ]
+      }
+    },
+    "analytics": {
+      "analytics_title": "ትንተናታትን ግንዛበታትን",
+      "analytics_sub": "ካብ ታሪኽ ምርመራኻ ዝወጽእ ብልህ ትንተና",
+      "total_scans": "ጠቕላላ ምርመራታት",
+      "disease_rate": "መጠን ሕማም",
+      "avg_conf": "ማእከላይ ርግፀኛነት",
+      "top_disease": "ዝለዓለ ሕማም",
+      "monthly_trend": "ኩነታት ወርሒ",
+      "crop_breakdown": "ሓፈሻዊ ርእይቶ ጥዕና",
+      "conf_distribution": "ደረጃታት ርግፀኛነት",
+      "no_analytics": "ክሳብ ሕጂ ዳታ የለን። ትንተና ንምርኣይ ምርመራ ጀምር።",
+      "tab_analytics_overview": "ሓፈሻዊ",
+      "tab_analytics_insights": "ምኽርታት AI",
+      "tab_analytics_trends": "ኩነታት",
+      "tab_analytics_location": "ቦታ"
+    },
+    "farm": {
+      "farm_title": "ኣካያዲ ሕርሻ",
+      "farm_sub": "ሕርሻታትካ ኣመሓድርን ዕብየት ዝራእትኻ ተኸታተልን።",
+      "farm_add": "ሕርሻ ወስኽ",
+      "farm_edit": "ኣስተኻኽል",
+      "farm_delete": "ሰርዝ",
+      "farm_name": "ስም ሕርሻ",
+      "farm_area": "ስፍሓት (ኣማራጭ)",
+      "farm_notes": "መዘክርታት",
+      "farm_crop": "ዓይነት ዝራእቲ",
+      "farm_stage": "ደረጃ ዕብየት",
+      "farm_name_ph": "ንኣብነት፦ ሰሜን ሕርሻ ቲማቲም",
+      "farm_area_ph": "ንኣብነት፦ 0.5 ሄክታር",
+      "farm_notes_ph": "ብዛዕባ እዚ ሕርሻ ዝኾነ መዘክር…",
+      "farm_not_scanned": "ክሳብ ሕጂ ኣይተመርመረን",
+      "farm_scan_btn": "ነዚ ዝራእቲ መርምር",
+      "farm_save": "ሕርሻ ዕቀብ",
+      "farm_cancel": "ሰርዝ",
+      "farm_empty_title": "ክሳብ ሕጂ ዝተወሰኸ ሕርሻ የለን",
+      "farm_empty_sub": "ጥዕና ዝራእቲ ንምክትታል ቀዳማይ ሕርሻ ወስኽ።",
+      "farm_add_first": "ቀዳማይ ሕርሻ ወስኽ",
+      "farm_delete_confirm": "እዚ ሕርሻ ይሰረዝ?",
+      "farm_saved": "ሕርሻ ተዓቂቡ",
+      "farm_updated": "ሕርሻ ተስተኻኺሉ",
+      "farm_deleted": "ሕርሻ ተሰሪዙ",
+      "farm_premium_limit": "ነጻ ኣገልግሎት 2 ሕርሻታት ጥራይ ይፈቅድ። ክሳብ 10 ንምርካብ ክብ ኣብልዎ።"
+    },
+    "bookmarks": {
+      "bookmarks_title": "ዝተዓቀቡ ትልምታት",
+      "bookmarks_saved": "ዝተዓቀቡ ትልምታት",
+      "bookmarks_feedback": "ርእይቶ",
+      "bookmarks_compare": "ቅድሚ / ድሕሪ",
+      "bookmarks_empty_title": "ዝተዓቀበ ትልሚ የለን",
+      "bookmarks_empty_sub": "ኣብ ዝኾነ ውጽኢት 'ትልሚ ዕቀብ' ብምጥዋቕ ኣብዚ ክትርእዩ ትኽእሉ ኢኹም።",
+      "bookmarks_remove": "ካብ መዝገብ ኣልግስ",
+      "bookmarks_view_guide": "መምርሒ ሕማማት ርአ →",
+      "compare_title": "ክልተ ምርመራታት ኣወዳድር",
+      "compare_sub": "ኩነታት ሕማም ንምክትታል ክልተ ምርመራታት ምረጽ።",
+      "compare_before": "ቅድሚ (ቀዳማይ ምርመራ)",
+      "compare_after": "ድሕሪ (ክትትል)",
+      "compare_select": "ምርመራ ምረጽ…",
+      "compare_same": "ኣብ ክልቲኦም ምርመራታት ተመሳሳሊ ሕማም",
+      "compare_different": "ዝተፈላለየ ውጽኢት ምርመራ",
+      "compare_reducing": "ጸቕጢ እቲ ሕማም ይጎድል ዘሎ ይመስል",
+      "compare_increasing": "ጸቕጢ እቲ ሕማም ይውስኽ ዘሎ ይመስል",
+      "feedback_empty_title": "ዝተላእከ ርእይቶ የለን",
+      "feedback_empty_sub": "ድሕሪ ምርመራ ትኽክለኛነት AI ንምምሕያሽ ርእይቶ ሃቡ።",
+      "feedback_clear": "ኩሉ ኣጽሪ"
+    },
+    "user": {
+      "user_greeting_morning": "ከመይ ሓዲርኩም",
+      "user_greeting_afternoon": "ከመይ ውዒልኩም",
+      "user_greeting_evening": "ከመይ ኣምሲኹም",
+      "user_free_plan": "ነጻ ኣገልግሎት",
+      "user_premium_plan": "ፕሪሚየም",
+      "user_scans_remaining": "ሎሚ {n} ምርመራታት ተሪፎም",
+      "user_unlimited": "ዘይተገደበ ምርመራ",
+      "profile_title": "ፕሮፋይልካ"
+    },
+    "notifications": {
+      "notif_copied": "ተቐዲሑ",
+      "notif_scan_saved": "ምርመራ ተዓቂቡ",
+      "notif_farm_saved": "ሕርሻ ተዓቂቡ",
+      "notif_feedback_sent": "ርእይቶ ተላኢኹ",
+      "notif_plan_saved": "ትልሚ ሕክምና ተዓቂቡ",
+      "alerts_title": "መጠንቀቕታታት",
+      "alerts_clear": "ኩሉ ኣጽሪ",
+      "alerts_unread": "{n} ዘይተነበዩ",
+      "alerts_empty": "ኩሉ ጸርዩ ኣሎ",
+      "alerts_empty_sub": "ኣብዚ ሕጂ እዋን መጠንቀቕታ የለን",
+      "alerts_urgent_badge": "{n} ህጹጽ",
+      "alerts_unread_sub": "{n} ዘይተነበዩ መጠንቀቕታታት",
+      "alerts_filter_all": "ኩሉ",
+      "alerts_filter_urgent": "🔴 ህጹጽ",
+      "alerts_filter_outbreak": "ምኽሳቲ ሕማም",
+      "alerts_filter_reminder": "መዘኻኸሪ",
+      "alerts_filter_weather": "ኩነታት ኣየር",
+      "alert1_title": "ምኽሳቲ ሕማም ዘንጊዩ ዝመጽእ ብላክ ተረኺቡ",
+      "alert1_body": "ኣብዚ ሰሙን 3 ናይ ቲማቲም ምርመራታት ሕማም ዘንጊዩ ዝመጽእ ብላክ ኣርእዮም ኣለዉ። ሕርሻኻ ፈትሽ።",
+      "alert2_title": "ግዜ ክትትል ሕክምና በጺሑ",
+      "alert2_body": "ካልኣይ ማንኮዜብ ንጸግ — ኣብ ሕርሻ ሀ ሕክምና ካብ ዝጅመር 7 መዓልቲ ኮይኑ ኣሎ።",
+      "alert3_title": "ሰሙናዊ መዘኻኸሪ ምርመራ",
+      "alert3_body": "ን5 መዓልታት ሕርሻ ቲማቲምካ ኣይመርመርካን። ልዑል ርጥበት ሓደጋ ይውስኽ።",
+      "alert4_title": "መጠንቀቕታ ሓደጋ ልዑል ርጥበት",
+      "alert4_body": "ኣብዚ ሰሙን ርጥበት ካብ 85% ንላዕሊ ክኸውን ትጽቢት ይግበር። ሓደጋ ሕማም ፈንገስ ልዑል እዩ።",
+      "alert5_title": "እዋናዊ ምኽሪ: እዋን ዝናብ",
+      "alert5_body": "ሕማማት ዋግን ብላክን ኣብ እዋን ዝናብ ይጋደዱ። ኣብ 3–5 መዓልቲ ዝራእትኻ ፈትሽ።"
+    },
+    "footer": {
+      "tagline": "ንሓረስቶት ኢትዮጵያ ብ AI ዝሰርሕ ምርመራ ሕማም ዝራእቲ",
+      "links": "ቅልጡፋት ሊንክታት",
+      "contact": "ርክብ",
+      "rights": "መሰሉ ብሕጊ ዝተሓለወ እዩ።",
+      "developed": "ብዩኒቨርሲቲ መቐለ – MIT ዝማበለ · ለካቲት 2026"
+    },
+    "treatment_labels": {
+      "cause_fungal": "ፈንገስ",
+      "cause_bacterial": "ባክቴሪያ",
+      "cause_pest": "ሓሸራ/ተባይ",
+      "cause_viral": "ቫይረስ",
+      "lbl_organic": "🌿 ተፈጥሮኣዊ / ኦርጋኒክ",
+      "lbl_chemical": "⚗ ኬሚካል (ምስ መጠን)",
+      "lbl_chemical_warning": "⚠ ኬሚካል ክትጥቀሙ ከለኹም ጓንትን ማስክን ግበሩ። መምርሒ ተኸተሉ።",
+      "organic_blight": "ኮፐር ሃይድሮክሳይድ 3g/L · ዘይቲ ኒም 5mL/L ኣብ ሰሙን ሓደ ግዜ",
+      "organic_rust": "ሰልፈር ፓውደር 3g/L · ዘይቲ ኒም 5mL/L",
+      "organic_mildew": "ፖታሲየም ባይካርቦኔት 5g/L · ቤኪንግ ሶዳ 4g/L + ዘይቲ ኒም 5mL/L",
+      "organic_spot": "ኮፐር ኦክሲክሎራይድ 3g/L · ቦርዶ ሚክስቸር 1%",
+      "organic_mold": "ዘይቲ ኒም 5mL/L · ትራይኮደርማ ባዮፔስቲሳይድ ብመሰረት መምርሒ",
+      "organic_virus": "ተፈጥሮኣዊ ሕክምና የብሉን። ነቲ ተኽሊ ንቐሎ። ተሸከምቲ ሓሸራታት ብዘይቲ ኒም ተኻላኸል።",
+      "organic_default": "ኮፐር-መሰረት ፈንገስ መጥፍኢ 3g/L · ዘይቲ ኒም 5mL/L ንመከላኸሊ",
+      "chemical_blight": "ማንኮዜብ 2.5g/L ወይ ሳይሞክሳኒል+ማንኮዜብ 2g/L · ኣብ 5–7 መዓልቲ ድገሞ",
+      "chemical_rust": "ቴቡኮናዞል 1mL/L ወይ ፕሮፒኮናዞል 1mL/L · ብ14 መዓልቲ ፍልልይ 2-3 ግዜ",
+      "chemical_mildew": "ትራይፍሎክሲስትሮቢን 0.5g/L ወይ ማይክሎቡታኒል 1g/L · ኣብ መጀመርታ ምልክት",
+      "chemical_spot": "ክሎሮታሎኒል 2g/L ወይ አዞክሲስትሮቢን 1mL/L · ኣብ ሰሙን ሓደ ግዜ",
+      "chemical_mold": "ክሎሮታሎኒል 2g/L · ኣየር ከምዝኣቱ ግበር። ኣብ 7 መዓልቲ ንጸግ።"
+    },
+    "encyclopedia": {
+      "enc_title": "ናይ ሕማም ኢንሳይክሎፔዲያ",
+      "enc_sub": "ናይ ሰብሊ ሕማማት ድለዩ",
+      "enc_search": "ሕማማት ድለዩ...",
+      "all_crops": "ኩሎም ሰብልታት",
+      "no_disease_found": "ዝኾነ ሕማም ኣይተረኽበን",
+      "enc_high": "ልዑል",
+      "enc_medium": "ማእከላይ",
+      "enc_low": "ትሑት",
+      "enc_fungal": "ፈንጋስ",
+      "enc_bacterial": "ባክቴሪያ",
+      "enc_viral": "ቫይረስ",
+      "symptoms": "ምልክታት",
+      "cause": "መኽንያት",
+      "treatment": "ሕክምና",
+      "prevention": "ምክልኻል",
+      "severity": "ክብደት"
+    },
+    "resultcard": {
+      "analysis_complete": "ትንታኔ ተዛዚሙ",
+      "btn_bookmark": "ዕቀብ",
+      "btn_bookmarked": "ተዓቂቡ",
+      "btn_new_scan2": "ሓድሽ ቅኝት",
+      "btn_report": "ናብ ወጻኢ ለኣኽ",
+      "btn_share": "ካፍሊ",
+      "feedback_btn_close": "ርእይቶ ዕጸፍ",
+      "feedback_btn_open": "ርእይቶ ሃብ",
+      "healthy_label": "✓ ጥዑይ",
+      "disease_label": "⚠ ሕማም ተረኺቡ",
+      "diagnosed_at": "ዝተመርመረሉ ሰዓት",
+      "confidence_score": "ናይ ርግጸኝነት ደረጃ",
+      "recommended_action": "ዝምከር ስጉምቲ",
+      "alt_predictions": "ካልኦት ትንበያታት",
+      "disclaimer": "እዚ ናይ AI ትንታኔ ኣብ ሓፈሻ ጥራይ እዩ። ንዝርዝር ምርመራን ናይ ሕክምና ውሳኔን ናይ ከባቢ ናይ ሕርሻ ኤክስፐርት ተወከስ።",
+      "tab_overview": "ሓፈሻዊ እይታ",
+      "tab_explain": "AI መብርሂ",
+      "tab_smart": "ስማርት ምኽሪ",
+      "tab_risk": "ናይ ሓደጋ ደረጃ",
+      "tab_treatment": "ሕክምና",
+      "tab_steps": "ስጉምትታት",
+      "unknown_crop": "ዘይፍለጥ ሰብሊ",
+      "severity_high": "ልዑል ሓደጋ",
+      "severity_medium": "ማእከላይ ሓደጋ",
+      "severity_low": "ትሑት ሓደጋ",
+      "step1": "ዝተለኽፉ ተኽልታት ወዲኡ ኣፈላሊ ምስፍሕፋሕ ንምክልኻል",
+      "step2": "ብርቱዕ ኢንፌክሽን ዘለዎ ቁሳቁስ ኣውጽኣዮ ኣወግዶ",
+      "step3": "ዝምከር ሕክምና ተግበር (ኬሚካል ወይ ኦርጋኒክ)",
+      "step4": "ኣብ ከባቢ ዘለዋ ተኽልታት ናይ ኢንፌክሽን ምልክታት ተኸታተሎ",
+      "step5": "ምሕዋይ ምስ መጸ ናይ ምክልኻል ስጉምትታት ቀጽሎ"
+    },
+    "community": {
+      "community_tab_feed": "ፊድ",
+      "community_tab_success": "ናይ ዓወት ዛዕባታት",
+      "community_tab_experts": "ናይ ኤክስፐርት ምኽርታት",
+      "community_all_crops": "ኩሎም ሰብልታት",
+      "community_worked": "ሰሪሑ",
+      "community_failed": "ኣይሰርሐን"
+    },
+    "diseases": {
+      "hero": {
+        "title": "ናይ ሕማም መምርሒ",
+        "subtitle": "ኣብ ኢትዮጵያ ሰብልታት ዝጸልዉ ሕማማት ዝርዝር — ምልክታት፣ ሕክምናን ምክልኻልን"
+      },
+      "search": "ሕማማት ድለዩ...",
+      "filter": {
+        "all": "ኩሎም ሰብልታት",
+        "wheat": "ስርናይ",
+        "maize": "ሽምብራ",
+        "tomato": "ቲማቲም",
+        "potato": "ድንሽ",
+        "pepper": "ፎሮ",
+        "teff": "ጣፍ",
+        "sorghum": "ሽምብራ"
+      },
+      "severity": {
+        "high": "ልዑል ሓደጋ",
+        "medium": "ማእከላይ ሓደጋ",
+        "low": "ትሑት ሓደጋ"
+      },
+      "labels": {
+        "symptoms": "ምልክታት",
+        "causes": "መኽንያታት",
+        "chemical": "ናይ ኬሚካል ሕክምና",
+        "organic": "ናይ ኦርጋኒክ ሕክምና",
+        "prevention": "ምክልኻል"
+      },
+      "list": [
+        {
+          "id": "wheat_leaf_rust",
+          "name": "ዋግ ቆጽሊ ስርናይ",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "ኣብ ላዕለዋይ ክፋል ቆጽሊ ወርቃዊ-ቡናዊ ሓሙኽሽቲ መሰል ነጠብጣባት። ቆጽሊ ብጫ ይኸውን ይነቅጽን።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ቴቡኮናዞል ወይ ፕሮፒኮናዞል ተጠቐሙ። ዝሓመሙ ኣወግዱ። ንሕማም ዝጻወሩ ዓሌታት ተጠቐሙ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ትከሉ። እቲ ዝራእቲ ኣይተጸቓጽቑ። ኣብ እዋን ርጥበት ተኸታተሉ።"
+        },
+        {
+          "id": "wheat_stem_rust",
+          "name": "ዋግ ጉንዲ ስርናይ",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "ኣብ ጉንድን ቆጽልን ጸሊም ቀይሕ-ቡናዊ ነጠብጣባት። ነቲ ጉንዲ ብምድኻም እቲ ዝራእቲ ንክወድቕ ይገብር።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ምልክት ምስ ተራእየ ፕሮፒኮናዞል ንጸግ። ዝተረጋገጸ ብሉጽ ዘርኢ ተጠቐም።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዘንጊኻ ምዝራእ ኣወግዱ።"
+        },
+        {
+          "id": "wheat_yellow_rust",
+          "name": "ቢጫ ዋግ ስርናይ",
+          "crop": "Wheat",
+          "severity": "medium",
+          "symptoms": "ኣብቲ ቆጽሊ ብመስመር ዝተደረደሩ ብጫ-ወርቃዊ ነጠብጣባት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ትራይፍሎክሲስትሮቢን ኣቐዲምኩም ተጠቐሙ። ካብ መጠን ንላዕሊ ናይ ናይትሮጅን ፍሩቅ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ኣብ ዝሑልን ርጥብን እዋን ብቐጻሊ ፈትሹ።"
+        },
+        {
+          "id": "northern_leaf_blight",
+          "name": "ሰሜናዊ ብላክ ቆጽሊ ዕፉን",
+          "crop": "Maize",
+          "severity": "high",
+          "symptoms": "ነዋሕቲ ቅርጺ ሲጋራ ዘለዎም ግራጫ-ቀጠልያ ምልክታት (5–15 ሴ.ሜ) ኣብቲ ቆጽሊ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ማንኮዜብ ወይ አዞክሲስትሮቢን ተጠቐሙ። ድሕሪ ምህርቲ ዝተረፈ ዝራእቲ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ዝጻወሩ ዓሌታት ተጠቐሙ። ተረፍ ፍርያት ቅበሩ።"
+        },
+        {
+          "id": "gray_leaf_spot",
+          "name": "ግራጫ ነጠብጣብ ቆጽሊ",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "ኣርባዕተ ኩርናዕ ቅርጺ ዘለዎም ግራጫማ ምልክታት ምስ ርሰር እቲ ቆጽሊ ትኹል ኮይኖም።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ዝጻወሩ ዓሌታት ተጠቐሙ። አዞክሲስትሮቢን ወይ ፕሮፒኮናዞል ንጸግ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ርሕቀት ተኽልታት ሓልዉ። ተረፍ ፍርያት ቅበሩ።"
+        },
+        {
+          "id": "common_rust",
+          "name": "ልሙድ ዋግ ዕፉን",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "ኣብ ክልቲኡ ሸነኽ እቲ ቆጽሊ ዘለዉ ቀይሕ ሓሙኽሽቲ መሰል ነጠብጣባት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "እንተበዚሑ ማንኮዜብ ወይ ክሎሮታሎኒል ተጠቐሙ። ዝጻወሩ ዓሌታት ትከሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ኣብ ዝሑልን ርጥብን እዋን ተኸታተሉ። ኣቐዲሞም ዝበጽሑ ዓሌታት ተጠቐሙ።"
+        },
+        {
+          "id": "sorghum_anthracnose",
+          "name": "አንትራክኖስ መሸላ",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "ኣብ ቆጽልን ጉንድን ቀይሕ ወይ ብጫ ክቢ ነጠብጣባት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ሕማም ዘይብሉ ዘርኢ ተጠቐሙ። ክሎሮታሎኒል ንጸግ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዝራእቲ ኣፈራርቑ። ኣይተጸቓጽቑ።"
+        },
+        {
+          "id": "sorghum_downy_mildew",
+          "name": "ጻዕዳ ኣረር መሸላ",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "ኣብ ትሕቲ እቲ ቆጽሊ ጻዕዳ ናይ ፈንገስ ዕብየት። ቆጽሊ ብጫ ይኸውን ዕብየት እውን ይዕገት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ዘርኢ ቅድሚ ምዝራእ ብሜታላክሲል ሕከሙ። ዝሓመሙ ንቐሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዘርኢ ሕከሙ። ሕማም ኣብ ዝነበረሉ ሕርሻ ኣይትዝርኡ።"
+        },
+        {
+          "id": "teff_leaf_spot",
+          "name": "ነጠብጣብ ቆጽሊ ጤፍ",
+          "crop": "Teff",
+          "severity": "low",
+          "symptoms": "ኣብ ቆጽሊ ንኣሽቱ ቡናዊ ነጠብጣባት። ቆጽሊ ክረግፍ ይኽእል እዩ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ኣየር ንክኣቱ ርሕቀት ተኽሊ ኣስተኻኽሉ። እንተበዚሑ ኮፐር-መሰረት መድሃኒት ንጸግ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ናይ ላዕሊ መስኖ ኣወግዱ። ማይ ዘይቋጽር ሓመድ ተጠቐሙ። ዝራእቲ ኣፈራርቑ።"
+        },
+        {
+          "id": "tomato_early_blight",
+          "name": "ቀዲሙ ዝመጽእ ብላክ ቲማቲም",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ኣብቶም ታሕተዎት ቆጽሊ ክቢ ቅርጺ ዘለዎም ጸለምቲ ቡናዊ ነጠብጣባት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ክሎሮታሎኒል ወይ ማንኮዜብ ተጠቐሙ። ታሕተዎት ቆጽሊ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ሓመድ ናብ ቆጽሊ ንከይነጽግ ኹትኳቶ ግበሩ።"
+        },
+        {
+          "id": "tomato_late_blight",
+          "name": "ዘንጊዩ ዝመጽእ ብላክ ቲማቲም",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "ብቕልጡፍ ናብ ቡናዊ ሕብሪ ዝቕየሩ ግራጫ-ቀጠልያ ምልክታት። ታሕቲ እቲ ቆጽሊ ጻዕዳ ፈንገስ። እቲ ፍረ ይበሰብሳ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸግ — ጣዕሚ ብቕልጡፍ ይዝርጋሕ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ቆጽሊ ልዕሊ ማይ ኣይተፍስሱ። ዝጻወሩ ዓሌታት ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።"
+        },
+        {
+          "id": "tomato_bacterial_spot",
+          "name": "ነጠብጣብ ባክቴሪያ ቲማቲም",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ኣብ ቆጽልን ፍረን ንኣሽቱ ጸለምቲ ማይ ዝመስሉ ነጠብጣባት።",
+          "causes": "ብናይ ባክቴሪያ ፓቶጅን ዝምጽእ ሕማም። ብዝናብ ርጭት ወይ ዝናቀቐ መሳርሒ ወይ ሕምብርቲ ይሰርጽ።",
+          "chemical": "ኮፐር-መሰረት መድሃኒት ንጸግ። ዝሓመሙ ጉንዲ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ጥዑይ ችግኝ ተጠቐሙ። ተኽልታት ርጥብ ኮይኖም ከለዉ ኣይትንከዩ። ዝራእቲ ኣፈራርቑ።"
+        },
+        {
+          "id": "tomato_leaf_mold",
+          "name": "ፈንገስ ቆጽሊ ቲማቲም",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ኣብ ላዕለዋይ ክፋል ቆጽሊ ብጫ ነጠብጣባት። ታሕተዋይ ክፋል ወይራ-ቀጠልያ ፈንገስ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ኣየር ንክኣቱ ግበሩ። ክሎሮታሎኒል ወይ ኮፐር ንጸግ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ርሕቀት ሓልዉ። ርጥበት ካብ 85% ንታሕቲ ንክኸውን ግበሩ።"
+        },
+        {
+          "id": "septoria_leaf_spot",
+          "name": "ነጠብጣብ ቆጽሊ ሰፕቶሪያ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ጸሊም ወሰን ዘለዎም ብዙሓት ንኣሽቱ ክቢ ነጠብጣባት።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ክሎሮታሎኒል ወይ ማንኮዜብ ተጠቐሙ። ዝሓመሙ ቆጽሊ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ሓመድ ንከይነጽግ ኹትኳቶ ግበሩ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        },
+        {
+          "id": "spider_mites",
+          "name": "ቀይሕ ሸረሪት ተባይ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ንኣሽቱ ብጫ ወይ ጻዕዳ ነጠብጣባት። ታሕቲ እቲ ቆጽሊ ዓለባ። ቆጽሊ ይነቅጹ።",
+          "causes": "ብቀይሕ ሸረሪት ተባይ ዝምጽእ ጉዳት። ኣብ ሙቀት ደረቕ ኩነታት ይበዝሕ።",
+          "chemical": "አባሜክቲን ወይ ቢፈናዜት ተጠቐሙ። ዘይቲ ኒም እውን ይሕግዝ። ርጥበት ወስኹ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ብጽቡቕ ማይ ሃቡ። መጥቃዕቲ ዝገብሩ ሓሸራታት ኣእትዉ። ሓሙኽሽታም ኩነታት ኣወግዱ።"
+        },
+        {
+          "id": "yellow_leaf_curl_virus",
+          "name": "ቫይረስ ጥቅል ብጫ ቆጽሊ",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "ቆጽሊ ንላዕሊ ምጥቕላልን ምገርጣትን። ዕብየት ምዕጋት። ዕምበባ ይረግፍ።",
+          "causes": "ብቫይረስ ፓቶጅን ዝምጽእ ሕማም። ብናይ ጾምቢ ሸረሪት ይሰርጽ።",
+          "chemical": "ፈውሲ የብሉን። ዝሓመሙ ሕጂ ኣወግዱ። ጻዕዳ ዝንቢታት ተኻላኸሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ሓሸራ ዘየእቱ መርበብ ተጠቐሙ።"
+        },
+        {
+          "id": "tomato_mosaic_virus",
+          "name": "ቫይረስ ሞዛይክ ቲማቲም",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "ኣብ ቆጽሊ ቀሊልን ጸሊምን ቀጠልያ ዝተሓወሰ ምልክት።",
+          "causes": "ብቫይረስ ፓቶጅን ዝምጽእ ሕማም። ብናይ ጾምቢ ሸረሪት ይሰርጽ።",
+          "chemical": "ፈውሲ የብሉን። ነቲ ተኽሊ ኣወግድ። መሳርሒታት ብኬሚካል ኣጽሪ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ቅድሚ ምትንካይኩም ኢድኩም ተሓጸቡ።"
+        },
+        {
+          "id": "tomato_target_spot",
+          "name": "ታርጌት ስፖት ቲማቲም",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ክቢ ቅርጺ ዘለዎም ቡናዊ ነጠብጣባት። ብዘይ ግዜኡ ቆጽሊ ምርጋፍ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ክሎሮታሎኒል ወይ አዞክሲስትሮቢን ተጠቐሙ። ዝተሃሰዩ ቆጽሊ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ነቲ ተኽሊ ብምእሳር ኣየር ንክኣቱ ግበሩ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        },
+        {
+          "id": "potato_early_blight",
+          "name": "ቀዲሙ ዝመጽእ ብላክ ድንች",
+          "crop": "Potato",
+          "severity": "medium",
+          "symptoms": "ኣብቶም ናይ ነዊሕ ግዜ ቆጽሊ ቡናዊ ነጠብጣባት ምስ ብጫ ሕብሪ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ክሎሮታሎኒል ወይ ማንኮዜብ ንጸግ። ፖታሲየም ዘለዎ ፍሩቅ ተጠቐም።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ኹትኳቶ ግበሩ። ማይ ንከይውሕዶ ግበሩ።"
+        },
+        {
+          "id": "potato_late_blight",
+          "name": "ዘንጊዩ ዝመጽእ ብላክ ድንች",
+          "crop": "Potato",
+          "severity": "high",
+          "symptoms": "ጸለምቲ ማይ ዝመስሉ ምልክታት። ታሕቲ እቲ ቆጽሊ ጻዕዳ ፈንገስ። እቲ ድንች ይበሰብሳ።",
+          "causes": "ብናይ ፈንጋስ ፓቶጅን ዝምጽእ ሕማም። ኣብ ሙቀትን ርጥብን ኩነታት ፍጥነት ይሰርጽ።",
+          "chemical": "ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸግ። ዝሓመሙ ኣወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ጥዑይ ዘርኢ ድንች ተጠቐሙ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        }
+      ]
+    }
+  },
+  "components": {
+    "aiChat": {
+      "window_title": "ረዳኢ CropGuard AI",
+      "status_thinking": "ይሓስብ ኣሎ…",
+      "status_online": "ኣብ መስመር · EN / AM / TI",
+      "btn_clear": "ኣጽሪ",
+      "btn_close_aria": "ዕጸው",
+      "suggestions_label_en": "Try asking",
+      "suggestions_label_am": "ጥያቄ ሀሳቦች",
+      "suggestions_label_ti": "ሕቶታት",
+      "language_hint_en": "Type in English, Amharic (አማርኛ), or Tigrinya (ትግርኛ)",
+      "language_hint_am": "በአማርኛ፣ ትግርኛ ወይም እንግሊዝኛ ይጻፉ",
+      "language_hint_ti": "ብትግርኛ፣ ኣምሓርኛ ወይ እንግሊዘኛ ጽሓፍ",
+      "input_placeholder_en": "Describe your crop problem…",
+      "input_placeholder_am": "የሰብልዎን ችግር እዚህ ይግለጹ…",
+      "input_placeholder_ti": "ሕቶኻ ጽሓፍ…",
+      "footer_disclaimer_en": "Enter to send · AI may make mistakes — consult an expert for critical decisions",
+      "footer_disclaimer_am": "Enter ለመላክ · AI ስህተት ሊሰራ ይችላል — ለከባድ ውሳኔዎች ባለሙያ ያማክሩ",
+      "footer_disclaimer_ti": "Enter ን ሰደድ · AI ኩሉ ግዜ ቅኑዕ ኣይኮነን — ምስ ሙኩር ክትዘራረብ",
+      "greeting_en": "Hello! I'm Sage, your CropGuard AI agricultural assistant. I can help with crop diseases, pests, soil health, fertilizers, irrigation, and farming best practices. What can I help you with today?",
+      "greeting_am": "ሰላም! እኔ ሴጅ ነኝ፣ የእርስዎ የ CropGuard AI እርሻ ረዳት። ስለ ሰብል በሽታዎች፣ ተባዮች፣ ማዳበሪያ እና ስለ እርሻ ስራዎች ልረዳዎ እችላለሁ። ዛሬ በምን ልርዳዎ?",
+      "greeting_ti": "ሰላም! ኣነ ሴጅ እየ፣ ናይ CropGuard AI ናይ ሕርሻ ምኽሪ ሃቢ። ብዛዕባ ሕማም ሕርሻ፣ ኣባ ጎሮ፣ ፍሩቅ ወይ ካሊእ ሕቶ ኣለካ? ሓግዘካ ኢየ።",
+      "chat_cleared_message": "ዕላል ተሰሪዙ ኣሎ። ብምንታይ ክሕግዘካ?",
+      "connection_error": "ጌጋ ርክብ። በጃኹም ኢንተርኔትኩም ፈትሹ።",
+      "response_fallback": "መልሲ ክህብ ኣይከኣልኩን። በጃኹም ደጊምኩም ፈትኑ።",
+      "connection_error_response": "ጌጋ ርክብ። በጃኹም ደጊምኩም ፈትኑ።",
+      "open_chat_bubble": "ሰላም! ሓገዝ ትደሊ?",
+      "chat_placeholder": "ብዛዕባ ሕማማት፣ ሕክምናታት ሕተት…",
+      "suggestions": {
+        "en": [
+          "My maize leaves are turning yellow",
+          "How do I treat tomato late blight?",
+          "What fertilizer is best for teff?",
+          "My wheat has rust spots"
+        ],
+        "am": [
+          "የበቆሎ ቅጠሎቼ ወደ ቢጫነት እየተቀየሩ ነው",
+          "የቲማቲም የዘገየ ብላክ በሽታን እንዴት ማከም እችላለሁ?",
+          "ለጤፍ የሚመረጠው ማዳበሪያ ምንድነው?",
+          "ስንዴዬ ላይ የዝገት ነጠብጣቦች አሉ"
+        ],
+        "ti": [
+          "ናይ ዕፉን ቅጠሉ ቢጫ ይኸውን ኣሎ",
+          "ናይ ቲማቲም ሕማም ብኸመይ ይፍወስ?",
+          "ንጤፍ ዝሓሸ ፍሩቅ ኣየናይ እዩ?",
+          "ሕርሻ ናይ ስርናይ ዝምቡዕ ኣለዎ"
+        ]
+      }
+    },
+    "resultCard": {
+      "analysis_complete": "ትንተና ተዛዚሙ",
+      "btn_new_scan": "ሓድሽ ምርመራ",
+      "btn_share": "ኣካፍል",
+      "btn_report": "ሪፖርት ግበር",
+      "btn_save_plan": "ትልሚ ዕቀብ",
+      "btn_saved_plan": "ተዓቂቡ",
+      "healthy_label": "✓ ጥዑይ ተኽሊ",
+      "disease_label": "⚠ ሕማም ተረኺቡ",
+      "confidence_score": "መጠን ርግፀኛነት",
+      "recommended_action": "ዝምከር ሕክምና",
+      "alt_predictions": "ካልኦት ክኾኑ ዝኽእሉ",
+      "severity_high": "🔴 ከቢድ",
+      "severity_medium": "🟡 ማእከላይ",
+      "severity_low": "🟢 ቀሊል",
+      "disclaimer": "እዚ ብ AI ዝተሓገዘ ናይ መጀመርታ ምርመራ ጥራይ እዩ። ንከቢድ ኩነታት ክኢላ ግብርና ኣማኽሩ።",
+      "diagnosed_at": "ዝተመርመረሉ ግዜ",
+      "unknown_crop": "ዘይተፈልጠ",
+      "export_header": "CROPGUARD AI",
+      "export_fields": {
+        "confidence_score": "መጠን_ርግፀኛነት",
+        "analysis_complete": "ትንተና_ተዛዚሙ",
+        "alt_predictions": "ካልኦት_ክኾኑ_ዝኽእሉ",
+        "disclaimer": "መጠንቀቕታ",
+        "diagnosed_at": "ዝተመርመረሉ_ግዜ",
+        "healthy_label": "ምልክት_ጥዕና",
+        "disease_label": "ምልክት_ሕማም",
+        "recommended_action": "ዝምከር_ሕክምና"
+      },
+      "tab_overview": "ሓፈሻዊ",
+      "tab_explain": "ንምንታይ እዚ ኮይኑ?",
+      "tab_smart": "ብልህ ትልሚ",
+      "tab_risk": "ሓደጋን ጽልዋን",
+      "tab_treatment": "ሕክምና",
+      "tab_steps": "ቀጻሊ ስጉምትታት"
+    },
+    "feedbackPanel": {
+      "step1_title": "እዚ ምርመራ ትኽክል ነይሩ?",
+      "step1_subtitle": "ርእይቶኹም ንሞዴል AI ንኩሎም ሓረስቶት ንምምሕያሽ ይሕግዝ።",
+      "btn_correct": "እወ፣ ትኽክል እዩ",
+      "btn_wrong": "ኣይፋል፣ ጌጋ እዩ",
+      "btn_unsure": "ርግፀኛ ኣይኮንኩን",
+      "step2_title_correct": "ጣዕሚ ጽቡቕ! ተወሳኺ መዘክር ኣለኩም?",
+      "step2_title_wrong": "እቲ ትኽክለኛ ሕማም እንታይ ነይሩ?",
+      "ai_diagnosed_prefix": "AI ዝመርመሮ፦",
+      "placeholder_wrong": "ንኣብነት፦ ናይ ቲማቲም ቀዲሙ ዝመጽእ ብላክ ነይሩ እምበር ዘንጊዩ ዝመጽእ ኣይኮነን...",
+      "placeholder_correct": "ብዛዕባ ምልክታት፣ ኩነታት ሕርሻ ወይ ዝተጠቐምኩምሉ ሕክምና መዘክር...",
+      "treatment_q": "እቲ ዝተመከረ ሕክምና ሰሪሑ? (ኣማራጭ)",
+      "treatment_worked": "✅ እወ፣ ሰሪሑ",
+      "treatment_partial": "⚡ ብክፋል",
+      "treatment_didnt": "❌ ምንም ለውጢ የለን",
+      "upload_followup": "ምስሊ ክትትል ጽዓን (ኣማራጭ)",
+      "uploading": "ይዕቅብ ኣሎ...",
+      "btn_skip": "ንሕጂ ይለፍ",
+      "btn_submit": "ርእይቶ ስደድ",
+      "submitting": "ይሰድድ ኣሎ…",
+      "step3_title": "ንርእይቶኹም ነመስግን!",
+      "step3_subtitle": "ርእይቶኹም ተላኢኹ ኣሎ፤ እዚ ድማ ትኽክለኛነት AI ንምምሕያሽ ዓቢ ግደ ኣለዎ።",
+      "btn_close": "ዕጸው",
+      "toast_submitted": "ነመስግን! ርእይቶኹም ን AIና የማሕይሾ።",
+      "toast_followup_saved": "ምስሊ ክትትል ንገምጋም ተዓቂቡ ኣሎ",
+      "toast_skipped": "ርእይቶ ተዘሊሉ ኣሎ።",
+      "feedback_correct": "እወ፣ ትኽክል እዩ",
+      "feedback_wrong": "ኣይፋል፣ ጌጋ እዩ",
+      "feedback_unsure": "ርግፀኛ ኣይኮንኩን",
+      "feedback_treatment_q": "እቲ ዝተመከረ ሕክምና ሰሪሑ?",
+      "feedback_worked": "ሰሪሑ",
+      "feedback_partial": "ብክፋል",
+      "feedback_didnt": "ምንም ለውጢ የለን",
+      "feedback_skip": "ንሕጂ ይለፍ",
+      "feedback_submit": "ርእይቶ ስደድ",
+      "feedback_thanks": "ንርእይቶኹም ነመስግን!",
+      "feedback_thanks_sub": "መልስኹም ንኩሎም ሓረስቶት ትኽክለኛነት AI ንምምሕያሽ ይሕግዝ።",
+      "feedback_was_correct": "እዚ ምርመራ ትኽክል ነይሩ?",
+      "feedback_note_ph_wrong": "ንኣብነት፦ ትኽክለኛ ናይ ቲማቲም ቀዲሙ ዝመጽእ ብላክ ነይሩ…",
+      "feedback_note_ph_right": "ብዛዕባ ምልክታት፣ ኩነታት ወይ ዝተጠቐምኩምሉ ሕክምና መዘክር…"
+    },
+    "smartRecommendation": {
+      "no_action_title": "✅ ምንም ዓይነት ስጉምቲ ኣየድልይን",
+      "no_action_desc": "እቲ ዝራእቲ ጥዑይ ይመስል። ሓደጋ ክህሉ ኣብ ዝኽእል እዋናት ኣብ 3–5 መዓልቲ ምክትታልኩም ቀጽሉ።",
+      "severity_label_suffix": " መጠን መጥቃዕቲ",
+      "act_label": "⏱ ስጉምቲ፦",
+      "priority_label": "ቀዳምነት",
+      "stage_aware_prefix": "ኣብ ደረጃ ዕብየት ዝተመርኮሰ፦",
+      "recommended_approach": "ዝምከር ኣገባብ፦",
+      "organic_approach": "🌿 ብተፈጥሮኣዊ ጀምር",
+      "chemical_approach": "⚗ ብኬሚካል ይሕከም",
+      "no_treatment_approach": "⛔ ምህርቲ ክእከብ ስለዝኾነ ሕክምና ኣይተካይዱ",
+      "escalation_title": "📋 ቅደም ተኸተል ሕክምና",
+      "tip_add_farm": "💡 ፍንጭ፦ ንዝበለጸ ትኽክለኛ ምኽሪ ነዚ ዝራእቲ ምስ ደረጃ ዕብየቱ ኣብ ኣካያዲ ሕርሻ ወስኾ።",
+      "crop_note_prefix": "🌾 መዘክር {crop}፦",
+      "severity_actions": {
+        "high": {
+          "urgency": "ሕጂ (ኣብ ውሽጢ 24 ሰዓት)",
+          "escalation": "ኬሚካል",
+          "label": "🔴 ጣዕሚ ከቢድ"
+        },
+        "medium": {
+          "urgency": "ብቕልጡፍ (ኣብ ውሽጢ 3 መዓልቲ)",
+          "escalation": "መጀመሪያ ተፈጥሮኣዊ፣ ኣብ 5 መዓልቲ ለውጢ እንተዘይመጹ ናብ ኬሚካል",
+          "label": "🟡 ማእከላይ"
+        },
+        "low": {
+          "urgency": "ኣብዚ ሰሙን",
+          "escalation": "ተፈጥሮኣዊ ጥራይ",
+          "label": "🟢 ቀሊል"
+        }
+      },
+      "stage_strategies": {
+        "Seedling": "ተኽልታት ድኹማት ስለዝኾኑ ሓያላት ኬሚካላት ኣወግዱ። ተፈጥሮኣዊ ኣማራጺታት ንዚ ደረጃ ይምረጹ።",
+        "Vegetative": "መጀመርታ ደረጃ ዕብየት — ብተፈጥሮኣዊ ጀምሩ። ሕማም ካብ 25% ንላዕሊ እንተተዘርጊሑ ጥራይ ናብ ኬሚካል ሕለፉ።",
+        "Flowering": "እዋን ዕምበባ — ንህቢ ንምሕላው ኣጠቓቕማ ኬሚካል ቀንሱ። ሕክምና ምሸት ግበሩ።",
+        "Fruiting": "እዋን ፍረ — ኬሚካል ከድሊ ይኽእል እዩ ግን ቅድሚ ምእካብ ምህርቲ ዘሎ ግዜ ብጥንቃቐ ተኸታተሉ።",
+        "Harvest": "ከባቢ ምህርቲ — ዝኾነ ኬሚካል ኣወግዱ። ጥዑያት ዝኾኑ ክፋላት ኣቐዲምኩም እከቡ።",
+        "Dormant": "እዋን ዕረፍቲ — ንመከላኸሊ ሕክምና ኬሚካልን ጨንፈር ንምቑራጽን ግቡእ ግዜ እዩ።"
+      },
+      "crop_notes": {
+        "Tomato": "ቲማቲም ንተፈላለዩ ሕማማት ተቓላዕቲ እዮም። ኣብ እዋን ርጥበት ኣብ ሰሙን ክልተ ግዜ ተኸታተሉ።",
+        "Corn": "ሕማማት ዕፉን ብቕልጡፍ ይዝርግሑ። ምልክታት ምስ ተራእዩ ንምሉእ ሕርሻ ፈትሹ።",
+        "Apple": "ሕማማት ቱፋሕ ካብ ዕምበባ ጀሚሮም መከላኸሊ መድሃኒታት ይሓትቱ።",
+        "Grape": "ወይኒ ንሕማም ፈንገስ ጣዕሚ ተቓላዓይ እዩ። ቆጽሊ ምትኽኻል ቁልፊ እዩ።",
+        "Potato": "ኣብ ድንች ዘጋጥም ዘንጊዩ ዝመጽእ ብላክ ንምሉእ ምህርቲ ኣብ ውሑዳት መዓልታት ከጥፍኦ ይኽእል እዩ። ሕጂ ስጉምቲ ውሰዱ።",
+        "Pepper": "ኣብ በርበረ ዘጋጥሙ ናይ ባክቴሪያ ሕማማት ብማይ ኣቢሎም ይዝርግሑ — ናይ ላዕሊ መስኖ ኣወግዱ።",
+        "Peach": "ንነጠብጣብ ባክቴሪያ ፒች — ንመጻኢ ንሕማም ዝጻወሩ ዓሌታት ተጠቐሙ።",
+        "Strawberry": "ሕማማት እንጆሪ መብዛሕትኡ ግዜ ምስ ምቑራጽ ማይን ሕጽረት ንፋስን ዝተተሓሓዙ እዮም።",
+        "Squash": "ናይ ዱባ ኣረር ቀዲሙ እንተተጀሚሩ ብተፈጥሮኣዊ ሕክምናታት ጽቡቕ ይስተኻኸል እዩ።",
+        "Orange": "ንመገርጣት ብርቱካን (Greening) ምንም ፈውሲ የብሉን — ትኹረት ኣብ ምክልኻል ክኸውን ኣለዎ።",
+        "default": "ንዝበለጸ ውጽኢት ዝተዋደዱ ኣገባባት ምክልኻል ሓሸራ ተኸተሉ።"
+      },
+      "steps": {
+        "medium_low": [
+          {
+            "icon": "🌿",
+            "label": "ብተፈጥሮኣዊ ጀምር",
+            "desc": "ዘይቲ ኒም ወይ ኮፐር-መሰረት ተፈጥሮኣዊ መድሃኒት ተጠቐም። ን5 መዓልታት ተኸታተል።"
+          },
+          {
+            "icon": "⚗",
+            "label": "ኣድላዪ እንተኾይኑ ወስኽ",
+            "desc": "ድሕሪ 5 መዓልታት ለውጢ እንተዘይመጹ ናብ {escalation} ሕለፍ።"
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "ክኢላ ኣማኽር",
+            "desc": "ሕክምና እንተተገብረ እውን ኩነታት እናገደደ እንተኸይዱ ክኢላ ግብርና ኤክስቴንሽን ኣዘራርብ።"
+          }
+        ],
+        "high": [
+          {
+            "icon": "🚨",
+            "label": "ህጹጽ ሕክምና ኬሚካል",
+            "desc": "መጠን መጥቃዕቲ ከቢድ ስለዝኾነ ተፈጥሮኣዊ ኣማራጺታት ክዘንጉ ይኽእሉ እዮም። ኣብ 24 ሰዓት ውሽጢ ፈንገስ መጥፍኢ ንጸግ።"
+          },
+          {
+            "icon": "🔒",
+            "label": "ፈሊኻ ምውጻእ",
+            "desc": "ጣዕሚ ዝተሃሰዩ ክፋላት ሕጂ ነቒልካ ኣውጽእ።"
+          },
+          {
+            "icon": "📅",
+            "label": "ምርመራ ክትትል ኣብ 7 መዓልቲ",
+            "desc": "ውጽኢታውነት እቲ ሕክምና ን ምርግጋጽ ደጊምካ መርምር።"
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "ንቢሮ ግብርና ሓብር",
+            "desc": "ከበድቲ ምኽሳቲ ሕማም ኣብቲ ከባቢ ንክፍለጡ ሪፖርት ክግበሩ ኣለዎም።"
+          }
+        ]
+      }
+    },
+    "explainPanel": {
+      "section_confidence": "🎯 ብዛዕባ መጠን ርግፀኛነት መብርሂ",
+      "section_ai_detected": "🔬 AI ኣብዚ ቆጽሊ ዝረኸቦ",
+      "section_how_ai_works": "⚙ AI ከመይ ኢሉ ናብዚ ውጽኢት በጺሑ",
+      "limitations_notice": "⚠ ደረት፦ ትኽክለኛነት AI ኣብ ጽሬት ፎቶ፣ ብርሃንን ደረጃ ዕብየት ዝራእትን ዝተመርኮሰ እዩ። ኣብ መጀመርታ ደረጃ ዘለዉ ሕማማት መጠን ርግፀኛነቶም ክጎድል ይኽእል እዩ። ከበድቲ ምርመራታት ኩልግዜ ምስ ክኢላ ኣረጋግጹ።",
+      "margin_strong": "— ካብ ካልኦት ኣማራጺታት ብንጹር ዝተፈለየ።",
+      "margin_weak": "— ንምርግጋጽ ዝሓሸ ፎቶ ምልዓል ሕሰቡሉ።",
+      "margin_prefix": "📊 ካብቲ ካልኣይ ኣማራጺ የ {margin}% ፍልልይ ኣለዎ",
+      "model_trained_note": "🏋 ሞዴል ብ54,305 ምስልታት ቆጽሊ ዝሰልጠነ እዩ። ዝተሓለመ ትኽክለኛነት፦ ≥85%።",
+      "step_label": "ደረጃ {n}",
+      "confidence_levels": {
+        "high": {
+          "label": "ጣዕሚ ልዑል ርግፀኛነት",
+          "text": "AI ድልዱል ምርኣያዊ ሓበሬታ ረኺቡ ኣሎ። ምልክታት እቲ ሕማም ብንጹር ዝርኣዩን ምስ ዝተፈልጡ ኩነታት ዝሰማምዑን እዮም።"
+        },
+        "good": {
+          "label": "ልዑል ርግፀኛነት",
+          "text": "ንጹር ምርኣያዊ ሓበሬታ ተረኺቡ ኣሎ። ቀንዲ ምልክታት ምስዚ ሕማም ጽቡቕ ይተሓሓዙ።"
+        },
+        "medium": {
+          "label": "ማእከላይ ርግፀኛነት",
+          "text": "ክፋል ሓበሬታ ተረኺቡ ኣሎ። ገለ ምልክታት እንተሃለዉ እውን ጽሬት ፎቶ ወይ መጀመርታ ሕማም ምዃኑ ጥርጣሬ ፈጢሩ ኣሎ።"
+        },
+        "low": {
+          "label": "ትሑት ርግፀኛነት",
+          "text": "ውሑድ ሓበሬታ። እቲ ሞዴል ክኾኑ ዝኽእሉ ምልክታት እንተረኣየ እውን ዝሓሸ ፎቶ ንክለዓል ወይ ክኢላ ንክማኸር ብጥብቂ ይምክር።"
+        }
+      },
+      "visual_cues": {
+        "blight": [
+          "ጸለምቲ ነጠብጣባት ምስ ክቢ መስመራት",
+          "ኣብ ዙርያ እቶም ነጠብጣባት ብጫ ሕብሪ",
+          "ኣብቲ ታሕተዋይ ናይ ነዊሕ ግዜ ቆጽሊ ይጅምር",
+          "ኣብ እዋን ርጥበት ብቕልጡፍ ይዝርጋሕ"
+        ],
+        "rust": [
+          "ወርቃዊ-ቡናዊ ሓሙኽሽቲ መሰል ምልክታት",
+          "ኣብቲ ቆጽሊ ዝተበተኑ ነጠብጣባት",
+          "እቶም ነጠብጣባት ተኸፊቶም ብናኝ ይወጾም",
+          "ኣብ ዙርያ እቶም ነጠብጣባት ምገርጣት ቆጽሊ"
+        ],
+        "mildew": [
+          "ጻዕዳ ሓሙኽሽቲ መሰል ሽፋን ኣብቲ ቆጽሊ",
+          "መጀመሪያ ንሓደስቲ ቆጽሊ የጥቅዕ",
+          "ቆጽሊ ምጥቕላልን ቅርጺ ምስኣንን",
+          "ብኢድ ክትንከፍ ከሎ ዝለቅቕ ጻዕዳ ብናኝ"
+        ],
+        "spot": [
+          "ንኣሽቱ ክቢ ነጠብጣባት",
+          "ጸሊም ወሰንን ማእከሉ ግራጫን",
+          "ኣብ ሓደ ቆጽሊ ብዙሓት ነጠብጣባት",
+          "ኣብ ዙርያ እቶም ነጠብጣባት ብጫ ሕብሪ"
+        ],
+        "mold": [
+          "ኣብ ላዕለዋይ ክፋል ብጫ ነጠብጣባት",
+          "ኣብ ታሕተዋይ ክፋል ወይራ-ቀጠልያ ናይ ፈንገስ ሽፋን",
+          "ልዑል ርጥበት ይደሊ",
+          "ኣብ ናይ ነዊሕ ግዜ ቆጽሊ ይጅምር"
+        ],
+        "virus": [
+          "ቀሊልን ጸሊምን ቀጠልያ ዝተሓወሰ ሕብሪ",
+          "ቆጽሊ ምጥቕላልን ቅርጺ ምስሓትን",
+          "ዕብየት ተኽሊ ምዕጋት",
+          "ሓደስቲ ቆጽሊ ብጫ ምዃን"
+        ],
+        "mites": [
+          "ንኣሽቱ ብጫ ነጠብጣባት",
+          "ኣብ ትሕቲ እቲ ቆጽሊ ቀጥን ዓለባ",
+          "ቆጽሊ ምድረቕን ምገርጣትን",
+          "ቆጽሊ ብዘይ ግዜኡ ምርጋፍ"
+        ],
+        "default": [
+          "ኣብ ሻርባ እቲ ቆጽሊ ለውጢ ተረኺቡ ኣሎ",
+          "ፍልልይ ሕብሪ ካብቲ ጥዑይ ክፋል",
+          "ጉድኣት መዋቕር ቆጽሊ ይርአ ኣሎ",
+          "ኣቀማምጥኡ ምስ ዝተፈልጡ ሕማማት ይተሓሓዝ"
+        ]
+      },
+      "model_steps": [
+        {
+          "icon": "🔲",
+          "label": "ቆጽሊ ምፍላጥ",
+          "desc": "እቲ ሞዴል ነቲ ቆጽሊ ካብ ድሕሪኡ ፈሊዩ ኣውጺኡዎ"
+        },
+        {
+          "icon": "🎨",
+          "label": "ትንተና ሕብሪ",
+          "desc": "ዘይተለምዱ ምልክታት ሕብሪ ፈሊዩ"
+        },
+        {
+          "icon": "🔍",
+          "label": "ትንተና ቅርጺ",
+          "desc": "ቅርጺ፣ ዓቐንን ዝርገሐን እቶም ነጠብጣባት መርሚሩ"
+        },
+        {
+          "icon": "📊",
+          "label": "ምስ ሓበሬታ ምውድዳር",
+          "desc": "ምስ 54,305 ምስልታት ስልጠና ኣወዳዲሩዎ"
+        },
+        {
+          "icon": "🧠",
+          "label": "ውጽኢት ምሃብ",
+          "desc": "ክኾኑ ዝኽእሉ 38 ሕማማት ብደረጃ ኣቐሚጡዎም"
+        }
+      ]
+    },
+    "riskScorePanel": {
+      "section_projected_yield": "📉 ሕክምና እንተዘይተገይሩ ክጠፍእ ዝኽእል ምህርቲ",
+      "potential_loss_suffix": "ክጠፍእ ዝኽእል",
+      "early_treatment_note": "💡 ብቕድመ ሕክምና፦ ቅልጡፍ ስጉምቲ ብምውሳድ ብክነት ምህርቲ ናብ {min}–{max}% ምቕናስ ይከኣል።",
+      "repeat_detection": "🔁 ተደጋጋሚ ግኝት፦ እዚ ሕማም ኣብዚ ቀረባ ግዜ ኣብ {n} ምርመራታት ተራእዩ ኣሎ። እዚ ድማ ኣብ ሕርሻኻ ጸቕጢ ሕማም ከምዘሎ የርእይ — ፍተሻኻ ኣስፍሕ።",
+      "score_cards": {
+        "healthy_risk_label": "ደረጃ ሓደጋ ዝራእቲ",
+        "healthy_risk_value": "ትሑት",
+        "healthy_risk_sub": "ምንም ሕማም ኣይተረኸበን",
+        "healthy_yield_label": "ኣብ ምህርቲ ዝህልዎ ጽልዋ",
+        "healthy_yield_value": "~0%",
+        "healthy_yield_sub": "ምንም ዝጠፍእ ምህርቲ የለን",
+        "risk_score_label": "መጠን ሓደጋ",
+        "yield_loss_label": "ብክነት ምህርቲ (ብዘይ ሕክምና)",
+        "yield_loss_sub": "ግምት",
+        "priority_label": "ቀዳምነት ሕክምና",
+        "priority_first": "ነዚ መጀመሪያ ሕከም",
+        "priority_order": "ብቕደም ተኸተል ሕከም"
+      },
+      "gauge_labels": {
+        "crop_health_risk": "ሓደጋ ጥዕና ዝራእቲ",
+        "minimal": "ጣዕሚ ኣነስተኛ",
+        "low": "ትሑት",
+        "moderate": "ማእከላይ",
+        "critical": "ከቢድ"
+      },
+      "risk_labels": {
+        "critical": "ከቢድ",
+        "moderate": "ማእከላይ",
+        "low": "ትሑት",
+        "minimal": "ጣዕሚ ኣነስተኛ"
+      },
+      "yield_impact_notes": {
+        "blight": "ሕማማት ብላክ ሕክምና እንተዘይተገይሩሎም ምህርቲ ምሉእ ብምሉእ ከጥፍኡ ይኽእሉ እዮም።",
+        "rust": "ሕማማት ዋግ ጽሬትን ዓቐንን እቲ ዝራእቲ ይቕንሱ።",
+        "mildew": "ሕማም ኣረር ዓቕሚ እቲ ተኽሊ ምግቢ ናይ ምድላው ሓይልን ጽሬት ፍረን ይሃሲ።",
+        "spot": "ነጠብጣባት ቆጽሊ ዕብየት እቲ ተኽሊ ይቕንሱ።",
+        "mold": "ፈንገስ ቆጽሊ ጽሬት እቲ ፍረ ጣዕሚ ይቕንሶ።",
+        "virus": "ሕማማት ቫይረስ ፈውሲ የብሎምን፤ ምሉእ ምህርቲ ከጥፍኡ ይኽእሉ እዮም።",
+        "default": "ጽልዋ ሕማም ይፈላለ እዩ — ቀዲምካ ምሕካም ጉድኣት ይቕንስ።"
+      }
+    },
+    "locationIntelligence": {
+      "btn_auto_detect": "🎯 ባዕሉ ይለይ",
+      "btn_change": "ቀይር",
+      "btn_set": "ኣስተኻኽል",
+      "input_placeholder": "ንኣብነት፦ ኣኽሱም፣ ዓዲግራት፣ ዓድዋ፣ ውቕሮ…",
+      "detecting": "⏳",
+      "error_denied": "ፍቓድ ቦታ ተኸልኪሉ ኣሎ። መቐለ ከም መበገሲ ተወሲዱ።",
+      "error_weather": "ሓበሬታ ኩነታት ኣየር ክርከብ ኣይተኻእለን።",
+      "your_location": "ናትካ ቦታ",
+      "section_weather_risk": "ርክብ ኩነታት ኣየርን ሕማምን",
+      "watch_for": "ተኸታተሉ፦",
+      "disease_risk_suffix": " ሓደጋ ሕማም",
+      "loading_suffix": "ይጽዕን ኣሎ...",
+      "humidity_label": "ርጥበት",
+      "temperature_label": "ሙቐት",
+      "wind_label": "ንፋስ",
+      "rainfall_label": "ዝናብ",
+      "risk_rules": [
+        {
+          "level": "high",
+          "message": "ጣዕሚ ልዑል ሓደጋ ፈንገስ — ካብ 85% ንላዕሊ ርጥበት ምስ ሙቐት ኣየር ንብላክን ፈንገስን ምቹው ኩነታት ይፈጥር።",
+          "diseases": [
+            "Late Blight",
+            "Early Blight",
+            "Septoria Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "ማእከላይ ሓደጋ ፈንገስ — ሕጂ ዘሎ ርጥበት ንዕብየት ፈንገስን ጻዕዳ ኣረርን ይመች።",
+          "diseases": [
+            "Powdery Mildew",
+            "Leaf Mold",
+            "Gray Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "ሓደጋ ዝርገሐ ሕማም — ልዑል ቅልጣፈ ንፋስ ንሕማማት ዋግን ብላክን ናብ ካልኦት ሕርሻታት ከዝርግሖም ይኽእል እዩ።",
+          "diseases": [
+            "Rust",
+            "Septoria",
+            "Anthracnose"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "ሙቑትን ንቑጽን ኣየር ንምፍራይ ሓሸራታት ይመች። ታሕቲ እቲ ቆጽሊ ብጥንቃቐ ፈትሹ።",
+          "diseases": [
+            "Spider Mites",
+            "Target Spot"
+          ]
+        },
+        {
+          "level": "low",
+          "message": "ትሑት ርጥበት ሓደጋ ፈንገስ ይቕንሶ። ብኣንጻሩ ሓሸራታት ተኸታተሉ።",
+          "diseases": []
+        },
+        {
+          "level": "low",
+          "message": "ሕጂ ዘሎ ኩነታት ትሑት ሓደጋ ሕማም ኣለዎ። ስሩዕ ምክትታልኩም ቀጽሉ።",
+          "diseases": []
+        }
+      ],
+      "correlation_tips": {
+        "humidity_high": "ርጥበት {value}% → ሓደጋ ሕማም ፈንገስ ልዑል እዩ",
+        "humidity_med": "ርጥበት {value}% → ማእከላይ ሓደጋ ፈንገስ፣ ብቐረባ ተኸታተሉ",
+        "heat_dry": "ሙቑትን ንቑጽን ኩነታት → ጸቕጢ ሓሸራታት ይውስኽ",
+        "recent_rain": "ናይ ቀረባ ግዜ ዝናብ → ሓደጋ ሕማም ዘንጊዩ ዝመጽእ ብላክን ባክቴሪያን ይውስኽ",
+        "high_wind": "ልዑል ንፋስ → ብናኝ ሕማማት ይዝርጋሕ ኣሎ፣ ፍተሻኹም ኣስፍሑ"
+      },
+      "cities": {
+        "mekelle": "መቐለ፣ ትግራይ",
+        "axum": "ኣኽሱም፣ ትግራይ",
+        "adwa": "ዓድዋ፣ ትግራይ",
+        "adigrat": "ዓዲግራት፣ ትግራይ",
+        "wukro": "ውቕሮ፣ ትግራይ",
+        "addis": "ኣዲስ ኣበባ"
+      }
+    },
+    "weatherWidget": {
+      "weather_codes": {
+        "0": "ጽሩይ ሰማይ",
+        "1": "ብኣብዛኛው ጽሩይ",
+        "2": "ብክፋል ደመናማ",
+        "3": "ደመናማ",
+        "45": "ጉም",
+        "51": "ካዝማ ዝናብ",
+        "53": "ካዝማ ዝናብ",
+        "61": "ዝናብ",
+        "63": "ዝናብ",
+        "65": "ከቢድ ዝናብ",
+        "80": "ዝናብ በረድ",
+        "95": "ነጎድጓድ"
+      }
+    },
+    "diseaseEncyclopedia": {
+      "search_placeholder": "ሕማማት ወይ ምልክታት ድለ…",
+      "filter_all_crops": "ኩሎም ዝራእቲ",
+      "filter_all_types": "ኩሎም ዓይነታት",
+      "results_found": "{n} ሕማም(ማት) ተረኺቦም",
+      "clear_filters": "መጻረዪታት ኣጽሪ ✕",
+      "no_diseases_found": "ምንም ሕማም ኣይተረኸበን። ካልእ ቃል ፈትን።",
+      "section_symptoms": "ምልክታት",
+      "section_treatment": "ሕክምና",
+      "section_prevention": "ምክልኻል",
+      "enc_title": "ኢንሳይክሎፒዲያ ሕማማት",
+      "enc_sub": "ብዛዕባ ምልክታት፣ ጠንቅታትን ሕክምናን ሕማማት ዝራእቲ መምርሒ",
+      "severity_high": "ልዑል",
+      "severity_medium": "ማእከላይ",
+      "severity_low": "ትሑት",
+      "diseases": [
+        {
+          "name": "ዋግ ቆጽሊ ስርናይ",
+          "crop": "ስርናይ",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia triticina",
+          "symptom": "ኣብ ላዕለዋይ ክፋል ቆጽሊ ወርቃዊ-ቡናዊ ሓሙኽሽቲ መሰል ነጠብጣባት። ቆጽሊ ብጫ ይኸውን ይነቅጽን።",
+          "treatment": "ቴቡኮናዞል ወይ ፕሮፒኮናዞል ተጠቐሙ። ዝሓመሙ ኣወግዱ። ንሕማም ዝጻወሩ ዓሌታት ተጠቐሙ።",
+          "prevention": "ዝጻወሩ ዓሌታት ትከሉ። እቲ ዝራእቲ ኣይተጸቓጽቑ። ኣብ እዋን ርጥበት ተኸታተሉ።"
+        },
+        {
+          "name": "ዋግ ጉንዲ ስርናይ",
+          "crop": "ስርናይ",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia graminis",
+          "symptom": "ኣብ ጉንድን ቆጽልን ጸሊም ቀይሕ-ቡናዊ ነጠብጣባት። ነቲ ጉንዲ ብምድኻም እቲ ዝራእቲ ንክወድቕ ይገብር።",
+          "treatment": "ምልክት ምስ ተራእየ ፕሮፒኮናዞል ንጸግ። ዝተረጋገጸ ብሉጽ ዘርኢ ተጠቐም።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዘንጊኻ ምዝራእ ኣወግዱ።"
+        },
+        {
+          "name": "ቢጫ ዋግ ስርናይ",
+          "crop": "ስርናይ",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia striiformis",
+          "symptom": "ኣብቲ ቆጽሊ ብመስመር ዝተደረደሩ ብጫ-ወርቃዊ ነጠብጣባት።",
+          "treatment": "ትራይፍሎክሲስትሮቢን ኣቐዲምኩም ተጠቐሙ። ካብ መጠን ንላዕሊ ናይ ናይትሮጅን ፍሩቅ ኣወግዱ።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ኣብ ዝሑልን ርጥብን እዋን ብቐጻሊ ፈትሹ።"
+        },
+        {
+          "name": "ሰሜናዊ ብላክ ቆጽሊ ዕፉን",
+          "crop": "ዕፉን",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Exserohilum turcicum",
+          "symptom": "ነዋሕቲ ቅርጺ ሲጋራ ዘለዎም ግራጫ-ቀጠልያ ምልክታት (5–15 ሴ.ሜ) ኣብቲ ቆጽሊ።",
+          "treatment": "ማንኮዜብ ወይ አዞክሲስትሮቢን ተጠቐሙ። ድሕሪ ምህርቲ ዝተረፈ ዝራእቲ ኣወግዱ።",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ዝጻወሩ ዓሌታት ተጠቐሙ። ተረፍ ፍርያት ቅበሩ።"
+        },
+        {
+          "name": "ግራጫ ነጠብጣብ ቆጽሊ",
+          "crop": "ዕፉን",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Cercospora zeae-maydis",
+          "symptom": "ኣርባዕተ ኩርናዕ ቅርጺ ዘለዎም ግራጫማ ምልክታት ምስ ርሰር እቲ ቆጽሊ ትኹል ኮይኖም።",
+          "treatment": "ዝጻወሩ ዓሌታት ተጠቐሙ። አዞክሲስትሮቢን ወይ ፕሮፒኮናዞል ንጸግ።",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ርሕቀት ተኽልታት ሓልዉ። ተረፍ ፍርያት ቅበሩ።"
+        },
+        {
+          "name": "ልሙድ ዋግ ዕፉን",
+          "crop": "ዕፉን",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia sorghi",
+          "symptom": "ኣብ ክልቲኡ ሸነኽ እቲ ቆጽሊ ዘለዉ ቀይሕ ሓሙኽሽቲ መሰል ነጠብጣባት።",
+          "treatment": "እንተበዚሑ ማንኮዜብ ወይ ክሎሮታሎኒል ተጠቐሙ። ዝጻወሩ ዓሌታት ትከሉ።",
+          "prevention": "ኣብ ዝሑልን ርጥብን እዋን ተኸታተሉ። ኣቐዲሞም ዝበጽሑ ዓሌታት ተጠቐሙ።"
+        },
+        {
+          "name": "አንትራክኖስ መሸላ",
+          "crop": "መሸላ",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Colletotrichum sublineolum",
+          "symptom": "ኣብ ቆጽልን ጉንድን ቀይሕ ወይ ብጫ ክቢ ነጠብጣባት።",
+          "treatment": "ሕማም ዘይብሉ ዘርኢ ተጠቐሙ። ክሎሮታሎኒል ንጸግ።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዝራእቲ ኣፈራርቑ። ኣይተጸቓጽቑ።"
+        },
+        {
+          "name": "ጻዕዳ ኣረር መሸላ",
+          "crop": "መሸላ",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Peronosclerospora sorghi",
+          "symptom": "ኣብ ትሕቲ እቲ ቆጽሊ ጻዕዳ ናይ ፈንገስ ዕብየት። ቆጽሊ ብጫ ይኸውን ዕብየት እውን ይዕገት።",
+          "treatment": "ዘርኢ ቅድሚ ምዝራእ ብሜታላክሲል ሕከሙ። ዝሓመሙ ንቐሉ።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ዘርኢ ሕከሙ። ሕማም ኣብ ዝነበረሉ ሕርሻ ኣይትዝርኡ።"
+        },
+        {
+          "name": "ነጠብጣብ ቆጽሊ ጤፍ",
+          "crop": "ጤፍ",
+          "severity": "ትሑት",
+          "type": "ፈንገስ",
+          "scientific": "Various fungal species",
+          "symptom": "ኣብ ቆጽሊ ንኣሽቱ ቡናዊ ነጠብጣባት። ቆጽሊ ክረግፍ ይኽእል እዩ።",
+          "treatment": "ኣየር ንክኣቱ ርሕቀት ተኽሊ ኣስተኻኽሉ። እንተበዚሑ ኮፐር-መሰረት መድሃኒት ንጸግ።",
+          "prevention": "ናይ ላዕሊ መስኖ ኣወግዱ። ማይ ዘይቋጽር ሓመድ ተጠቐሙ። ዝራእቲ ኣፈራርቑ።"
+        },
+        {
+          "name": "ቀዲሙ ዝመጽእ ብላክ ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Alternaria solani",
+          "symptom": "ኣብቶም ታሕተዎት ቆጽሊ ክቢ ቅርጺ ዘለዎም ጸለምቲ ቡናዊ ነጠብጣባት።",
+          "treatment": "ክሎሮታሎኒል ወይ ማንኮዜብ ተጠቐሙ። ታሕተዎት ቆጽሊ ኣወግዱ።",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ሓመድ ናብ ቆጽሊ ንከይነጽግ ኹትኳቶ ግበሩ።"
+        },
+        {
+          "name": "ዘንጊዩ ዝመጽእ ብላክ ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Phytophthora infestans",
+          "symptom": "ብቕልጡፍ ናብ ቡናዊ ሕብሪ ዝቕየሩ ግራጫ-ቀጠልያ ምልክታት። ታሕቲ እቲ ቆጽሊ ጻዕዳ ፈንገስ። እቲ ፍረ ይበሰብሳ።",
+          "treatment": "ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸግ — ጣዕሚ ብቕልጡፍ ይዝርጋሕ።",
+          "prevention": "ቆጽሊ ልዕሊ ማይ ኣይተፍስሱ። ዝጻወሩ ዓሌታት ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።"
+        },
+        {
+          "name": "ነጠብጣብ ባክቴሪያ ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ባክቴሪያ",
+          "scientific": "Xanthomonas vesicatoria",
+          "symptom": "ኣብ ቆጽልን ፍረን ንኣሽቱ ጸለምቲ ማይ ዝመስሉ ነጠብጣባት።",
+          "treatment": "ኮፐር-መሰረት መድሃኒት ንጸግ። ዝሓመሙ ጉንዲ ኣወግዱ።",
+          "prevention": "ጥዑይ ችግኝ ተጠቐሙ። ተኽልታት ርጥብ ኮይኖም ከለዉ ኣይትንከዩ። ዝራእቲ ኣፈራርቑ።"
+        },
+        {
+          "name": "ፈንገስ ቆጽሊ ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Fulvia fulva",
+          "symptom": "ኣብ ላዕለዋይ ክፋል ቆጽሊ ብጫ ነጠብጣባት። ታሕተዋይ ክፋል ወይራ-ቀጠልያ ፈንገስ።",
+          "treatment": "ኣየር ንክኣቱ ግበሩ። ክሎሮታሎኒል ወይ ኮፐር ንጸግ።",
+          "prevention": "ርሕቀት ሓልዉ። ርጥበት ካብ 85% ንታሕቲ ንክኸውን ግበሩ።"
+        },
+        {
+          "name": "ነጠብጣብ ቆጽሊ ሰፕቶሪያ",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Septoria lycopersici",
+          "symptom": "ጸሊም ወሰን ዘለዎም ብዙሓት ንኣሽቱ ክቢ ነጠብጣባት።",
+          "treatment": "ክሎሮታሎኒል ወይ ማንኮዜብ ተጠቐሙ። ዝሓመሙ ቆጽሊ ኣወግዱ።",
+          "prevention": "ሓመድ ንከይነጽግ ኹትኳቶ ግበሩ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        },
+        {
+          "name": "ቀይሕ ሸረሪት ተባይ",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ተባይ",
+          "scientific": "Tetranychus urticae",
+          "symptom": "ንኣሽቱ ብጫ ወይ ጻዕዳ ነጠብጣባት። ታሕቲ እቲ ቆጽሊ ዓለባ። ቆጽሊ ይነቅጹ።",
+          "treatment": "አባሜክቲን ወይ ቢፈናዜት ተጠቐሙ። ዘይቲ ኒም እውን ይሕግዝ። ርጥበት ወስኹ።",
+          "prevention": "ብጽቡቕ ማይ ሃቡ። መጥቃዕቲ ዝገብሩ ሓሸራታት ኣእትዉ። ሓሙኽሽታም ኩነታት ኣወግዱ።"
+        },
+        {
+          "name": "ቫይረስ ጥቅል ብጫ ቆጽሊ",
+          "crop": "ቲማቲም",
+          "severity": "ልዑል",
+          "type": "ቫይረስ",
+          "scientific": "TYLCV (Begomovirus)",
+          "symptom": "ቆጽሊ ንላዕሊ ምጥቕላልን ምገርጣትን። ዕብየት ምዕጋት። ዕምበባ ይረግፍ።",
+          "treatment": "ፈውሲ የብሉን። ዝሓመሙ ሕጂ ኣወግዱ። ጻዕዳ ዝንቢታት ተኻላኸሉ።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ሓሸራ ዘየእቱ መርበብ ተጠቐሙ።"
+        },
+        {
+          "name": "ቫይረስ ሞዛይክ ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ልዑል",
+          "type": "ቫይረስ",
+          "scientific": "Tomato mosaic virus (ToMV)",
+          "symptom": "ኣብ ቆጽሊ ቀሊልን ጸሊምን ቀጠልያ ዝተሓወሰ ምልክት።",
+          "treatment": "ፈውሲ የብሉን። ነቲ ተኽሊ ኣወግድ። መሳርሒታት ብኬሚካል ኣጽሪ።",
+          "prevention": "ዝጻወሩ ዓሌታት ተጠቐሙ። ቅድሚ ምትንካይኩም ኢድኩም ተሓጸቡ።"
+        },
+        {
+          "name": "ታርጌት ስፖት ቲማቲም",
+          "crop": "ቲማቲም",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Corynespora cassiicola",
+          "symptom": "ክቢ ቅርጺ ዘለዎም ቡናዊ ነጠብጣባት። ብዘይ ግዜኡ ቆጽሊ ምርጋፍ።",
+          "treatment": "ክሎሮታሎኒል ወይ አዞክሲስትሮቢን ተጠቐሙ። ዝተሃሰዩ ቆጽሊ ኣወግዱ።",
+          "prevention": "ነቲ ተኽሊ ብምእሳር ኣየር ንክኣቱ ግበሩ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        },
+        {
+          "name": "ቀዲሙ ዝመጽእ ብላክ ድንች",
+          "crop": "ድንች",
+          "severity": "ማእከላይ",
+          "type": "ፈንገስ",
+          "scientific": "Alternaria solani",
+          "symptom": "ኣብቶም ናይ ነዊሕ ግዜ ቆጽሊ ቡናዊ ነጠብጣባት ምስ ብጫ ሕብሪ።",
+          "treatment": "ክሎሮታሎኒል ወይ ማንኮዜብ ንጸግ። ፖታሲየም ዘለዎ ፍሩቅ ተጠቐም።",
+          "prevention": "ዝራእቲ ኣፈራርቑ። ኹትኳቶ ግበሩ። ማይ ንከይውሕዶ ግበሩ።"
+        },
+        {
+          "name": "ዘንጊዩ ዝመጽእ ብላክ ድንች",
+          "crop": "ድንች",
+          "severity": "ልዑል",
+          "type": "ፈንገስ",
+          "scientific": "Phytophthora infestans",
+          "symptom": "ጸለምቲ ማይ ዝመስሉ ምልክታት። ታሕቲ እቲ ቆጽሊ ጻዕዳ ፈንገስ። እቲ ድንች ይበሰብሳ።",
+          "treatment": "ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸግ። ዝሓመሙ ኣወግዱ።",
+          "prevention": "ጥዑይ ዘርኢ ድንች ተጠቐሙ። ናይ ላዕሊ መስኖ ኣወግዱ።"
+        }
+      ]
+    },
+    "communityPage": {
+      "intro_text": "ካልኦት ሓረስቶት ትግራይ እንታይ ዓይነት ሕማም ሪፖርት ይገብሩ ከምዘለዉ ርኣዩ።",
+      "outbreak_title_prefix": "ሕጂ ዘሎ ሕማም፦",
+      "outbreak_desc": "ኣብዚ ሰሙን {n} ሓረስቶት እዚ ሕማም ሪፖርት ገይሮም ኣለዉ። ዝራእትኻ ተኸታተል።",
+      "btn_scan_now": "ሕጂ መርምር",
+      "tab_feed": "ሓበሬታ ማሕበረሰብ",
+      "tab_insights": "ውጽኢት ሕክምና",
+      "tab_experts": "ምኽሪ ክኢላታት",
+      "filter_all_crops": "ኩሎም ዝራእቲ",
+      "reports_count": "{n} ሪፖርትታት",
+      "treatment_label_prefix": "ሕክምና፦",
+      "community_worked": "ብዓወት ሰሪሑ",
+      "community_failed": "ለውጢ የለን — ካልእ ይፍተን ኣሎ",
+      "watching_symptoms": "⏳ ሕክምና ኣይተጀመረን — ምልክታት ይርኣዩ ኣለዉ",
+      "view_disease_info": "ብዛዕባ እቲ ሕማም ሓበሬታ ርአ →",
+      "liked": "❤",
+      "not_liked": "🤍",
+      "insights_title": "ውጽኢታውነት ሕክምና (ካብ ማሕበረሰብ)",
+      "insights_based_on": "ካብ ሓረስቶት ትግራይ ዝተረኽቡ {n} ሪፖርትታት ዝተመርኮሰ።",
+      "success_rate": "{rate}% ውጽኢታዊ ({n} ሪፖርት)",
+      "most_reported_title": "ኣብዚ ሰሙን ብብዝሒ ዝተራእዩ ሕማማት",
+      "reports_this_week": "ኣብዚ ሰሙን {n} ሪፖርት",
+      "active_outbreak_badge": "ሕማም ተኸሲቱ ኣሎ",
+      "experts_intro": "ኣብ ኢትዮጵያ ዘለዉ ክኢላታት ኣትክልቲ ዝሃቡዎም ምኽርታት።",
+      "farmers_found_helpful": "{n} ሓረስቶት ነዚ ፈትዮምዎ።",
+      "community_title": "ማሕበረሰብ",
+      "community_sub": "ካልኦት ሓረስቶት ትግራይ እንታይ ሪፖርት ይገብሩ ከምዘለዉ ርኣዩ።",
+      "expert_tips_data": [
+        {
+          "expert": "ዶ/ር ተክሉ",
+          "role": "ክኢላ ኣትክልቲ፣ ዩኒቨርሲቲ መቐለ",
+          "tip": "ዘንጊዩ ዝመጽእ ብላክ ኣብ እዋን ርጥበት ኣብ 48 ሰዓት ውሽጢ ይዝርጋሕ። ምልክት ኣብ ዝረኣኹምሉ መዓልቲ ማንኮዜብ ንጸጉ።",
+          "crop": "Tomato"
+        },
+        {
+          "expert": "ኣይተ ሃለፎም",
+          "role": "ክኢላ ግብርና ኤክስቴንሽን",
+          "tip": "ኣብ ስርናይን ዕፉንን ዘጋጥም ዋግ፦ ንጉሆ ኣብ እዋን ሽሻይ ፈትሹ — እቶም ብናኝ ብጽቡቕ ይርኣዩ።",
+          "crop": "Corn"
+        },
+        {
+          "expert": "ዶ/ር ኒማ",
+          "role": "ሳይንቲስት ዝራእቲ፣ MIT",
+          "tip": "ዘይቲ ኒም ብርሃን ጸሓይ ምስ ረኸበ ድሕሪ 8 ሰዓት ሓይሉ ይስእን። ኩልግዜ ምሸት ንጸጉ።",
+          "crop": "General"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "errors": {
+      "auth": {
+        "email_exists": "በዚ ኢሜይል ዝተኸፍተ ሕሳብ ኣሎ።",
+        "registration_failed": "ምዝገባ ኣይተዓወተን። በጃኹም ደጊምኩም ፈትኑ።",
+        "email_password_required": "ኢሜይልን መሕለፊ ቃልን የድልዩ።",
+        "no_account_found": "በዚ ኢሜይል ዝተመዝገበ ሕሳብ የለን።",
+        "incorrect_password": "መሕለፊ ቃል ጌጋ እዩ።",
+        "login_failed": "ምእታው ኣይተዓወተን። በጃኹም ደጊምኩም ፈትኑ።",
+        "refresh_token_required": "ሪፍሬሽ ቶከን የድሊ።",
+        "session_expired": "እቲ ግዜ ኣብቂዑ ኣሎ። በጃኹም ደጊምኩም እተዉ።",
+        "invalid_session": "እቲ ግዜ ኣይሰርሕን። ደጊምኩም እተዉ።",
+        "signed_out_all": "ካብ ኩሎም መሳርሒታት ወጺእኩም ኣለኹም።",
+        "user_not_found": "ተጠቃሚ ኣይተረኸበን።",
+        "profile_load_failed": "ፕሮፋይል ንምጽዓን ኣይተኻእለን።",
+        "profile_update_failed": "ፕሮፋይል ንምስትኽኻል ኣይተኻእለን።",
+        "upgrade_gateway_only": "ኣገልግሎት ንምዕባይ ብስርዓት ክፍሊት ክትሓልፉ ኣለኩም።",
+        "invalid_plan": "ዘይሰርሕ ዓይነት ኣገልግሎት።",
+        "upgrade_success": "ናብ ኣገልግሎት {plan} ብዓወት ተሰጋጊርኩም ኣለኹም።",
+        "upgrade_failed": "ኣገልግሎት ክብ ምባል ኣይተዓወተን።",
+        "downgrade_failed": "ኣገልግሎት ታሕቲ ምውራድ ኣይተዓወተን።",
+        "field_required": "{field} የድሊ።",
+        "field_must_be_string": "{field} ጽሑፍ ክኸውን ኣለዎ።",
+        "field_max_length": "{field} ካብ {max} ፊደላት ክበልጽ የብሉን።",
+        "field_min_length": "{field} ብውሑዱ {min} ፊደላት ክኸውን ኣለዎ።",
+        "field_enum": "{field} ካብዞም ዝስዕቡ ሓደ ክኸውን ኣለዎ፦ {values}።",
+        "field_email": "{field} ትኽክለኛ ኢሜይል ክኸውን ኣለዎ።",
+        "field_complexity": "{field} ብውሑዱ ሓደ ዓቢ ፊደልን ሓደ ቁጽርን ክሕዝ ኣለዎ።"
+      },
+      "chat": {
+        "invalid_message": "ዘይሰርሕ መልእኽቲ።",
+        "ai_not_configured": "ረዳኢ AI ኣይተስተኻኸለን።",
+        "ai_unavailable": "ረዳኢ AI ንግዚኡ ኣይሰርሕን።",
+        "response_failed": "መልሲ ክህብ ኣይከኣልኩን። በጃኹም ደጊምኩም ፈትኑ።"
+      },
+      "feedback": {
+        "disease_rating_required": "እቲ ሕማምን ደረጃኡን ክምላእ ኣለዎ።",
+        "invalid_rating": "ዘይሰርሕ ደረጃ።",
+        "disease_too_long": "ስም እቲ ሕማም ጣዕሚ ነዊሕ እዩ (ዝለዓለ 200)።",
+        "note_too_long": "መዘክር ጣዕሚ ነዊሕ እዩ (ዝለዓለ 1000)።",
+        "treatment_too_long": "ውጽኢት ሕክምና ጣዕሚ ነዊሕ እዩ (ዝለዓለ 200)።",
+        "scan_not_found": "ምርመራ ኣይተረኸበን ወይ ፍቓድ የብልኩምን።",
+        "save_failed": "ርእይቶ ንምዕቃብ ኣይተኻእለን።",
+        "load_failed": "ርእይቶ ንምጽዓን ኣይተኻእለን።"
+      },
+      "history": {
+        "load_failed": "ታሪኽ ንምጽዓን ኣይተኻእለን።",
+        "stats_failed": "ቁጽርታት ንምጽዓን ኣይተኻእለን።",
+        "scan_not_found": "ምርመራ ኣይተረኸበን።",
+        "delete_failed": "ምርመራ ንምስራዝ ኣይተኻእለን።",
+        "bulk_delete_failed": "ምርመራታት ንምስራዝ ኣይተዓወተን።",
+        "fetch_failed": "ምርመራ ንምርካብ ኣይተኻእለን።",
+        "ids_required": "መፍለዪ ቁጽርታት (IDs) የድልዩ።"
+      },
+      "predict": {
+        "no_image": "ምንም ምስሊ ኣይቀረበን።",
+        "only_images_allowed": "JPG፣ PNG ን WebP ን ምስልታት ጥራይ ይፍቀዱ።",
+        "quota_exceeded": "ወሰን ምርመራ መዓልቲ በጺሕኩም ኣለኹም (ኣብ መዓልቲ {limit} ብነጻ ኣገልግሎት)።",
+        "upgrade_message": "ንዘይተገደበ ምርመራ ናብ ፕሪሚየም ክብ ኣብልዎ።",
+        "user_not_found": "ተጠቃሚ ኣይተረኸበን።",
+        "invalid_ai_response": "ካብ ሰርቨር AI ጌጋ መልሲ መጺኡ።",
+        "ai_server_offline": "ሰርቨር AI ጠፊኡ ኣሎ።",
+        "image_unprocessable": "ነቲ ምስሊ ንምትንታን ኣይተኻእለን።",
+        "prediction_failed": "ምርመራ ኣይተዓወተን። በጃኹም ደጊምኩም ፈትኑ።",
+        "file_must_be_image": "ፋይል ምስሊ ክኸውን ኣለዎ (JPEG, PNG, ወይ WebP)።",
+        "file_too_large": "ፋይል ጣዕሚ ዓቢ እዩ። ዝለዓለ {max} MB።"
+      }
+    }
+  },
+  "ml": {
+    "friendlyNames": {
+      "Apple___Apple_scab": "እከክ ቱፋሕ",
+      "Apple___Black_rot": "ጸሊም መበስበስ ቱፋሕ",
+      "Apple___Cedar_apple_rust": "ዋግ ቱፋሕ",
+      "Apple___healthy": "ቱፋሕ — ጥዑይ",
+      "Blueberry___healthy": "ብሉቤሪ — ጥዑይ",
+      "Cherry_(including_sour)___Powdery_mildew": "ጻዕዳ ኣረር ቼሪ",
+      "Cherry_(including_sour)___healthy": "ቼሪ — ጥዑይ",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "ግራጫ ነጠብጣብ ዕፉን",
+      "Corn_(maize)___Common_rust_": "ልሙድ ዋግ ዕፉን",
+      "Corn_(maize)___Northern_Leaf_Blight": "ሰሜናዊ ብላክ ዕፉን",
+      "Corn_(maize)___healthy": "ዕፉን — ጥዑይ",
+      "Grape___Black_rot": "ጸሊም መበስበስ ወይኒ",
+      "Grape___Esca_(Black_Measles)": "ኤስካ ወይኒ",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "ብላክ ቆጽሊ ወይኒ",
+      "Grape___healthy": "ወይኒ — ጥዑይ",
+      "Orange___Haunglongbing_(Citrus_greening)": "መገርጣት ብርቱካን (HLB)",
+      "Peach___Bacterial_spot": "ነጠብጣብ ባክቴሪያ ፒች",
+      "Peach___healthy": "ፒች — ጥዑይ",
+      "Pepper,_bell___Bacterial_spot": "ነጠብጣብ ባክቴሪያ በርበረ",
+      "Pepper,_bell___healthy": "በርበረ — ጥዑይ",
+      "Potato___Early_blight": "ቀዲሙ ዝመጽእ ብላክ ድንች",
+      "Potato___Late_blight": "ዘንጊዩ ዝመጽእ ብላክ ድንች",
+      "Potato___healthy": "ድንች — ጥዑይ",
+      "Raspberry___healthy": "ራስቤሪ — ጥዑይ",
+      "Soybean___healthy": "ሶያ ቢን — ጥዑይ",
+      "Squash___Powdery_mildew": "ጻዕዳ ኣረር ዱባ",
+      "Strawberry___Leaf_scorch": "ኣረር ቆጽሊ እንጆሪ",
+      "Strawberry___healthy": "እንጆሪ — ጥዑይ",
+      "Tomato___Bacterial_spot": "ነጠብጣብ ባክቴሪያ ቲማቲም",
+      "Tomato___Early_blight": "ቀዲሙ ዝመጽእ ብላክ ቲማቲም",
+      "Tomato___Late_blight": "ዘንጊዩ ዝመጽእ ብላክ ቲማቲም",
+      "Tomato___Leaf_Mold": "ፈንገስ ቆጽሊ ቲማቲም",
+      "Tomato___Septoria_leaf_spot": "ነጠብጣብ ቆጽሊ ሰፕቶሪያ",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "ቀይሕ ሸረሪት ተባይ ቲማቲም",
+      "Tomato___Target_Spot": "ታርጌት ስፖት ቲማቲም",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ቫይረስ ጥቅል ብጫ ቆጽሊ ቲማቲም",
+      "Tomato___Tomato_mosaic_virus": "ቫይረስ ሞዛይክ ቲማቲም",
+      "Tomato___healthy": "ቲማቲም — ጥዑይ"
+    },
+    "diseaseMeta": {
+      "Apple___Apple_scab": "ምልክት ምስ ተራእየ ሰልፈር ወይ ዘይቲ ኒም ተጠቐሙ። ዝሓመሙ ኣወግዱ።",
+      "Apple___Black_rot": "ዝሓመሙ ጉንዲ ቁረጹ። ኮፐር-መሰረት መድሃኒት ንጸጉ።",
+      "Apple___Cedar_apple_rust": "ሰልፈር-መሰረት ፈንገስ መጥፍኢ ተጠቐሙ።",
+      "Apple___healthy": "ምንም ሕክምና ኣየድልይን። ንጽህናኡ ሓልዉ።",
+      "Blueberry___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Cherry_(including_sour)___Powdery_mildew": "ፖታሲየም ባይካርቦኔት ወይ ዘይቲ ኒም ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።",
+      "Cherry_(including_sour)___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "ዝራእቲ ኣፈራርቑ። ተረፍ ፍርያት ኣወግዱ። ኣብ መጀመርታ ደረጃ ዘይቲ ኒም ተጠቐሙ።",
+      "Corn_(maize)___Common_rust_": "ዝጻወሩ ዓሌታት ትከሉ። ኣቐዲምኩም ዘይቲ ኒም ተጠቐሙ።",
+      "Corn_(maize)___Northern_Leaf_Blight": "ዝራእቲ ኣፈራርቑ። ኮፐር-መሰረት መድሃኒት ንጸጉ።",
+      "Corn_(maize)___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Grape___Black_rot": "ዝነቀጹ ፍረታት ኣወግዱ። ኮፐር ንጸጉ።",
+      "Grape___Esca_(Black_Measles)": "ፈውሲ የብሉን። ዝሓመሙ ንቐሉ። ቁስልታት ብኬሚካል ዕጸው።",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "ኮፐር ንጸጉ። ዝሓመሙ ኣወግዱ።",
+      "Grape___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Orange___Haunglongbing_(Citrus_greening)": "ፈውሲ የብሉን። ነቲ ተኽሊ ሕጂ ኣወግዱ። ተባዮች ተቖጻጸሩ።",
+      "Peach___Bacterial_spot": "ኮፐር-መሰረት ባክቴሪያ መጥፍኢ ተጠቐሙ። ናይ ላዕሊ መስኖ ኣወግዱ።",
+      "Peach___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Pepper,_bell___Bacterial_spot": "ኮፐር ንጸጉ። ዝሓመሙ ኣወግዱ። ጥዑይ ችግኝ ተጠቐሙ።",
+      "Pepper,_bell___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Potato___Early_blight": "ታሕተዎት ቆጽሊ ኣወግዱ። ኮፐር ንጸጉ። ዝራእቲ ኣፈራርቑ።",
+      "Potato___Late_blight": "⚠️ ሕጂ ስጉምቲ ውሰዱ። ዝሓመሙ ኣወግዱ። ኮፐር ንጸጉ።",
+      "Potato___healthy": "ምንም ሕክምና ኣየድልይን። ኣብ እዋን ርጥበት ተኸታተሉ።",
+      "Raspberry___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Soybean___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Squash___Powdery_mildew": "ቤኪንግ ሶዳ ወይ ዘይቲ ኒም ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።",
+      "Strawberry___Leaf_scorch": "ዝሓመሙ ኣወግዱ። ኮፐር ንጸጉ። ቆጽሊ ልዕሊ ማይ ኣይተፍስሱ።",
+      "Strawberry___healthy": "ምንም ሕክምና ኣየድልይን።",
+      "Tomato___Bacterial_spot": "ኮፐር-መሰረት መድሃኒት ንጸጉ። ዝሓመሙ ኣወግዱ።",
+      "Tomato___Early_blight": "ታሕተዎት ቆጽሊ ኣወግዱ። ኮፐር ወይ ዘይቲ ኒም ተጠቐሙ።",
+      "Tomato___Late_blight": "⚠️ ሕጂ ስጉምቲ ውሰዱ። ዝሓመሙ ኣወግዱ። ኮፐር ንጸጉ።",
+      "Tomato___Leaf_Mold": "ኣየር ንክኣቱ ግበሩ። ርጥበት ቀንሱ። ኮፐር ወይ ሰልፈር ንጸጉ።",
+      "Tomato___Septoria_leaf_spot": "ዝሓመሙ ኣወግዱ። ኮፐር ንጸጉ። ኹትኳቶ ግበሩ።",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "ዘይቲ ኒም ወይ ሳሙና ተጠቐሙ። ርጥበት ወስኹ።",
+      "Tomato___Target_Spot": "ጣዕሚ ዝተሃሰዩ ኣወግዱ። ዘይቲ ኒም ተጠቐሙ።",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ፈውሲ የብሉን። ዝሓመሙ ሕጂ ኣወግዱ። ጻዕዳ ዝንቢ ተኻላኸሉ።",
+      "Tomato___Tomato_mosaic_virus": "ፈውሲ የብሉን። ዝሓመሙ ኣወግዱ። መሳርሒታት ብኬሚካል ኣጽሪ። ኢድካ ተሓጸብ።",
+      "Tomato___healthy": "ምንም ሕክምና ኣየድልይን።"
+    },
+    "recommendations": {
+      "Apple___Apple_scab": "ኣብ መጀመርታ ደረጃ ፈንገስ መጥፍኢ ንጸጉ። ዝረገፉ ዝሓመሙ ቆጽሊ ኣወግዱ። ኣየር ንክኣቱ ጉንዲ ቁረጹ።",
+      "Apple___Black_rot": "ዝሓመሙ ጉንድን ፍረታትን ኣወግዱ። ካፕታን ወይ ካልእ ፈንገስ መጥፍኢ ተጠቐሙ።",
+      "Apple___Cedar_apple_rust": "ምልክት ምስ ተራእየ ማይክሎቡታኒል ወይ ፕሮፒኮናዞል ተጠቐሙ። ኣብ ቀረባ ዘለዉ ዕንጨይቲ ጥድ ኣወግዱ።",
+      "Apple___healthy": "ምንም ሕማም ኣይተረኸበን። ስሩዕ ክንክንን ምክትታልን ቀጽሉ።",
+      "Blueberry___healthy": "ምንም ሕማም ኣይተረኸበን። ኩነታት ሓመድን ማይን ብጥንቃቐ ተኸታተሉ።",
+      "Cherry_(including_sour)___Powdery_mildew": "ሰልፈር-መሰረት ወይ ፖታሲየም ባይካርቦኔት ተጠቐሙ። ካብ መጠን ንላዕሊ ፍሩቅ ኣወግዱ።",
+      "Cherry_(including_sour)___healthy": "ምንም ሕማም ኣይተረኸበን። ስሩዕ ምክትታልኩም ቀጽሉ።",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "አዞክሲስትሮቢን ወይ ፕሮፒኮናዞል ንጸጉ። ንመጻኢ ዝጻወሩ ዓሌታት ተጠቐሙ።",
+      "Corn_(maize)___Common_rust_": "እንተበዚሑ ማንኮዜብ ወይ ክሎሮታሎኒል ተጠቐሙ። ኣብ ቁርን ርጥበትን ተኸታተሉ።",
+      "Corn_(maize)___Northern_Leaf_Blight": "ማንኮዜብ ወይ አዞክሲስትሮቢን ንጸጉ። ዝራእቲ ኣፈራርቑ። ተረፍ ፍርያት ኣወግዱ።",
+      "Corn_(maize)___healthy": "ምንም ሕማም ኣይተረኸበን። ጽቡቕ ናይ ሕርሻ ስራሕ ቀጽሉ።",
+      "Grape___Black_rot": "ካብ መጀመርታ ማንኮዜብ ወይ ማይክሎቡታኒል ተጠቐሙ። ዝነቀጹ ፍረታት ኣወግዱ።",
+      "Grape___Esca_(Black_Measles)": "ፈውሲ የብሉን። ዝሓመሙ ሕጂ ኣወግዱ። ቁስልታት ብኬሚካል ዕጸው።",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "ኮፐር-መሰረት መድሃኒት ወይ ማንኮዜብ ንጸጉ። ኣየር ንክኣቱ ግበሩ።",
+      "Grape___healthy": "ምንም ሕማም ኣይተረኸበን። ስራሕቲ ምትኽኻል ቆጽሊ ቀጽሉ።",
+      "Orange___Haunglongbing_(Citrus_greening)": "ፈውሲ የብሉን። ነቲ ተኽሊ ሕጂ ኣወግዱ። ተሸከምቲ ሓሸራታት ተኻላኸሉ።",
+      "Peach___Bacterial_spot": "ኣብ እዋን ቀውዕን ጽድያን ኮፐር ንጸጉ። ናይ ላዕሊ መስኖ ኣወግዱ።",
+      "Peach___healthy": "ምንም ሕማም ኣይተረኸበን። ስሩዕ ምስላጥን ፍሩቅን ቀጽሉ።",
+      "Pepper,_bell___Bacterial_spot": "ኮፐር ንጸጉ። ዝሓመሙ ኣወግዱ። ናይ ላዕሊ መስኖ ኣወግዱ።",
+      "Pepper,_bell___healthy": "ምንም ሕማም ኣይተረኸበን። ርሕቀት ተኽልታት ንክሕሎ ግበሩ።",
+      "Potato___Early_blight": "ክሎሮታሎኒል ወይ ማንኮዜብ ንጸጉ። ፖታሲየም ተጠቐሙ። ዝራእቲ ኣፈራርቑ።",
+      "Potato___Late_blight": "⚠️ ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸጉ — ጣዕሚ ብቕልጡፍ ይዝርጋሕ። ዝሓመሙ ኣወግዱ።",
+      "Potato___healthy": "ምንም ሕማም ኣይተረኸበን። ኣብ እዋን ርጥበት ብቐጻሊ ፈትሹ።",
+      "Raspberry___healthy": "ምንም ሕማም ኣይተረኸበን። ስራሕቲ ምስላጥ ቀጽሉ።",
+      "Soybean___healthy": "ምንም ሕማም ኣይተረኸበን። ኣብ ግዜ ዕብየት ዋግ ንከይህሉ ተኸታተሉ።",
+      "Squash___Powdery_mildew": "ፖታሲየም ባይካርቦኔት፣ ዘይቲ ኒም ወይ ሰልፈር ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።",
+      "Strawberry___Leaf_scorch": "ካፕታን ወይ ማይክሎቡታኒል ተጠቐሙ። ዝሓመሙ ኣወግዱ።",
+      "Strawberry___healthy": "ምንም ሕማም ኣይተረኸበን። ድሕሪ ምህርቲ ስራሕቲ ጽሬት ግበሩ።",
+      "Tomato___Bacterial_spot": "ኮፐር-መሰረት መድሃኒት ንጸጉ። ዝሓመሙ ኣወግዱ።",
+      "Tomato___Early_blight": "ክሎሮታሎኒል ወይ ማንኮዜብ ንጸጉ። ታሕተዎት ቆጽሊ ኣወግዱ።",
+      "Tomato___Late_blight": "⚠️ ሕጂ ማንኮዜብ ወይ ሳይሞክሳኒል ንጸጉ — ጣዕሚ ብቕልጡፍ ይዝርጋሕ።",
+      "Tomato___Leaf_Mold": "ኣየር ንክኣቱ ግበሩ። ክሎሮታሎኒል ወይ ኮፐር ንጸጉ።",
+      "Tomato___Septoria_leaf_spot": "ክሎሮታሎኒል ወይ ማንኮዜብ ንጸጉ። ታሕተዎት ቆጽሊ ኣወግዱ። ኹትኳቶ ግበሩ።",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "አባሜክቲን ወይ ቢፈናዜት ተጠቐሙ። ዘይቲ ኒም እውን ይሕግዝ።",
+      "Tomato___Target_Spot": "ክሎሮታሎኒል ወይ አዞክሲስትሮቢን ተጠቐሙ። ኣየር ንክኣቱ ግበሩ።",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ፈውሲ የብሉን። ዝሓመሙ ሕጂ ኣወግዱ። ጻዕዳ ዝንቢ ብወጥመድ ተኻላኸሉ።",
+      "Tomato___Tomato_mosaic_virus": "ፈውሲ የብሉን። ዝሓመሙ ኣወግዱ። መሳርሒታት ብኬሚካል ኣጽሪ። ኢድካ ተሓጸብ።",
+      "Tomato___healthy": "ምንም ሕማም ኣይተረኸበን። ስሩዕ ምክትታልኩም ቀጽሉ።"
+    },
+    "errors": {
+      "image_quality_low": "ጽሬት ምስሊ ትሑት እዩ",
+      "image_too_small": "ምስሊ ንእሽቶ እዩ ({w}×{h}px)። ብውሑዱ {min}×{min} ፒክሰል ዝኸውን ፎቶ ተጠቀም።",
+      "image_blurry": "ምስሊ ብሃሃ ይብል ኣሎ። ካሜራ ኣጽናዕ ዝጠጠዐ ፎቶ ውሰድ።",
+      "confidence_too_low": "ርግጸኝነት ትሑት ({confidence}%). ሞዴሉ ርግጸኛ ኣይኮነን — ቅጠሉ ብንጹር ዘይርኤ ወይ ሕማሙ ኣብ ዝተሓዝ ዝርዝር ዘይርከብ ይኸውን።",
+      "retake_reason": "ፎቶ ደጊምካ ውሰድ፦ ቅጠሉ ንምስሊ ምሉእ ብምሉእ ምልኦ፣ ጽቡቕ ብርሃን ተጠቀም፣ ናብ እቲ እተጓደለ ቦታ ኣተኩር።",
+      "file_not_image": "ፋይሉ ምስሊ ክኸውን ኣለዎ (JPEG, PNG, ወይ WebP)።",
+      "file_too_large": "ፋይሉ ዓቢ እዩ። ዝለዓለ {max} ሜጋባይት.",
+      "image_unreadable": "ምስሊ ክርከብ ኣይከኣለን: {error}",
+      "image_decode_failed": "ምስሊ ክፍቶ ኣይከኣለን: {error}",
+      "fallback_recommendation": "ናይ ከባቢኻ ናይ ሕርሻ ኤክስቴንሽን ሰራሕተኛ ተወከስ።"
+    }
+  }
+}

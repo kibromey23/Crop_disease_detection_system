@@ -1,206 +1,268 @@
-// src/context/AuthContext.jsx
-// Handles: register, login, logout, token refresh, plan state
-// Access token lives in memory (secure), refresh token in localStorage
-
+/**
+ * AuthContext.jsx — Real authentication connected to backend API
+ * Fixes:
+ *   1. Mock login/register replaced with real API calls
+ *   2. JWT tokens stored & attached to all requests (authFetch)
+ *   3. Auto token refresh on 401 (expired access token)
+ *   4. scansRemaining, FREE_DAILY_LIMIT, upgradeToPremium, downgradePlan exposed
+ *   5. No API keys or secrets in frontend
+ */
 import { createContext, useContext, useState, useEffect, useCallback, useRef } from "react";
+
+const AuthContext = createContext(null);
+
 const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
-
-const Ctx = createContext(null);
-export const useAuth = () => useContext(Ctx);
-
 const FREE_DAILY_LIMIT = 5;
 
-export function AuthProvider({ children }) {
-  const [user,         setUser]         = useState(null);   // server user object
-  const [accessToken,  setAccessToken]  = useState(null);   // in memory only
-  const [loading,      setLoading]      = useState(true);   // initial auth check
-  const [authError,    setAuthError]    = useState(null);
-  const refreshTimer   = useRef(null);
-
-  // ── Helpers ───────────────────────────────────────────────
-  function getRefreshToken() {
-    return localStorage.getItem("cg_rt");
-  }
-  function saveRefreshToken(token) {
-    localStorage.setItem("cg_rt", token);
-  }
-  function clearRefreshToken() {
-    localStorage.removeItem("cg_rt");
-  }
-
-  // ── Auth'd fetch helper ────────────────────────────────────
-  // Automatically attaches Bearer token. Components should use this
-  // instead of raw fetch() for all /api/ calls.
-  // authFetch — attaches Bearer token to every API request
-  // Simple version: no circular dependency on refresh
-  // Token is 24h so expiry during a session is very unlikely
-  const authFetch = useCallback(async (url, options = {}) => {
-    const headers = {
-      "Content-Type": "application/json",
-      ...(options.headers || {}),
-      ...(accessToken ? { Authorization: `Bearer ${accessToken}` } : {}),
+function getTokens() {
+  try {
+    return {
+      accessToken:  localStorage.getItem("cg_access"),
+      refreshToken: localStorage.getItem("cg_refresh"),
     };
-    // FormData: let browser set Content-Type with boundary
-    if (options.body instanceof FormData) delete headers["Content-Type"];
-    return fetch(url, { ...options, headers });
-  }, [accessToken]);
+  } catch { return { accessToken: null, refreshToken: null }; }
+}
+function saveTokens(access, refresh) {
+  try {
+    if (access)  localStorage.setItem("cg_access",  access);
+    if (refresh) localStorage.setItem("cg_refresh", refresh);
+  } catch {}
+}
+function clearTokens() {
+  try {
+    localStorage.removeItem("cg_access");
+    localStorage.removeItem("cg_refresh");
+    localStorage.removeItem("cg_user");
+    sessionStorage.removeItem("cg_seen");
+    sessionStorage.removeItem("cg_chat_seen");
+  } catch {}
+}
 
-  // ── Refresh access token ───────────────────────────────────
-  const refresh = useCallback(async () => {
-    const rt = getRefreshToken();
-    if (!rt) { setLoading(false); return false; }
+export function AuthProvider({ children }) {
+  const [user,      setUser]      = useState(null);
+  const [loading,   setLoading]   = useState(true);
+  const [authError, setAuthError] = useState(null);
+  const refreshing  = useRef(false);
 
-    try {
-      const res  = await fetch(`${API}/api/auth/refresh`, {
-        method:  "POST",
-        headers: { "Content-Type":"application/json" },
-        body:    JSON.stringify({ refreshToken: rt }),
-      });
-      if (!res.ok) {
-        clearRefreshToken();
-        setUser(null); setAccessToken(null);
-        setLoading(false);
-        return false;
+  // ── Boot: restore session from stored tokens ──────────────────────────
+  useEffect(() => {
+    async function restore() {
+      const { accessToken, refreshToken } = getTokens();
+      if (!refreshToken) { setLoading(false); return; }
+      try {
+        // Try refresh to get a fresh access token & user data
+        const res = await fetch(`${API}/api/auth/refresh`, {
+          method:  "POST",
+          headers: { "Content-Type": "application/json" },
+          body:    JSON.stringify({ refreshToken }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          saveTokens(data.accessToken, data.refreshToken);
+          // Merge stored UI settings and preserved language
+          try {
+            const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+            const lang = localStorage.getItem("cropguard_lang");
+            const merged = { ...data.user, ...ui, ...(lang ? { language: lang } : {}) };
+            localStorage.setItem("cg_user", JSON.stringify(merged));
+            setUser(merged);
+          } catch { setUser(data.user); }
+        } else {
+          clearTokens();
+        }
+      } catch {
+        // Network offline — use cached user
+        try {
+          const stored = localStorage.getItem("cg_user");
+          if (stored && accessToken) setUser(JSON.parse(stored));
+        } catch {}
       }
+      setLoading(false);
+    }
+    restore();
+  }, []);
+
+  // ── authFetch: authenticated fetch with auto token refresh ─────────────
+  const authFetch = useCallback(async (url, options = {}) => {
+    const isFormData = options.body instanceof FormData;
+    const { accessToken } = getTokens();
+
+    const makeRequest = (token) => fetch(url, {
+      ...options,
+      headers: {
+        ...(isFormData ? {} : { "Content-Type": "application/json" }),
+        ...(options.headers || {}),
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      },
+    });
+
+    let res = await makeRequest(accessToken);
+
+    // Auto-refresh on 401
+    if (res.status === 401 && !refreshing.current) {
+      refreshing.current = true;
+      try {
+        const { refreshToken } = getTokens();
+        if (!refreshToken) { setUser(null); clearTokens(); return res; }
+
+        const rfRes = await fetch(`${API}/api/auth/refresh`, {
+          method:  "POST",
+          headers: { "Content-Type": "application/json" },
+          body:    JSON.stringify({ refreshToken }),
+        });
+        if (rfRes.ok) {
+          const data = await rfRes.json();
+          saveTokens(data.accessToken, data.refreshToken);
+          setUser(u => ({ ...u, ...data.user }));
+          res = await makeRequest(data.accessToken);
+        } else {
+          setUser(null); clearTokens();
+        }
+      } finally {
+        refreshing.current = false;
+      }
+    }
+    return res;
+  }, []);
+
+  // ── login ──────────────────────────────────────────────────────────────
+  const login = useCallback(async ({ email, password }) => {
+    setAuthError(null);
+    try {
+      const res  = await fetch(`${API}/api/auth/login`, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify({ email, password }),
+      });
       const data = await res.json();
-      setUser(data.user);
-      setAccessToken(data.accessToken);
-      saveRefreshToken(data.refreshToken); // rotated
-      scheduleRefresh(data.accessToken);
-      setLoading(false);
-      return true;
+      if (!res.ok) { setAuthError(data.error || "Login failed."); return null; }
+      saveTokens(data.accessToken, data.refreshToken);
+      try {
+        const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+        const lang = localStorage.getItem("cropguard_lang");
+        const merged = { ...data.user, ...ui, ...(lang ? { language: lang } : {}) };
+        localStorage.setItem("cg_user", JSON.stringify(merged));
+        setUser(merged);
+        return merged;
+      } catch {
+        localStorage.setItem("cg_user", JSON.stringify(data.user));
+        setUser(data.user);
+        return data.user;
+      }
     } catch {
-      setLoading(false);
-      return false;
+      setAuthError("Network error. Please check your connection.");
+      return null;
     }
   }, []);
 
-  // ── Schedule token refresh 1 minute before expiry ─────────
-  function scheduleRefresh(token) {
-    if (refreshTimer.current) clearTimeout(refreshTimer.current);
+  // ── register ───────────────────────────────────────────────────────────
+  const register = useCallback(async ({ name, email, password, institution, language }) => {
+    setAuthError(null);
     try {
-      const payload  = JSON.parse(atob(token.split(".")[1]));
-      const expiresIn = (payload.exp * 1000) - Date.now() - 60_000; // 1min early
-      if (expiresIn > 0) {
-        refreshTimer.current = setTimeout(refresh, expiresIn);
+      const res  = await fetch(`${API}/api/auth/register`, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify({ name, email, password, institution, language }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setAuthError(data.error || "Registration failed."); return null; }
+      saveTokens(data.accessToken, data.refreshToken);
+      localStorage.setItem("cg_user", JSON.stringify(data.user));
+      setUser(data.user);
+      return data.user;
+    } catch {
+      setAuthError("Network error. Please check your connection.");
+      return null;
+    }
+  }, []);
+
+  // ── logout ─────────────────────────────────────────────────────────────
+  const logout = useCallback(async () => {
+    const { refreshToken } = getTokens();
+    try {
+      await fetch(`${API}/api/auth/logout`, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify({ refreshToken }),
+      });
+    } catch {}
+    clearTokens();
+    setUser(null);
+  }, []);
+
+  // ── reloadUser: re-fetch from /api/auth/me ─────────────────────────────
+  const reloadUser = useCallback(async () => {
+    try {
+      const res = await authFetch(`${API}/api/auth/me`);
+      if (res.ok) {
+        const data = await res.json();
+        try {
+          const ui   = JSON.parse(localStorage.getItem("cg_ui") || "{}");
+          const lang = localStorage.getItem("cropguard_lang");
+          const merged = { ...data, ...ui, ...(lang ? { language: lang } : {}) };
+          localStorage.setItem("cg_user", JSON.stringify(merged));
+          setUser(merged);
+        } catch {
+          localStorage.setItem("cg_user", JSON.stringify(data));
+          setUser(data);
+        }
       }
     } catch {}
-  }
+  }, [authFetch]);
 
-  // ── Initial auth check on app load ─────────────────────────
-  useEffect(() => {
-    refresh();
-    return () => { if (refreshTimer.current) clearTimeout(refreshTimer.current); };
-  }, []);
+  // ── upgradeToPremium ───────────────────────────────────────────────────
+  const upgradeToPremium = useCallback(async (plan = "premium") => {
+    try {
+      const res  = await authFetch(`${API}/api/auth/upgrade`, {
+        method: "POST",
+        body:   JSON.stringify({ plan }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        saveTokens(data.accessToken, null);
+        setUser(u => ({ ...u, ...data.user }));
+        return true;
+      }
+      return false;
+    } catch { return false; }
+  }, [authFetch]);
 
-  // ── Register ───────────────────────────────────────────────
-  async function register({ name, email, password, institution, language }) {
-    setAuthError(null);
-    const res  = await fetch(`${API}/api/auth/register`, {
-      method:  "POST",
-      headers: { "Content-Type":"application/json" },
-      body:    JSON.stringify({ name, email, password, institution, language }),
-    });
-    const data = await res.json();
-    if (!res.ok) { setAuthError(data.error); return false; }
-    setUser(data.user);
-    setAccessToken(data.accessToken);
-    saveRefreshToken(data.refreshToken);
-    scheduleRefresh(data.accessToken);
-    return true;
-  }
+  // ── downgradePlan ──────────────────────────────────────────────────────
+  const downgradePlan = useCallback(async () => {
+    try {
+      const res  = await authFetch(`${API}/api/auth/downgrade`, { method: "POST", body: "{}" });
+      const data = await res.json();
+      if (res.ok) {
+        saveTokens(data.accessToken, null);
+        setUser(u => ({ ...u, ...data.user }));
+        return true;
+      }
+      return false;
+    } catch { return false; }
+  }, [authFetch]);
 
-  // ── Login ──────────────────────────────────────────────────
-  async function login({ email, password }) {
-    setAuthError(null);
-    const res  = await fetch(`${API}/api/auth/login`, {
-      method:  "POST",
-      headers: { "Content-Type":"application/json" },
-      body:    JSON.stringify({ email, password }),
-    });
-    const data = await res.json();
-    if (!res.ok) { setAuthError(data.error); return false; }
-    setUser(data.user);
-    setAccessToken(data.accessToken);
-    saveRefreshToken(data.refreshToken);
-    scheduleRefresh(data.accessToken);
-    return true;
-  }
-
-  // ── Logout ─────────────────────────────────────────────────
-  async function logout() {
-    const rt = getRefreshToken();
-    fetch(`${API}/api/auth/logout`, {
-      method:  "POST",
-      headers: { "Content-Type":"application/json" },
-      body:    JSON.stringify({ refreshToken: rt }),
-    }).catch(() => {});
-    clearRefreshToken();
-    setUser(null); setAccessToken(null);
-    if (refreshTimer.current) clearTimeout(refreshTimer.current);
-  }
-
-  // ── Update profile ─────────────────────────────────────────
-  async function updateProfile(patch) {
-    const res  = await authFetch(`${API}/api/auth/me`, {
-      method: "PUT",
-      body:   JSON.stringify(patch),
-    });
-    const data = await res.json();
-    if (res.ok) setUser(data);
-    return res.ok;
-  }
-
-  // ── Upgrade plan ───────────────────────────────────────────
-  async function upgradeToPremium() {
-    const res  = await authFetch(`${API}/api/auth/upgrade`, {
-      method: "POST",
-      body:   JSON.stringify({ plan:"premium" }),
-    });
-    const data = await res.json();
-    if (res.ok) {
-      setUser(data.user);
-      setAccessToken(data.accessToken); // new token with plan
-      scheduleRefresh(data.accessToken);
-    }
-    return res.ok;
-  }
-
-  async function downgradePlan() {
-    const res  = await authFetch(`${API}/api/auth/downgrade`, { method:"POST" });
-    const data = await res.json();
-    if (res.ok) {
-      setUser(data.user);
-      setAccessToken(data.accessToken);
-      scheduleRefresh(data.accessToken);
-    }
-    return res.ok;
-  }
-
-  // ── Refresh local user from server ────────────────────────
-  async function reloadUser() {
-    if (!accessToken) return;
-    const res = await authFetch(`${API}/api/auth/me`);
-    if (res.ok) setUser(await res.json());
-  }
-
-  // ── Derived values ────────────────────────────────────────
-  const isPremium      = user?.plan !== "free" && !!user;
-  const scansRemaining = user
-    ? (isPremium ? Infinity : Math.max(0, user.scans_remaining ?? FREE_DAILY_LIMIT))
-    : 0;
-  const canScan = user ? (isPremium || scansRemaining > 0) : false;
+  // ── Computed values ────────────────────────────────────────────────────
+  const isPremium      = user?.plan !== "free" && user?.plan != null;
+  const scansRemaining = isPremium ? null : Math.max(0, FREE_DAILY_LIMIT - (user?.scans_today || 0));
+  const canScan        = isPremium || (scansRemaining == null ? true : scansRemaining > 0);
 
   return (
-    <Ctx.Provider value={{
-      user, loading, authError, accessToken,
-      isPremium, scansRemaining, canScan, FREE_DAILY_LIMIT,
-      login, register, logout, updateProfile,
-      upgradeToPremium, downgradePlan, reloadUser,
-      authFetch,
-      setAuthError,
+    <AuthContext.Provider value={{
+      user, loading, authError, setAuthError,
+      login, register, logout, reloadUser, authFetch,
+      isPremium, canScan,
+      scansRemaining,
+      FREE_DAILY_LIMIT,
+      upgradeToPremium,
+      downgradePlan,
     }}>
       {children}
-    </Ctx.Provider>
+    </AuthContext.Provider>
   );
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  return ctx;
 }

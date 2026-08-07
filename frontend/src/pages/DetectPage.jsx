@@ -1,4 +1,4 @@
-// src/pages/DetectPage.jsx v10 — merged upload + camera, quota-aware, full i18n
+// src/pages/DetectPage.jsx — i18n FIX: all hardcoded strings replaced with t() calls
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../components/Toast";
@@ -10,7 +10,6 @@ export default function DetectPage({ onResult, settings, t, canScan }) {
   const [tab, setTab] = useState("upload");
   const { isPremium, scansRemaining, authFetch, reloadUser } = useAuth();
 
-  // Quota gate
   if (!canScan) return (
     <div className="page-anim">
       <div className="premium-gate" style={{ marginTop:40 }}>
@@ -23,8 +22,9 @@ export default function DetectPage({ onResult, settings, t, canScan }) {
           onClick={() => { reloadUser(); }}>
           ⭐ {t("go_premium")}
         </button>
+        {/* i18n FIX: was hardcoded "Quota resets at midnight" */}
         <div style={{ fontSize:11.5, color:"var(--text3)", marginTop:8 }}>
-          Quota resets at midnight
+          {t("quota_resets_midnight")}
         </div>
       </div>
     </div>
@@ -37,26 +37,28 @@ export default function DetectPage({ onResult, settings, t, canScan }) {
         <p>{t("upload_sub")}</p>
         {!isPremium && (
           <div style={{ display:"flex", alignItems:"center", gap:7, marginTop:8 }}>
-            <span className="badge badge-amber">{t("user_scans_remaining").replace("{n}", scansRemaining)}</span>
-            <span style={{ fontSize:11.5, color:"var(--text3)" }}>today</span>
+            <span className="badge badge-amber">{t("user_scans_remaining").replace("{n}", scansRemaining ?? 0)}</span>
+            {/* i18n FIX: was hardcoded "today" */}
+            <span style={{ fontSize:11.5, color:"var(--text3)" }}>{t("today")}</span>
           </div>
         )}
       </div>
 
-      {/* Tab switcher */}
       <div className="detect-tabs">
         <button className={`dtab ${tab==="upload"?"active":""}`} onClick={() => setTab("upload")}>
           <span className="dtab-icon">📁</span>
           <span>
-            Upload image
+            {/* i18n FIX: was hardcoded "Upload image" */}
+            {t("upload_tab_label")}
             <span className="dtab-sub">{t("drop_sub")}</span>
           </span>
         </button>
         <button className={`dtab ${tab==="camera"?"active":""}`} onClick={() => setTab("camera")}>
           <span className="dtab-icon">📷</span>
           <span>
-            {t("cam_live")} camera
-            <span className="dtab-sub">Point &amp; scan in real time</span>
+            {t("cam_live")} {t("cam_tab_camera")}
+            {/* i18n FIX: was hardcoded "Point & scan in real time" */}
+            <span className="dtab-sub">{t("cam_realtime_sub")}</span>
           </span>
         </button>
       </div>
@@ -174,7 +176,10 @@ function UploadPanel({ onResult, settings, t }) {
 }
 
 /* ── Camera panel ─────────────────────────────────────── */
-const TIPS_KEYS = ["Hold 20–30 cm from the leaf","Let the leaf fill the frame","Use natural daylight","Focus on the most affected area","Keep camera parallel to the leaf"];
+// i18n FIX: TIPS_KEYS are now translation keys instead of hardcoded English strings
+const TIPS_KEYS = [
+  "cam_tip1", "cam_tip2", "cam_tip3", "cam_tip4", "cam_tip5"
+];
 
 function CameraPanel({ onResult, settings, t }) {
   const { enqueue } = useOfflineQueue();
@@ -263,7 +268,8 @@ function CameraPanel({ onResult, settings, t }) {
                 <div className="cam-corner bl"/><div className="cam-corner br"/>
                 {scanning && <div className="cam-scanline"/>}
                 <div className="cam-reticle"/>
-                <div className="cam-tip">{TIPS_KEYS[tipIdx]}</div>
+                {/* i18n FIX: tips now translated */}
+                <div className="cam-tip">{t(TIPS_KEYS[tipIdx])}</div>
               </div>
             </>
           )}

@@ -1,34 +1,55 @@
 // src/components/FeedbackPanel.jsx
 // Feedback Loop — "Was this diagnosis correct?"
-// Collects ground-truth corrections → future training data pipeline
+// Submits to backend /api/feedback and also caches locally for offline
 
 import { useState } from "react";
 import { useToast } from "./Toast";
+import { useAuth } from "../context/AuthContext";
+
+const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
 export default function FeedbackPanel({ disease, scanId, onClose }) {
-  const [step,       setStep]       = useState(1); // 1=rating, 2=detail, 3=done
-  const [rating,     setRating]     = useState(null); // "correct"|"wrong"|"unsure"
+  const [step,       setStep]       = useState(1);
+  const [rating,     setRating]     = useState(null);
   const [followUp,   setFollowUp]   = useState("");
-  const [treatment,  setTreatment]  = useState(null); // "worked"|"partial"|"didnt"
+  const [treatment,  setTreatment]  = useState(null);
   const [uploading,  setUploading]  = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const toast = useToast();
+  const { authFetch } = useAuth();
 
   const name = (disease.split("___")[1] || disease).replace(/_/g, " ");
 
-  function submitRating(r) {
+  async function submitRating(r) {
     setRating(r);
     setStep(2);
-    // Save feedback locally as training signal
-    const fb = JSON.parse(localStorage.getItem("cg_feedback") || "[]");
-    fb.push({ scanId, disease, rating:r, note:followUp, treatment, ts:new Date().toISOString() });
-    localStorage.setItem("cg_feedback", JSON.stringify(fb));
   }
 
-  function submitDetail() {
-    const fb = JSON.parse(localStorage.getItem("cg_feedback") || "[]");
-    const idx = fb.findLastIndex(f => f.scanId === scanId);
-    if (idx >= 0) { fb[idx].note = followUp; fb[idx].treatment = treatment; }
-    localStorage.setItem("cg_feedback", JSON.stringify(fb));
+  async function submitDetail() {
+    setSubmitting(true);
+    const payload = { scan_id: scanId, disease, rating, note: followUp || null, treatment_result: treatment || null };
+
+    // 1. Submit to backend
+    try {
+      await authFetch(`${API}/api/feedback`, {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify(payload),
+      });
+    } catch {
+      // Offline — cache locally
+    }
+
+    // 2. Cache locally as training signal backup
+    try {
+      const fb = JSON.parse(localStorage.getItem("cg_feedback") || "[]");
+      fb.push({ ...payload, ts: new Date().toISOString() });
+      // Keep only last 100 feedback items locally
+      if (fb.length > 100) fb.splice(0, fb.length - 100);
+      localStorage.setItem("cg_feedback", JSON.stringify(fb));
+    } catch {}
+
+    setSubmitting(false);
     setStep(3);
     toast("Thank you! Your feedback improves our AI.", "success");
   }
@@ -95,14 +116,13 @@ export default function FeedbackPanel({ disease, scanId, onClose }) {
             }}
           />
 
-          {/* Did the treatment work? */}
           <div style={{ marginBottom:14 }}>
             <div style={{ fontSize:12, fontWeight:600, color:"var(--text2)", marginBottom:9 }}>Did the recommended treatment work? (optional)</div>
             <div style={{ display:"flex", gap:8 }}>
               {[
-                { val:"worked",  label:"✅ Yes, worked",   color:"var(--green)" },
-                { val:"partial", label:"⚡ Partially",     color:"var(--amber)" },
-                { val:"didnt",   label:"❌ No improvement",color:"var(--red)"   },
+                { val:"worked",  label:"✅ Yes, worked",    color:"var(--green)" },
+                { val:"partial", label:"⚡ Partially",      color:"var(--amber)" },
+                { val:"didnt",   label:"❌ No improvement", color:"var(--red)"   },
               ].map(({ val, label, color }) => (
                 <button key={val} onClick={() => setTreatment(treatment === val ? null : val)} style={{
                   flex:1, padding:"8px 6px", borderRadius:9, fontSize:11.5, fontWeight:600,
@@ -115,7 +135,6 @@ export default function FeedbackPanel({ disease, scanId, onClose }) {
             </div>
           </div>
 
-          {/* Upload follow-up image */}
           <label style={{
             display:"flex", alignItems:"center", gap:9, padding:"10px 13px",
             background:"var(--bg2)", border:"1px dashed var(--border2)",
@@ -128,8 +147,10 @@ export default function FeedbackPanel({ disease, scanId, onClose }) {
           </label>
 
           <div style={{ display:"flex", gap:9 }}>
-            <button className="btn btn-ghost btn-sm" onClick={() => setStep(3)} style={{ flex:1 }}>Skip</button>
-            <button className="btn btn-primary btn-sm" onClick={submitDetail} style={{ flex:2 }}>Submit feedback</button>
+            <button className="btn btn-ghost btn-sm" onClick={() => { setStep(3); toast("Feedback skipped.", "info"); }} style={{ flex:1 }}>Skip</button>
+            <button className="btn btn-primary btn-sm" onClick={submitDetail} disabled={submitting} style={{ flex:2 }}>
+              {submitting ? "Submitting…" : "Submit feedback"}
+            </button>
           </div>
         </>
       )}
@@ -141,7 +162,7 @@ export default function FeedbackPanel({ disease, scanId, onClose }) {
             Thank you for your feedback!
           </div>
           <div style={{ fontSize:12.5, color:"var(--text2)", lineHeight:1.6, marginBottom:14 }}>
-            Your response is stored locally and helps improve AI accuracy for all farmers using CropGuard.
+            Your feedback has been submitted and helps improve AI accuracy for all farmers.
           </div>
           <button className="btn btn-ghost btn-sm" onClick={onClose}>Close</button>
         </div>

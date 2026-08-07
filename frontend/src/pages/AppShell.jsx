@@ -1,29 +1,24 @@
-// src/App.jsx — CropGuard AI v11
-// Fixes: lazy loading, memoized settings, light default theme, i18n topbar date
 import { useState, useEffect, useCallback, useMemo, lazy, Suspense } from "react";
-import { AuthProvider, useAuth }  from "./context/AuthContext";
-import { useT }                   from "./i18n";
-import { ToastProvider }          from "./components/Toast";
-import Sidebar      from "./components/Sidebar";
-import SplashScreen from "./components/SplashScreen";
-import AlertsPanel  from "./components/AlertsPanel";
-import AuthPage     from "./pages/AuthPage";
-import "./App.css";
+import { useTranslation } from "react-i18next";
+import { useAuth } from "../context/AuthContext";
+import Sidebar from "../components/Sidebar";
+import SplashScreen from "../components/SplashScreen";
+import AlertsPanel from "../components/AlertsPanel";
+import ChatBubble from "../components/ChatBubble";
+import i18n from "../i18n/index";
 
-// ── Lazy-load every page — code splitting (critical perf fix) ──
-const AIChat        = lazy(() => import("./components/AIChat"));
-import ChatBubble from "./components/ChatBubble";
-const ResultCard    = lazy(() => import("./components/ResultCard"));
-const DetectPage    = lazy(() => import("./pages/DetectPage"));
-const DashboardPage = lazy(() => import("./pages/DashboardPage"));
-const HistoryPage   = lazy(() => import("./pages/HistoryPage"));
-const EncyclopediaPage = lazy(() => import("./pages/EncyclopediaPage"));
-const AnalyticsPage = lazy(() => import("./pages/AnalyticsPage"));
-const FarmPage      = lazy(() => import("./pages/FarmPage"));
-const CommunityPage = lazy(() => import("./pages/CommunityPage"));
-const BookmarksPage = lazy(() => import("./pages/BookmarksPage"));
-const SettingsPage  = lazy(() => import("./pages/SettingsPage"));
-const PricingPage   = lazy(() => import("./pages/PricingPage"));
+const AIChat        = lazy(() => import("../components/AIChat"));
+const ResultCard    = lazy(() => import("../components/ResultCard"));
+const DetectPage    = lazy(() => import("./DetectPage"));
+const DashboardPage = lazy(() => import("./DashboardPage"));
+const HistoryPage   = lazy(() => import("./HistoryPage"));
+const EncyclopediaPage = lazy(() => import("./EncyclopediaPage"));
+const AnalyticsPage = lazy(() => import("./AnalyticsPage"));
+const FarmPage      = lazy(() => import("./FarmPage"));
+const CommunityPage = lazy(() => import("./CommunityPage"));
+const BookmarksPage = lazy(() => import("./BookmarksPage"));
+const SettingsPage  = lazy(() => import("./SettingsPage"));
+const PricingPage   = lazy(() => import("./PricingPage"));
 
 const PAGE_TITLE_KEY = {
   dashboard:"nav_dashboard", detect:"nav_detect",
@@ -33,7 +28,6 @@ const PAGE_TITLE_KEY = {
   pricing:"upgrade_cta",     settings:"nav_settings",
 };
 
-// Simple page-level spinner
 function PageLoader() {
   return (
     <div style={{ display:"flex", alignItems:"center", justifyContent:"center",
@@ -43,23 +37,27 @@ function PageLoader() {
   );
 }
 
-function AppShell() {
+export default function AppShell() {
   const { user, loading, logout, isPremium, canScan, reloadUser, authFetch } = useAuth();
+  // i18n FIX: use react-i18next directly — single translation system, instant re-render on language change
+  const { t } = useTranslation();
 
-  // ── useMemo: settings object only rebuilds when user actually changes ──
-  const settings = useMemo(() => ({
-    theme:       user?.theme       || "light",   // DEFAULT = LIGHT
-    language:    user?.language    || "en",
-    fontSize:    user?.fontSize    || "medium",
-    confidence:  user?.confidence  || 70,
-    autoSave:    user?.autoSave    !== false,
-    showTop3:    user?.showTop3    !== false,
-    userName:    user?.name        || "Researcher",
-    institution: user?.institution || "Mekelle Institute of Technology",
-    plan:        user?.plan        || "free",
-  }), [user]);
-
-  const t = useT(settings);
+  const settings = useMemo(() => {
+    const lang = (typeof localStorage !== "undefined"
+      ? localStorage.getItem("cropguard_lang")
+      : null) || user?.language || "en";
+    return {
+      theme:       user?.theme       || "light",
+      language:    lang,
+      fontSize:    user?.fontSize    || "medium",
+      confidence:  user?.confidence  || 70,
+      autoSave:    user?.autoSave    !== false,
+      showTop3:    user?.showTop3    !== false,
+      userName:    user?.name        || "Researcher",
+      institution: user?.institution || "",
+      plan:        user?.plan        || "free",
+    };
+  }, [user]);
 
   const setSettings = useCallback(async (patch) => {
     const resolved = typeof patch === "function" ? patch(settings) : patch;
@@ -73,16 +71,25 @@ function AppShell() {
     localStorage.setItem("cg_ui", JSON.stringify(ui));
     document.documentElement.setAttribute("data-theme",    resolved.theme);
     document.documentElement.setAttribute("data-fontsize", resolved.fontSize);
-    // Persist profile fields to server
-    await authFetch(
-      `${import.meta.env.VITE_API_URL||"http://localhost:3001"}/api/auth/me`,
-      { method:"PUT", body: JSON.stringify({
-          name: resolved.userName, institution: resolved.institution,
-          language: resolved.language,
-      })}
-    ).catch(() => {});
+    if (resolved.language && resolved.language !== settings.language) {
+      localStorage.setItem("cropguard_lang", resolved.language);
+      // i18n FIX: call changeLanguage on the single i18n instance — all components re-render instantly
+      i18n.changeLanguage(resolved.language);
+    }
+    const updated = {
+      ...JSON.parse(localStorage.getItem("cg_user") || "{}"),
+      name: resolved.userName,
+      institution: resolved.institution,
+      language: resolved.language,
+      theme: resolved.theme,
+      fontSize: resolved.fontSize,
+      confidence: resolved.confidence,
+      autoSave: resolved.autoSave,
+      showTop3: resolved.showTop3,
+    };
+    localStorage.setItem("cg_user", JSON.stringify(updated));
     reloadUser();
-  }, [settings, authFetch, reloadUser]);
+  }, [settings, reloadUser]);
 
   const [splash,     setSplash]     = useState(() => !sessionStorage.getItem("cg_seen"));
   const [page,       setPage]       = useState("dashboard");
@@ -90,38 +97,37 @@ function AppShell() {
   const [menuOpen,   setMenuOpen]   = useState(false);
   const [showAlerts, setShowAlerts] = useState(false);
   const [showChat,   setShowChat]   = useState(false);
-  const [chatOpened,  setChatOpened]  = useState(() => !!sessionStorage.getItem("cg_chat_seen"));
+  const [chatOpened, setChatOpened] = useState(() => !!sessionStorage.getItem("cg_chat_seen"));
   const [isOffline,  setIsOffline]  = useState(!navigator.onLine);
 
-  // Apply theme/font on mount from localStorage (instant, no flash)
   useEffect(() => {
     try {
       const ui = JSON.parse(localStorage.getItem("cg_ui") || "{}");
-      document.documentElement.setAttribute("data-theme",
-        ui.theme || "light");  // DEFAULT LIGHT
-      document.documentElement.setAttribute("data-fontsize",
-        ui.fontSize || "medium");
+      document.documentElement.setAttribute("data-theme",    ui.theme || "light");
+      document.documentElement.setAttribute("data-fontsize", ui.fontSize || "medium");
     } catch {
       document.documentElement.setAttribute("data-theme", "light");
     }
   }, []);
 
-  // Apply theme whenever settings change
   useEffect(() => {
     document.documentElement.setAttribute("data-theme",    settings.theme);
     document.documentElement.setAttribute("data-fontsize", settings.fontSize);
+    if (settings.theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }, [settings.theme, settings.fontSize]);
 
-  // Responsive: close menu on resize
   useEffect(() => {
     const fn = () => { if (window.innerWidth > 900) setMenuOpen(false); };
     window.addEventListener("resize", fn);
     return () => window.removeEventListener("resize", fn);
   }, []);
 
-  // Online/offline
   useEffect(() => {
-    const on = () => setIsOffline(false);
+    const on  = () => setIsOffline(false);
     const off = () => setIsOffline(true);
     window.addEventListener("online",  on);
     window.addEventListener("offline", off);
@@ -137,9 +143,7 @@ function AppShell() {
     setResult(data);
   }, [reloadUser]);
 
-  // Localised date string
   const dateStr = useMemo(() => {
-    // Map app language to correct BCP-47 locale for date formatting
     const localeMap = { en:"en-GB", am:"am-ET", ti:"ti-ET" };
     const locale = localeMap[settings.language] || "en-GB";
     try {
@@ -147,7 +151,6 @@ function AppShell() {
         weekday:"long", day:"numeric", month:"long", year:"numeric"
       });
     } catch {
-      // Fallback if locale not supported by the browser
       return new Date().toLocaleDateString("en-GB", {
         weekday:"long", day:"numeric", month:"long", year:"numeric"
       });
@@ -159,12 +162,10 @@ function AppShell() {
       display:"flex", alignItems:"center", justifyContent:"center" }}>
       <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:14 }}>
         <div className="spinner"/>
-        <div style={{ color:"var(--text3)", fontSize:13 }}>Loading CropGuard AI…</div>
+        <div style={{ color:"var(--text3)", fontSize:13 }}>{t("loading")}</div>
       </div>
     </div>
   );
-
-  if (!user) return <AuthPage/>;
 
   const pageTitle = t(PAGE_TITLE_KEY[page] || "nav_dashboard");
 
@@ -231,12 +232,11 @@ function AppShell() {
               {page==="community"    && <CommunityPage    nav={nav} t={t}/>}
               {page==="bookmarks"    && <BookmarksPage    nav={nav} t={t}/>}
               {page==="pricing"      && <PricingPage      t={t}/>}
-              {page==="settings"     && <SettingsPage     settings={settings} setSettings={setSettings} t={t} onLogout={logout}/>}
+              {page==="settings"     && <SettingsPage     settings={settings} setSettings={setSettings} t={t} onLogout={logout} nav={nav}/>}
             </Suspense>
           </main>
         </div>
 
-        {/* ── AI Assistant ── */}
         {!showChat && (
           <ChatBubble
             lang={settings.language}
@@ -255,15 +255,5 @@ function AppShell() {
         )}
       </div>
     </>
-  );
-}
-
-export default function App() {
-  return (
-    <ToastProvider>
-      <AuthProvider>
-        <AppShell/>
-      </AuthProvider>
-    </ToastProvider>
   );
 }

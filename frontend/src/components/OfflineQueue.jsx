@@ -3,10 +3,12 @@
 // Also exports useOfflineQueue hook used by DetectPage
 
 import { useState, useEffect, useCallback } from "react";
+import { useAuth } from "../context/AuthContext";
 const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
 // ── Hook ─────────────────────────────────────────────────────
 export function useOfflineQueue() {
+  const { authFetch } = useAuth();
   const [queue, setQueue] = useState(() => {
     try { return JSON.parse(localStorage.getItem("cg_offline_queue") || "[]"); } catch { return []; }
   });
@@ -52,7 +54,7 @@ export function useOfflineQueue() {
         const blob = await res.blob();
         const fd   = new FormData();
         fd.append("image", blob, item.fileName);
-        const apiRes  = await fetch(`${API}/api/predict`, { method:"POST", body:fd });
+        const apiRes  = await authFetch(`${API}/api/predict`, { method:"POST", body:fd });
         const data    = await apiRes.json();
         if (!apiRes.ok) throw new Error(data.error);
         const done = q.map(i => i.id === item.id ? { ...i, status:"done", result:data } : i);

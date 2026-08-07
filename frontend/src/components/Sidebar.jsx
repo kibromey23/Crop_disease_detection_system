@@ -144,10 +144,10 @@ export default function Sidebar({ page, nav, t, menuOpen }) {
 
       {showLogoutModal && (
         <ConfirmModal
-          title="Sign out?"
-          message="You will be signed out from this device. Your data is safely stored on the server."
-          confirmLabel="Sign out"
-          cancelLabel="Cancel"
+          title={`${t("sign_out")}?`}
+          message={t("logout_confirm_message")}
+          confirmLabel={t("sign_out")}
+          cancelLabel={t("cancel")}
           danger={false}
           onConfirm={async () => { setShowLogoutModal(false); await logout(); }}
           onCancel={() => setShowLogoutModal(false)}

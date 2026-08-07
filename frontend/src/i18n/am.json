@@ -1,0 +1,2175 @@
+{
+  "_meta": {
+    "project": "CropGuard AI",
+    "institution": "መቀሌ ቴክኖሎጂ ኢንስቲትዩት (MIT)፣ 2026",
+    "source_language": "English (en)",
+    "target_languages": [
+      "Tigrinya (ti)",
+      "Amharic (am)"
+    ],
+    "generated": "2026-05-03",
+    "notes": "ለፊት ለፊት፣ ለጀርባ እና ለማሽን ላርኒንግ ክፍሎች የተዘጋጀ አማርኛ ትርጉም"
+  },
+  "frontend": {
+    "app": {
+      "app_name": "CropGuard AI",
+      "app_subtitle": "የዕፅዋት በሽታ መመርመሪያ",
+      "version": "v1.0 · MIT 2026",
+      "model_online": "AI በመስመር ላይ",
+      "ai_ready": "ሞዴሉ ዝግጁ ነው",
+      "loading": "በመጫን ላይ…",
+      "saving": "በማስቀመጥ ላይ…",
+      "close": "ዝጋ",
+      "cancel": "ሰርዝ",
+      "confirm": "አረጋግጥ",
+      "back": "ተመለስ",
+      "next": "ቀጣይ",
+      "done": "ተጠናቋል",
+      "scan_now": "አሁን መርምር",
+      "learn_more": "ተጨማሪ እወቅ",
+      "view_all": "ሁሉንም እይ",
+      "see_more": "ተጨማሪ እይ",
+      "save_profile": "መገለጫ አስቀምጥ",
+      "downgrade": "ዝቅ አድርግ",
+      "daily_scans": "የቀን ምርመራዎች",
+      "resets_midnight": "እኩለ ሌሊት ላይ ይታደሳል",
+      "features_on_plan": "በአገልግሎትዎ የተካተቱ ጥቅሞች",
+      "see_premium_features": "ሁሉንም የፕሪሚየም ጥቅሞች እይ →",
+      "account_info": "የመለያ መረጃ",
+      "email_label": "ኢሜይል",
+      "member_since": "አባል የሆኑት ከ",
+      "user_id_label": "የተጠቃሚ መለያ",
+      "security": "ደህንነት",
+      "enabled": "በርቷል",
+      "disabled": "ጠፍቷል",
+      "today": "ዛሬ",
+      "weather_label": "የመቀሌ አየር ሁኔታ",
+      "humidity": "እርጥበት",
+      "wind": "ንፋስ"
+    },
+    "nav": {
+      "home": "መነሻ",
+      "about": "ስለ እኛ",
+      "contact": "ያግኙን",
+      "diseases": "የበሽታ መመሪያ",
+      "signin": "ግባ",
+      "register": "ተመዝገብ",
+      "dashboard": "የመቆጣጠሪያ ሰሌዳ",
+      "backHome": "ወደ መነሻ ተመለስ",
+      "nav_main": "ዋና",
+      "nav_system": "ብልህ መረጃ",
+      "nav_tools": "መሳሪያዎች",
+      "nav_dashboard": "የመቆጣጠሪያ ሰሌዳ",
+      "nav_detect": "በሽታ መርምር",
+      "nav_history": "የምርመራ ታሪክ",
+      "nav_encyclopedia": "የበሽታ መመሪያ",
+      "nav_analytics": "ትንታኔ",
+      "nav_farm": "የእርሻ ስራ አስኪያጅ",
+      "nav_community": "ማህበረሰብ",
+      "nav_bookmarks": "የተቀመጡ እቅዶች",
+      "nav_settings": "ቅንብሮች",
+      "btn_new_scan": "አዲስ ምርመራ",
+      "sign_in": "ግባ",
+      "sign_out": "ውጣ"
+    },
+    "home": {
+      "hero": {
+        "badge": "በ AI የሚመራ ግብርና",
+        "title": "ሰብልዎን በ CropGuard AI ይጠብቁ",
+        "subtitle": "ለኢትዮጵያ አነስተኛ አርሶ አደሮች የተነደፈ ብልህና ባለብዙ ቋንቋ የዕፅዋት በሽታ መመርመሪያ። የቅጠል ምስል በመጫን ፈጣን የ AI ምርመራና የሕክምና ምክሮችን ያግኙ።",
+        "getStarted": "በነጻ ይጀምሩ",
+        "learnMore": "የበሽታ መመሪያን ይቃኙ",
+        "supportedCrops": "ስንዴ · ጤፍ · በቆሎ · ቲማቲም · ድንች · ቃሪያ"
+      },
+      "stats": {
+        "accuracy": "93.7%",
+        "accuracyLabel": "የሞዴሉ ትክክለኛነት",
+        "diseases": "10+",
+        "diseasesLabel": "የበሽታ አይነቶች",
+        "languages": "3",
+        "languagesLabel": "ቋንቋዎች",
+        "farmers": "ትግራይ",
+        "farmersLabel": "የትኩረት ክልል"
+      },
+      "features": {
+        "title": "ለምን CropGuard AI?",
+        "subtitle": "ለኢትዮጵያ አርሶ አደሮች ተብሎ የተሰራ — ትክክለኛ፣ ተደራሽ እና ባለብዙ ቋንቋ።",
+        "ai": {
+          "title": "የ AI በሽታ ምርመራ",
+          "desc": "በ14,559 የቅጠል ምስሎች የሰለጠነ ሞዴል በ10 የሰብል በሽታዎች ላይ 93.7% ትክክለኛነት ያሳያል።"
+        },
+        "multilingual": {
+          "title": "የ3 ቋንቋዎች ድጋፍ",
+          "desc": "ሙሉ የእንግሊዝኛ፣ የአማርኛ እና የትግርኛ ድጋፍ — ለአርሶ አደሮች የቋንቋ እንቅፋትን ያስቀረ።"
+        },
+        "instant": {
+          "title": "ፈጣን ውጤት",
+          "desc": "የቅጠል ፎቶ በመጫን በጥቂት ሰከንዶች ውስጥ ውጤቱን እና ተስማሚ የሕክምና ምክሮችን ያግኙ።"
+        },
+        "history": {
+          "title": "የትንበያ ታሪክ",
+          "desc": "ሁሉንም ያለፉ ምርመራዎች በመቆጣጠሪያ ሰሌዳዎ ላይ ይከታተሉ። በእርሻዎ ላይ ያለውን የበሽታ ሁኔታ ይገምግሙ።"
+        },
+        "chat": {
+          "title": "የ AI ረዳት",
+          "desc": "ስለ ተገኘው በሽታ ተጨማሪ ጥያቄዎችን በሚመርጡት ቋንቋ ይጠይቁ። በዘመናዊ AI የታገዘ።"
+        },
+        "crops": {
+          "title": "የአካባቢ ሰብሎች ሽፋን",
+          "desc": "በትግራይ ለሚበቅሉ ሰብሎች የተዘጋጀ፦ ስንዴ፣ ጤፍ፣ በቆሎ፣ ቲማቲም፣ ድንች እና ቃሪያ።"
+        }
+      },
+      "howItWorks": {
+        "title": "እንዴት ነው የሚሰራው?",
+        "subtitle": "ምርትዎን ለመጠበቅ ሶስት ቀላል እርምጃዎች",
+        "step1": {
+          "title": "የቅጠል ፎቶ ይጫኑ",
+          "desc": "የታመመውን የሰብል ቅጠል በቅርብ ግልጽ ፎቶ አንስተው ከስልክዎ ወይም ከኮምፒውተርዎ ይጫኑ።"
+        },
+        "step2": {
+          "title": "የ AI ትንታኔ",
+          "desc": "የእኛ ሞዴል ምስሉን በፍጥነት በመተንተን የበሽታውን ምልክቶች በ93.7% ትክክለኛነት ይለያል።"
+        },
+        "step3": {
+          "title": "ምክሮችን ያግኙ",
+          "desc": "የበሽታውን ስም፣ የእርግጠኝነት መጠን እና የሕክምና አማራጮችን በቋንቋዎ ያግኙ።"
+        }
+      },
+      "crops": {
+        "title": "የሚደገፉ ሰብሎች",
+        "subtitle": "CropGuard AI በትግራይ ግብርና ውስጥ ዋና ዋና የሆኑ ሰብሎችን ይሸፍናል",
+        "list": [
+          {
+            "name": "ስንዴ",
+            "diseases": "የግንድ ዝገት፣ የቅጠል ዝገት"
+          },
+          {
+            "name": "ጤፍ",
+            "diseases": "የቅጠል ብላክ፣ የጤፍ ስመጥ"
+          },
+          {
+            "name": "በቆሎ",
+            "diseases": "የቅጠል ብላክ፣ ግራጫ የቅጠል ነጠብጣብ"
+          },
+          {
+            "name": "ቲማቲም",
+            "diseases": "የዘገየ ብላክ፣ የባክቴሪያ ነጠብጣብ"
+          },
+          {
+            "name": "ድንች",
+            "diseases": "የቀደመ ብላክ፣ የዘገየ ብላክ"
+          },
+          {
+            "name": "ቃሪያ",
+            "diseases": "የባክቴሪያ ነጠብጣብ፣ ጤናማ"
+          }
+        ]
+      },
+      "cta": {
+        "title": "ሰብልዎን ዛሬውኑ መጠበቅ ይጀምሩ",
+        "subtitle": "ምርታቸውን ለመጠበቅ AI የሚጠቀሙ የትግራይ አርሶ አደሮችን ይቀላቀሉ። በየትኛውም መሳሪያ ላይ በነጻ ያግኙት።",
+        "button": "የነጻ መለያ ይፍጠሩ",
+        "secondary": "የበሽታ መመሪያን ይቃኙ"
+      },
+      "seasonal_tip": "ወቅታዊ ምክር",
+      "tip_text": "የዝገት በሽታዎች በዝናብ ወቅት ይባባሳሉ። ስንዴና ገብስን በየ3-5 ቀኑ ይከታተሉ።",
+      "welcome_title": "ወደ CropGuard AI እንኳን ደህና መጡ",
+      "welcome_sub": "ለትግራይ አርሶ አደሮች የተዘጋጀ የ AI ሰብል በሽታ መመርመሪያ። ለፈጣን ምርመራ ፎቶ ይጫኑ።",
+      "btn_view_history": "ታሪክን እይ",
+      "btn_disease_guide": "የበሽታ መመሪያ"
+    },
+    "auth": {
+      "signin": {
+        "title": "እንኳን በደህና መለሱ",
+        "subtitle": "ወደ መቆጣጠሪያ ሰሌዳዎ ለመግባት ይግቡ",
+        "email": "ኢሜይል አድራሻ",
+        "password": "የይለፍ ቃል",
+        "button": "ግባ",
+        "noAccount": "መለያ የለዎትም?",
+        "register": "እዚህ ይመዝገቡ",
+        "backHome": "ወደ መነሻ ተመለስ"
+      },
+      "register": {
+        "title": "መለያ ይፍጠሩ",
+        "subtitle": "CropGuard AIን ይቀላቀሉ እና ምርትዎን ይጠብቁ",
+        "name": "ሙሉ ስም",
+        "email": "ኢሜይል አድራሻ",
+        "password": "የይለፍ ቃል",
+        "confirm": "የይለፍ ቃል ያረጋግጡ",
+        "button": "መለያ ፍጠር",
+        "hasAccount": "ከዚህ በፊት መለያ ነበረዎት?",
+        "signin": "እዚህ ይግቡ",
+        "backHome": "ወደ መነሻ ተመለስ"
+      },
+      "auth_sign_in": "ግባ",
+      "auth_create_account": "መለያ ፍጠር",
+      "auth_email": "ኢሜይል አድራሻ",
+      "auth_password": "የይለፍ ቃል",
+      "auth_full_name": "ሙሉ ስም",
+      "auth_institution": "ተቋም",
+      "auth_language": "ቋንቋ",
+      "auth_confirm_pw": "የይለፍ ቃል ያረጋግጡ",
+      "auth_subtitle": "የዕፅዋት በሽታ መመርመሪያ",
+      "auth_your_email": "your@email.com",
+      "auth_your_password": "የይለፍ ቃል ያስገቡ",
+      "auth_pw_placeholder": "ቢያንስ 8 ፊደላት፣ ትልቅ ፊደልና ቁጥር",
+      "auth_confirm_ph": "የይለፍ ቃልዎን ድጋሚ ያስገቡ",
+      "auth_please_wait": "እባክዎን ይጠብቁ…",
+      "auth_no_name": "እባክዎን ሙሉ ስምዎን ያስገቡ።",
+      "auth_bad_email": "እባክዎን ትክክለኛ የኢሜይል አድራሻ ያስገቡ።",
+      "auth_pw_min": "የይለፍ ቃል ቢያንስ 8 ፊደላት መሆን አለበት።",
+      "auth_pw_rules": "የይለፍ ቃል ቢያንስ አንድ ትልቅ ፊደል እና አንድ ቁጥር መያዝ አለበት።",
+      "auth_pw_mismatch": "የይለፍ ቃላቱ አይዛመዱም።",
+      "auth_pw_match": "✓ የይለፍ ቃላቱ ተዛምደዋል",
+      "auth_free_plan_note": "የነጻ አገልግሎት፦ በቀን 5 ምርመራዎች። ላልተገደበ ምርመራ ወደ ፕሪሚየም ($4.99/ወር) ያሳድጉ።",
+      "pw_show": "አሳይ",
+      "pw_hide": "ደብቅ",
+      "auth_pw_too_short": "በጣም አጭር",
+      "auth_pw_weak": "ደካማ",
+      "auth_pw_fair": "መካከለኛ",
+      "auth_pw_good": "ጥሩ",
+      "auth_pw_strong": "ጠንካራ",
+      "auth_pw_very_strong": "በጣም ጠንካራ"
+    },
+    "dashboard": {
+      "title": "የእኔ መቆጣጠሪያ ሰሌዳ",
+      "backHome": "ወደ መነሻ ተመለስ",
+      "welcome": "እንኳን በደህና መለሱ",
+      "stats": {
+        "totalScans": "ጠቅላላ ምርመራዎች",
+        "diseased": "የታመሙ",
+        "healthy": "ጤናማ",
+        "thisMonth": "በዚህ ወር"
+      },
+      "recentScans": "የቅርብ ጊዜ ምርመራዎች",
+      "noScans": "እስካሁን ምንም ምርመራ የለም። ለመጀመር የቅጠል ምስል ይጫኑ።",
+      "uploadNew": "አዲስ ምስል ይጫኑ",
+      "stat_total": "ጠቅላላ ምርመራዎች",
+      "stat_diseased": "የተገኙ በሽታዎች",
+      "stat_healthy": "ጤናማ ሰብሎች",
+      "stat_confidence": "አማካኝ እርግጠኝነት",
+      "health_rate": "የጤናማነት መጠን",
+      "recent_scans": "የቅርብ ጊዜ ምርመራዎች",
+      "no_scans_yet": "እስካሁን ምንም ምርመራ የለም — 'አዲስ ምርመራ'ን ይጫኑ",
+      "disease_dist": "የበሽታዎች ስርጭት",
+      "quick_actions": "ፈጣን ተግባራት",
+      "action_scan": "ቅጠል መርምር",
+      "action_guide": "የበሽታ መመሪያ",
+      "action_history": "የምርመራ ታሪክ",
+      "action_settings": "ቅንብሮች",
+      "activity_chart_label": "የ7 ቀን የምርመራ እንቅስቃሴ",
+      "day_abbreviations": {
+        "su": "እሁ",
+        "mo": "ሰኞ",
+        "tu": "ማክ",
+        "we": "ረቡ",
+        "th": "ሐሙ",
+        "fr": "አርብ",
+        "sa": "ቅዳ"
+      }
+    },
+    "detect": {
+      "upload_title": "ቅጠል ይመርምሩ፣ ውጤት ያግኙ",
+      "upload_sub": "የታመመ ቅጠል ፎቶ ይጫኑ። የእኛ AI በሽታውን ለይቶ በጥቂት ሰከንዶች ውስጥ ሕክምና ይጠቁማል።",
+      "drop_title": "የቅጠሉን ምስል እዚህ ይጎትቱ",
+      "drop_sub": "ወይም ፋይሎችን ለመምረጥ ይጫኑ",
+      "ready_label": "ለመተንተን ዝግጁ ነው",
+      "remove_image": "ምስሉን አስወግድ",
+      "btn_analyse": "ይህን ቅጠል ተንትን",
+      "btn_select": "መጀመሪያ ምስል ይምረጡ",
+      "analysing": "በመተንተን ላይ…",
+      "running_model": "የ AI ሞዴሉን በማሰራት ላይ",
+      "photo_tips": "የፎቶ አነሳስ ምክሮች",
+      "tip1_title": "ጥሩ ብርሃን",
+      "tip1_desc": "የተፈጥሮ የቀን ብርሃን ይጠቀሙ፣ ጥላ እንዳያርፍበት ያድርጉ",
+      "tip2_title": "የቅርብ ምስል",
+      "tip2_desc": "አንድ ወይም ሁለት ቅጠሎች ምስሉን እንዲሞሉት ያድርጉ",
+      "tip3_title": "ምልክቶችን ያሳዩ",
+      "tip3_desc": "በጣም የተጎዳውን የቅጠል ክፍል ፎቶ ያንሱ",
+      "tip4_title": "ካሜራውን አያናውጡ",
+      "tip4_desc": "ካሜራውን ከቅጠሉ ጋር ትይዩ አድርገው ይያዙ",
+      "conf_threshold": "የእርግጠኝነት ገደብ",
+      "conf_in_settings": "በቅንብሮች → ምርመራ ውስጥ ያስተካክሉ",
+      "error_prefix": "ስህተት: ",
+      "upload_note": "JPG, PNG, WebP · ቢበዛ 10 MB",
+      "cam_live": "ቀጥታ",
+      "cam_scan_btn": "ቅጠል ፎቶ አንሳ",
+      "cam_capture": "በማንሳት ላይ…",
+      "cam_retake": "ድጋሚ አንሳ",
+      "cam_flip": "ካሜራ አዙር",
+      "cam_not_supported": "ካሜራው አይሰራም",
+      "cam_not_supported_sub": "በምትኩ 'መጫኛ'ን ይጠቀሙ።",
+      "cam_denied": "የካሜራ ፈቃድ ተከልክሏል — እባክዎን ፈቃድ ሰጥተው ገጹን ያድሱ።",
+      "offline_queued": "ኢንተርኔት የለም — ምርመራው ተቀምጧል፣ ኢንተርኔት ሲመጣ ይተነተናል።",
+      "offline_banner": "ያለ ኢንተርኔት አገልግሎት — ምርመራዎች ተመዝግበው ኢንተርኔት ሲያገኙ ይላካሉ።",
+      "online_back": "ኢንተርኔት ተመልሷል",
+      "error_ai_offline": "የ AI አገልጋዩ ጠፍቷል። እባክዎን አስጀምረው ድጋሚ ይሞክሩ።",
+      "error_too_large": "ፋይሉ በጣም ትልቅ ነው — ቢበዛ 10 MB",
+      "error_wrong_type": "JPG, PNG ወይም WebP ምስሎች ብቻ ይፈቀዳሉ",
+      "error_try_again": "የሆነ ስህተት ተፈጥሯል። እባክዎን ድጋሚ ይሞክሩ።",
+      "upload_tab_label": "ምስል ስቀል",
+      "cam_tab_camera": "ካሜራ",
+      "cam_realtime_sub": "ካሜራውን ወደ ታመመው የዕፅዋት ቅጠል አቅና",
+      "quota_resets_midnight": "ኮታ በምሽቱ 12 ሰዓት ይታደሳል"
+    },
+    "history": {
+      "search_placeholder": "በበሽታ ወይም በሰብል ስም ይፈልጉ…",
+      "filter_all": "ሁሉም ውጤቶች",
+      "filter_diseased": "የታመሙ ብቻ",
+      "filter_healthy": "ጤናማ ብቻ",
+      "filter_highconf": "ከፍተኛ እርግጠኝነት",
+      "sort_newest": "የቅርብ ጊዜ መጀመሪያ",
+      "sort_oldest": "የቆየ መጀመሪያ",
+      "sort_conf": "በእርግጠኝነት መጠን",
+      "scans_count": "ከ{total} ምርመራዎች {n}ቱ",
+      "no_history_title": "ምንም ታሪክ የለም",
+      "no_history_sub": "ለመጀመር ቅጠል ይመርምሩ",
+      "no_results_title": "ምንም ውጤት አልተገኘም",
+      "no_results_sub": "ሌላ የፍለጋ ቃል ወይም ማጣሪያ ይሞክሩ",
+      "confidence_label": "እርግጠኝነት",
+      "healthy_badge": "ጤናማ",
+      "diseased_badge": "የታመመ",
+      "export_csv": "በ CSV ያውርዱ",
+      "view_grid": "ሰንጠረዥ",
+      "view_list": "ዝርዝር",
+      "select_all": "ሁሉንም ምረጥ",
+      "deselect_all": "ምርጫ ሰርዝ",
+      "bulk_delete": "{n} የተመረጡትን ሰርዝ",
+      "notif_deleted": "ተሰርዟል",
+      "notif_exported": "CSV ወርዷል",
+      "delete_one_title": "ይህ ምርመራ ይሰረዝ?",
+      "delete_one_message": "ይህ ድርጊት ሊመለስ አይችልም።",
+      "delete_one_confirm_label": "ሰርዝ",
+      "delete_bulk_title": "{n} ምርመራዎች ይሰረዙ?",
+      "delete_bulk_message": "ሁሉም የተመረጡ ምርመራዎች በቋሚነት ይወገዳሉ።",
+      "delete_bulk_confirm_label": "ሁሉንም ሰርዝ",
+      "deleted_n_scans": "{n} ምርመራዎች ተሰርዘዋል"
+    },
+    "settings": {
+      "settings_sub": "የ CropGuard AI ተሞክሮዎን ያስተካክሉ",
+      "btn_save": "ለውጦችን አስቀምጥ",
+      "btn_saved": "✓ ተቀምጧል!",
+      "tab_appearance": "ገጽታ",
+      "tab_detection": "ምርመራ",
+      "tab_profile": "መገለጫ",
+      "tab_account": "መለያ",
+      "tab_about": "ስለ",
+      "theme_title": "ገጽታ",
+      "theme_desc": "የመተግበሪያውን ገጽታ ይምረጡ",
+      "theme_dark": "ጥቁር",
+      "theme_light": "ነጭ",
+      "fontsize_title": "የፊደል መጠን",
+      "fontsize_desc": "የጽሁፍ መጠን ያስተካክሉ",
+      "fs_small": "ትንሽ",
+      "fs_medium": "መካከለኛ",
+      "fs_large": "ትልቅ",
+      "language_title": "ቋንቋ",
+      "language_desc": "የመተግበሪያው ቋንቋ",
+      "conf_title": "የእርግጠኝነት ገደብ",
+      "conf_desc": "ውጤት ለማሳየት የሚያስፈልግ አነስተኛ እርግጠኝነት።",
+      "conf_more": "30% — ብዙ ውጤቶች",
+      "conf_precise": "95% — ከፍተኛ ጥራት",
+      "top3_title": "ምርጥ 3 ትንበያዎችን አሳይ",
+      "top3_desc": "ተመሳሳይነት ያላቸውን ውጤቶች ያሳያል",
+      "autosave_title": "ምርመራዎችን በራስ-ሰር አስቀምጥ",
+      "autosave_desc": "ሁሉንም ውጤቶች በራስ-ሰር ያስቀምጣል",
+      "name_title": "ስምዎ",
+      "name_desc": "በመተግበሪያው አናት ላይ ይታያል",
+      "name_placeholder": "ስምዎን ያስገቡ",
+      "inst_title": "ተቋም",
+      "inst_desc": "ድርጅትዎ",
+      "inst_placeholder": "የተቋሙ ስም",
+      "about_title": "ስለ CropGuard AI",
+      "about_desc": "የስርዓት መረጃ",
+      "team_title": "የፕሮጀክቱ ቡድን",
+      "lbl_version": "ስሪት",
+      "lbl_model": "ሞዴል",
+      "lbl_dataset": "ዳታሴት",
+      "lbl_crops": "የታለሙ ሰብሎች",
+      "lbl_inst": "ተቋም",
+      "lbl_submitted": "ለማን የቀረበ",
+      "lbl_year": "ዓመተ ምህረት",
+      "lbl_frontend": "Frontend",
+      "lbl_backend": "Backend",
+      "lbl_ai_server": "AI አገልጋይ",
+      "view_active_sessions": "ንቁ ክፍለ-ጊዜዎችን እይ",
+      "signout_all_devices": "ከሁሉም መሳሪያዎች ውጣ",
+      "downgrade_title": "ወደ ነጻ አገልግሎት ይመለሱ?",
+      "downgrade_msg": "ያልተገደበ ምርመራ እና የ AI ምክሮችን ጨምሮ የፕሪሚየም ጥቅሞችን ያጣሉ።",
+      "downgrade_confirm": "አዎ፣ ይመለስ",
+      "downgraded_info": "ወደ ነጻ አገልግሎት ተመልሰዋል",
+      "signout_all_title": "ከሁሉም መሳሪያዎች መውጣት ይፈልጋሉ?",
+      "signout_all_msg": "ይህ በሁሉም መሳሪያዎች ላይ ያሉትን ክፍለ-ጊዜዎች ያበቃል። ድጋሚ መግባት ይኖርብዎታል።",
+      "signout_all_btn": "ከሁሉም ውጣ",
+      "signout_all_done": "ከሁሉም መሳሪያዎች ወጥተዋል",
+      "logout_confirm_message": "ከዚህ መሳሪያ ይወጣሉ። መረጃዎ በአገልጋዩ ላይ በጥንቃቄ ተቀምጧል።",
+      "stage_seedling": "ተክል",
+      "stage_vegetative": "እድገት",
+      "stage_flowering": "አበባ",
+      "stage_fruiting": "ፍሬ",
+      "stage_harvest": "ምርት",
+      "stage_dormant": "እረፍት"
+    },
+    "pricing": {
+      "upgrade_cta": "ወደ ፕሪሚየም ያሳድጉ",
+      "upgrade_sub": "ያልተገደበ ምርመራ እና የባለሙያ ድጋፍ ያግኙ",
+      "plan_free": "ነጻ",
+      "plan_premium": "ፕሪሚየም",
+      "plan_enterprise": "ድርጅታዊ",
+      "plan_free_desc": "በቀን 5 ምርመራዎች · መሰረታዊ ውጤቶች",
+      "plan_premium_desc": "ያልተገደበ ምርመራ · የ AI ምክሮች · ፈጣን ድጋፍ",
+      "plan_enterprise_desc": "ለብዙ እርሻዎች · ለቡድን · ለተቋማት",
+      "plan_free_price": "ነጻ",
+      "plan_premium_price": "$4.99 / በወር",
+      "plan_enterprise_price": "ያግኙን",
+      "plan_current": "የአሁኑ አገልግሎት",
+      "plan_upgrade": "አሳድግ",
+      "plan_most_popular": "ተመራጭ",
+      "premium_feature": "የፕሪሚየም ጥቅም",
+      "premium_locked": "ይህ አገልግሎት የፕሪሚየም አባልነት ይጠይቃል",
+      "premium_unlock": "በፕሪሚየም ክፈት",
+      "go_premium": "ወደ ፕሪሚየም →",
+      "enterprise_price_monthly": "$19.99 / በወር",
+      "enterprise_payment_title": "ድርጅታዊ አገልግሎት",
+      "enterprise_payment_sub": "ሁሉንም የፕሪሚየም ጥቅሞች ከሙሉ ድጋፍ ጋር ይይዛል።",
+      "enterprise_contact_btn": "ለዋጋ ያግኙን",
+      "enterprise_upgrade_btn": "ድርጅታዊ ያግኙ →",
+      "enterprise_contact_alert": "ለድርጅትዎ አገልግሎት ለማግኘት cropguard@mit.edu.et ላይ ያግኙን።",
+      "current_plan_badge": "የአሁኑ አገልግሎት:",
+      "plan_card_current_label": "✓ የአሁኑ አገልግሎት",
+      "plan_card_contact_label": "ያግኙን",
+      "plan_card_downgrade_label": "ዝቅ አድርግ",
+      "what_you_get_title": "በእያንዳንዱ አገልግሎት የሚያገኙት",
+      "feature_matrix": {
+        "col_feature": "ጥቅሞች",
+        "rows": {
+          "daily_scans": {
+            "label": "የቀን ምርመራዎች",
+            "free": "5 / በቀን",
+            "premium": "ያልተገደበ",
+            "enterprise": "ያልተገደበ"
+          },
+          "ai_diagnosis": {
+            "label": "የ AI ምርመራ",
+            "free": "መሰረታዊ",
+            "premium": "የላቀ",
+            "enterprise": "የላቀ"
+          },
+          "farms": {
+            "label": "እርሻዎች",
+            "free": "2",
+            "premium": "10",
+            "enterprise": "ያልተገደበ"
+          },
+          "scan_history": {
+            "label": "የምርመራ ታሪክ",
+            "free": "የመጨረሻ 20",
+            "premium": "ያልተገደበ",
+            "enterprise": "ያልተገደበ"
+          },
+          "ai_insights": {
+            "label": "የ AI ምክሮች",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "smart_treatment": {
+            "label": "ብልህ ሕክምና",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "risk_scoring": {
+            "label": "የአደጋ መጠን",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "export_reports": {
+            "label": "ሪፖርት ማውጣት",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "offline_queue": {
+            "label": "ያለ ኢንተርኔት",
+            "free": "—",
+            "premium": "✓",
+            "enterprise": "✓"
+          },
+          "api_access": {
+            "label": "የ API ፍቃድ",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "custom_model": {
+            "label": "ልዩ ሞዴል",
+            "free": "—",
+            "premium": "—",
+            "enterprise": "✓"
+          },
+          "support": {
+            "label": "ድጋፍ",
+            "free": "ማህበረሰብ",
+            "premium": "ፈጣን ኢሜይል",
+            "enterprise": "ልዩ ድጋፍ"
+          },
+          "price": {
+            "label": "ዋጋ",
+            "free": "ነጻ",
+            "premium": "$4.99/ወር",
+            "enterprise": "ያግኙን"
+          }
+        }
+      },
+      "plan_features": {
+        "free": [
+          "በቀን 5 ምርመራዎች",
+          "መሰረታዊ የ AI ምርመራ",
+          "የበሽታ ኢንሳይክሎፒዲያ",
+          "ቢበዛ 2 እርሻዎች",
+          "የመጨረሻ 20 ታሪኮች"
+        ],
+        "free_locked": [
+          "የ AI ትንታኔዎች",
+          "ብልህ የሕክምና እቅድ",
+          "የአደጋ እና ምርት ስሌት",
+          "የቦታ ብልህነት",
+          "ሪፖርቶችን ማውረድ",
+          "ያለ ኢንተርኔት መጠቀም",
+          "የማህበረሰብ መረጃ",
+          "ቅድሚያ ድጋፍ"
+        ],
+        "premium": [
+          "ያልተገደበ ምርመራ",
+          "የላቀ የ AI ምርመራ",
+          "የበሽታ ኢንሳይክሎፒዲያ",
+          "እስከ 10 እርሻዎች",
+          "ሙሉ የምርመራ ታሪክ",
+          "የ AI ትንታኔዎች",
+          "ብልህ የሕክምና እቅድ",
+          "የአደጋ እና ምርት ስሌት",
+          "የቦታ ብልህነት",
+          "ሪፖርቶችን ማውረድ",
+          "ያለ ኢንተርኔት መጠቀም",
+          "የማህበረሰብ መረጃ",
+          "ቅድሚያ ኢሜይል ድጋፍ"
+        ],
+        "enterprise": [
+          "ሁሉንም የፕሪሚየም ጥቅሞች",
+          "ያልተገደበ እርሻና ተጠቃሚ",
+          "ልዩ የ AI ሞዴል ስልጠና",
+          "የ API ፍቃድ",
+          "የቡድን መቆጣጠሪያ",
+          "ልዩ ድጋፍ ሰጪ",
+          "በቦታው ስልጠና",
+          "ልዩ ምልክት ማድረግ",
+          "የአገልግሎት ዋስትና"
+        ]
+      },
+      "toast_welcome_premium": "🎉 ወደ ፕሪሚየም እንኳን ደህና መጡ! ሁሉም ጥቅሞች ክፍት ናቸው።",
+      "toast_downgraded": "ወደ ነጻ አገልግሎት ተመልሰዋል።",
+      "feat_unlimited_scans": "ያልተገደበ ምርመራ",
+      "feat_ai_insights": "የ AI ሰብል ምክሮች",
+      "feat_smart_rec": "ብልህ የሕክምና እቅዶች",
+      "feat_risk_score": "የአደጋ እና ምርት ስሌት",
+      "feat_explain": "የማብራሪያ ንብርብር",
+      "feat_location": "የቦታ ብልህነት",
+      "feat_export": "ሪፖርቶችን ማውረድ (PDF/CSV)",
+      "feat_history_full": "ሙሉ የምርመራ ታሪክ",
+      "feat_community": "የማህበረሰብ መረጃ",
+      "feat_alerts": "የበሽታ መከሰት ማስጠንቀቂያ",
+      "feat_offline": "ያለ ኢንተርኔት መጠቀም",
+      "feat_multi_farm": "እስከ 10 እርሻዎች",
+      "feat_support": "ፈጣን ኢሜይል ድጋፍ"
+    },
+    "about": {
+      "hero": {
+        "title": "ስለ CropGuard AI",
+        "subtitle": "ከመቀሌ ዩኒቨርሲቲ ቴክኖሎጂ ኢንስቲትዩት የተገኘ የምርምር ፕሮጀክት፤ የኢትዮጵያን አርሶ አደሮች በ AI ግብርና ለመደገፍ የተሰራ።"
+      },
+      "university_badge": "መቀሌ ዩኒቨርሲቲ – MIT",
+      "mission": {
+        "title": "ተልእኳችን",
+        "text": "ግብርና የኢትዮጵያ ኢኮኖሚ መሰረት ሲሆን ከ70–80% የሚሆነውን የሰው ኃይል ያሰማራል። በትግራይ ክልል ስንዴ፣ ጤፍ፣ በቆሎና መሰል ሰብሎች በሚሊዮን ለሚቆጠሩ ቤተሰቦች ዋና መተዳደሪያ ናቸው። CropGuard AI የተፈጠረው ለእነዚህ አርሶ አደሮች ተደራሽ፣ ትክክለኛ እና ባለብዙ ቋንቋ የዕፅዋት በሽታ መመርመሪያ መሳሪያ ለማቅረብ ነው።",
+        "quote": "እያንዳንዱን አርሶ አደር — በቋንቋ ወይም በቦታ ሳይወሰን — በ AI የመመርመር አቅም ማብቃት።",
+        "card_subtitle": "ለኢትዮጵያ አርሶ አደሮች በ AI የሚሰራ የሰብል በሽታ ምርመራ"
+      },
+      "problem": {
+        "title": "የምንፈታው ችግር",
+        "subtitle": " በትግራይ እና በመላው ኢትዮጵያ አነስተኛ አርሶ አደሮች የሚገጥሟቸው አራት ተያያዥ ችግሮች",
+        "items": [
+          {
+            "title": "የባለሙያ እጥረት",
+            "desc": "የግብርና ኤክስቴንሽን ባለሙያዎች ለሰፊው ገጠር ህዝብ በቂ ባለመሆናቸው የበሽታ ምርመራ ዘግይቶ ሰብል እንዲጠፋ ያደርጋል።"
+          },
+          {
+            "title": "የቋንቋ እንቅፋት",
+            "desc": "ያሉ የ AI መሳሪያዎች በእንግሊዝኛ ብቻ በመሆናቸው በአማርኛ ወይም በትግርኛ ለሚግባቡ በሚሊዮን የሚቆጠሩ አርሶ አደሮች አይመቹም።"
+          },
+          {
+            "title": "ተገቢ ያልሆነ የመድኃኒት አጠቃቀም",
+            "desc": "በሽታውን በትክክል አለማወቅ ተገቢ ያልሆነ ኬሚካል እንዲረጭ፣ ወጪ እንዲጨምር እና ውሃ እንዲበከል ያደርጋል።"
+          },
+          {
+            "title": "የምርመራ ስህተት",
+            "desc": "ባለሙያ ያልሆኑ ገበሬዎች የበሽታ ምልክቶችን በማየት ብቻ መለየት ስለሚከብዳቸው በተለይ በመጀመሪያ ደረጃ ላይ ስህተት ይፈጠራል።"
+          }
+        ]
+      },
+      "model": {
+        "title": "ከ CropGuard AI በስተጀርባ ያለው ቴክኖሎጂ",
+        "text": "CropGuard AI የሚጠቀመው MobileNetV2 የተባለ ለሞባይልና ለዌብ የተመቻቸ በጎግል የበለጸገ የነርቭ መረብ ነው። በ14,559 የዕፅዋት በሽታ ምስሎች የሰለጠነ ሲሆን በትግራይ አካባቢ ከተሰበሰቡ ምስሎች ጋር ተዳምሮ 93.7% ትክክለኛነት ያስመዘገበ ነው።",
+        "stats": [
+          {
+            "label": "የስልጠና ምስሎች",
+            "value": "14,559"
+          },
+          {
+            "label": "የበሽታ አይነቶች",
+            "value": "10"
+          },
+          {
+            "label": "የሞዴል ትክክለኛነት",
+            "value": "93.7%"
+          },
+          {
+            "label": "የሚደገፉ ሰብሎች",
+            "value": "6"
+          }
+        ],
+        "techStack": [
+          "React.js Frontend",
+          "Node.js / Express API",
+          "Python FastAPI ML Service",
+          "PostgreSQL Database",
+          "MobileNetV2 Model",
+          "i18next Multilingual"
+        ]
+      },
+      "comparison": {
+        "title": "የእኛ ልዩነት",
+        "subtitle": "CropGuard AI ባለብዙ ቋንቋ ድጋፍን፣ የአካባቢ ሰብሎችን ሽፋን እና የምርመራ ታሪክን በአንድ ላይ ይይዛል",
+        "headers": [
+          "ባህሪ",
+          "PlantVillage",
+          "Plantix",
+          "CropGuard AI"
+        ],
+        "rows": [
+          {
+            "feature": "የቀጥታ ምርመራ",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "አማርኛ / ትግርኛ",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "የ AI ረዳት",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "የተግራይ ሰብሎች ሽፋን",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          },
+          {
+            "feature": "ነጻ እና ክፍት",
+            "plantvillage": true,
+            "plantix": true,
+            "cropguard": true
+          },
+          {
+            "feature": "የምርመራ መቆጣጠሪያ",
+            "plantvillage": false,
+            "plantix": false,
+            "cropguard": true
+          }
+        ]
+      },
+      "team": {
+        "title": "የምርምር ቡድኑ",
+        "subtitle": "ሰባት በመቀሌ ቴክኖሎጂ ኢንስቲትዩት የመረጃ ቴክኖሎጂ ተማሪዎች የነበሩ ሲሆኑ CropGuard AIን ለምረቃ ማሟያ ሰርተውታል።",
+        "members": [
+          {
+            "name": "ኒማ ከድር",
+            "role": "የቡድን መሪ እና ML መሐንዲስ"
+          },
+          {
+            "name": "ሃለፎም ኃይሉ",
+            "role": "Backend አዘጋጅ"
+          },
+          {
+            "name": "ጉዕሽ ተክሉ",
+            "role": "Frontend አዘጋጅ"
+          },
+          {
+            "name": "ሃዱሽ ፀጋቡ",
+            "role": "የዳታቤዝ መሐንዲስ"
+          },
+          {
+            "name": "ኪብሮም ጌታቸው",
+            "role": "AI/ML ተመራማሪ"
+          },
+          {
+            "name": "ሰለሞን ገ/ቸርቆስ",
+            "role": "የስርዓት አርክቴክት"
+          },
+          {
+            "name": "ገ/እግዚአብሔር ደስታለም",
+            "role": "UI/UX ዲዛይነር"
+          }
+        ],
+        "supervisor": "በኢንስፔክተር ጆርጅ የሚመራ",
+        "institution": "መቀሌ ዩኒቨርሲቲ – MIT፣ የመረጃ ቴክኖሎጂ ትምህርት ክፍል፣ መቀሌ፣ ትግራይ፣ ኢትዮጵያ",
+        "year": "የካቲት 2026"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "ያግኙን",
+        "subtitle": "ስለ CropGuard AI ጥያቄ አለዎት? ከአርሶ አደሮች፣ ተመራማሪዎች እና አጋሮች መስማት እንፈልጋለን።"
+      },
+      "form": {
+        "send_us_message": "መልዕክት ይላኩልን",
+        "name": "ሙሉ ስም",
+        "email": "ኢሜይል አድራሻ",
+        "subject": "ርዕስ",
+        "message": "መልዕክት",
+        "send": "መልዕክት ላክ",
+        "success": "መልዕክትዎ በተሳካ ሁኔታ ተልኳል! በቅርቡ ምላሽ እንሰጣለን።",
+        "namePlaceholder": "ሙሉ ስምዎ",
+        "emailPlaceholder": "your@email.com",
+        "subjectPlaceholder": "እንዴት ልንረዳዎ እንችላለን?",
+        "messagePlaceholder": "መልዕክትዎን እዚህ ይጻፉ..."
+      },
+      "info": {
+        "title": "በእነዚህ አድራሻዎች ያግኙን",
+        "institution": "መቀሌ ቴክኖሎጂ ኢንስቲትዩት",
+        "department": "የመረጃ ቴክኖሎጂ ትምህርት ክፍል",
+        "location": "መቀሌ፣ ትግራይ፣ ኢትዮጵያ",
+        "email": "cropguard@mekelle.edu.et",
+        "email_label": "ኢሜይል",
+        "languages_label": "ቋንቋዎች",
+        "languages_value": "English · አማርኛ · ትግርኛ",
+        "response_time_title": "የምላሽ ጊዜ",
+        "response_time_text": "በተለምዶ ከ2–3 የስራ ቀናት ውስጥ ምላሽ እንሰጣለን። ለአስቸኳይ ጉዳዮች በርዕሱ ላይ ይጠቅሱ።",
+        "topics": {
+          "title": "የተለመዱ ርዕሶች",
+          "items": [
+            "ስለ መተግበሪያው ቴክኒካዊ ድጋፍ",
+            "የምርምር ትብብር ጥያቄዎች",
+            "የበሽታ ሽፋን እንዲጨምር መጠየቅ",
+            "አስተያየት እና የስርዓት ስህተት",
+            "የአጋርነት እድሎች"
+          ]
+        }
+      },
+      "faq": {
+        "title": "ተደጋጋሚ ጥያቄዎች",
+        "items": [
+          {
+            "q": "CropGuard AI መጠቀም ነጻ ነው?",
+            "a": "አዎ፣ CropGuard AI ለሁሉም አርሶ አደሮች እና ተመራማሪዎች ሙሉ በሙሉ ነጻ ነው።"
+          },
+          {
+            "q": "ሲስተሙ የትኞቹን ሰብሎች ይደግፋል?",
+            "a": "ስንዴ፣ ጤፍ፣ በቆሎ፣ ቲማቲም፣ ድንች እና ቃሪያ — በትግራይ የተለመዱ ሰብሎችን ይደግፋል።"
+          },
+          {
+            "q": "መተግበሪያው በሞባይል ስልክ ይሰራል?",
+            "a": "አዎ፣ በማንኛውም ዘመናዊ ስልክ ወይም ኮምፒውተር ላይ ይሰራል ።"
+          },
+          {
+            "q": "የ AI ምርመራው ምን ያህል ትክክለኛ ነው?",
+            "a": "የእኛ ሞዴል በ10 የበሽታ አይነቶች ላይ 93.7% ትክክለኛነት ያስመዘገበ ነው።"
+          }
+        ]
+      }
+    },
+    "analytics": {
+      "analytics_title": "ትንታኔዎች እና ግንዛቤዎች",
+      "analytics_sub": "ከምርመራ ታሪክዎ የሚወጣ ብልህ ትንታኔ",
+      "total_scans": "ጠቅላላ ምርመራዎች",
+      "disease_rate": "የበሽታ መጠን",
+      "avg_conf": "አማካኝ እርግጠኝነት",
+      "top_disease": "ከፍተኛው በሽታ",
+      "monthly_trend": "የወር ሁኔታ",
+      "crop_breakdown": "የጤና አጠቃላይ እይታ",
+      "conf_distribution": "የእርግጠኝነት ደረጃዎች",
+      "no_analytics": "እስካሁን ዳታ የለም። ትንታኔ ለማየት መርምር ይጀምሩ።",
+      "tab_analytics_overview": "አጠቃላይ",
+      "tab_analytics_insights": "የ AI ምክሮች",
+      "tab_analytics_trends": "ሁኔታዎች",
+      "tab_analytics_location": "ቦታ"
+    },
+    "farm": {
+      "farm_title": "የእርሻ ስራ አስኪያጅ",
+      "farm_sub": "እርሻዎችዎን ያስተዳድሩ እና የሰብል እድገትን ይከታተሉ።",
+      "farm_add": "እርሻ ጨምር",
+      "farm_edit": "አስተካክል",
+      "farm_delete": "ሰርዝ",
+      "farm_name": "የእርሻ ስም",
+      "farm_area": "ስፋት (አማራጭ)",
+      "farm_notes": "ማስታወሻዎች",
+      "farm_crop": "የሰብል አይነት",
+      "farm_stage": "የእድገት ደረጃ",
+      "farm_name_ph": "ለምሳሌ፦ ሰሜን ቲማቲም እርሻ",
+      "farm_area_ph": "ለምሳሌ፦ 0.5 ሄክታር",
+      "farm_notes_ph": "ስለዚህ እርሻ ማንኛውም ማስታወሻ…",
+      "farm_not_scanned": "እስካሁን አልተመረመረም",
+      "farm_scan_btn": "ይህን ሰብል መርምር",
+      "farm_save": "እርሻ አስቀምጥ",
+      "farm_cancel": "ሰርዝ",
+      "farm_empty_title": "እስካሁን ምንም እርሻ አልተጨመረም",
+      "farm_empty_sub": "የሰብል ጤና ለመከታተል የመጀመሪያውን እርሻ ይጨምሩ።",
+      "farm_add_first": "የመጀመሪያውን እርሻ ይጨምሩ",
+      "farm_delete_confirm": "ይህ እርሻ ይሰረዝ?",
+      "farm_saved": "እርሻ ተቀምጧል",
+      "farm_updated": "እርሻ ተስተካክሏል",
+      "farm_deleted": "እርሻ ተሰርዟል",
+      "farm_premium_limit": "ነጻ አገልግሎት 2 እርሻዎችን ብቻ ይፈቅዳል። እስከ 10 ለማግኘት ያሳድጉ።"
+    },
+    "bookmarks": {
+      "bookmarks_title": "የተቀመጡ እቅዶች",
+      "bookmarks_saved": "የተቀመጡ እቅዶች",
+      "bookmarks_feedback": "አስተያየት",
+      "bookmarks_compare": "በፊት / በኋላ",
+      "bookmarks_empty_title": "ምንም የተቀመጠ እቅድ የለም",
+      "bookmarks_empty_sub": "በማንኛውም ውጤት ላይ 'እቅድ አስቀምጥ' የሚለውን በመጫን እዚህ ማየት ይችላሉ።",
+      "bookmarks_remove": "ከማህደር አስወግድ",
+      "bookmarks_view_guide": "የበሽታ መመሪያን እይ →",
+      "compare_title": "ሁለት ምርመራዎችን አወዳድር",
+      "compare_sub": "የበሽታውን ሁኔታ ለመከታተል ሁለት ምርመራዎችን ይምረጡ።",
+      "compare_before": "በፊት (የመጀመሪያ ምርመራ)",
+      "compare_after": "በኋላ (ክትትል)",
+      "compare_select": "ምርመራ ይምረጡ…",
+      "compare_same": "በሁለቱም ምርመራዎች ላይ ተመሳሳይ በሽታ",
+      "compare_different": "የተለያየ የምርመራ ውጤት",
+      "compare_reducing": "የበሽታው ጫና እየቀነሰ ይመስላል።",
+      "compare_increasing": "የበሽታው ጫና እየጨመረ ይመስላል።",
+      "feedback_empty_title": "ምንም አስተያየት አልተላከም",
+      "feedback_empty_sub": "ከምርመራ በኋላ የ AI ትክክለኛነትን ለማሻሻል አስተያየት ይስጡ።",
+      "feedback_clear": "ሁሉንም አጽዳ"
+    },
+    "user": {
+      "user_greeting_morning": "እንደምን አደሩ",
+      "user_greeting_afternoon": "እንደምን ዋሉ",
+      "user_greeting_evening": "እንደምን አመሹ",
+      "user_free_plan": "ነጻ አገልግሎት",
+      "user_premium_plan": "ፕሪሚየም",
+      "user_scans_remaining": "ዛሬ {n} ምርመራዎች ቀርተዋል",
+      "user_unlimited": "ያልተገደበ ምርመራ",
+      "profile_title": "የእርስዎ መገለጫ"
+    },
+    "notifications": {
+      "notif_copied": "ተገልብጧል",
+      "notif_scan_saved": "ምርመራ ተቀምጧል",
+      "notif_farm_saved": "እርሻ ተቀምጧል",
+      "notif_feedback_sent": "አስተያየት ተልኳል",
+      "notif_plan_saved": "የሕክምና እቅድ ተቀምጧል",
+      "alerts_title": "ማሳወቂያዎች",
+      "alerts_clear": "ሁሉንም አጽዳ",
+      "alerts_unread": "{n} ያልተነበቡ",
+      "alerts_empty": "ሁሉም ጸድቷል",
+      "alerts_empty_sub": "በአሁኑ ጊዜ ማሳወቂያ የለም",
+      "alerts_urgent_badge": "{n} አስቸኳይ",
+      "alerts_unread_sub": "{n} ያልተነበቡ ማስጠንቀቂያዎች",
+      "alerts_filter_all": "ሁሉም",
+      "alerts_filter_urgent": "🔴 አስቸኳይ",
+      "alerts_filter_outbreak": "የበሽታ መከሰት",
+      "alerts_filter_reminder": "ማሳሰቢያ",
+      "alerts_filter_weather": "አየር ሁኔታ",
+      "alert1_title": "የዘገየ ብላክ በሽታ መከሰት ተገኝቷል",
+      "alert1_body": "በዚህ ሳምንት 3 የቲማቲም ምርመራዎች የዘገየ ብላክ በሽታ አሳይተዋል። እርሻዎን ይፈትሹ።",
+      "alert2_title": "የሕክምና ክትትል ጊዜ ደርሷል",
+      "alert2_body": "ሁለተኛውን ማንኮዜብ ይርጩ — በእርሻ ሀ ላይ ሕክምና ከተጀመረ 7 ቀን ሆኗል።",
+      "alert3_title": "የሳምንታዊ ምርመራ ማሳሰቢያ",
+      "alert3_body": "ለ5 ቀናት የቲማቲም እርሻዎን አልመረመሩም። ከፍተኛ እርጥበት አደጋውን ይጨምራል።",
+      "alert4_title": "የከፍተኛ እርጥበት አደጋ ማስጠንቀቂያ",
+      "alert4_body": "በዚህ ሳምንት እርጥበት ከ85% በላይ እንደሚሆን ተተንብዮአል። የፈንገስ በሽታ አደጋ ከፍ ያለ ነው።",
+      "alert5_title": "ወቅታዊ ምክር: የዝናብ ወቅት",
+      "alert5_body": "የዝገት እና የብላክ በሽታዎች በዝናብ ወቅት ይባባሳሉ። በየ3–5 ቀኑ ሰብልዎን ይቃኙ።"
+    },
+    "footer": {
+      "tagline": "ለኢትዮጵያ አርሶ አደሮች በ AI የሚሰራ የሰብል በሽታ ምርመራ",
+      "links": "ፈጣን ሊንኮች",
+      "contact": "ግንኙነት",
+      "rights": "መብቱ በህግ የተጠበቀ ነው።",
+      "developed": "በመቀሌ ዩኒቨርሲቲ – MIT የበለጸገ · የካቲት 2026"
+    },
+    "treatment_labels": {
+      "cause_fungal": "ፈንገስ",
+      "cause_bacterial": "ባክቴሪያ",
+      "cause_pest": "ተባይ",
+      "cause_viral": "ቫይረስ",
+      "lbl_organic": "🌿 ተፈጥሮአዊ / ኦርጋኒክ",
+      "lbl_chemical": "⚗ ኬሚካል (ከመጠን ጋር)",
+      "lbl_chemical_warning": "⚠ ኬሚካል ሲጠቀሙ ጓንት እና ማስክ ያድርጉ። መመሪያውን ይከተሉ።",
+      "organic_blight": "ኮፐር ሃይድሮክሳይድ 3g/L · የኒም ዘይት 5mL/L በየ7 ቀኑ",
+      "organic_rust": "ሰልፈር ዱቄት 3g/L · የኒም ዘይት 5mL/L",
+      "organic_mildew": "ፖታሲየም ባይካርቦኔት 5g/L · ቤኪንግ ሶዳ 4g/L + ኒም ዘይት 5mL/L",
+      "organic_spot": "ኮፐር ኦክሲክሎራይድ 3g/L · ቦርዶ ሚክስቸር 1%",
+      "organic_mold": "የኒም ዘይት 5mL/L · ትራይኮደርማ ባዮፔስቲሳይድ በመመሪያው መሰረት",
+      "organic_virus": "ምንም ተፈጥሮአዊ ሕክምና የለውም። ተክሉን ይንቀሉ። ተሸካሚ ተባዮችን በኒም ዘይት ይከላከሉ።",
+      "organic_default": "ኮፐር-ተኮር ፈንገስ ማጥፊያ 3g/L · ኒም ዘይት 5mL/L ለመከላከያ",
+      "chemical_blight": "ማንኮዜብ 2.5g/L ወይም ሳይሞክሳኒል+ማንኮዜብ 2g/L · በየ5–7 ቀኑ ይድገሙ",
+      "chemical_rust": "ቴቡኮናዞል 1mL/L ወይም ፕሮፒኮናዞል 1mL/L · ከ14 ቀን ልዩነት ጋር 2-3 ጊዜ",
+      "chemical_mildew": "ትራይፍሎክሲስትሮቢን 0.5g/L ወይም ማይክሎቡታኒል 1g/L · በመጀመሪያው ምልክት",
+      "chemical_spot": "ክሎሮታሎኒል 2g/L ወይም አዞክሲስትሮቢን 1mL/L · በሳምንት አንዴ",
+      "chemical_mold": "ክሎሮታሎኒል 2g/L · አየር እንዲገባ ያድርጉ። በየ7 ቀኑ ይርጩ።"
+    },
+    "encyclopedia": {
+      "enc_title": "የበሽታ ኢንሳይክሎፔዲያ",
+      "enc_sub": "የሰብል በሽታዎችን ያስሱ እና ይፈልጉ",
+      "enc_search": "በሽታዎችን ፈልግ...",
+      "all_crops": "ሁሉም ሰብሎች",
+      "no_disease_found": "ምንም በሽታ አልተገኘም",
+      "enc_high": "ከፍተኛ",
+      "enc_medium": "መካከለኛ",
+      "enc_low": "ዝቅተኛ",
+      "enc_fungal": "ፈንገስ",
+      "enc_bacterial": "ባክቴሪያ",
+      "enc_viral": "ቫይረስ",
+      "symptoms": "ምልክቶች",
+      "cause": "መንስኤ",
+      "treatment": "ህክምና",
+      "prevention": "መከላከል",
+      "severity": "ክብደት"
+    },
+    "resultcard": {
+      "analysis_complete": "ትንታኔ ተጠናቋል",
+      "btn_bookmark": "አስቀምጥ",
+      "btn_bookmarked": "ተቀምጧል",
+      "btn_new_scan2": "አዲስ ቅኝት",
+      "btn_report": "ወደ ውጭ ላክ",
+      "btn_share": "አጋራ",
+      "feedback_btn_close": "ግብረ-መልስ ዝጋ",
+      "feedback_btn_open": "ግብረ-መልስ ስጥ",
+      "healthy_label": "✓ ጤናማ",
+      "disease_label": "⚠ በሽታ ተገኝቷል",
+      "diagnosed_at": "የተመረመረበት ሰዓት",
+      "confidence_score": "የእርግጠኝነት ደረጃ",
+      "recommended_action": "የሚመከር እርምጃ",
+      "alt_predictions": "አማራጭ ትንበያዎች",
+      "disclaimer": "ይህ የAI ትንታኔ መመሪያ ብቻ ነው። ለወሳኝ ምርመራ እና የህክምና ውሳኔዎች የአካባቢ የግብርና ባለሙያ ያማክሩ።",
+      "tab_overview": "አጠቃላይ እይታ",
+      "tab_explain": "AI ማብራሪያ",
+      "tab_smart": "ስማርት ምክር",
+      "tab_risk": "የአደጋ ደረጃ",
+      "tab_treatment": "ህክምና",
+      "tab_steps": "ደረጃዎች",
+      "unknown_crop": "ያልታወቀ ሰብል",
+      "severity_high": "ከፍተኛ አደጋ",
+      "severity_medium": "መካከለኛ አደጋ",
+      "severity_low": "ዝቅተኛ አደጋ",
+      "step1": "የተበከሉ ተክሎችን ወዲያውኑ ለይ ስርጭትን ለመከላከል",
+      "step2": "ከባድ ኢንፌክሽን ያለበትን ቁሳቁስ አውጥቶ አስወግድ",
+      "step3": "የሚመከረው ህክምና ተግብር (ኬሚካል ወይም ኦርጋኒክ)",
+      "step4": "አካባቢ ያሉ ተክሎችን ለኢንፌክሽን ምልክቶች ክትትል አድርግ",
+      "step5": "ማዳን ካገኘ በኋላ ከፍ ያሉ የጥንቃቄ እርምጃዎችን ተከተል"
+    },
+    "community": {
+      "community_tab_feed": "ፊድ",
+      "community_tab_success": "የስኬት ታሪኮች",
+      "community_tab_experts": "የባለሙያ ምክሮች",
+      "community_all_crops": "ሁሉም ሰብሎች",
+      "community_worked": "ሰርቷል",
+      "community_failed": "አልሰራም"
+    },
+    "diseases": {
+      "hero": {
+        "title": "የበሽታ መመሪያ",
+        "subtitle": "በኢትዮጵያ ሰብሎች ላይ ስለሚነኩ በሽታዎች ሙሉ መረጃ — ምልክቶች፣ ህክምና እና መከላከያ"
+      },
+      "search": "በሽታዎችን ፈልግ...",
+      "filter": {
+        "all": "ሁሉም ሰብሎች",
+        "wheat": "ስንዴ",
+        "maize": "በቆሎ",
+        "tomato": "ቲማቲም",
+        "potato": "ድንች",
+        "pepper": "ቃሪያ",
+        "teff": "ጤፍ",
+        "sorghum": "ማሽላ"
+      },
+      "severity": {
+        "high": "ከፍተኛ አደጋ",
+        "medium": "መካከለኛ አደጋ",
+        "low": "ዝቅተኛ አደጋ"
+      },
+      "labels": {
+        "symptoms": "ምልክቶች",
+        "causes": "መንስኤዎች",
+        "chemical": "ኬሚካላዊ ህክምና",
+        "organic": "ኦርጋኒክ ህክምና",
+        "prevention": "መከላከያ"
+      },
+      "list": [
+        {
+          "id": "wheat_leaf_rust",
+          "name": "የስንዴ ቅጠል ዝገት",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "በላይኛው የቅጠል ክፍል ላይ ብርቱካንማ-ቡኒ የዱቄት መሰል ነጠብጣቦች። ቅጠሎች ቢጫ ይሆናሉ ይደርቃሉም።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ቴቡኮናዞል ወይም ፕሮፒኮናዞል ይጠቀሙ። የታመሙትን ያስወግዱ። በሽታን የሚቋቋሙ ዝርያዎችን ይጠቀሙ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይትከሉ። ሰብሉን አያጨናንቁ። በእርጥበት ወቅት ይከታተሉ።"
+        },
+        {
+          "id": "wheat_stem_rust",
+          "name": "የስንዴ ግንድ ዝገት",
+          "crop": "Wheat",
+          "severity": "high",
+          "symptoms": "በግንድ እና በቅጠል ላይ ጥቁር ቀይ-ቡኒ ነጠብጣቦች። ግንዱን በማዳከም ሰብሉ እንዲወድቅ ያደርጋል።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ምልክቱ ሲታይ ፕሮፒኮናዞል ይርጩ። የተረጋገጠ ምርጥ ዘር ይጠቀሙ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ዘግይቶ መዝራትን ያስወግዱ።"
+        },
+        {
+          "id": "wheat_yellow_rust",
+          "name": "የስንዴ ቢጫ ዝገት",
+          "crop": "Wheat",
+          "severity": "medium",
+          "symptoms": "በቅጠሉ ላይ በመስመር የተደረደሩ ቢጫ-ብርቱካንማ ነጠብጣቦች።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ትራይፍሎክሲስትሮቢን ቀድመው ይጠቀሙ። ከመጠን ያለፈ የናይትሮጅን ማዳበሪያ ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። በቀዝቃዛና እርጥብ ወቅት በየጊዜው ይፈትሹ።"
+        },
+        {
+          "id": "northern_leaf_blight",
+          "name": "የበቆሎ ሰሜናዊ ቅጠል ብላክ",
+          "crop": "Maize",
+          "severity": "high",
+          "symptoms": "ረጅም የሲጋራ ቅርፅ ያላቸው ግራጫ-አረንጓዴ ምልክቶች (5–15 ሴ.ሜ) በቅጠሉ ላይ።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ማንኮዜብ ወይም አዞክሲስትሮቢን ይጠቀሙ። ከምርት በኋላ የተረፈውን ሰብል ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ሰብል ያፈራርቁ። የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ቅሪቶችን ይቀብሩ።"
+        },
+        {
+          "id": "gray_leaf_spot",
+          "name": "ግራጫ የቅጠል ነጠብጣብ",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "አራት ማዕዘን ቅርፅ ያላቸው ግራጫማ ምልክቶች ከቅጠሉ ደም ስር ጋር በትይዩ።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። አዞክሲስትሮቢን ወይም ፕሮፒኮናዞል ይርጩ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ሰብል ያፈራርቁ። የተክሎች ርቀት ይጠብቁ። ቅሪቶችን ይቀብሩ።"
+        },
+        {
+          "id": "common_rust",
+          "name": "የበቆሎ መደበኛ ዝገት",
+          "crop": "Maize",
+          "severity": "medium",
+          "symptoms": "በሁለቱም የቅጠል በኩል ያሉ ቀይ የዱቄት መሰል ነጠብጣቦች።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ከበደለ ማንኮዜብ ወይም ክሎሮታሎኒል ይጠቀሙ። የሚቋቋሙ ዝርያዎችን ይትከሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "በቀዝቃዛና እርጥብ ወቅት ይከታተሉ። ቀድመው የሚደርሱ ዝርያዎችን ይጠቀሙ።"
+        },
+        {
+          "id": "sorghum_anthracnose",
+          "name": "የማሽላ አንትራክኖስ",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "በቅጠል እና በግንድ ላይ ቀይ ወይም ቢጫ ክብ ነጠብጣቦች።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "በሽታ የሌለበት ዘር ይጠቀሙ። ክሎሮታሎኒል ይርጩ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ሰብል ያፈራርቁ። አያጨናንቁ።"
+        },
+        {
+          "id": "sorghum_downy_mildew",
+          "name": "የማሽላ ነጭ አረር",
+          "crop": "Sorghum",
+          "severity": "high",
+          "symptoms": "በቅጠሉ ስር ነጭ የፈንገስ እድገት። ቅጠሎች ቢጫ ይሆናሉ እድገትም ይገታል።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ዘሩን ከመዝራት በፊት በሜታላክሲል ያክሙ። የታመሙትን ይንቀሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ዘር ያክሙ። በሽታ በነበረበት እርሻ ላይ አይዝሩ።"
+        },
+        {
+          "id": "teff_leaf_spot",
+          "name": "የጤፍ ቅጠል ነጠብጣብ",
+          "crop": "Teff",
+          "severity": "low",
+          "symptoms": "በቅጠል ላይ ትናንሽ ቡኒ ነጠብጣቦች። ቅጠል ሊረግፍ ይችላል።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "አየር እንዲገባ የተክሉን ርቀት ያስተካክሉ። ከበደለ ኮፐር-ተኮር መድሃኒት ይርጩ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የላይ ረጭ መስኖ ያስወግዱ። ውሃ የማይቋጥር አፈር ይጠቀሙ። ሰብል ያፈራርቁ።"
+        },
+        {
+          "id": "tomato_early_blight",
+          "name": "የቲማቲም የቀደመ ብላክ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "በታችኛው ቅጠሎች ላይ የክብ ቅርፅ ያላቸው ጥቁር ቡኒ ነጠብጣቦች።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ክሎሮታሎኒል ወይም ማንኮዜብ ይጠቀሙ። የታችኛውን ቅጠሎች ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ሰብል ያፈራርቁ። አፈር ወደ ቅጠል እንዳይረጭ ኩትኳቶ ያድርጉ።"
+        },
+        {
+          "id": "tomato_late_blight",
+          "name": "የቲማቲም የዘገየ ብላክ",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "በፍጥነት ወደ ቡኒነት የሚቀየሩ ግራጫ-አረንጓዴ ምልክቶች። በቅጠሉ ስር ነጭ ፈንገስ። ፍሬው ይበሰብሳል።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ — በጣም በፍጥነት ይሰራጫል።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ቅጠሉ ላይ ውሃ አያፍሱ። የሚቋቋሙ ዝርያዎችን ይጠቀሙ። አየር እንዲገባ ያድርጉ።"
+        },
+        {
+          "id": "tomato_bacterial_spot",
+          "name": "የቲማቲም የባክቴሪያ ነጠብጣብ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "በቅጠልና በፍሬ ላይ ትናንሽ ጥቁር የውሃ ነክ ነጠብጣቦች።",
+          "causes": "በባክቴሪያ ፓቶጅኖች የሚከሰት ሕማም። ዝናብ ርጭት ወይ የተበከሉ መሳሪያዎች ያሰራጫሉ።",
+          "chemical": "ኮፐር-ተኮር መድሃኒት ይርጩ። የታመሙትን ግንዶች ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ጤናማ ችግኝ ይጠቀሙ። ተክሎች እርጥብ ሲሆኑ አይንኩ። ሰብል ያፈራርቁ።"
+        },
+        {
+          "id": "tomato_leaf_mold",
+          "name": "የቲማቲም ቅጠል ፈንገስ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "በላይኛው የቅጠል በኩል ቢጫ ነጠብጣቦች። በታችኛው በኩል ወይራ-አረንጓዴ ፈንገስ።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "አየር እንዲገባ ያድርጉ። ክሎሮታሎኒል ወይም ኮፐር ይርጩ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ርቀት ይጠብቁ። እርጥበት ከ85% በታች እንዲሆን ያድርጉ።"
+        },
+        {
+          "id": "septoria_leaf_spot",
+          "name": "የሰፕቶሪያ ቅጠል ነጠብጣብ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ጥቁር ጠርዝ ያላቸው ብዙ ትናንሽ ክብ ነጠብጣቦች።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ክሎሮታሎኒል ወይም ማንኮዜብ ይጠቀሙ። የታመሙትን ቅጠሎች ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "አፈር እንዳይረጭ ኩትኳቶ ያድርጉ። የላይ ረጭ መስኖ ያስወግዱ።"
+        },
+        {
+          "id": "spider_mites",
+          "name": "ቀይ የሸረሪት ተባይ",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ትናንሽ ቢጫ ወይም ነጭ ነጠብጣቦች። በቅጠሉ ስር ድር። ቅጠሎች ይደርቃሉ።",
+          "causes": "በቀይ ሸረሪቶቹ ያደረሱት ጉዳት። ሙቀታማ እና ደረቅ ሁኔታ ውስጥ ይበዛሉ።",
+          "chemical": "አባሜክቲን ወይም ቢፈናዜት ይጠቀሙ። የኒም ዘይትም ይረዳል። እርጥበት ይጨምሩ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "በደንብ ውሃ ይስጡ። አዳኝ ተባዮችን ያስገቡ። አቧራማ ሁኔታ ያስወግዱ።"
+        },
+        {
+          "id": "yellow_leaf_curl_virus",
+          "name": "የቢጫ ቅጠል ጥቅል ቫይረስ",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "የቅጠል ወደ ላይ መጠቅለል እና መገርጠት። እድገት መገታት። አበባ ይረግፋል።",
+          "causes": "በቫይረስ ፓቶጅኖች የሚከሰት ሕማም። ነፍሳቶቹ (ዝንብ) ያሰራጫሉ።",
+          "chemical": "ፈውስ የለውም። የታመሙትን አሁኑኑ ያስወግዱ። ነጭ ዝንቦችን ይከላከሉ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ነፍሳት የማይገቡበት መረብ ይጠቀሙ።"
+        },
+        {
+          "id": "tomato_mosaic_virus",
+          "name": "የቲማቲም ሞዛይክ ቫይረስ",
+          "crop": "Tomato",
+          "severity": "high",
+          "symptoms": "በቅጠሎች ላይ ቀላል እና ጥቁር አረንጓዴ የተቀላቀለ ምልክት።",
+          "causes": "በቫይረስ ፓቶጅኖች የሚከሰት ሕማም። ነፍሳቶቹ (ዝንብ) ያሰራጫሉ።",
+          "chemical": "ፈውስ የለውም። ተክሉን ያስወግዱ። መሳሪያዎችን በኬሚካል ያጽዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ከመንካትዎ በፊት እጅዎን ይታጠቡ።"
+        },
+        {
+          "id": "tomato_target_spot",
+          "name": "የቲማቲም ታርጌት ስፖት",
+          "crop": "Tomato",
+          "severity": "medium",
+          "symptoms": "ክብ ቅርፅ ያላቸው ቡኒ ነጠብጣቦች። ያለ ጊዜው ቅጠል መርገፍ።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ክሎሮታሎኒል ወይም አዞክሲስትሮቢን ይጠቀሙ። የተጎዱትን ቅጠሎች ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ተክሉን በማሰር አየር እንዲገባ ያድርጉ። የላይ ረጭ መስኖ ያስወግዱ።"
+        },
+        {
+          "id": "potato_early_blight",
+          "name": "የድንች የቀደመ ብላክ",
+          "crop": "Potato",
+          "severity": "medium",
+          "symptoms": "በቆዩ ቅጠሎች ላይ ቡኒ ነጠብጣቦች ከቢጫ ቀለም ጋር።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "ክሎሮታሎኒል ወይም ማንኮዜብ ይርጩ። ፖታሲየም ያለው ማዳበሪያ ይጠቀሙ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ሰብል ያፈራርቁ። ኩትኳቶ ያድርጉ። ውሃ እንዳያጥረው ያድርጉ።"
+        },
+        {
+          "id": "potato_late_blight",
+          "name": "የድንች የዘገየ ብላክ",
+          "crop": "Potato",
+          "severity": "high",
+          "symptoms": "ጥቁር የውሃ ነክ ምልክቶች። በቅጠሉ ስር ነጭ ፈንገስ። ድንቹ ይበሰብሳል።",
+          "causes": "በፈንጋስ ፓቶጅኖች የሚከሰት ሕማም። ሙቀታማና ርጥብ ሁኔታዎች ውስጥ ፈጠን ብሎ ይሰራጫሉ።",
+          "chemical": "አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ። የታመሙትን ያስወግዱ።",
+          "organic": "Remove and destroy infected plant material. Apply copper-based organic sprays. Ensure proper crop spacing and airflow.",
+          "prevention": "ጤናማ ዘር ድንች ይጠቀሙ። የላይ ረጭ መስኖ ያስወግዱ።"
+        }
+      ]
+    }
+  },
+  "components": {
+    "aiChat": {
+      "window_title": "የ CropGuard AI ረዳት",
+      "status_thinking": "በማሰብ ላይ…",
+      "status_online": "በመስመር ላይ · EN / AM / TI",
+      "btn_clear": "አጽዳ",
+      "btn_close_aria": "ዝጋ",
+      "suggestions_label_en": "Try asking",
+      "suggestions_label_am": "ጥያቄ ሀሳቦች",
+      "suggestions_label_ti": "ሕቶታት",
+      "language_hint_en": "Type in English, Amharic (አማርኛ), or Tigrinya (ትግርኛ)",
+      "language_hint_am": "በአማርኛ፣ ትግርኛ ወይም እንግሊዝኛ ይጻፉ",
+      "language_hint_ti": "ብትግርኛ፣ አማርኛ ወይ እንግሊዘኛ ጽሓፍ",
+      "input_placeholder_en": "Describe your crop problem…",
+      "input_placeholder_am": "የሰብልዎን ችግር እዚህ ይግለጹ…",
+      "input_placeholder_ti": "ሕቶኻ ጽሓፍ…",
+      "footer_disclaimer_en": "Enter to send · AI may make mistakes — consult an expert for critical decisions",
+      "footer_disclaimer_am": "Enter ለመላክ · AI ስህተት ሊሰራ ይችላል — ለከባድ ውሳኔዎች ባለሙያ ያማክሩ",
+      "footer_disclaimer_ti": "Enter ን ሰደድ · AI ኩሉ ጊዜ ቅኑዕ ኣይኮነን — ምስ ሙኩር ክትዘራረብ",
+      "greeting_en": "Hello! I'm Sage, your CropGuard AI agricultural assistant. I can help with crop diseases, pests, soil health, fertilizers, irrigation, and farming best practices. What can I help you with today?",
+      "greeting_am": "ሰላም! እኔ ሴጅ ነኝ፣ የእርስዎ የ CropGuard AI እርሻ ረዳት። ስለ ሰብል በሽታዎች፣ ተባዮች፣ ማዳበሪያ እና ስለ እርሻ ስራዎች ልረዳዎ እችላለሁ። ዛሬ በምን ልርዳዎ?",
+      "greeting_ti": "ሰላም! ኣነ ሴጅ እየ፣ ናይ CropGuard AI ናይ ሕርሻ ምኽሪ ሃቢ። ብዛዕባ ሕማም ሕርሻ፣ ኣባ ጎሮ፣ ፍሩቅ ወይ ካሊእ ሕቶ ኣለካ? ሓግዘካ ኢየ።",
+      "chat_cleared_message": "ንግግሩ ተሰርዟል። ምን ልርዳዎ?",
+      "connection_error": "የግንኙነት ስህተት። እባክዎን ኢንተርኔትዎን ይፈትሹ።",
+      "response_fallback": "ምላሽ መስጠት አልቻልኩም። እባክዎን ድጋሚ ይሞክሩ።",
+      "connection_error_response": "የግንኙነት ስህተት። እባክዎን ድጋሚ ይሞክሩ።",
+      "open_chat_bubble": "ሰላም! እርዳታ ይፈልጋሉ?",
+      "chat_placeholder": "ስለ በሽታዎች፣ ሕክምናዎች ይጠይቁ…",
+      "suggestions": {
+        "en": [
+          "My maize leaves are turning yellow",
+          "How do I treat tomato late blight?",
+          "What fertilizer is best for teff?",
+          "My wheat has rust spots"
+        ],
+        "am": [
+          "የበቆሎ ቅጠሎቼ ወደ ቢጫነት እየተቀየሩ ነው",
+          "የቲማቲም የዘገየ ብላክ በሽታን እንዴት ማከም እችላለሁ?",
+          "ለጤፍ የሚመረጠው ማዳበሪያ ምንድነው?",
+          "ስንዴዬ ላይ የዝገት ነጠብጣቦች አሉ"
+        ],
+        "ti": [
+          "ናይ ሽምብራ ቅጠሉ ቢጫ ይኸውን ኣሎ",
+          "ናይ ቲማቲም ሕማም ብኸመይ ይፍወስ?",
+          "ንጤፍ ዝሓሸ ፍሩቅ ኣየናይ እዩ?",
+          "ሕርሻ ናይ ስርናይ ዝምቡዕ ኣለዎ"
+        ]
+      }
+    },
+    "resultCard": {
+      "analysis_complete": "ትንታኔው ተጠናቋል",
+      "btn_new_scan": "አዲስ ምርመራ",
+      "btn_share": "አጋራ",
+      "btn_report": "ሪፖርት አድርግ",
+      "btn_save_plan": "እቅድ አስቀምጥ",
+      "btn_saved_plan": "ተቀምጧል",
+      "healthy_label": "✓ ጤናማ ተክል",
+      "disease_label": "⚠ በሽታ ተገኝቷል",
+      "confidence_score": "የእርግጠኝነት መጠን",
+      "recommended_action": "የሚመከር ሕክምና",
+      "alt_predictions": "ሌሎች ሊሆኑ የሚችሉ",
+      "severity_high": "🔴 ከባድ",
+      "severity_medium": "🟡 መካከለኛ",
+      "severity_low": "🟢 ቀላል",
+      "disclaimer": "ይህ በ AI የታገዘ የመጀመሪያ ምርመራ ብቻ ነው። ለከፋ ሁኔታ የግብርና ባለሙያ ያማክሩ።",
+      "diagnosed_at": "የተመረመረበት ጊዜ",
+      "unknown_crop": "ያልታወቀ",
+      "export_header": "CROPGUARD AI",
+      "export_fields": {
+        "confidence_score": "የእርግጠኝነት_መጠን",
+        "analysis_complete": "ትንታኔ_ተጠናቋል",
+        "alt_predictions": "ሌሎች_ሊሆኑ_የሚችሉ",
+        "disclaimer": "ማሳሰቢያ",
+        "diagnosed_at": "የተመረመረበት_ጊዜ",
+        "healthy_label": "ጤናማ_ምልክት",
+        "disease_label": "የበሽታ_ምልክት",
+        "recommended_action": "የሚመከር_ሕክምና"
+      },
+      "tab_overview": "አጠቃላይ",
+      "tab_explain": "ለምን ይህ ሆነ?",
+      "tab_smart": "ብልህ እቅድ",
+      "tab_risk": "አደጋ እና ተፅዕኖ",
+      "tab_treatment": "ሕክምና",
+      "tab_steps": "ቀጣይ እርምጃዎች"
+    },
+    "feedbackPanel": {
+      "step1_title": "ይህ ምርመራ ትክክል ነበር?",
+      "step1_subtitle": "የእርስዎ አስተያየት የ AI ሞዴሉን ለሁሉም አርሶ አደሮች ለማሻሻል ይረዳል።",
+      "btn_correct": "አዎ፣ ትክክል ነው",
+      "btn_wrong": "አይ፣ ስህተት ነው",
+      "btn_unsure": "እርግጠኛ አይደለሁም",
+      "step2_title_correct": "በጣም ጥሩ! ተጨማሪ ማስታወሻ አለዎት?",
+      "step2_title_wrong": "ትክክለኛው በሽታ ምን ነበር?",
+      "ai_diagnosed_prefix": "AI የመረመረው፦",
+      "placeholder_wrong": "ለምሳሌ፦ የቲማቲም የቀደመ ብላክ ነበር እንጂ የዘገየ ብላክ አይደለም...",
+      "placeholder_correct": "ስለ ምልክቶቹ፣ ስለ እርሻው ሁኔታ ወይም ስለ ተጠቀሙት ሕክምና ማስታወሻ...",
+      "treatment_q": "የተመከረው ሕክምና ሰርቷል? (አማራጭ)",
+      "treatment_worked": "✅ አዎ፣ ሰርቷል",
+      "treatment_partial": "⚡ በከፊል",
+      "treatment_didnt": "❌ ምንም ለውጥ የለም",
+      "upload_followup": "የክትትል ምስል ይጫኑ (አማራጭ)",
+      "uploading": "በማስቀመጥ ላይ...",
+      "btn_skip": "ለአሁኑ ይለፍ",
+      "btn_submit": "አስተያየት ላክ",
+      "submitting": "በመላክ ላይ…",
+      "step3_title": "ለአስተያየትዎ እናመሰግናለን!",
+      "step3_subtitle": "አስተያየትዎ ተልኳል፤ ይህም የ AI ትክክለኛነትን ለማሻሻል ትልቅ አስተዋፅኦ አለው።",
+      "btn_close": "ዝጋ",
+      "toast_submitted": "እናመሰግናለን! አስተያየትዎ AIያችንን ያሻሽላል።",
+      "toast_followup_saved": "የክትትል ምስል ለግምገማ ተቀምጧል",
+      "toast_skipped": "አስተያየት ተዘልሏል።",
+      "feedback_correct": "አዎ፣ ትክክል ነው",
+      "feedback_wrong": "አይ፣ ስህተት ነው",
+      "feedback_unsure": "እርግጠኛ አይደለሁም",
+      "feedback_treatment_q": "የተመከረው ሕክምና ሰርቷል?",
+      "feedback_worked": "ሰርቷል",
+      "feedback_partial": "በከፊል",
+      "feedback_didnt": "ምንም ለውጥ የለም",
+      "feedback_skip": "ለአሁኑ ይለፍ",
+      "feedback_submit": "አስተያየት ላክ",
+      "feedback_thanks": "ለአስተያየትዎ እናመሰግናለን!",
+      "feedback_thanks_sub": "የእርስዎ ምላሽ ለሁሉም አርሶ አደሮች የ AI ትክክለኛነትን ለማሻሻል ይረዳል።",
+      "feedback_was_correct": "ይህ ምርመራ ትክክል ነበር?",
+      "feedback_note_ph_wrong": "ለምሳሌ፦ ትክክለኛው የቲማቲም የቀደመ ብላክ ነበር…",
+      "feedback_note_ph_right": "ስለ ምልክቶቹ፣ ሁኔታዎች ወይም ጥቅም ላይ የዋለ ሕክምና ማስታወሻ…"
+    },
+    "smartRecommendation": {
+      "no_action_title": "✅ ምንም አይነት እርምጃ አያስፈልግም",
+      "no_action_desc": "ሰብሉ ጤናማ ይመስላል። አደጋ ሊኖርባቸው በሚችሉ ወቅቶች በየ3–5 ቀኑ መከታተልዎን ይቀጥሉ።",
+      "severity_label_suffix": " የጥቃት መጠን",
+      "act_label": "⏱ እርምጃ፦",
+      "priority_label": "ቅድሚያ የሚሰጠው",
+      "stage_aware_prefix": "በእድገት ደረጃ ላይ የተመሰረተ፦",
+      "recommended_approach": "የሚመከር አካሄድ፦",
+      "organic_approach": "🌿 በተፈጥሮአዊ ይጀምሩ",
+      "chemical_approach": "⚗ በኬሚካል ይታከም",
+      "no_treatment_approach": "⛔ ምርት ሊሰበሰብ ስለሆነ ሕክምና አያድርጉ",
+      "escalation_title": "📋 የሕክምና ቅደም ተከተል",
+      "tip_add_farm": "💡 ፍንጭ፦ ለበለጠ ትክክለኛ ምክር ይህን ሰብል ከእድገት ደረጃው ጋር በእርሻ ስራ አስኪያጅ ውስጥ ይጨምሩ።",
+      "crop_note_prefix": "🌾 የ{crop} ማስታወሻ፦",
+      "severity_actions": {
+        "high": {
+          "urgency": "አሁኑኑ (በ24 ሰዓት ውስጥ)",
+          "escalation": "ኬሚካል",
+          "label": "🔴 በጣም ከባድ"
+        },
+        "medium": {
+          "urgency": "በቅርቡ (በ3 ቀናት ውስጥ)",
+          "escalation": "መጀመሪያ ተፈጥሮአዊ፣ በ5 ቀን ውስጥ ለውጥ ካልመጣ ወደ ኬሚካል",
+          "label": "🟡 መካከለኛ"
+        },
+        "low": {
+          "urgency": "በዚህ ሳምንት",
+          "escalation": "ተፈጥሮአዊ ብቻ",
+          "label": "🟢 ቀላል"
+        }
+      },
+      "stage_strategies": {
+        "Seedling": "ተክሎች ደካማ ስለሆኑ ጠንካራ ኬሚካሎችን ያስወግዱ። ተፈጥሮአዊ አማራጮች ለዚህ ደረጃ ይመረጣሉ።",
+        "Vegetative": "ቀደምት የእድገት ደረጃ — በተፈጥሮአዊ ይጀምሩ። በሽታው ከ25% በላይ ከተስፋፋ ብቻ ወደ ኬሚካል ይለፉ።",
+        "Flowering": "የአበባ ወቅት — ንቦችን ለመጠበቅ የኬሚካል አጠቃቀምን ይቀንሱ። ሕክምናውን ምሽት ላይ ያድርጉ።",
+        "Fruiting": "የፍሬ ወቅት — ኬሚካል አስፈላጊ ሊሆን ይችላል ነገር ግን ከመሰብሰቡ በፊት ያለውን የጊዜ ገደብ በጥንቃቄ ይከታተሉ።",
+        "Harvest": "ምርት አካባቢ — ማንኛውንም ኬሚካል ያስወግዱ። ጤናማ የሆኑትን ክፍሎች ቀድመው ይሰብስቡ።",
+        "Dormant": "የእረፍት ወቅት — ለመከላከያ የኬሚካል ሕክምና እና ቅርንጫፍ ለመቁረጥ ተስማሚ ጊዜ ነው።"
+      },
+      "crop_notes": {
+        "Tomato": "ቲማቲሞች ለተለያዩ በሽታዎች ተጋላጭ ናቸው። በእርጥበት ወቅት በሳምንት ሁለት ጊዜ ይከታተሉ።",
+        "Corn": "የበቆሎ በሽታዎች በፍጥነት ይሰራጫሉ። ምልክቶች ሲታዩ ሙሉውን እርሻ ይፈትሹ።",
+        "Apple": "የፖም በሽታዎች ከአበባ ጀምሮ መከላከያ መድሃኒቶችን ይፈልጋሉ።",
+        "Grape": "ወይኖች ለፈንገስ በሽታ በጣም ተጋላጭ ናቸው። ቅጠሎችን ማስተካከል ቁልፍ ነው።",
+        "Potato": "በድንች ላይ የሚከሰት የዘገየ ብላክ ሙሉ ምርቱን በጥቂት ቀናት ውስጥ ሊያጠፋ ይችላል። አሁኑኑ እርምጃ ይውሰዱ።",
+        "Pepper": "በቃሪያ ላይ የሚከሰቱ የባክቴሪያ በሽታዎች በውሃ አማካኝነት ይሰራጫሉ — የላይ ረጭ መስኖን ያስወግዱ።",
+        "Peach": "ለፒች ባክቴሪያ ነጠብጣብ — ለወደፊት ተከላ በሽታውን የሚቋቋሙ ዝርያዎችን ይጠቀሙ።",
+        "Strawberry": "የእንጆሪ በሽታዎች ብዙውን ጊዜ ከውሃ መቆም እና ከአየር ዝውውር እጥረት ጋር የተያያዙ ናቸው።",
+        "Squash": "የዱባ አረር ቀደም ብሎ ከተጀመረ በተፈጥሮአዊ ሕክምናዎች በደንብ ይስተካከላል።",
+        "Orange": "ለብርቱካን መገርጣት (Greening) ምንም ፈውስ የለውም — ትኩረቱ መከላከል ላይ መሆን አለበት።",
+        "default": "ለተሻለ ውጤት የተቀናጀ የተባይ መከላከያ ዘዴዎችን ይከተሉ።"
+      },
+      "steps": {
+        "medium_low": [
+          {
+            "icon": "🌿",
+            "label": "በተፈጥሮአዊ ይጀምሩ",
+            "desc": "የኒም ዘይት ወይም ኮፐር-ተኮር ተፈጥሮአዊ መድሃኒት ይጠቀሙ። ለ5 ቀናት ይከታተሉ።"
+          },
+          {
+            "icon": "⚗",
+            "label": "አስፈላጊ ከሆነ ይጨምሩ",
+            "desc": "ከ5 ቀናት በኋላ ምንም ለውጥ ካልመጣ ወደ {escalation} ይለፉ።"
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "ባለሙያ ያማክሩ",
+            "desc": "ሕክምና ቢደረግም ሁኔታው እየከፋ ከሄደ የግብርና ኤክስቴንሽን ባለሙያ ያነጋግሩ።"
+          }
+        ],
+        "high": [
+          {
+            "icon": "🚨",
+            "label": "አስቸኳይ የኬሚካል ሕክምና",
+            "desc": "የጥቃት መጠኑ ከባድ ስለሆነ ተፈጥሮአዊ አማራጮች ሊዘገዩ ይችላሉ። በ24 ሰዓት ውስጥ የኬሚካል ፈንገስ ማጥፊያ ይርጩ።"
+          },
+          {
+            "icon": "🔒",
+            "label": "ለይቶ ማውጣት",
+            "desc": "በጣም የተጎዱትን ክፍሎች አሁኑኑ ነቅለው ያስወግዱ።"
+          },
+          {
+            "icon": "📅",
+            "label": "የክትትል ምርመራ በ7 ቀን ውስጥ",
+            "desc": "የሕክምናውን ውጤታማነት ለማረጋገጥ ድጋሚ ይመርምሩ።"
+          },
+          {
+            "icon": "👨‍🌾",
+            "label": "ለግብርና ቢሮ ያሳውቁ",
+            "desc": "ከባድ የበሽታ መከሰቶች በአካባቢው እንዲታወቁ ሪፖርት መደረግ አለባቸው።"
+          }
+        ]
+      }
+    },
+    "explainPanel": {
+      "section_confidence": "🎯 ስለ እርግጠኝነት መጠን ማብራሪያ",
+      "section_ai_detected": "🔬 AI በዚህ ቅጠል ላይ ያገኘው",
+      "section_how_ai_works": "⚙ AI ወደዚህ ውጤት እንዴት ደረሰ",
+      "limitations_notice": "⚠ ገደቦች፦ የ AI ትክክለኛነት በፎቶው ጥራት፣ በብርሃን እና በሰብሉ የእድገት ደረጃ ላይ የተመሰረተ ነው። በመጀመሪያ ደረጃ ያሉ በሽታዎች የእርግጠኝነት መጠኑ ሊቀንስ ይችላል። ከባድ ምርመራዎችን ሁልጊዜ ከባለሙያ ጋር ያረጋግጡ።",
+      "margin_strong": "— ከሌሎች አማራጮች በግልጽ የተለየ።",
+      "margin_weak": "— እርግጠኛ ለመሆን የተሻለ ፎቶ ማንሳት ያስቡበት።",
+      "margin_prefix": "📊 ከሁለተኛው አማራጭ የ{margin}% ልዩነት አለው",
+      "model_trained_note": "🏋 ሞዴሉ በ54,305 የቅጠል ምስሎች የሰለጠነ ነው። የታለመው ትክክለኛነት፦ ≥85%።",
+      "step_label": "ደረጃ {n}",
+      "confidence_levels": {
+        "high": {
+          "label": "በጣም ከፍተኛ እርግጠኝነት",
+          "text": "AIው ጠንካራ ምስላዊ መረጃ አግኝቷል። የበሽታው ምልክቶች በግልጽ የሚታዩ እና ከታወቁ ሁኔታዎች ጋር የሚጣጣሙ ናቸው።"
+        },
+        "good": {
+          "label": "ከፍተኛ እርግጠኝነት",
+          "text": "ግልጽ ምስላዊ መረጃ ተገኝቷል። ዋና ዋና ምልክቶች ከዚህ በሽታ ጋር በደንብ ይዛመዳሉ።"
+        },
+        "medium": {
+          "label": "መካከለኛ እርግጠኝነት",
+          "text": "ከፊል መረጃ ተገኝቷል። አንዳንድ ምልክቶች ቢኖሩም የፎቶው ጥራት ወይም የበሽታው መጀመሪያ መሆን ጥርጣሬ ፈጥሯል።"
+        },
+        "low": {
+          "label": "ዝቅተኛ እርግጠኝነት",
+          "text": "ውስን መረጃ። ሞዴሉ ሊሆኑ የሚችሉ ምልክቶችን ቢያይም የተሻለ ፎቶ እንዲነሳ ወይም ባለሙያ እንዲማከር በጥብቅ ይመክራል።"
+        }
+      },
+      "visual_cues": {
+        "blight": [
+          "ጥቁር ነጠብጣቦች ከክብ መስመሮች ጋር",
+          "በነጠብጣቦቹ ዙሪያ ቢጫ ቀለም",
+          "በታችኛው የቆዩ ቅጠሎች ላይ ይጀምራል",
+          "በእርጥበት ወቅት በፍጥነት ይስፋፋል"
+        ],
+        "rust": [
+          "ብርቱካንማ-ቡኒ የዱቄት መሰል ምልክቶች",
+          "በቅጠሉ ላይ የተበተኑ ነጠብጣቦች",
+          "ነጠብጣቦቹ ተከፍተው ብናኝ ይወጣቸዋል",
+          "በነጠብጣቦቹ ዙሪያ የቅጠሉ መገርጣት"
+        ],
+        "mildew": [
+          "ነጭ የዱቄት መሰል ሽፋን በቅጠሉ ላይ",
+          "በመጀመሪያ አዲስ ቅጠሎችን ያጠቃል",
+          "ቅጠሎች መጠቅለል እና ቅርፅ ማጣት",
+          "በእጅ ሲነካ የሚለቅ ነጭ ብናኝ"
+        ],
+        "spot": [
+          "ትናንሽ ክብ ነጠብጣቦች",
+          "ጥቁር ጠርዝ እና መካከለኛው ግራጫ",
+          "በአንድ ቅጠል ላይ ብዙ ነጠብጣቦች",
+          "በነጠብጣቦቹ ዙሪያ ቢጫ ቀለም"
+        ],
+        "mold": [
+          "በላይኛው በኩል ቢጫ ነጠብጣቦች",
+          "በታችኛው በኩል ወይራ-አረንጓዴ የፈንገስ ሽፋን",
+          "ከፍተኛ እርጥበት ይፈልጋል",
+          "በቆዩ ቅጠሎች ላይ ይጀምራል"
+        ],
+        "virus": [
+          "ቀላል እና ጥቁር አረንጓዴ የተቀላቀለ ቀለም",
+          "የቅጠል መጠቅለል እና መዛባት",
+          "የተክል እድገት መገታት",
+          "አዳዲስ ቅጠሎች ቢጫ መሆን"
+        ],
+        "mites": [
+          "ትናንሽ ቢጫ ነጠብጣቦች",
+          "በቅጠሉ ስር ቀጭን ድር",
+          "ቅጠሎች መድረቅ እና መገረጥ",
+          "ቅጠሎች ያለ ጊዜያቸው መርገፍ"
+        ],
+        "default": [
+          "በቅጠሉ ሸካራነት ላይ ለውጥ ተገኝቷል",
+          "የቀለም ልዩነት ከጤናማው ክፍል",
+          "የቅጠል መዋቅር መጎዳት ይታያል",
+          "አቀማመጡ ከታወቁ በሽታዎች ጋር ይዛመዳል"
+        ]
+      },
+      "model_steps": [
+        {
+          "icon": "🔲",
+          "label": "ቅጠልን መለየት",
+          "desc": "ሞዴሉ ቅጠሉን ከጀርባው ለይቶ አውጥቷል"
+        },
+        {
+          "icon": "🎨",
+          "label": "የቀለም ትንታኔ",
+          "desc": "ያልተለመዱ የቀለም ምልክቶችን ለይቷል"
+        },
+        {
+          "icon": "🔍",
+          "label": "የቅርፅ ትንታኔ",
+          "desc": "የነጠብጣቦቹን ቅርፅ፣ መጠን እና ስርጭት መርምሯል"
+        },
+        {
+          "icon": "📊",
+          "label": "ከመረጃ ጋር ማወዳደር",
+          "desc": "ከ54,305 የስልጠና ምስሎች ጋር አወዳድሯል"
+        },
+        {
+          "icon": "🧠",
+          "label": "ውጤት መስጠት",
+          "desc": "ሊሆኑ የሚችሉ 38 በሽታዎችን በደረጃ አስቀምጧል"
+        }
+      ]
+    },
+    "riskScorePanel": {
+      "section_projected_yield": "📉 ሕክምና ካልተደረገ ሊጠፋ የሚችል ምርት",
+      "potential_loss_suffix": "ሊጠፋ የሚችል",
+      "early_treatment_note": "💡 በቅድመ ሕክምና፦ ፈጣን እርምጃ በመውሰድ የምርት ብክነትን ወደ {min}–{max}% መቀነስ ይቻላል።",
+      "repeat_detection": "🔁 ተደጋጋሚ ግኝት፦ ይህ በሽታ በቅርብ ጊዜ በ{n} ምርመራዎች ታይቷል። ይህም በእርሻዎ ላይ የበሽታ ጫና እንዳለ ያሳያል — ፍተሻዎን ያስፉ።",
+      "score_cards": {
+        "healthy_risk_label": "የሰብል አደጋ ደረጃ",
+        "healthy_risk_value": "ዝቅተኛ",
+        "healthy_risk_sub": "ምንም በሽታ አልተገኘም",
+        "healthy_yield_label": "በምርት ላይ የሚኖረው ተፅዕኖ",
+        "healthy_yield_value": "~0%",
+        "healthy_yield_sub": "ምንም የሚጠፋ ምርት የለም",
+        "risk_score_label": "የአደጋ መጠን",
+        "yield_loss_label": "የምርት ብክነት (ያለ ሕክምና)",
+        "yield_loss_sub": "ግምት",
+        "priority_label": "የሕክምና ቅድሚያ",
+        "priority_first": "ይህን መጀመሪያ ያክሙ",
+        "priority_order": "በቅደም ተከተል ያክሙ"
+      },
+      "gauge_labels": {
+        "crop_health_risk": "የሰብል ጤና አደጋ",
+        "minimal": "በጣም አነስተኛ",
+        "low": "ዝቅተኛ",
+        "moderate": "መካከለኛ",
+        "critical": "ከባድ"
+      },
+      "risk_labels": {
+        "critical": "ከባድ",
+        "moderate": "መካከለኛ",
+        "low": "ዝቅተኛ",
+        "minimal": "በጣም አነስተኛ"
+      },
+      "yield_impact_notes": {
+        "blight": "ብላክ በሽታዎች ሕክምና ካልተደረገላቸው ምርትን ሙሉ በሙሉ ሊያጠፉ ይችላሉ።",
+        "rust": "የዝገት በሽታዎች የሰብሉን ጥራት እና መጠን ይቀንሳሉ።",
+        "mildew": "የአረር በሽታ የተክሉን ምግብ የማዘጋጀት አቅም እና የፍሬ ጥራት ይጎዳል።",
+        "spot": "የቅጠል ነጠብጣቦች የተክሉን እድገት ይቀንሳሉ።",
+        "mold": "የቅጠል ፈንገስ የፍሬውን ጥራት በጣም ይቀንሳል።",
+        "virus": "የቫይረስ በሽታዎች ፈውስ የላቸውም፤ ሙሉ ምርትን ሊያወድሙ ይችላሉ።",
+        "default": "የበሽታ ተፅዕኖ ይለያያል — ቀደም ብሎ ማከም ጉዳቱን ይቀንሳል።"
+      }
+    },
+    "locationIntelligence": {
+      "btn_auto_detect": "🎯 በራሱ ይለይ",
+      "btn_change": "ቀይር",
+      "btn_set": "አስተካክል",
+      "input_placeholder": "ለምሳሌ፦ አክሱም፣ አዲግራት፣ ዓድዋ፣ ውቅሮ…",
+      "detecting": "⏳",
+      "error_denied": "የቦታ ፍቃድ ተከልክሏል። መቀሌ እንደ መነሻ ተወስዷል።",
+      "error_weather": "የአየር ሁኔታ መረጃ ማግኘት አልተቻለም።",
+      "your_location": "የእርስዎ ቦታ",
+      "section_weather_risk": "የአየር ሁኔታ እና የበሽታ ግንኙነት",
+      "watch_for": "ይከታተሉ፦",
+      "disease_risk_suffix": " የበሽታ አደጋ",
+      "loading_suffix": "በመጫን ላይ...",
+      "humidity_label": "እርጥበት",
+      "temperature_label": "ሙቀት",
+      "wind_label": "ንፋስ",
+      "rainfall_label": "ዝናብ",
+      "risk_rules": [
+        {
+          "level": "high",
+          "message": "በጣም ከፍተኛ የፈንገስ አደጋ — ከ85% በላይ እርጥበት ከሞቃታማ አየር ጋር ለብላክ እና ለፈንገስ ምቹ ሁኔታ ይፈጥራል።",
+          "diseases": [
+            "Late Blight",
+            "Early Blight",
+            "Septoria Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "መካከለኛ የፈንገስ አደጋ — አሁን ያለው እርጥበት ለፈንገስ እና ለነጭ አረር እድገት ይመቻል።",
+          "diseases": [
+            "Powdery Mildew",
+            "Leaf Mold",
+            "Gray Leaf Spot"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "የበሽታ ስርጭት አደጋ — ከፍተኛ የንፋስ ፍጥነት የዝገት እና የብላክ በሽታዎችን ወደ ሌሎች እርሻዎች ሊያሰራጭ ይችላል።",
+          "diseases": [
+            "Rust",
+            "Septoria",
+            "Anthracnose"
+          ]
+        },
+        {
+          "level": "medium",
+          "message": "ሞቃት እና ደረቅ አየር ለተባይ መራባት ይመቻል። የቅጠሉን ስር በጥንቃቄ ይፈትሹ።",
+          "diseases": [
+            "Spider Mites",
+            "Target Spot"
+          ]
+        },
+        {
+          "level": "low",
+          "message": "ዝቅተኛ እርጥበት የፈንገስ አደጋን ይቀንሳል። ይልቁንም ተባዮችን ይከታተሉ።",
+          "diseases": []
+        },
+        {
+          "level": "low",
+          "message": "አሁን ያለው ሁኔታ ዝቅተኛ የበሽታ አደጋ አለው። መደበኛ ክትትልዎን ይቀጥሉ።",
+          "diseases": []
+        }
+      ],
+      "correlation_tips": {
+        "humidity_high": "እርጥበት {value}% → የፈንገስ በሽታ አደጋ ከፍ ያለ ነው",
+        "humidity_med": "እርጥበት {value}% → መካከለኛ የፈንገስ አደጋ፣ በቅርብ ይከታተሉ",
+        "heat_dry": "ሞቃት እና ደረቅ ሁኔታ → የተባይ ጫና ከፍ ይላል",
+        "recent_rain": "የቅርብ ጊዜ ዝናብ → የዘገየ ብላክ እና የባክቴሪያ በሽታ አደጋን ይጨምራል",
+        "high_wind": "ከፍተኛ ንፋስ → የበሽታ ብናኞች እየተሰራጩ ነው፣ ፍተሻዎን ያስፉ"
+      },
+      "cities": {
+        "mekelle": "መቀሌ፣ ትግራይ",
+        "axum": "አክሱም፣ ትግራይ",
+        "adwa": "ዓድዋ፣ ትግራይ",
+        "adigrat": "አዲግራት፣ ትግራይ",
+        "wukro": "ውቅሮ፣ ትግራይ",
+        "addis": "አዲስ አበባ"
+      }
+    },
+    "weatherWidget": {
+      "weather_codes": {
+        "0": "ጠራ ያለ ሰማይ",
+        "1": "በአብዛኛው ጠራ ያለ",
+        "2": "ከፊል ደመናማ",
+        "3": "ጭጋጋማ",
+        "45": "ጉም",
+        "51": "ካስማ ዝናብ",
+        "53": "ካስማ ዝናብ",
+        "61": "ዝናብ",
+        "63": "ዝናብ",
+        "65": "ከባድ ዝናብ",
+        "80": "የበረዶ ዝናብ",
+        "95": "ነጎድጓድ"
+      }
+    },
+    "diseaseEncyclopedia": {
+      "search_placeholder": "በሽታዎችን ወይም ምልክቶችን ይፈልጉ…",
+      "filter_all_crops": "ሁሉም ሰብሎች",
+      "filter_all_types": "ሁሉም አይነቶች",
+      "results_found": "{n} በሽታ(ዎች) ተገኝተዋል",
+      "clear_filters": "ማጣሪያዎችን አጽዳ ✕",
+      "no_diseases_found": "ምንም በሽታ አልተገኘም። ሌላ ቃል ይሞክሩ።",
+      "section_symptoms": "ምልክቶች",
+      "section_treatment": "ሕክምና",
+      "section_prevention": "መከላከል",
+      "enc_title": "የበሽታ ኢንሳይክሎፒዲያ",
+      "enc_sub": "ስለ ሰብል በሽታዎች ምልክት፣ መንስኤ እና ሕክምና መመሪያ",
+      "severity_high": "ከፍተኛ",
+      "severity_medium": "መካከለኛ",
+      "severity_low": "ዝቅተኛ",
+      "diseases": [
+        {
+          "name": "የስንዴ ቅጠል ዝገት",
+          "crop": "ስንዴ",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia triticina",
+          "symptom": "በላይኛው የቅጠል ክፍል ላይ ብርቱካንማ-ቡኒ የዱቄት መሰል ነጠብጣቦች። ቅጠሎች ቢጫ ይሆናሉ ይደርቃሉም።",
+          "treatment": "ቴቡኮናዞል ወይም ፕሮፒኮናዞል ይጠቀሙ። የታመሙትን ያስወግዱ። በሽታን የሚቋቋሙ ዝርያዎችን ይጠቀሙ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይትከሉ። ሰብሉን አያጨናንቁ። በእርጥበት ወቅት ይከታተሉ።"
+        },
+        {
+          "name": "የስንዴ ግንድ ዝገት",
+          "crop": "ስንዴ",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia graminis",
+          "symptom": "በግንድ እና በቅጠል ላይ ጥቁር ቀይ-ቡኒ ነጠብጣቦች። ግንዱን በማዳከም ሰብሉ እንዲወድቅ ያደርጋል።",
+          "treatment": "ምልክቱ ሲታይ ፕሮፒኮናዞል ይርጩ። የተረጋገጠ ምርጥ ዘር ይጠቀሙ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ዘግይቶ መዝራትን ያስወግዱ።"
+        },
+        {
+          "name": "የስንዴ ቢጫ ዝገት",
+          "crop": "ስንዴ",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia striiformis",
+          "symptom": "በቅጠሉ ላይ በመስመር የተደረደሩ ቢጫ-ብርቱካንማ ነጠብጣቦች።",
+          "treatment": "ትራይፍሎክሲስትሮቢን ቀድመው ይጠቀሙ። ከመጠን ያለፈ የናይትሮጅን ማዳበሪያ ያስወግዱ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። በቀዝቃዛና እርጥብ ወቅት በየጊዜው ይፈትሹ።"
+        },
+        {
+          "name": "የበቆሎ ሰሜናዊ ቅጠል ብላክ",
+          "crop": "በቆሎ",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Exserohilum turcicum",
+          "symptom": "ረጅም የሲጋራ ቅርፅ ያላቸው ግራጫ-አረንጓዴ ምልክቶች (5–15 ሴ.ሜ) በቅጠሉ ላይ።",
+          "treatment": "ማንኮዜብ ወይም አዞክሲስትሮቢን ይጠቀሙ። ከምርት በኋላ የተረፈውን ሰብል ያስወግዱ።",
+          "prevention": "ሰብል ያፈራርቁ። የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ቅሪቶችን ይቀብሩ።"
+        },
+        {
+          "name": "ግራጫ የቅጠል ነጠብጣብ",
+          "crop": "በቆሎ",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Cercospora zeae-maydis",
+          "symptom": "አራት ማዕዘን ቅርፅ ያላቸው ግራጫማ ምልክቶች ከቅጠሉ ደም ስር ጋር በትይዩ።",
+          "treatment": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። አዞክሲስትሮቢን ወይም ፕሮፒኮናዞል ይርጩ።",
+          "prevention": "ሰብል ያፈራርቁ። የተክሎች ርቀት ይጠብቁ። ቅሪቶችን ይቀብሩ።"
+        },
+        {
+          "name": "የበቆሎ መደበኛ ዝገት",
+          "crop": "በቆሎ",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Puccinia sorghi",
+          "symptom": "በሁለቱም የቅጠል በኩል ያሉ ቀይ የዱቄት መሰል ነጠብጣቦች።",
+          "treatment": "ከበደለ ማንኮዜብ ወይም ክሎሮታሎኒል ይጠቀሙ። የሚቋቋሙ ዝርያዎችን ይትከሉ።",
+          "prevention": "በቀዝቃዛና እርጥብ ወቅት ይከታተሉ። ቀድመው የሚደርሱ ዝርያዎችን ይጠቀሙ።"
+        },
+        {
+          "name": "የማሽላ አንትራክኖስ",
+          "crop": "ማሽላ",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Colletotrichum sublineolum",
+          "symptom": "በቅጠል እና በግንድ ላይ ቀይ ወይም ቢጫ ክብ ነጠብጣቦች።",
+          "treatment": "በሽታ የሌለበት ዘር ይጠቀሙ። ክሎሮታሎኒል ይርጩ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ሰብል ያፈራርቁ። አያጨናንቁ።"
+        },
+        {
+          "name": "የማሽላ ነጭ አረር",
+          "crop": "ማሽላ",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Peronosclerospora sorghi",
+          "symptom": "በቅጠሉ ስር ነጭ የፈንገስ እድገት። ቅጠሎች ቢጫ ይሆናሉ እድገትም ይገታል።",
+          "treatment": "ዘሩን ከመዝራት በፊት በሜታላክሲል ያክሙ። የታመሙትን ይንቀሉ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ዘር ያክሙ። በሽታ በነበረበት እርሻ ላይ አይዝሩ።"
+        },
+        {
+          "name": "የጤፍ ቅጠል ነጠብጣብ",
+          "crop": "ጤፍ",
+          "severity": "ዝቅተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Various fungal species",
+          "symptom": "በቅጠል ላይ ትናንሽ ቡኒ ነጠብጣቦች። ቅጠል ሊረግፍ ይችላል።",
+          "treatment": "አየር እንዲገባ የተክሉን ርቀት ያስተካክሉ። ከበደለ ኮፐር-ተኮር መድሃኒት ይርጩ።",
+          "prevention": "የላይ ረጭ መስኖ ያስወግዱ። ውሃ የማይቋጥር አፈር ይጠቀሙ። ሰብል ያፈራርቁ።"
+        },
+        {
+          "name": "የቲማቲም የቀደመ ብላክ",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Alternaria solani",
+          "symptom": "በታችኛው ቅጠሎች ላይ የክብ ቅርፅ ያላቸው ጥቁር ቡኒ ነጠብጣቦች።",
+          "treatment": "ክሎሮታሎኒል ወይም ማንኮዜብ ይጠቀሙ። የታችኛውን ቅጠሎች ያስወግዱ።",
+          "prevention": "ሰብል ያፈራርቁ። አፈር ወደ ቅጠል እንዳይረጭ ኩትኳቶ ያድርጉ።"
+        },
+        {
+          "name": "የቲማቲም የዘገየ ብላክ",
+          "crop": "ቲማቲም",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Phytophthora infestans",
+          "symptom": "በፍጥነት ወደ ቡኒነት የሚቀየሩ ግራጫ-አረንጓዴ ምልክቶች። በቅጠሉ ስር ነጭ ፈንገስ። ፍሬው ይበሰብሳል።",
+          "treatment": "አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ — በጣም በፍጥነት ይሰራጫል።",
+          "prevention": "ቅጠሉ ላይ ውሃ አያፍሱ። የሚቋቋሙ ዝርያዎችን ይጠቀሙ። አየር እንዲገባ ያድርጉ።"
+        },
+        {
+          "name": "የቲማቲም የባክቴሪያ ነጠብጣብ",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ባክቴሪያ",
+          "scientific": "Xanthomonas vesicatoria",
+          "symptom": "በቅጠልና በፍሬ ላይ ትናንሽ ጥቁር የውሃ ነክ ነጠብጣቦች።",
+          "treatment": "ኮፐር-ተኮር መድሃኒት ይርጩ። የታመሙትን ግንዶች ያስወግዱ።",
+          "prevention": "ጤናማ ችግኝ ይጠቀሙ። ተክሎች እርጥብ ሲሆኑ አይንኩ። ሰብል ያፈራርቁ።"
+        },
+        {
+          "name": "የቲማቲም ቅጠል ፈንገስ",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Fulvia fulva",
+          "symptom": "በላይኛው የቅጠል በኩል ቢጫ ነጠብጣቦች። በታችኛው በኩል ወይራ-አረንጓዴ ፈንገስ።",
+          "treatment": "አየር እንዲገባ ያድርጉ። ክሎሮታሎኒል ወይም ኮፐር ይርጩ።",
+          "prevention": "ርቀት ይጠብቁ። እርጥበት ከ85% በታች እንዲሆን ያድርጉ።"
+        },
+        {
+          "name": "የሰፕቶሪያ ቅጠል ነጠብጣብ",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Septoria lycopersici",
+          "symptom": "ጥቁር ጠርዝ ያላቸው ብዙ ትናንሽ ክብ ነጠብጣቦች።",
+          "treatment": "ክሎሮታሎኒል ወይም ማንኮዜብ ይጠቀሙ። የታመሙትን ቅጠሎች ያስወግዱ።",
+          "prevention": "አፈር እንዳይረጭ ኩትኳቶ ያድርጉ። የላይ ረጭ መስኖ ያስወግዱ።"
+        },
+        {
+          "name": "ቀይ የሸረሪት ተባይ",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ተባይ",
+          "scientific": "Tetranychus urticae",
+          "symptom": "ትናንሽ ቢጫ ወይም ነጭ ነጠብጣቦች። በቅጠሉ ስር ድር። ቅጠሎች ይደርቃሉ።",
+          "treatment": "አባሜክቲን ወይም ቢፈናዜት ይጠቀሙ። የኒም ዘይትም ይረዳል። እርጥበት ይጨምሩ።",
+          "prevention": "በደንብ ውሃ ይስጡ። አዳኝ ተባዮችን ያስገቡ። አቧራማ ሁኔታ ያስወግዱ።"
+        },
+        {
+          "name": "የቢጫ ቅጠል ጥቅል ቫይረስ",
+          "crop": "ቲማቲም",
+          "severity": "ከፍተኛ",
+          "type": "ቫይረስ",
+          "scientific": "TYLCV (Begomovirus)",
+          "symptom": "የቅጠል ወደ ላይ መጠቅለል እና መገርጠት። እድገት መገታት። አበባ ይረግፋል።",
+          "treatment": "ፈውስ የለውም። የታመሙትን አሁኑኑ ያስወግዱ። ነጭ ዝንቦችን ይከላከሉ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ነፍሳት የማይገቡበት መረብ ይጠቀሙ።"
+        },
+        {
+          "name": "የቲማቲም ሞዛይክ ቫይረስ",
+          "crop": "ቲማቲም",
+          "severity": "ከፍተኛ",
+          "type": "ቫይረስ",
+          "scientific": "Tomato mosaic virus (ToMV)",
+          "symptom": "በቅጠሎች ላይ ቀላል እና ጥቁር አረንጓዴ የተቀላቀለ ምልክት።",
+          "treatment": "ፈውስ የለውም። ተክሉን ያስወግዱ። መሳሪያዎችን በኬሚካል ያጽዱ።",
+          "prevention": "የሚቋቋሙ ዝርያዎችን ይጠቀሙ። ከመንካትዎ በፊት እጅዎን ይታጠቡ።"
+        },
+        {
+          "name": "የቲማቲም ታርጌት ስፖት",
+          "crop": "ቲማቲም",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Corynespora cassiicola",
+          "symptom": "ክብ ቅርፅ ያላቸው ቡኒ ነጠብጣቦች። ያለ ጊዜው ቅጠል መርገፍ።",
+          "treatment": "ክሎሮታሎኒል ወይም አዞክሲስትሮቢን ይጠቀሙ። የተጎዱትን ቅጠሎች ያስወግዱ።",
+          "prevention": "ተክሉን በማሰር አየር እንዲገባ ያድርጉ። የላይ ረጭ መስኖ ያስወግዱ።"
+        },
+        {
+          "name": "የድንች የቀደመ ብላክ",
+          "crop": "ድንች",
+          "severity": "መካከለኛ",
+          "type": "ፈንገስ",
+          "scientific": "Alternaria solani",
+          "symptom": "በቆዩ ቅጠሎች ላይ ቡኒ ነጠብጣቦች ከቢጫ ቀለም ጋር።",
+          "treatment": "ክሎሮታሎኒል ወይም ማንኮዜብ ይርጩ። ፖታሲየም ያለው ማዳበሪያ ይጠቀሙ።",
+          "prevention": "ሰብል ያፈራርቁ። ኩትኳቶ ያድርጉ። ውሃ እንዳያጥረው ያድርጉ።"
+        },
+        {
+          "name": "የድንች የዘገየ ብላክ",
+          "crop": "ድንች",
+          "severity": "ከፍተኛ",
+          "type": "ፈንገስ",
+          "scientific": "Phytophthora infestans",
+          "symptom": "ጥቁር የውሃ ነክ ምልክቶች። በቅጠሉ ስር ነጭ ፈንገስ። ድንቹ ይበሰብሳል።",
+          "treatment": "አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ። የታመሙትን ያስወግዱ።",
+          "prevention": "ጤናማ ዘር ድንች ይጠቀሙ። የላይ ረጭ መስኖ ያስወግዱ።"
+        }
+      ]
+    },
+    "communityPage": {
+      "intro_text": "ሌሎች የትግራይ አርሶ አደሮች ምን አይነት በሽታ ሪፖርት እያደረጉ እንደሆነ ይመልከቱ።",
+      "outbreak_title_prefix": "አሁን ያለ በሽታ፦",
+      "outbreak_desc": "በዚህ ሳምንት {n} አርሶ አደሮች ይህን በሽታ ሪፖርት አድርገዋል። ሰብልዎን ይከታተሉ።",
+      "btn_scan_now": "አሁን መርምር",
+      "tab_feed": "የማህበረሰብ መረጃ",
+      "tab_insights": "የሕክምና ውጤት",
+      "tab_experts": "የባለሙያ ምክር",
+      "filter_all_crops": "ሁሉም ሰብሎች",
+      "reports_count": "{n} ሪፖርቶች",
+      "treatment_label_prefix": "ሕክምና፦",
+      "community_worked": "በተሳካ ሁኔታ ሰርቷል",
+      "community_failed": "ለውጥ የለም — ሌላ እየተሞከረ ነው",
+      "watching_symptoms": "⏳ ሕክምና አልተጀመረም — ምልክቶች በመታየት ላይ",
+      "view_disease_info": "ስለ በሽታው መረጃ እይ →",
+      "liked": "❤",
+      "not_liked": "🤍",
+      "insights_title": "የሕክምና ውጤታማነት (ከማህበረሰቡ)",
+      "insights_based_on": "ከትግራይ አርሶ አደሮች በተገኙ {n} ሪፖርቶች ላይ የተመሰረተ።",
+      "success_rate": "{rate}% ውጤታማ ({n} ሪፖርት)",
+      "most_reported_title": "በዚህ ሳምንት በብዛት የታዩ በሽታዎች",
+      "reports_this_week": "በዚህ ሳምንት {n} ሪፖርት",
+      "active_outbreak_badge": "በሽታው ተከስቷል",
+      "experts_intro": "በኢትዮጵያ ካሉ የዕፅዋት ባለሙያዎች የተገኙ ምክሮች።",
+      "farmers_found_helpful": "{n} አርሶ አደሮች ይህን ወደውታል።",
+      "community_title": "ማህበረሰብ",
+      "community_sub": "ሌሎች የትግራይ አርሶ አደሮች ምን ሪፖርት እያደረጉ እንደሆነ ይመልከቱ።",
+      "expert_tips_data": [
+        {
+          "expert": "ዶ/ር ተክሉ",
+          "role": "የዕፅዋት ባለሙያ፣ መቀሌ ዩኒቨርሲቲ",
+          "tip": "የዘገየ ብላክ በእርጥበት ወቅት በ48 ሰዓት ውስጥ ይስፋፋል። ምልክቱን ባዩበት ቀን ማንኮዜብ ይርጩ።",
+          "crop": "Tomato"
+        },
+        {
+          "expert": "አቶ ሃለፎም",
+          "role": "የግብርና ኤክስቴንሽን ባለሙያ",
+          "tip": "በስንዴ እና በቆሎ ላይ ለሚከሰት ዝገት፦ ጠዋት በጤዛ ወቅት ይፈትሹ — ብናኞቹ በደንብ ይታያሉ።",
+          "crop": "Corn"
+        },
+        {
+          "expert": "ዶ/ር ኒማ",
+          "role": "ሰብል ሳይንቲስት፣ MIT",
+          "tip": "የኒም ዘይት በፀሐይ ብርሃን ከ8 ሰዓት በኋላ ኃይሉን ያጣል። ሁልጊዜ ምሽት ላይ ይርጩ።",
+          "crop": "General"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "errors": {
+      "auth": {
+        "email_exists": "በዚህ ኢሜይል የተከፈተ መለያ አለ።",
+        "registration_failed": "ምዝገባ አልተሳካም። እባክዎን ድጋሚ ይሞክሩ።",
+        "email_password_required": "ኢሜይል እና የይለፍ ቃል ያስፈልጋል።",
+        "no_account_found": "በዚህ ኢሜይል የተመዘገበ መለያ የለም።",
+        "incorrect_password": "የይለፍ ቃል ስህተት ነው።",
+        "login_failed": "መግባት አልተሳካም። እባክዎን ድጋሚ ይሞክሩ።",
+        "refresh_token_required": "ሪፍሬሽ ቶከን ያስፈልጋል።",
+        "session_expired": "ክፍለ-ጊዜው አልፎበታል። እባክዎን ድጋሚ ይግቡ።",
+        "invalid_session": "ክፍለ-ጊዜው አይሰራም። ድጋሚ ይግቡ።",
+        "signed_out_all": "ከሁሉም መሳሪያዎች ወጥተዋል።",
+        "user_not_found": "ተጠቃሚው አልተገኘም።",
+        "profile_load_failed": "መገለጫውን መጫን አልተቻለም።",
+        "profile_update_failed": "መገለጫውን ማስተካከል አልተቻለም።",
+        "upgrade_gateway_only": "አገልግሎቱን ለማሳደግ በክፍያ ስርዓቱ በኩል ማለፍ አለብዎት።",
+        "invalid_plan": "የማይሰራ የአገልግሎት አይነት።",
+        "upgrade_success": "ወደ {plan} አገልግሎት በተሳካ ሁኔታ ተሸጋግረዋል።",
+        "upgrade_failed": "አገልግሎቱን ማሳደግ አልተሳካም።",
+        "downgrade_failed": "አገልግሎቱን ዝቅ ማድረግ አልተሳካም።",
+        "field_required": "{field} ያስፈልጋል።",
+        "field_must_be_string": "{field} ጽሁፍ መሆን አለበት።",
+        "field_max_length": "{field} ከ {max} ፊደላት መብለጥ የለበትም።",
+        "field_min_length": "{field} ቢያንስ {min} ፊደላት መሆን አለበት።",
+        "field_enum": "{field} ከእነዚህ አንዱ መሆን አለበት፦ {values}።",
+        "field_email": "{field} ትክክለኛ ኢሜይል መሆን አለበት።",
+        "field_complexity": "{field} ቢያንስ አንድ ትልቅ ፊደል እና አንድ ቁጥር መያዝ አለበት።"
+      },
+      "chat": {
+        "invalid_message": "የማይሰራ መልዕክት።",
+        "ai_not_configured": "የ AI ረዳቱ አልተስተካከለም።",
+        "ai_unavailable": "የ AI ረዳቱ ለጊዜው አይሰራም።",
+        "response_failed": "ምላሽ መስጠት አልቻልኩም። እባክዎን ድጋሚ ይሞክሩ።"
+      },
+      "feedback": {
+        "disease_rating_required": "በሽታው እና ደረጃው መሞላት አለበት።",
+        "invalid_rating": "የማይሰራ ደረጃ።",
+        "disease_too_long": "የበሽታው ስም በጣም ረጅም ነው (ቢበዛ 200)።",
+        "note_too_long": "ማስታወሻው በጣም ረጅም ነው (ቢበዛ 1000)።",
+        "treatment_too_long": "የሕክምናው ውጤት በጣም ረጅም ነው (ቢበዛ 200)።",
+        "scan_not_found": "ምርመራው አልተገኘም ወይም ፍቃድ የለዎትም።",
+        "save_failed": "አስተያየቱን ማስቀመጥ አልተቻለም።",
+        "load_failed": "አስተያየቱን መጫን አልተቻለም።"
+      },
+      "history": {
+        "load_failed": "ታሪክን መጫን አልተቻለም።",
+        "stats_failed": "ቁጥሮችን መጫን አልተቻለም።",
+        "scan_not_found": "ምርመራው አልተገኘም።",
+        "delete_failed": "ምርመራውን መሰረዝ አልተቻለም።",
+        "bulk_delete_failed": "ምርመራዎችን መሰረዝ አልተሳካም።",
+        "fetch_failed": "ምርመራውን ማግኘት አልተቻለም።",
+        "ids_required": "የመለያ ቁጥሮች (IDs) ያስፈልጋሉ።"
+      },
+      "predict": {
+        "no_image": "ምንም ምስል አልቀረበም።",
+        "only_images_allowed": "JPG፣ PNG እና WebP ምስሎች ብቻ ይፈቀዳሉ።",
+        "quota_exceeded": "የቀን ምርመራ ገደብዎ ላይ ደርሰዋል (በቀን {limit} በነጻ አገልግሎት)።",
+        "upgrade_message": "ላልተገደበ ምርመራ ወደ ፕሪሚየም ያሳድጉ።",
+        "user_not_found": "ተጠቃሚው አልተገኘም።",
+        "invalid_ai_response": "ከ AI አገልጋዩ የተሳሳተ ምላሽ መጥቷል።",
+        "ai_server_offline": "የ AI አገልጋዩ ጠፍቷል።",
+        "image_unprocessable": "ምስሉን መተንተን አልተቻለም።",
+        "prediction_failed": "ምርመራው አልተሳካም። እባክዎን ድጋሚ ይሞክሩ።",
+        "file_must_be_image": "ፋይሉ ምስል መሆን አለበት (JPEG, PNG, ወይም WebP)።",
+        "file_too_large": "ፋይሉ በጣም ትልቅ ነው። ቢበዛ {max} MB።"
+      }
+    }
+  },
+  "ml": {
+    "friendlyNames": {
+      "Apple___Apple_scab": "የፖም እከክ",
+      "Apple___Black_rot": "የፖም ጥቁር መበስበስ",
+      "Apple___Cedar_apple_rust": "የፖም ዝገት",
+      "Apple___healthy": "ፖም — ጤናማ",
+      "Blueberry___healthy": "ብሉቤሪ — ጤናማ",
+      "Cherry_(including_sour)___Powdery_mildew": "የቼሪ ነጭ አረር",
+      "Cherry_(including_sour)___healthy": "ቼሪ — ጤናማ",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "የበቆሎ ግራጫ ነጠብጣብ",
+      "Corn_(maize)___Common_rust_": "የበቆሎ መደበኛ ዝገት",
+      "Corn_(maize)___Northern_Leaf_Blight": "የበቆሎ ሰሜናዊ ብላክ",
+      "Corn_(maize)___healthy": "በቆሎ — ጤናማ",
+      "Grape___Black_rot": "የወይን ጥቁር መበስበስ",
+      "Grape___Esca_(Black_Measles)": "የወይን ኤስካ",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "የወይን ቅጠል ብላክ",
+      "Grape___healthy": "ወይን — ጤናማ",
+      "Orange___Haunglongbing_(Citrus_greening)": "የብርቱካን መገርጣት (HLB)",
+      "Peach___Bacterial_spot": "የፒች ባክቴሪያ ነጠብጣብ",
+      "Peach___healthy": "ፒች — ጤናማ",
+      "Pepper,_bell___Bacterial_spot": "የቃሪያ ባክቴሪያ ነጠብጣብ",
+      "Pepper,_bell___healthy": "ቃሪያ — ጤናማ",
+      "Potato___Early_blight": "የድንች የቀደመ ብላክ",
+      "Potato___Late_blight": "የድንች የዘገየ ብላክ",
+      "Potato___healthy": "ድንች — ጤናማ",
+      "Raspberry___healthy": "ራስቤሪ — ጤናማ",
+      "Soybean___healthy": "ሶያ ቢን — ጤናማ",
+      "Squash___Powdery_mildew": "የዱባ ነጭ አረር",
+      "Strawberry___Leaf_scorch": "የእንጆሪ ቅጠል አረር",
+      "Strawberry___healthy": "እንጆሪ — ጤናማ",
+      "Tomato___Bacterial_spot": "የቲማቲም ባክቴሪያ ነጠብጣብ",
+      "Tomato___Early_blight": "የቲማቲም የቀደመ ብላክ",
+      "Tomato___Late_blight": "የቲማቲም የዘገየ ብላክ",
+      "Tomato___Leaf_Mold": "የቲማቲም ቅጠል ፈንገስ",
+      "Tomato___Septoria_leaf_spot": "የሰፕቶሪያ ቅጠል ነጠብጣብ",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "የቲማቲም ቀይ ሸረሪት ተባይ",
+      "Tomato___Target_Spot": "የቲማቲም ታርጌት ስፖት",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "የቲማቲም ቢጫ ቅጠል ጥቅል ቫይረስ",
+      "Tomato___Tomato_mosaic_virus": "የቲማቲም ሞዛይክ ቫይረስ",
+      "Tomato___healthy": "ቲማቲም — ጤናማ"
+    },
+    "diseaseMeta": {
+      "Apple___Apple_scab": "ምልክቱ ሲታይ ሰልፈር ወይም የኒም ዘይት ይጠቀሙ። የታመሙትን ያስወግዱ።",
+      "Apple___Black_rot": "የታመሙትን ግንዶች ይቁረጡ። ኮፐር-ተኮር መድሃኒት ይርጩ።",
+      "Apple___Cedar_apple_rust": "ሰልፈር-ተኮር ፈንገስ ማጥፊያ ይጠቀሙ።",
+      "Apple___healthy": "ምንም ሕክምና አያስፈልግም። ንጽህናውን ይጠብቁ።",
+      "Blueberry___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Cherry_(including_sour)___Powdery_mildew": "ፖታሲየም ባይካርቦኔት ወይም ኒም ዘይት ይጠቀሙ። አየር እንዲገባ ያድርጉ።",
+      "Cherry_(including_sour)___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "ሰብል ያፈራርቁ። ቅሪቶችን ያስወግዱ። በመጀመሪያው ደረጃ የኒም ዘይት ይጠቀሙ።",
+      "Corn_(maize)___Common_rust_": "የሚቋቋሙ ዝርያዎችን ይትከሉ። ቀድሞ የኒም ዘይት ይጠቀሙ።",
+      "Corn_(maize)___Northern_Leaf_Blight": "ሰብል ያፈራርቁ። ኮፐር-ተኮር መድሃኒት ይርጩ።",
+      "Corn_(maize)___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Grape___Black_rot": "የደረቁ ፍሬዎችን ያስወግዱ። ኮፐር ይርጩ።",
+      "Grape___Esca_(Black_Measles)": "ፈውስ የለውም። የታመሙትን ይንቀሉ። ቁስሎችን በኬሚካል ይዝጉ።",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "ኮፐር ይርጩ። የታመሙትን ያስወግዱ።",
+      "Grape___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Orange___Haunglongbing_(Citrus_greening)": "ፈውስ የለውም። ተክሉን አሁኑኑ ያስወግዱ። ተባዮችን ይቆጣጠሩ።",
+      "Peach___Bacterial_spot": "ኮፐር-ተኮር ባክቴሪያ ማጥፊያ ይጠቀሙ። የላይ ረጭ መስኖ ያስወግዱ።",
+      "Peach___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Pepper,_bell___Bacterial_spot": "ኮፐር ይርጩ። የታመሙትን ያስወግዱ። ጤናማ ችግኝ ይጠቀሙ።",
+      "Pepper,_bell___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Potato___Early_blight": "የታችኛው ቅጠሎችን ያስወግዱ። ኮፐር ይርጩ። ሰብል ያፈራርቁ።",
+      "Potato___Late_blight": "⚠️ አሁኑኑ እርምጃ ይውሰዱ። የታመሙትን ያስወግዱ። ኮፐር ይርጩ።",
+      "Potato___healthy": "ምንም ሕክምና አያስፈልግም። በእርጥበት ወቅት ይከታተሉ።",
+      "Raspberry___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Soybean___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Squash___Powdery_mildew": "ቤኪንግ ሶዳ ወይም ኒም ዘይት ይጠቀሙ። አየር እንዲገባ ያድርጉ።",
+      "Strawberry___Leaf_scorch": "የታመሙትን ያስወግዱ። ኮፐር ይርጩ። ቅጠሉ ላይ ውሃ አያፍሱ።",
+      "Strawberry___healthy": "ምንም ሕክምና አያስፈልግም።",
+      "Tomato___Bacterial_spot": "ኮፐር-ተኮር መድሃኒት ይርጩ። የታመሙትን ያስወግዱ።",
+      "Tomato___Early_blight": "የታችኛው ቅጠሎችን ያስወግዱ። ኮፐር ወይም ኒም ዘይት ይጠቀሙ።",
+      "Tomato___Late_blight": "⚠️ አሁኑኑ እርምጃ ይውሰዱ። የታመሙትን ያስወግዱ። ኮፐር ይርጩ።",
+      "Tomato___Leaf_Mold": "አየር እንዲገባ ያድርጉ። እርጥበት ይቀንሱ። ኮፐር ወይም ሰልፈር ይርጩ።",
+      "Tomato___Septoria_leaf_spot": "የታመሙትን ያስወግዱ። ኮፐር ይርጩ። ኩትኳቶ ያድርጉ።",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "የኒም ዘይት ወይም ሳሙና ይጠቀሙ። እርጥበት ይጨምሩ።",
+      "Tomato___Target_Spot": "በጣም የተጎዱትን ያስወግዱ። የኒም ዘይት ይጠቀሙ።",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ፈውስ የለውም። የታመሙትን አሁኑኑ ያስወግዱ። ነጭ ዝንብን ይከላከሉ።",
+      "Tomato___Tomato_mosaic_virus": "ፈውስ የለውም። የታመሙትን ያስወግዱ። መሳሪያዎችን በኬሚካል ያጽዱ። እጅዎን ይታጠቡ።",
+      "Tomato___healthy": "ምንም ሕክምና አያስፈልግም።"
+    },
+    "recommendations": {
+      "Apple___Apple_scab": "በመጀመሪያው ደረጃ ፈንገስ ማጥፊያ ይርጩ። የረገፉ የታመሙ ቅጠሎችን ያስወግዱ። አየር እንዲገባ ግንዶችን ይቁረጡ።",
+      "Apple___Black_rot": "የታመሙትን ግንዶች እና ፍሬዎች ያስወግዱ። ካፕታን ወይም ሌላ ፈንገስ ማጥፊያ ይጠቀሙ።",
+      "Apple___Cedar_apple_rust": "ምልክቱ ሲታይ ማይክሎቡታኒል ወይም ፕሮፒኮናዞል ይጠቀሙ። በአቅራቢያ ያሉ የጥድ ዛፎችን ያስወግዱ።",
+      "Apple___healthy": "ምንም በሽታ አልተገኘም። መደበኛ እንክብካቤውን እና ክትትልዎን ይቀጥሉ።",
+      "Blueberry___healthy": "ምንም በሽታ አልተገኘም። የአፈርን ሁኔታ እና ውሃ በጥንቃቄ ይከታተሉ።",
+      "Cherry_(including_sour)___Powdery_mildew": "ሰልፈር-ተኮር ወይም ፖታሲየም ባይካርቦኔት ይጠቀሙ። ከመጠን ያለፈ ማዳበሪያ ያስወግዱ።",
+      "Cherry_(including_sour)___healthy": "ምንም በሽታ አልተገኘም። መደበኛ ክትትልዎን ይቀጥሉ።",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": "አዞክሲስትሮቢን ወይም ፕሮፒኮናዞል ይርጩ። ለወደፊት የሚቋቋሙ ዝርያዎችን ይጠቀሙ።",
+      "Corn_(maize)___Common_rust_": "ከበደለ ማንኮዜብ ወይም ክሎሮታሎኒል ይጠቀሙ። በብርድና በእርጥበት ወቅት ይከታተሉ።",
+      "Corn_(maize)___Northern_Leaf_Blight": "ማንኮዜብ ወይም አዞክሲስትሮቢን ይርጩ። ሰብል ያፈራርቁ። ቅሪቶችን ያስወግዱ።",
+      "Corn_(maize)___healthy": "ምንም በሽታ አልተገኘም። ጥሩ አግሮኖሚክ ስራዎችን ይቀጥሉ።",
+      "Grape___Black_rot": "ከመጀመሪያው ጀምሮ ማንኮዜብ ወይም ማይክሎቡታኒል ይጠቀሙ። የደረቁ ፍሬዎችን ያስወግዱ።",
+      "Grape___Esca_(Black_Measles)": "ፈውስ የለውም። የታመሙትን አሁኑኑ ያስወግዱ። ቁስሎችን በኬሚካል ይዝጉ።",
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": "ኮፐር-ተኮር መድሃኒት ወይም ማንኮዜብ ይርጩ። አየር እንዲገባ ያድርጉ።",
+      "Grape___healthy": "ምንም በሽታ አልተገኘም። የቅጠል ማስተካከል ስራዎችን ይቀጥሉ።",
+      "Orange___Haunglongbing_(Citrus_greening)": "ፈውስ የለውም። ተክሉን አሁኑኑ ያስወግዱ። ተሸካሚ ነፍሳትን ይከላከሉ።",
+      "Peach___Bacterial_spot": "በመከር እና በጸደይ ኮፐር ይርጩ። የላይ ረጭ መስኖ ያስወግዱ።",
+      "Peach___healthy": "ምንም በሽታ አልተገኘም። መደበኛ መቆረጥ እና ማዳበሪያ ስራዎችን ይቀጥሉ።",
+      "Pepper,_bell___Bacterial_spot": "ኮፐር ይርጩ። የታመሙትን ያስወግዱ። የላይ ረጭ መስኖ ያስወግዱ።",
+      "Pepper,_bell___healthy": "ምንም በሽታ አልተገኘም። የተክሎች ርቀት እንዲጠበቅ ያድርጉ።",
+      "Potato___Early_blight": "ክሎሮታሎኒል ወይም ማንኮዜብ ይርጩ። ፖታሲየም ይጠቀሙ። ሰብል ያፈራርቁ።",
+      "Potato___Late_blight": "⚠️ አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ — በጣም በፍጥነት ይሰራጫል። የታመሙትን ያስወግዱ።",
+      "Potato___healthy": "ምንም በሽታ አልተገኘም። በእርጥበት ወቅት በየጊዜው ይፈትሹ።",
+      "Raspberry___healthy": "ምንም በሽታ አልተገኘም። ቆርጦ ማስተካከል ስራዎችን ይቀጥሉ።",
+      "Soybean___healthy": "ምንም በሽታ አልተገኘም። በእድገት ወቅት ዝገት እንዳይኖር ይከታተሉ።",
+      "Squash___Powdery_mildew": "ፖታሲየም ባይካርቦኔት፣ ኒም ዘይት ወይም ሰልፈር ይጠቀሙ። አየር እንዲገባ ያድርጉ።",
+      "Strawberry___Leaf_scorch": "ካፕታን ወይም ማይክሎቡታኒል ይጠቀሙ። የታመሙትን ያስወግዱ።",
+      "Strawberry___healthy": "ምንም በሽታ አልተገኘም። ከምርት በኋላ ማጽዳት ስራዎችን ያድርጉ።",
+      "Tomato___Bacterial_spot": "ኮፐር-ተኮር መድሃኒት ይርጩ። የታመሙትን ያስወግዱ።",
+      "Tomato___Early_blight": "ክሎሮታሎኒል ወይም ማንኮዜብ ይርጩ። የታችኛውን ቅጠሎች ያስወግዱ።",
+      "Tomato___Late_blight": "⚠️ አሁኑኑ ማንኮዜብ ወይም ሳይሞክሳኒል ይርጩ — በጣም በፍጥነት ይሰራጫል።",
+      "Tomato___Leaf_Mold": "አየር እንዲገባ ያድርጉ። ክሎሮታሎኒል ወይም ኮፐር ይርጩ።",
+      "Tomato___Septoria_leaf_spot": "ክሎሮታሎኒል ወይም ማንኮዜብ ይርጩ። የታችኛውን ቅጠሎች ያስወግዱ። ኩትኳቶ ያድርጉ።",
+      "Tomato___Spider_mites Two-spotted_spider_mite": "አባሜክቲን ወይም ቢፈናዜት ይጠቀሙ። የኒም ዘይትም ይረዳል።",
+      "Tomato___Target_Spot": "ክሎሮታሎኒል ወይም አዞክሲስትሮቢን ይጠቀሙ። አየር እንዲገባ ያድርጉ።",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": "ፈውስ የለውም። የታመሙትን አሁኑኑ ያስወግዱ። ነጭ ዝንብን በወጥመድ ይከላከሉ።",
+      "Tomato___Tomato_mosaic_virus": "ፈውስ የለውም። የታመሙትን ያስወግዱ። መሳሪያዎችን በኬሚካል ያጽዱ። እጅዎን ይታጠቡ።",
+      "Tomato___healthy": "ምንም በሽታ አልተገኘም። መደበኛ ክትትልዎን ይቀጥሉ።"
+    },
+    "errors": {
+      "image_quality_low": "የምስሉ ጥራት ለምርመራ ዝቅተኛ ነው።",
+      "image_too_small": "ምስሉ በጣም ትንሽ ነው ({w}×{h}px)። ቢያንስ {min}×{min} ፒክስል ይጠቀሙ።",
+      "image_blurry": "ምስሉ ግልጽ አይደለም። ካሜራውን አረጋግተው ግልጽ ፎቶ ያንሱ።",
+      "confidence_too_low": "የእርግጠኝነት መጠኑ ዝቅተኛ ነው ({confidence}%)። ሞዴሉ እርግጠኛ አይደለም — የተሻለ ፎቶ ያንሱ።",
+      "retake_reason": "እባክዎን ድጋሚ ፎቶ ያንሱ፦ ቅጠሉ ምስሉን እንዲሞላ ያድርጉ እና በብርሃን ቦታ ሆነው ምልክቱን ያሳዩ።",
+      "file_not_image": "ፋይሉ ምስል መሆን አለበት (JPEG, PNG, ወይም WebP)።",
+      "file_too_large": "ፋይሉ በጣም ትልቅ ነው። ቢበዛ {max} MB።",
+      "image_unreadable": "ምስሉን ማንበብ አልተቻለም፦ {error}",
+      "image_decode_failed": "ምስሉን መተንተን አልተቻለም፦ {error}",
+      "fallback_recommendation": "የግብርና ኤክስቴንሽን ባለሙያዎን ያማክሩ።"
+    }
+  }
+}

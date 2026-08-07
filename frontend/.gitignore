@@ -1,4 +1,6 @@
-# frontend/.gitignore
 node_modules/
 dist/
 .env
+.env.local
+.env.production
+.vite/

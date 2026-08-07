@@ -2,6 +2,7 @@
 // Full multilingual agricultural advisor with structured responses
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { useAuth } from "../context/AuthContext";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
@@ -149,6 +150,7 @@ export default function AIChat({ t, onClose, settings }) {
   const lang      = settings?.language || "en";
   const bottomRef = useRef(null);
   const inputRef  = useRef(null);
+  const { authFetch } = useAuth();
 
   const [messages, setMessages] = useState([{
     role:    "assistant",
@@ -181,7 +183,7 @@ export default function AIChat({ t, onClose, settings }) {
     const detectedLang = detectLanguage(msg);
 
     try {
-      const res = await fetch(`${API}/api/chat`, {
+      const res = await authFetch(`${API}/api/chat`, {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify({

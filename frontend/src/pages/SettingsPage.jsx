@@ -5,7 +5,7 @@ import { useToast } from "../components/Toast";
 import ConfirmModal from "../components/ConfirmModal";
 const API = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
-export default function SettingsPage({ settings, setSettings, t, onLogout }) {
+export default function SettingsPage({ settings, setSettings, t, onLogout, nav }) {
   const [tab,      setTab]      = useState("appearance");
   const [saving,   setSaving]   = useState(false);
   const [sessions, setSessions] = useState([]);
@@ -54,21 +54,21 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
   }
   async function handleDowngrade() {
     const yes = await confirm({
-      title: "Downgrade to Free?",
-      message: "You will lose Premium features including unlimited scans, AI insights, and smart recommendations.",
-      confirmLabel: "Yes, downgrade",
+      title: t("downgrade_title"),
+      message: t("downgrade_msg"),
+      confirmLabel: t("downgrade_confirm"),
       danger: true,
     });
     if (!yes) return;
     await downgradePlan();
-    toast("Downgraded to Free plan", "info");
+    toast(t("downgraded_info"), "info");
   }
 
   async function handleLogout() {
     const yes = await confirm({
-      title: "Sign out?",
-      message: "You will be signed out from this device. Your data is safely stored on the server.",
-      confirmLabel: "Sign out",
+      title: `${t("sign_out")}?`,
+      message: t("logout_confirm_message"),
+      confirmLabel: t("sign_out"),
       danger: false,
     });
     if (!yes) return;
@@ -76,14 +76,14 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
   }
   async function handleLogoutAll() {
     const yes = await confirm({
-      title: "Sign out from all devices?",
-      message: "This will end all active sessions on every device. You will need to sign in again.",
-      confirmLabel: "Sign out all",
+      title: t("signout_all_title"),
+      message: t("signout_all_msg"),
+      confirmLabel: t("signout_all_btn"),
       danger: true,
     });
     if (!yes) return;
     await authFetch(`${API}/api/auth/logout-all`, { method:"POST" });
-    toast("Signed out from all devices", "info");
+    toast(t("signout_all_done"), "info");
     await logout();
   }
   async function loadSessions() {
@@ -106,8 +106,10 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
   return (
     <div className="page-anim">
       <div style={{ display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:22,flexWrap:"wrap",gap:10 }}>
-        <p style={{ fontSize:13,color:"var(--text2)" }}>{t("settings_sub")}</p>
-        <button className="btn btn-primary" onClick={save}>{t("btn_save")}</button>
+        <p style={{ fontSize:13,color:"var(--text2)",maxWidth:480 }}>{t("settings_sub")}</p>
+        <button className="btn btn-primary" onClick={save} style={{ minWidth:130 }}>
+          ✓ {t("btn_save")}
+        </button>
       </div>
 
       <div className="settings-layout">
@@ -144,34 +146,95 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
             <div className="settings-card">
               <div className="settings-card-title">{t("theme_title")}</div>
               <div className="settings-card-desc">{t("theme_desc")}</div>
-              <div className="theme-grid">
-                {[["light","○",t("theme_light")],["dark","◑",t("theme_dark")]].map(([val,ico,lbl])=>(
-                  <button key={val} className={`theme-btn ${settings.theme===val?"active":""}`}
-                    onClick={()=>upd("theme",val)}>
-                    <span>{ico}</span>{lbl}
-                  </button>
-                ))}
+              <div style={{ display:"flex", gap:10 }}>
+                {[["light","☀️",t("theme_light")],["dark","🌙",t("theme_dark")]].map(([val,ico,lbl])=>{
+                  const active = settings.theme === val;
+                  return (
+                    <button key={val} onClick={() => upd("theme", val)} style={{
+                      flex:1, display:"flex", alignItems:"center", justifyContent:"center",
+                      gap:8, padding:"12px 16px", borderRadius:10, cursor:"pointer",
+                      border: `2px solid ${active ? "var(--green)" : "var(--border)"}`,
+                      background: active ? "var(--green-glow)" : "var(--bg2)",
+                      fontFamily:"var(--fb)", fontSize:13, fontWeight:600,
+                      color: active ? "var(--green)" : "var(--text2)",
+                      transition:"all .15s",
+                    }}>
+                      <span style={{ fontSize:18 }}>{ico}</span> {lbl}
+                    </button>
+                  );
+                })}
               </div>
             </div>
             <div className="settings-card">
               <div className="settings-card-title">{t("fontsize_title")}</div>
               <div className="settings-card-desc">{t("fontsize_desc")}</div>
-              <div style={{ display:"flex",gap:8 }}>
-                {[["small",t("fs_small")],["medium",t("fs_medium")],["large",t("fs_large")]].map(([val,lbl])=>(
-                  <button key={val} className={`btn ${settings.fontSize===val?"btn-primary":"btn-secondary"}`}
-                    style={{flex:1}} onClick={()=>upd("fontSize",val)}>{lbl}</button>
-                ))}
+              <div style={{ display:"flex", gap:8 }}>
+                {[
+                  ["small",  t("fs_small"),  13],
+                  ["medium", t("fs_medium"), 16],
+                  ["large",  t("fs_large"),  20],
+                ].map(([val,lbl,sz]) => {
+                  const active = settings.fontSize === val;
+                  return (
+                    <button key={val} onClick={() => upd("fontSize", val)} style={{
+                      flex:1, display:"flex", flexDirection:"column", alignItems:"center",
+                      gap:6, padding:"12px 8px", borderRadius:10, cursor:"pointer",
+                      border: `2px solid ${active ? "var(--green)" : "var(--border)"}`,
+                      background: active ? "var(--green-glow)" : "var(--bg2)",
+                      transition:"all .15s",
+                    }}>
+                      <span style={{
+                        fontFamily:"var(--fh)", fontSize:sz,
+                        fontWeight:700, color: active ? "var(--green)" : "var(--text2)",
+                        lineHeight:1,
+                      }}>A</span>
+                      <span style={{ fontSize:11, color: active ? "var(--green)" : "var(--text3)", fontWeight:500 }}>
+                        {lbl}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
             <div className="settings-card">
               <div className="settings-card-title">{t("language_title")}</div>
               <div className="settings-card-desc">{t("language_desc")}</div>
-              <select className="form-select" value={settings.language}
-                onChange={e=>upd("language",e.target.value)}>
-                <option value="en">🌐 English</option>
-                <option value="am">🇪🇹 አማርኛ (Amharic)</option>
-                <option value="ti">🇪🇹 ትግርኛ (Tigrinya)</option>
-              </select>
+              <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
+                {[
+                  ["en", "English",          "English",   "🌐"],
+                  ["am", "አማርኛ",            "Amharic",   "🇪🇹"],
+                  ["ti", "ትግርኛ",            "Tigrinya",  "🇪🇹"],
+                ].map(([val, native, english, flag]) => {
+                  const active = settings.language === val;
+                  return (
+                    <button key={val} onClick={() => upd("language", val)} style={{
+                      display:"flex", alignItems:"center", gap:12,
+                      padding:"11px 14px", borderRadius:10, cursor:"pointer", textAlign:"left",
+                      border: `2px solid ${active ? "var(--green)" : "var(--border)"}`,
+                      background: active ? "var(--green-glow)" : "var(--bg2)",
+                      transition:"all .15s",
+                    }}>
+                      <span style={{ fontSize:22, flexShrink:0 }}>{flag}</span>
+                      <div style={{ flex:1 }}>
+                        <div style={{
+                          fontSize:14, fontWeight:700,
+                          color: active ? "var(--green)" : "var(--text1)",
+                        }}>{native}</div>
+                        <div style={{ fontSize:11, color:"var(--text3)", marginTop:1 }}>{english}</div>
+                      </div>
+                      {active && (
+                        <span style={{
+                          width:18, height:18, borderRadius:"50%",
+                          background:"var(--green)", color:"#fff",
+                          fontSize:11, fontWeight:800,
+                          display:"flex", alignItems:"center", justifyContent:"center",
+                          flexShrink:0,
+                        }}>✓</span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </>}
 
@@ -255,7 +318,7 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
             </div>
             <div style={{ display:"flex",justifyContent:"flex-end" }}>
               <button className="btn btn-primary" disabled={saving} onClick={saveProfile}>
-                {saving?"Saving…":"Save profile"}
+                {saving ? t("saving") : t("save_profile")}
               </button>
             </div>
 
@@ -276,28 +339,28 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
                 </div>
                 {!isPremium
                   ? <button className="btn btn-gold btn-sm" onClick={handleUpgrade}>⭐ {t("go_premium")}</button>
-                  : <button className="btn btn-ghost btn-sm" onClick={handleDowngrade} style={{color:"var(--text3)",fontSize:11}}>Downgrade</button>
+                  : <button className="btn btn-ghost btn-sm" onClick={handleDowngrade} style={{color:"var(--text3)",fontSize:11}}>{t("downgrade")}</button>
                 }
               </div>
               {/* Scan quota bar (free only) */}
               {!isPremium && (
                 <div style={{ marginTop:4 }}>
                   <div style={{ display:"flex",justifyContent:"space-between",fontSize:11,color:"var(--text3)",marginBottom:5 }}>
-                    <span>Daily scans</span>
+                    <span>{t("daily_scans")}</span>
                     <span>{FREE_DAILY_LIMIT-(scansRemaining??0)}/{FREE_DAILY_LIMIT} used</span>
                   </div>
                   <div className="scans-bar" style={{ height:5 }}>
                     <div className={`scans-fill ${scansPct<30?"danger":scansPct<60?"warning":""}`}
                       style={{ width:`${100-scansPct}%` }}/>
                   </div>
-                  <div style={{ fontSize:10,color:"var(--text3)",marginTop:4 }}>Resets at midnight</div>
+                  <div style={{ fontSize:10,color:"var(--text3)",marginTop:4 }}>{t("resets_midnight")}</div>
                 </div>
               )}
             </div>
 
             {/* Feature list */}
             <div className="settings-card">
-              <div className="settings-card-title">Features on your plan</div>
+              <div className="settings-card-title">{t("features_on_plan")}</div>
               <div style={{ display:"flex",flexDirection:"column",gap:8 }}>
                 {[
                   {feat:t("feat_unlimited_scans"), ok:isPremium},
@@ -316,19 +379,19 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
                 ))}
               </div>
               {!isPremium && (
-                <button className="btn btn-gold btn-full" style={{ marginTop:14 }} onClick={()=>window.nav?.("pricing")}>
-                  ⭐ See all Premium features →
+                <button className="btn btn-gold btn-full" style={{ marginTop:14 }} onClick={()=>nav?.("pricing")}>
+                  ⭐ {t("see_premium_features")}
                 </button>
               )}
             </div>
 
             {/* Account info */}
             <div className="settings-card">
-              <div className="settings-card-title">Account info</div>
+              <div className="settings-card-title">{t("account_info")}</div>
               {[
-                ["Email",        user?.email || "—"],
-                ["Member since", user?.created_at ? new Date(user.created_at).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}) : "—"],
-                ["User ID",      user?.id ? `#${user.id}` : "—"],
+                [t("email_label"),       user?.email || "—"],
+                [t("member_since"),      user?.created_at ? new Date(user.created_at).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}) : "—"],
+                [t("user_id_label"),     user?.id ? `#${user.id}` : "—"],
               ].map(([lbl,val]) => (
                 <div key={lbl} style={{ display:"flex",justifyContent:"space-between",padding:"8px 0",borderBottom:"1px solid var(--border)",fontSize:13 }}>
                   <span style={{ color:"var(--text3)" }}>{lbl}</span>
@@ -339,13 +402,13 @@ export default function SettingsPage({ settings, setSettings, t, onLogout }) {
 
             {/* Security */}
             <div className="settings-card">
-              <div className="settings-card-title">Security</div>
+              <div className="settings-card-title">{t("security")}</div>
               <div style={{ display:"flex",flexDirection:"column",gap:8 }}>
                 <button className="btn btn-secondary btn-full" onClick={loadSessions}>
-                  📱 View active sessions
+                  📱 {t("view_active_sessions")}
                 </button>
                 <button className="btn btn-danger btn-full" onClick={handleLogoutAll}>
-                  → Sign out from all devices
+                  → {t("signout_all_devices")}
                 </button>
               </div>
               {showSess && sessions.length > 0 && (
